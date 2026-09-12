@@ -1,4 +1,4 @@
-name: ShortPrompt Trend Radar
+name: ShortPrompt Trend Radar V2
 
 on:
   schedule:
@@ -10,21 +10,13 @@ permissions:
 
 jobs:
   collect-trends:
-    name: Collect and Analyze Google Trends
+    name: Collect and Analyze Google Trends V2
     runs-on: ubuntu-latest
 
     steps:
 
-      # ================================================================
-      # CHECKOUT
-      # ================================================================
-
       - name: Checkout repository
         uses: actions/checkout@v5
-
-      # ================================================================
-      # NODE 24
-      # ================================================================
 
       - name: Setup Node.js
         uses: actions/setup-node@v7
@@ -37,10 +29,6 @@ jobs:
           node --version
           npm --version
           python3 --version
-
-      # ================================================================
-      # COLLECT + ANALYZE
-      # ================================================================
 
       - name: Collect and analyze Google Trends
         env:
@@ -70,40 +58,40 @@ jobs:
           LATEST_FILE = DATA_DIR / "latest.json"
           STATE_FILE = DATA_DIR / "trends-state.json"
 
-          HISTORY_DAYS = 30
-          LOOKBACK_HOURS = 24
-          STATE_RETENTION_DAYS = 7
+          HISTORY_HOURS = 72
+          STATE_RETENTION_DAYS = 14
 
           DATA_DIR.mkdir(parents=True, exist_ok=True)
           HISTORY_DIR.mkdir(parents=True, exist_ok=True)
 
 
           # ============================================================
-          # CURRENT TIME
+          # TIME
           # ============================================================
 
           now = datetime.now(timezone.utc).astimezone()
           now_iso = now.isoformat()
 
           print("========================================")
-          print("SHORTPROMPT TREND RADAR")
+          print("SHORTPROMPT TREND RADAR V2")
           print("========================================")
           print(f"Timestamp: {now_iso}")
           print("")
 
 
           # ============================================================
-          # NAMESPACE
+          # GOOGLE TRENDS NAMESPACE
           # ============================================================
 
           HT_NS = "https://trends.google.com/trending/rss"
 
 
           # ============================================================
-          # TEXT HELPERS
+          # HELPERS
           # ============================================================
 
           def clean_text(value):
+
               if value is None:
                   return ""
 
@@ -115,7 +103,9 @@ jobs:
 
 
           def normalize_title(value):
+
               value = clean_text(value).lower()
+
               value = re.sub(
                   r"\s+",
                   " ",
@@ -126,13 +116,38 @@ jobs:
 
 
           # ============================================================
-          # TRAFFIC PARSER
+          # TRAFFIC BANDS
+          #
+          # IMPORTANT:
+          # Google RSS exposes approximate traffic bands.
+          # We therefore DO NOT interpret 500+ as exactly 500.
           # ============================================================
 
-          def parse_traffic(value):
+          TRAFFIC_BANDS = {
+              "100+": 100,
+              "200+": 200,
+              "500+": 500,
+              "1000+": 1000,
+              "2000+": 2000,
+              "5000+": 5000,
+              "10000+": 10000,
+              "20000+": 20000,
+              "50000+": 50000,
+              "100000+": 100000,
+              "200000+": 200000,
+              "500000+": 500000,
+              "1000000+": 1000000
+          }
+
+
+          def parse_traffic_band(value):
 
               if not value:
-                  return 0
+                  return {
+                      "label": "",
+                      "level": 0,
+                      "lower_bound": 0
+                  }
 
               value = (
                   str(value)
@@ -141,18 +156,30 @@ jobs:
                   .replace(",", "")
               )
 
+              if value in TRAFFIC_BANDS:
+
+                  return {
+                      "label": value,
+                      "level": list(
+                          TRAFFIC_BANDS.keys()
+                      ).index(value) + 1,
+                      "lower_bound": TRAFFIC_BANDS[value]
+                  }
+
               match = re.match(
-                  r"([0-9.]+)\s*([KMB]?)",
+                  r"([0-9.]+)\s*([KMB]?)\+?",
                   value
               )
 
               if not match:
-                  return 0
 
-              number = float(
-                  match.group(1)
-              )
+                  return {
+                      "label": value,
+                      "level": 0,
+                      "lower_bound": 0
+                  }
 
+              number = float(match.group(1))
               suffix = match.group(2)
 
               multipliers = {
@@ -162,7 +189,7 @@ jobs:
                   "B": 1000000000
               }
 
-              return int(
+              lower_bound = int(
                   number *
                   multipliers.get(
                       suffix,
@@ -170,9 +197,15 @@ jobs:
                   )
               )
 
+              return {
+                  "label": value,
+                  "level": lower_bound,
+                  "lower_bound": lower_bound
+              }
+
 
           # ============================================================
-          # CATEGORY KEYWORDS
+          # CATEGORIES
           # ============================================================
 
           CATEGORY_KEYWORDS = {
@@ -189,7 +222,8 @@ jobs:
                   "copilot",
                   "llm",
                   "machine learning",
-                  "robot"
+                  "robot",
+                  "robotica"
               ],
 
               "Tech": [
@@ -216,7 +250,8 @@ jobs:
                   "tiktok",
                   "youtube",
                   "netflix",
-                  "spotify"
+                  "spotify",
+                  "honor"
               ],
 
               "Sport": [
@@ -238,7 +273,15 @@ jobs:
                   "wta",
                   "olimpiadi",
                   "giro d'italia",
-                  "tour de france"
+                  "tour de france",
+                  "volley",
+                  "volley",
+                  "juventus",
+                  "milan",
+                  "inter",
+                  "roma",
+                  "napoli",
+                  "atalanta"
               ],
 
               "Entertainment": [
@@ -257,7 +300,10 @@ jobs:
                   "festival",
                   "reality",
                   "grande fratello",
-                  "sanremo"
+                  "sanremo",
+                  "tv",
+                  "fiction",
+                  "personaggio"
               ],
 
               "Business": [
@@ -275,7 +321,11 @@ jobs:
                   "tim",
                   "enel",
                   "eni",
-                  "stellantis"
+                  "stellantis",
+                  "finanza",
+                  "mercato",
+                  "licenziamento",
+                  "edilizia"
               ]
           }
 
@@ -319,7 +369,7 @@ jobs:
 
 
           # ============================================================
-          # FETCH GOOGLE TRENDS RSS
+          # FETCH RSS
           # ============================================================
 
           print("Fetching Google Trends RSS...")
@@ -330,7 +380,7 @@ jobs:
                   "User-Agent":
                       "Mozilla/5.0 "
                       "(compatible; "
-                      "ShortPrompt-Trend-Radar/1.0)"
+                      "ShortPrompt-Trend-Radar/2.0)"
               }
           )
 
@@ -386,11 +436,8 @@ jobs:
               )
 
 
-          # ============================================================
-          # PARSE TRENDS
-          # ============================================================
-
           trends = []
+
 
           for item in channel.findall("item"):
 
@@ -401,27 +448,33 @@ jobs:
               if not title:
                   continue
 
+
               key = normalize_title(
                   title
               )
+
 
               description = clean_text(
                   item.findtext("description")
               )
 
+
               pub_date = clean_text(
                   item.findtext("pubDate")
               )
 
-              traffic = clean_text(
+
+              traffic_raw = clean_text(
                   item.findtext(
                       f"{{{HT_NS}}}approx_traffic"
                   )
               )
 
-              traffic_value = parse_traffic(
-                  traffic
+
+              traffic = parse_traffic_band(
+                  traffic_raw
               )
+
 
               picture = clean_text(
                   item.findtext(
@@ -429,13 +482,16 @@ jobs:
                   )
               )
 
+
               picture_source = clean_text(
                   item.findtext(
                       f"{{{HT_NS}}}picture_source"
                   )
               )
 
+
               news_items = []
+
 
               for news in item.findall(
                   f"{{{HT_NS}}}news_item"
@@ -443,38 +499,38 @@ jobs:
 
                   news_title = clean_text(
                       news.findtext(
-                          f"{{{HT_NS}}}"
-                          f"news_item_title"
+                          f"{{{HT_NS}}}news_item_title"
                       )
                   )
+
 
                   news_snippet = clean_text(
                       news.findtext(
-                          f"{{{HT_NS}}}"
-                          f"news_item_snippet"
+                          f"{{{HT_NS}}}news_item_snippet"
                       )
                   )
+
 
                   news_url = clean_text(
                       news.findtext(
-                          f"{{{HT_NS}}}"
-                          f"news_item_url"
+                          f"{{{HT_NS}}}news_item_url"
                       )
                   )
+
 
                   news_picture = clean_text(
                       news.findtext(
-                          f"{{{HT_NS}}}"
-                          f"news_item_picture"
+                          f"{{{HT_NS}}}news_item_picture"
                       )
                   )
 
+
                   news_source = clean_text(
                       news.findtext(
-                          f"{{{HT_NS}}}"
-                          f"news_item_source"
+                          f"{{{HT_NS}}}news_item_source"
                       )
                   )
+
 
                   news_items.append({
 
@@ -492,17 +548,17 @@ jobs:
 
 
               news_titles = [
-                  item["title"]
-                  for item in news_items
-                  if item["title"]
+                  news["title"]
+                  for news in news_items
+                  if news["title"]
               ]
 
 
               sources = sorted(
                   set(
-                      item["source"]
-                      for item in news_items
-                      if item["source"]
+                      news["source"]
+                      for news in news_items
+                      if news["source"]
                   )
               )
 
@@ -519,10 +575,13 @@ jobs:
 
                   "key": key,
 
-                  "traffic": traffic,
+                  "traffic": traffic["label"],
+
+                  "traffic_level":
+                      traffic["level"],
 
                   "traffic_value":
-                      traffic_value,
+                      traffic["lower_bound"],
 
                   "description":
                       description,
@@ -555,15 +614,17 @@ jobs:
 
 
           print(
-              f"Trends found: {len(trends)}"
+              f"Trends found: "
+              f"{len(trends)}"
           )
 
 
           # ============================================================
-          # LOAD TREND STATE
+          # LOAD STATE
           # ============================================================
 
           state = {}
+
 
           if STATE_FILE.exists():
 
@@ -578,12 +639,14 @@ jobs:
                           file
                       )
 
+
                   if isinstance(
                       loaded_state,
                       dict
                   ):
 
                       state = loaded_state
+
 
               except Exception as error:
 
@@ -596,7 +659,7 @@ jobs:
 
 
           # ============================================================
-          # LOAD RECENT HISTORY
+          # LOAD LAST 72 HOURS OF HISTORY
           # ============================================================
 
           recent_snapshots = []
@@ -604,7 +667,7 @@ jobs:
           history_cutoff = (
               now -
               timedelta(
-                  hours=LOOKBACK_HOURS
+                  hours=HISTORY_HOURS
               )
           )
 
@@ -646,12 +709,11 @@ jobs:
                   if not timestamp_raw:
                       continue
 
+
                   try:
 
-                      timestamp = (
-                          datetime.fromisoformat(
-                              timestamp_raw
-                          )
+                      timestamp = datetime.fromisoformat(
+                          timestamp_raw
                       )
 
                   except Exception:
@@ -697,6 +759,7 @@ jobs:
                   )
               )
 
+
               best = None
               best_delta = None
 
@@ -710,12 +773,11 @@ jobs:
                   if not timestamp_raw:
                       continue
 
+
                   try:
 
-                      timestamp = (
-                          datetime.fromisoformat(
-                              timestamp_raw
-                          )
+                      timestamp = datetime.fromisoformat(
+                          timestamp_raw
                       )
 
                   except Exception:
@@ -756,7 +818,8 @@ jobs:
                       historical_trend.get(
                           "key"
                       )
-                      == key
+                      ==
+                      key
                   ):
 
                       return historical_trend
@@ -766,66 +829,138 @@ jobs:
 
 
           # ============================================================
-          # CALCULATE GROWTH
+          # FIND RECENT OCCURRENCES
           # ============================================================
 
-          def calculate_growth(
-              current_value,
+          def count_recent_occurrences(
+              key,
+              minutes
+          ):
+
+              cutoff = (
+                  now -
+                  timedelta(
+                      minutes=minutes
+                  )
+              )
+
+              count = 0
+
+              for snapshot in recent_snapshots:
+
+                  timestamp_raw = snapshot.get(
+                      "timestamp"
+                  )
+
+                  if not timestamp_raw:
+                      continue
+
+
+                  try:
+
+                      timestamp = datetime.fromisoformat(
+                          timestamp_raw
+                      )
+
+                  except Exception:
+
+                      continue
+
+
+                  if timestamp < cutoff:
+                      continue
+
+
+                  for trend in snapshot.get(
+                      "trends",
+                      []
+                  ):
+
+                      if (
+                          trend.get("key")
+                          ==
+                          key
+                      ):
+
+                          count += 1
+                          break
+
+
+              return count
+
+
+          # ============================================================
+          # TRAFFIC BAND COMPARISON
+          # ============================================================
+
+          def band_change(
+              current_level,
               previous
           ):
 
               if previous is None:
                   return None
 
-              old_value = float(
+
+              old_level = int(
                   previous.get(
-                      "traffic_value",
+                      "traffic_level",
                       0
                   )
               )
 
-              new_value = float(
-                  current_value
-              )
 
-              if old_value <= 0:
+              if old_level <= 0:
                   return None
 
-              return round(
-                  (
-                      (
-                          new_value -
-                          old_value
-                      )
-                      /
-                      old_value
-                  )
-                  * 100,
-                  1
+
+              return (
+                  current_level -
+                  old_level
               )
+
+
+          def band_direction(
+              change
+          ):
+
+              if change is None:
+                  return "UNKNOWN"
+
+              if change > 0:
+                  return "UP"
+
+              if change < 0:
+                  return "DOWN"
+
+              return "FLAT"
 
 
           # ============================================================
           # SCORE COMPONENTS
           # ============================================================
 
-          def traffic_score(
-              traffic_value
+          def volume_score(
+              traffic_level
           ):
 
-              if traffic_value <= 0:
+              if traffic_level <= 0:
                   return 0
+
 
               score = (
                   math.log10(
-                      traffic_value + 1
+                      traffic_level + 1
                   )
                   /
-                  6
-              ) * 40
+                  math.log10(
+                      14
+                  )
+              ) * 25
+
 
               return min(
-                  40,
+                  25,
                   round(
                       score,
                       1
@@ -833,29 +968,73 @@ jobs:
               )
 
 
-          def news_score(
-              news_count
+          def acceleration_score(
+              changes
           ):
 
-              return min(
-                  15,
-                  round(
-                      news_count * 3,
-                      1
+              valid = [
+                  change
+                  for change in changes
+                  if isinstance(
+                      change,
+                      int
                   )
+                  or
+                  isinstance(
+                      change,
+                      float
+                  )
+              ]
+
+
+              if not valid:
+                  return 0
+
+
+              positive = [
+                  change
+                  for change in valid
+                  if change > 0
+              ]
+
+
+              if not positive:
+                  return 0
+
+
+              weighted = 0
+
+
+              weights = [
+                  5,
+                  4,
+                  3,
+                  2,
+                  1
+              ]
+
+
+              for index, change in enumerate(
+                  valid[:5]
+              ):
+
+                  if change > 0:
+
+                      weighted += (
+                          change *
+                          weights[index]
+                      )
+
+
+              score = min(
+                  30,
+                  weighted * 2.5
               )
 
 
-          def source_score(
-              source_count
-          ):
-
-              return min(
-                  10,
-                  round(
-                      source_count * 3.33,
-                      1
-                  )
+              return round(
+                  score,
+                  1
               )
 
 
@@ -864,58 +1043,73 @@ jobs:
           ):
 
               return min(
-                  10,
+                  15,
                   round(
-                      appearances,
+                      appearances *
+                      0.8,
                       1
                   )
               )
 
 
-          def growth_score(
-              changes
+          def new_entry_score(
+              appearances
           ):
 
-              valid = [
-                  value
-                  for value in changes
-                  if isinstance(
-                      value,
-                      (int, float)
+              if appearances <= 1:
+                  return 15
+
+              if appearances == 2:
+                  return 10
+
+              if appearances <= 4:
+                  return 5
+
+              return 0
+
+
+          def news_score(
+              news_count,
+              source_count
+          ):
+
+              score = (
+                  min(
+                      6,
+                      news_count * 1.5
                   )
-              ]
-
-              if not valid:
-                  return 0
-
-              positive = [
-                  value
-                  for value in valid
-                  if value > 0
-              ]
-
-              if not positive:
-                  return 0
-
-              average = (
-                  sum(positive)
-                  /
-                  len(positive)
+                  +
+                  min(
+                      4,
+                      source_count * 2
+                  )
               )
 
+              return round(
+                  min(
+                      10,
+                      score
+                  ),
+                  1
+              )
+
+
+          def recurrence_score(
+              occurrences
+          ):
+
               return min(
-                  25,
+                  5,
                   round(
-                      math.log10(
-                          average + 1
-                      ) * 12,
+                      occurrences *
+                      0.5,
                       1
                   )
               )
 
 
           # ============================================================
-          # ANALYZE TRENDS
+          # ENRICH TRENDS
           # ============================================================
 
           enriched_trends = []
@@ -925,31 +1119,21 @@ jobs:
 
               key = trend["key"]
 
+
               previous_state = state.get(
                   key,
                   {}
               )
 
 
-              # --------------------------------------------------------
-              # FIRST / LAST SEEN
-              # --------------------------------------------------------
-
-              first_seen = previous_state.get(
-                  "first_seen"
+              first_seen = (
+                  previous_state.get(
+                      "first_seen"
+                  )
+                  or
+                  now_iso
               )
 
-              if not first_seen:
-
-                  first_seen = now_iso
-
-
-              last_seen = now_iso
-
-
-              # --------------------------------------------------------
-              # APPEARANCES
-              # --------------------------------------------------------
 
               appearances = int(
                   previous_state.get(
@@ -960,7 +1144,7 @@ jobs:
 
 
               # --------------------------------------------------------
-              # HISTORICAL VALUES
+              # Historical comparisons
               # --------------------------------------------------------
 
               previous_30m = find_previous(
@@ -989,62 +1173,81 @@ jobs:
               )
 
 
-              # --------------------------------------------------------
-              # GROWTH
-              # --------------------------------------------------------
-
-              growth_30m = calculate_growth(
-                  trend["traffic_value"],
+              change_30m = band_change(
+                  trend["traffic_level"],
                   previous_30m
               )
 
-              growth_1h = calculate_growth(
-                  trend["traffic_value"],
+
+              change_1h = band_change(
+                  trend["traffic_level"],
                   previous_1h
               )
 
-              growth_3h = calculate_growth(
-                  trend["traffic_value"],
+
+              change_3h = band_change(
+                  trend["traffic_level"],
                   previous_3h
               )
 
-              growth_6h = calculate_growth(
-                  trend["traffic_value"],
+
+              change_6h = band_change(
+                  trend["traffic_level"],
                   previous_6h
               )
 
-              growth_24h = calculate_growth(
-                  trend["traffic_value"],
+
+              change_24h = band_change(
+                  trend["traffic_level"],
                   previous_24h
               )
 
 
               changes = [
 
-                  growth_30m,
+                  change_30m,
 
-                  growth_1h,
+                  change_1h,
 
-                  growth_3h,
+                  change_3h,
 
-                  growth_6h,
+                  change_6h,
 
-                  growth_24h
+                  change_24h
 
               ]
 
 
               # --------------------------------------------------------
-              # DURATION
+              # Recurrence
+              # --------------------------------------------------------
+
+              occurrences_1h = count_recent_occurrences(
+                  key,
+                  60
+              )
+
+              occurrences_3h = count_recent_occurrences(
+                  key,
+                  180
+              )
+
+              occurrences_6h = count_recent_occurrences(
+                  key,
+                  360
+              )
+
+
+              # --------------------------------------------------------
+              # Duration
               # --------------------------------------------------------
 
               try:
 
-                  first_seen_dt = (
-                      datetime.fromisoformat(
-                          first_seen
-                      )
+                  first_seen_dt = datetime.fromisoformat(
+                      first_seen
                   )
+
 
                   duration_seconds = max(
                       0,
@@ -1055,6 +1258,7 @@ jobs:
                           ).total_seconds()
                       )
                   )
+
 
               except Exception:
 
@@ -1068,37 +1272,44 @@ jobs:
 
 
               # --------------------------------------------------------
-              # SCORE
+              # Score
               # --------------------------------------------------------
 
               score = (
 
-                  traffic_score(
-                      trend["traffic_value"]
+                  volume_score(
+                      trend["traffic_level"]
                   )
 
                   +
 
-                  growth_score(
+                  acceleration_score(
                       changes
-                  )
-
-                  +
-
-                  news_score(
-                      trend["news_count"]
-                  )
-
-                  +
-
-                  source_score(
-                      trend["source_count"]
                   )
 
                   +
 
                   persistence_score(
                       appearances
+                  )
+
+                  +
+
+                  new_entry_score(
+                      appearances
+                  )
+
+                  +
+
+                  news_score(
+                      trend["news_count"],
+                      trend["source_count"]
+                  )
+
+                  +
+
+                  recurrence_score(
+                      occurrences_1h
                   )
 
               )
@@ -1113,73 +1324,152 @@ jobs:
               )
 
 
-              # --------------------------------------------------------
-              # STATUS
-              # --------------------------------------------------------
+              # ========================================================
+              # ACCELERATION CLASSIFICATION
+              # ========================================================
+
+              acceleration = "NONE"
+
+
+              positive_short = (
+                  change_30m is not None
+                  and
+                  change_30m > 0
+              )
+
+
+              positive_medium = (
+                  change_1h is not None
+                  and
+                  change_1h > 0
+              )
+
+
+              positive_long = (
+                  change_3h is not None
+                  and
+                  change_3h > 0
+              )
+
 
               if (
-                  growth_30m is not None
+                  change_30m is not None
                   and
-                  growth_1h is not None
+                  change_1h is not None
                   and
-                  growth_30m >= 50
+                  change_30m >= 2
                   and
-                  growth_1h >= 25
+                  change_1h >= 2
               ):
 
-                  status = "ACCELERATING"
+                  acceleration = "STRONG"
 
 
               elif (
-                  growth_1h is not None
+                  positive_short
                   and
-                  growth_1h >= 20
+                  positive_medium
               ):
 
-                  status = "RISING"
+                  acceleration = "MEDIUM"
 
 
-              elif (
-                  appearances <= 2
+              elif positive_medium or positive_long:
+
+                  acceleration = "WEAK"
+
+
+              # ========================================================
+              # STATUS
+              # ========================================================
+
+              status = "HOT"
+
+
+              # New trend
+              if (
+                  appearances <= 1
                   and
                   (
-                      trend["traffic_value"]
-                      >= 100
+                      trend["traffic_level"] >= 2
                       or
-                      trend["news_count"]
-                      >= 2
+                      trend["news_count"] >= 2
                   )
               ):
 
                   status = "EMERGING"
 
 
+              # Strong acceleration
               elif (
-                  growth_6h is not None
+                  acceleration == "STRONG"
                   and
-                  growth_6h <= -25
+                  (
+                      appearances >= 2
+                      or
+                      trend["traffic_level"] >= 3
+                  )
+              ):
+
+                  status = "ACCELERATING"
+
+
+              # Rising
+              elif (
+                  acceleration in [
+                      "MEDIUM",
+                      "STRONG"
+                  ]
+                  and
+                  (
+                      occurrences_1h >= 2
+                      or
+                      trend["traffic_level"] >= 3
+                  )
+              ):
+
+                  status = "RISING"
+
+
+              # Cooling
+              elif (
+                  change_6h is not None
+                  and
+                  change_6h <= -2
+                  and
+                  trend["traffic_level"] <= 3
               ):
 
                   status = "COOLING"
 
 
+              # Stable
               elif (
-                  growth_24h is not None
+                  appearances >= 4
                   and
-                  abs(growth_24h) < 20
+                  all(
+                      change is None
+                      or
+                      change == 0
+                      for change in [
+                          change_1h,
+                          change_3h
+                      ]
+                  )
               ):
 
                   status = "STABLE"
 
 
+              # Otherwise HOT
               else:
 
                   status = "HOT"
 
 
-              # --------------------------------------------------------
-              # UPDATE STATE
-              # --------------------------------------------------------
+              # ========================================================
+              # FIRST SEEN / STATE
+              # ========================================================
 
               state[key] = {
 
@@ -1190,13 +1480,16 @@ jobs:
                       first_seen,
 
                   "last_seen":
-                      last_seen,
+                      now_iso,
 
                   "appearances":
                       appearances,
 
                   "last_traffic":
                       trend["traffic"],
+
+                  "last_traffic_level":
+                      trend["traffic_level"],
 
                   "last_traffic_value":
                       trend["traffic_value"],
@@ -1207,15 +1500,18 @@ jobs:
                   "status":
                       status,
 
+                  "acceleration":
+                      acceleration,
+
                   "score":
                       score
 
               }
 
 
-              # --------------------------------------------------------
-              # ENRICHED TREND
-              # --------------------------------------------------------
+              # ========================================================
+              # OUTPUT
+              # ========================================================
 
               enriched_trends.append({
 
@@ -1231,11 +1527,17 @@ jobs:
                   "status":
                       status,
 
+                  "acceleration":
+                      acceleration,
+
                   "score":
                       score,
 
                   "traffic":
                       trend["traffic"],
+
+                  "traffic_level":
+                      trend["traffic_level"],
 
                   "traffic_value":
                       trend["traffic_value"],
@@ -1244,7 +1546,7 @@ jobs:
                       first_seen,
 
                   "last_seen":
-                      last_seen,
+                      now_iso,
 
                   "appearances":
                       appearances,
@@ -1252,20 +1554,44 @@ jobs:
                   "duration_minutes":
                       duration_minutes,
 
-                  "growth_30m":
-                      growth_30m,
+                  "change_30m_bands":
+                      change_30m,
 
-                  "growth_1h":
-                      growth_1h,
+                  "change_1h_bands":
+                      change_1h,
 
-                  "growth_3h":
-                      growth_3h,
+                  "change_3h_bands":
+                      change_3h,
 
-                  "growth_6h":
-                      growth_6h,
+                  "change_6h_bands":
+                      change_6h,
 
-                  "growth_24h":
-                      growth_24h,
+                  "change_24h_bands":
+                      change_24h,
+
+                  "direction_30m":
+                      band_direction(
+                          change_30m
+                      ),
+
+                  "direction_1h":
+                      band_direction(
+                          change_1h
+                      ),
+
+                  "direction_3h":
+                      band_direction(
+                          change_3h
+                      ),
+
+                  "occurrences_1h":
+                      occurrences_1h,
+
+                  "occurrences_3h":
+                      occurrences_3h,
+
+                  "occurrences_6h":
+                      occurrences_6h,
 
                   "news_count":
                       trend["news_count"],
@@ -1289,7 +1615,7 @@ jobs:
 
 
           # ============================================================
-          # SORT BY SCORE
+          # SORT
           # ============================================================
 
           enriched_trends.sort(
@@ -1303,9 +1629,9 @@ jobs:
                       )
                   ),
 
-                  -float(
+                  -int(
                       item.get(
-                          "traffic_value",
+                          "traffic_level",
                           0
                       )
                   )
@@ -1314,6 +1640,10 @@ jobs:
 
           )
 
+
+          # ============================================================
+          # RANK
+          # ============================================================
 
           for index, trend in enumerate(
               enriched_trends,
@@ -1324,10 +1654,13 @@ jobs:
 
 
           # ============================================================
-          # LATEST.JSON
+          # LATEST JSON
           # ============================================================
 
           latest = {
+
+              "version":
+                  "2.0",
 
               "timestamp":
                   now_iso,
@@ -1341,8 +1674,38 @@ jobs:
               "feed_url":
                   FEED_URL,
 
+              "history_hours":
+                  HISTORY_HOURS,
+
               "trend_count":
-                  len(enriched_trends),
+                  len(
+                      enriched_trends
+                  ),
+
+              "scoring": {
+
+                  "volume":
+                      25,
+
+                  "acceleration":
+                      30,
+
+                  "persistence":
+                      15,
+
+                  "new_entry":
+                      15,
+
+                  "news_sources":
+                      10,
+
+                  "recent_recurrence":
+                      5
+
+              },
+
+              "traffic_note":
+                  "Google Trends RSS traffic values are approximate bands.",
 
               "trends":
                   enriched_trends
@@ -1356,10 +1719,15 @@ jobs:
           ) as file:
 
               json.dump(
+
                   latest,
+
                   file,
+
                   ensure_ascii=False,
+
                   indent=2
+
               )
 
 
@@ -1385,6 +1753,9 @@ jobs:
                       "traffic":
                           trend["traffic"],
 
+                      "traffic_level":
+                          trend["traffic_level"],
+
                       "traffic_value":
                           trend["traffic_value"]
 
@@ -1403,8 +1774,8 @@ jobs:
 
           history_file = (
 
-              HISTORY_DIR
-              /
+              HISTORY_DIR /
+
               f"{now.strftime('%Y-%m-%d')}.json"
 
           )
@@ -1426,12 +1797,14 @@ jobs:
                           file
                       )
 
+
                   if isinstance(
                       loaded_history,
                       list
                   ):
 
                       day_history = loaded_history
+
 
               except Exception as error:
 
@@ -1448,14 +1821,9 @@ jobs:
           )
 
 
-          # Keep snapshots from the last 24 hours.
-          day_cutoff = (
-              now -
-              timedelta(
-                  hours=LOOKBACK_HOURS
-              )
-          )
-
+          # ============================================================
+          # KEEP 72 HOURS
+          # ============================================================
 
           cleaned_history = []
 
@@ -1469,12 +1837,11 @@ jobs:
               if not timestamp_raw:
                   continue
 
+
               try:
 
-                  snapshot_time = (
-                      datetime.fromisoformat(
-                          timestamp_raw
-                      )
+                  snapshot_time = datetime.fromisoformat(
+                      timestamp_raw
                   )
 
               except Exception:
@@ -1482,7 +1849,7 @@ jobs:
                   continue
 
 
-              if snapshot_time >= day_cutoff:
+              if snapshot_time >= history_cutoff:
 
                   cleaned_history.append(
                       snapshot
@@ -1490,11 +1857,13 @@ jobs:
 
 
           cleaned_history.sort(
+
               key=lambda item:
                   item.get(
                       "timestamp",
                       ""
                   )
+
           )
 
 
@@ -1504,23 +1873,30 @@ jobs:
           ) as file:
 
               json.dump(
+
                   cleaned_history,
+
                   file,
+
                   ensure_ascii=False,
+
                   indent=2
+
               )
 
 
           # ============================================================
-          # REMOVE OLD HISTORY FILES
+          # DELETE OLD HISTORY FILES
           # ============================================================
 
           history_date_cutoff = (
 
               now.date()
+
               -
+
               timedelta(
-                  days=HISTORY_DAYS
+                  days=4
               )
 
           )
@@ -1553,14 +1929,19 @@ jobs:
 
 
           # ============================================================
-          # REMOVE STALE STATE
+          # CLEAN STATE
           # ============================================================
 
           state_cutoff = (
-              now -
+
+              now
+
+              -
+
               timedelta(
                   days=STATE_RETENTION_DAYS
               )
+
           )
 
 
@@ -1573,6 +1954,7 @@ jobs:
                   "last_seen"
               )
 
+
               if not last_seen_raw:
 
                   stale_keys.append(
@@ -1584,10 +1966,8 @@ jobs:
 
               try:
 
-                  last_seen = (
-                      datetime.fromisoformat(
-                          last_seen_raw
-                      )
+                  last_seen = datetime.fromisoformat(
+                      last_seen_raw
                   )
 
               except Exception:
@@ -1611,31 +1991,33 @@ jobs:
               del state[key]
 
 
-          # ============================================================
-          # SAVE STATE
-          # ============================================================
-
           with STATE_FILE.open(
               "w",
               encoding="utf-8"
           ) as file:
 
               json.dump(
+
                   state,
+
                   file,
+
                   ensure_ascii=False,
+
                   indent=2
+
               )
 
 
           # ============================================================
-          # OUTPUT SUMMARY
+          # CONSOLE OUTPUT
           # ============================================================
 
           print("")
           print("========================================")
-          print("TREND RADAR RESULT")
+          print("TREND RADAR V2 RESULT")
           print("========================================")
+
 
           for trend in enriched_trends:
 
@@ -1647,6 +2029,8 @@ jobs:
 
                   f"{trend['status']} | "
 
+                  f"{trend['acceleration']} | "
+
                   f"{trend['score']}/100 | "
 
                   f"{trend['traffic']}"
@@ -1656,27 +2040,13 @@ jobs:
 
           print("")
           print("Generated files:")
-
-          print(
-              f"- {LATEST_FILE}"
-          )
-
-          print(
-              f"- {STATE_FILE}"
-          )
-
-          print(
-              f"- {history_file}"
-          )
-
+          print(f"- {LATEST_FILE}")
+          print(f"- {STATE_FILE}")
+          print(f"- {history_file}")
           print("")
 
 
           PY
-
-      # ================================================================
-      # VALIDATE JSON
-      # ================================================================
 
       - name: Validate generated JSON
         run: |
@@ -1687,9 +2057,13 @@ jobs:
 
           required_files = [
 
-              Path("data/latest.json"),
+              Path(
+                  "data/latest.json"
+              ),
 
-              Path("data/trends-state.json")
+              Path(
+                  "data/trends-state.json"
+              )
 
           ]
 
@@ -1708,7 +2082,9 @@ jobs:
                   encoding="utf-8"
               ) as handle:
 
-                  json.load(handle)
+                  json.load(
+                      handle
+                  )
 
 
               print(
@@ -1717,9 +2093,13 @@ jobs:
 
 
           history_files = list(
-              Path("data/history").glob(
+
+              Path(
+                  "data/history"
+              ).glob(
                   "*.json"
               )
+
           )
 
 
@@ -1736,24 +2116,23 @@ jobs:
                   encoding="utf-8"
               ) as handle:
 
-                  json.load(handle)
+                  json.load(
+                      handle
+                  )
 
 
               print(
                   f"Valid JSON: {file}"
               )
 
+
           print("")
           print(
-              "All Trend Radar JSON files "
+              "All Trend Radar V2 JSON files "
               "are valid."
           )
 
           PY
-
-      # ================================================================
-      # COMMIT
-      # ================================================================
 
       - name: Commit Trend Radar data
         run: |
@@ -1775,6 +2154,6 @@ jobs:
           fi
 
           git commit \
-            -m "Update Trend Radar data"
+            -m "Update Trend Radar V2 data"
 
           git push
