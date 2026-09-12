@@ -1,4 +1,4 @@
-name: ShortPrompt Trend Radar V2.1
+name: ShortPrompt Trend Radar V3
 
 on:
   schedule:
@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   collect-trends:
-    name: Collect and Analyze Google Trends V2.1
+    name: Collect and Analyze Google Trends V3
     runs-on: ubuntu-latest
 
     steps:
@@ -30,7 +30,7 @@ jobs:
           npm --version
           python3 --version
 
-      - name: Collect and analyze Google Trends V2.1
+      - name: Collect and analyze Google Trends V3
         env:
           TZ: Europe/Rome
         run: |
@@ -45,17 +45,18 @@ jobs:
 
           from datetime import datetime, timedelta, timezone
           from pathlib import Path
+          from zoneinfo import ZoneInfo
 
 
           # ============================================================
-          # SHORTPROMPT TREND RADAR V2.1
+          # SHORTPROMPT TREND RADAR V3
           #
           # BASE:
           #   ShortPrompt Trend Radar V2
           #
-          # V2.1 ADDITIONS:
+          # V3 DEFINITIVE ADDITIONS:
           #   - stronger title normalization
-          #   - compatibility with old V2 history/state
+          #   - safe migration of old V2/V2.1 history/state
           #   - momentum metrics
           #   - IT + US + GB + DE + FR + ES
           #   - Global Score
@@ -136,13 +137,13 @@ jobs:
 
           now = datetime.now(
               timezone.utc
-          ).astimezone()
+          ).astimezone(ZoneInfo("Europe/Rome"))
 
           now_iso = now.isoformat()
 
           print("")
           print("========================================")
-          print("SHORTPROMPT TREND RADAR V2.1")
+          print("SHORTPROMPT TREND RADAR V3")
           print("========================================")
           print(f"Timestamp: {now_iso}")
           print("")
@@ -744,7 +745,7 @@ jobs:
                       "User-Agent":
                           "Mozilla/5.0 "
                           "(compatible; "
-                          "ShortPrompt-Trend-Radar/2.1)"
+                          "ShortPrompt-Trend-Radar/3.0)"
                   }
               )
 
@@ -1218,6 +1219,7 @@ jobs:
               title,
               minutes
           ):
+              """Find a usable snapshot near the requested historical window."""
 
               target = (
                   now -
@@ -1226,26 +1228,35 @@ jobs:
                   )
               )
 
+              # GitHub Actions can occasionally be delayed. These tolerances
+              # allow normal scheduling jitter without comparing against a
+              # snapshot that is materially older than the requested window.
+              tolerance_minutes = {
+                  30: 25,
+                  60: 35,
+                  180: 75,
+                  360: 150,
+                  1440: 360
+              }.get(
+                  minutes,
+                  max(30, int(minutes * 0.25))
+              )
+
               best = None
               best_delta = None
 
               for snapshot in recent_snapshots:
-
                   timestamp_raw = snapshot.get(
                       "timestamp"
                   )
-
                   if not timestamp_raw:
                       continue
 
                   try:
-
                       timestamp = datetime.fromisoformat(
                           timestamp_raw
                       )
-
                   except Exception:
-
                       continue
 
                   if timestamp > target:
@@ -1261,24 +1272,26 @@ jobs:
                       or
                       delta < best_delta
                   ):
-
                       best = snapshot
                       best_delta = delta
 
-              if best is None:
+              if best is None or best_delta is None:
+                  return None
+
+              if best_delta > timedelta(
+                  minutes=tolerance_minutes
+              ):
                   return None
 
               for historical_trend in best.get(
                   "trends",
                   []
               ):
-
                   if historical_trend_matches(
                       historical_trend,
                       key,
                       title
                   ):
-
                       return historical_trend
 
               return None
@@ -1407,6 +1420,90 @@ jobs:
               return {}, None
 
 
+          def migrate_state_keys(
+              state
+          ):
+              """Merge legacy/duplicate keys into one canonical key."""
+
+              if not isinstance(state, dict):
+                  return {}
+
+              migrated = {}
+
+              for old_key, value in state.items():
+                  if not isinstance(value, dict):
+                      continue
+
+                  title = value.get(
+                      "title",
+                      old_key
+                  )
+
+                  canonical_key = normalize_title(
+                      title
+                  ) or normalize_title(
+                      old_key
+                  )
+
+                  if not canonical_key:
+                      continue
+
+                  current = migrated.get(
+                      canonical_key
+                  )
+
+                  if current is None:
+                      migrated[canonical_key] = dict(value)
+                      migrated[canonical_key][
+                          "normalized_title"
+                      ] = canonical_key
+                      continue
+
+                  current_first = current.get(
+                      "first_seen",
+                      ""
+                  )
+                  value_first = value.get(
+                      "first_seen",
+                      ""
+                  )
+
+                  if (
+                      value_first
+                      and
+                      (
+                          not current_first
+                          or value_first < current_first
+                      )
+                  ):
+                      current["first_seen"] = value_first
+
+                  current["appearances"] = max(
+                      safe_int(current.get("appearances", 0)),
+                      safe_int(value.get("appearances", 0))
+                  )
+
+                  current_last = current.get(
+                      "last_seen",
+                      ""
+                  )
+                  value_last = value.get(
+                      "last_seen",
+                      ""
+                  )
+
+                  if value_last > current_last:
+                      for field, field_value in value.items():
+                          if field not in (
+                              "first_seen",
+                              "appearances"
+                          ):
+                              current[field] = field_value
+                      current["last_seen"] = value_last
+
+              return migrated
+
+
           # ============================================================
           # BAND COMPARISON
           # ============================================================
@@ -1455,42 +1552,36 @@ jobs:
           def momentum_value(
               changes
           ):
-
-              valid = [
-                  change
-                  for change in changes
-                  if isinstance(
-                      change,
-                      int
-                  )
-                  or isinstance(
-                      change,
-                      float
-                  )
-              ]
-
-              if not valid:
-                  return 0
+              """Weighted average of band movement by time window."""
 
               weights = [
-                  5,
-                  3,
-                  1
+                  5.0,
+                  3.0,
+                  2.0,
+                  1.0,
+                  0.5
               ]
 
-              total = 0
+              weighted_total = 0.0
+              weight_total = 0.0
 
-              for index, change in enumerate(
-                  valid[:3]
-              ):
+              for index, change in enumerate(changes[:5]):
+                  if not (
+                      isinstance(change, int)
+                      or isinstance(change, float)
+                  ):
+                      continue
 
-                  total += (
-                      change *
-                      weights[index]
+                  weighted_total += (
+                      change * weights[index]
                   )
+                  weight_total += weights[index]
+
+              if weight_total == 0:
+                  return 0
 
               return round(
-                  total,
+                  weighted_total / weight_total,
                   2
               )
 
@@ -1525,26 +1616,29 @@ jobs:
           # ============================================================
 
           def volume_score(
-              traffic_level
+              traffic_value
           ):
+              """Score the lower bound of Google's approximate traffic band."""
 
-              if traffic_level <= 0:
+              if traffic_value <= 0:
                   return 0
 
+              minimum = math.log10(100)
+              maximum = math.log10(1000000)
+              current = math.log10(
+                  max(100, traffic_value)
+              )
+
               score = (
-                  math.log10(
-                      traffic_level + 1
-                  )
+                  (current - minimum)
                   /
-                  math.log10(
-                      14
-                  )
+                  (maximum - minimum)
               ) * 25
 
               return min(
                   25,
                   round(
-                      score,
+                      max(0, score),
                       1
                   )
               )
@@ -1679,6 +1773,76 @@ jobs:
                       1
                   )
               )
+
+
+          def why_now(
+              status,
+              acceleration,
+              momentum_status,
+              change_30m,
+              change_1h,
+              news_count,
+              source_count,
+              appearances
+          ):
+              """Generate a deterministic, non-causal explanation."""
+
+              reasons = []
+
+              if acceleration == "STRONG":
+                  reasons.append(
+                      "forte aumento delle fasce di traffico"
+                  )
+              elif acceleration == "MEDIUM":
+                  reasons.append(
+                      "aumento del traffico nel breve periodo"
+                  )
+              elif acceleration == "WEAK":
+                  reasons.append(
+                      "segnali di crescita nelle finestre piu lunghe"
+                  )
+
+              if momentum_status in (
+                  "VERY_HIGH",
+                  "HIGH"
+              ):
+                  reasons.append(
+                      "momentum positivo"
+                  )
+
+              if change_30m is not None and change_30m > 0:
+                  reasons.append(
+                      "+fascia negli ultimi 30 minuti"
+                  )
+
+              if change_1h is not None and change_1h > 0:
+                  reasons.append(
+                      "+fascia nell'ultima ora"
+                  )
+
+              if news_count > 0:
+                  if source_count > 1:
+                      reasons.append(
+                          f"{news_count} notizie da {source_count} fonti"
+                      )
+                  else:
+                      reasons.append(
+                          f"{news_count} notizie correlate"
+                      )
+
+              if status == "EMERGING" or appearances <= 1:
+                  reasons.append(
+                      "nuova entrata nel radar"
+                  )
+
+              if not reasons:
+                  if status == "STABLE":
+                      return "presenza stabile senza variazioni rilevanti"
+                  if status == "COOLING":
+                      return "riduzione delle fasce di traffico"
+                  return "presenza attiva nel radar"
+
+              return "; ".join(reasons[:3])
 
 
           # ============================================================
@@ -1874,7 +2038,7 @@ jobs:
                   score = (
 
                       volume_score(
-                          trend["traffic_level"]
+                          trend["traffic_value"]
                       )
 
                       +
@@ -2088,9 +2252,33 @@ jobs:
                           score,
 
                       "momentum":
-                          momentum
+                          momentum,
+
+                      "momentum_status":
+                          momentum_status,
+
+                      "why_now":
+                          why_now(
+                              status,
+                              acceleration,
+                              momentum_status,
+                              change_30m,
+                              change_1h,
+                              trend["news_count"],
+                              trend["source_count"],
+                              appearances
+                          )
 
                   }
+
+                  if (
+                      state_key
+                      and
+                      state_key != key
+                      and
+                      state_key in state
+                  ):
+                      del state[state_key]
 
                   # ----------------------------------------------------
                   # OUTPUT
@@ -2154,6 +2342,18 @@ jobs:
 
                       "momentum_status":
                           momentum_status,
+
+                      "why_now":
+                          why_now(
+                              status,
+                              acceleration,
+                              momentum_status,
+                              change_30m,
+                              change_1h,
+                              trend["news_count"],
+                              trend["source_count"],
+                              appearances
+                          ),
 
                       "change_30m_bands":
                           change_30m,
@@ -2501,6 +2701,19 @@ jobs:
                   f"{len(trends)} trends"
               )
 
+          if len(market_raw.get("IT", [])) == 0:
+              raise SystemExit(
+                  "Italy Google Trends RSS returned no trends. "
+                  "Aborting to avoid overwriting valid data."
+              )
+
+          for geo in MARKETS:
+              if geo != "IT" and not market_raw.get(geo):
+                  print(
+                      f"WARNING: {geo} feed unavailable; "
+                      "continuing with remaining markets."
+                  )
+
 
           # ============================================================
           # PROCESS MARKETS
@@ -2526,6 +2739,10 @@ jobs:
                   dict
               ):
                   state = {}
+
+              state = migrate_state_keys(
+                  state
+              )
 
               enriched = process_market(
                   geo,
@@ -2985,6 +3202,13 @@ jobs:
                   "italy_status":
                       italy_status,
 
+                  "why_now":
+                      (
+                          italy.get("why_now", "")
+                          if italy
+                          else "presenza internazionale rilevata"
+                      ),
+
                   "markets":
                       market_summary,
 
@@ -3127,7 +3351,10 @@ jobs:
           latest = {
 
               "version":
-                  "2.1",
+                  "3.0",
+
+              "schema":
+                  "shortprompt-trend-radar-v3",
 
               "timestamp":
                   now_iso,
@@ -3178,13 +3405,13 @@ jobs:
                   italy_trends,
 
               # --------------------------------------------------------
-              # NEW V2.1
+              # NEW V3
               # --------------------------------------------------------
 
               "radar": {
 
                   "version":
-                      "2.1",
+                      "3.0",
 
                   "markets":
                       list(
@@ -3282,6 +3509,11 @@ jobs:
           ):
 
               global_state = {}
+
+
+          global_state = migrate_state_keys(
+              global_state
+          )
 
 
           for trend in global_trends:
@@ -3382,7 +3614,7 @@ jobs:
 
           print("")
           print("========================================")
-          print("TREND RADAR V2.1 RESULT")
+          print("TREND RADAR V3 RESULT")
           print("========================================")
           print("")
 
@@ -3537,12 +3769,12 @@ jobs:
 
 
           # ------------------------------------------------------------
-          # BASIC V2.1 VALIDATION
+          # BASIC V3 VALIDATION
           # ------------------------------------------------------------
 
           if latest.get(
               "version"
-          ) != "2.1":
+          ) != "3.0":
 
               raise SystemExit(
                   "Invalid Trend Radar version."
@@ -3596,6 +3828,28 @@ jobs:
                   )
 
 
+          if latest.get("schema") != "shortprompt-trend-radar-v3":
+              raise SystemExit(
+                  "Invalid Trend Radar schema."
+              )
+
+          if not isinstance(latest.get("trends"), list):
+              raise SystemExit(
+                  "Invalid Italy trends structure."
+              )
+
+          for trend in latest["trends"]:
+              for field in [
+                  "score",
+                  "status",
+                  "momentum_3h",
+                  "why_now"
+              ]:
+                  if field not in trend:
+                      raise SystemExit(
+                          f"Missing trend field: {field}"
+                      )
+
           # ------------------------------------------------------------
           # HISTORY VALIDATION
           # ------------------------------------------------------------
@@ -3632,7 +3886,7 @@ jobs:
 
           print("")
           print(
-              "All Trend Radar V2.1 JSON files "
+              "All Trend Radar V3 JSON files "
               "are valid."
           )
 
@@ -3658,6 +3912,6 @@ jobs:
           fi
 
           git commit \
-            -m "Update Trend Radar V2.1 data"
+            -m "Update Trend Radar V3 data"
 
           git push
