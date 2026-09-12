@@ -1,0 +1,671 @@
+name: ShortPrompt Trend Radar
+
+on:
+  schedule:
+    # Ogni 15 minuti.
+    # GitHub usa UTC.
+    - cron: '7,22,37,52 * * * *'
+
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  collect-trends:
+    name: Collect Google Trends
+    runs-on: ubuntu-latest
+
+    steps:
+
+      # ------------------------------------------------------------
+      # CHECKOUT
+      # ------------------------------------------------------------
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # ------------------------------------------------------------
+      # PYTHON
+      # ------------------------------------------------------------
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      # ------------------------------------------------------------
+      # COLLECT + ANALYZE
+      # ------------------------------------------------------------
+      - name: Collect Google Trends RSS
+        env:
+          TZ: Europe/Rome
+        run: |
+          python <<'PY'
+          import json
+          import math
+          import os
+          import re
+          import sys
+          import urllib.request
+          import xml.etree.ElementTree as ET
+          from datetime import datetime, timezone, timedelta
+          from pathlib import Path
+
+          # ============================================================
+          # CONFIG
+          # ============================================================
+
+          RSS_URL = "https://trends.google.com/trending/rss?geo=IT"
+
+          DATA_DIR = Path("data")
+          HISTORY_DIR = DATA_DIR / "history"
+
+          DATA_DIR.mkdir(parents=True, exist_ok=True)
+          HISTORY_DIR.mkdir(parents=True, exist_ok=True)
+
+          HT_NS = "https://trends.google.com/trending/rss"
+
+          # ============================================================
+          # TIME
+          # ============================================================
+
+          now = datetime.now(timezone.utc)
+
+          timestamp = now.isoformat()
+          date_key = now.strftime("%Y-%m-%d")
+          time_key = now.strftime("%H:%M")
+
+          # ============================================================
+          # DOWNLOAD RSS
+          # ============================================================
+
+          request = urllib.request.Request(
+              RSS_URL,
+              headers={
+                  "User-Agent": "ShortPrompt-Trend-Radar/1.0"
+              }
+          )
+
+          try:
+              with urllib.request.urlopen(request, timeout=20) as response:
+                  xml_data = response.read()
+
+          except Exception as e:
+              print(f"ERROR: Google Trends RSS download failed: {e}")
+              sys.exit(1)
+
+          print(f"RSS downloaded: {len(xml_data)} bytes")
+
+          # ============================================================
+          # PARSE XML
+          # ============================================================
+
+          try:
+              root = ET.fromstring(xml_data)
+          except Exception as e:
+              print(f"ERROR: XML parsing failed: {e}")
+              sys.exit(1)
+
+          channel = root.find("channel")
+
+          if channel is None:
+              print("ERROR: RSS channel not found")
+              sys.exit(1)
+
+          # ============================================================
+          # HELPERS
+          # ============================================================
+
+          def text(element):
+              if element is None:
+                  return ""
+              return (element.text or "").strip()
+
+          def parse_traffic(value):
+              """
+              Converts Google approximate traffic values:
+
+              100+
+              1,000+
+              10K+
+              100K+
+              1M+
+
+              into numeric approximations.
+              """
+
+              if not value:
+                  return 0
+
+              value = value.strip().upper()
+              value = value.replace("+", "")
+              value = value.replace(" ", "")
+
+              multiplier = 1
+
+              if value.endswith("K"):
+                  multiplier = 1000
+                  value = value[:-1]
+
+              elif value.endswith("M"):
+                  multiplier = 1000000
+                  value = value[:-1]
+
+              elif value.endswith("B"):
+                  multiplier = 1000000000
+                  value = value[:-1]
+
+              value = value.replace(",", ".")
+              
+              try:
+                  return int(float(value) * multiplier)
+              except:
+                  return 0
+
+          def traffic_bucket_score(traffic):
+              """
+              Google gives approximate traffic buckets.
+              We deliberately do NOT call this growth.
+              """
+
+              if traffic >= 1000000:
+                  return 40
+
+              if traffic >= 100000:
+                  return 36
+
+              if traffic >= 10000:
+                  return 32
+
+              if traffic >= 5000:
+                  return 28
+
+              if traffic >= 1000:
+                  return 24
+
+              if traffic >= 500:
+                  return 20
+
+              if traffic >= 200:
+                  return 15
+
+              if traffic >= 100:
+                  return 10
+
+              return 5
+
+          def category_for(title, article_titles):
+              """
+              Simple deterministic classification.
+              This is intentionally not AI-based.
+              """
+
+              combined = (
+                  title + " " +
+                  " ".join(article_titles)
+              ).lower()
+
+              categories = {
+
+                  "AI": [
+                      "ai",
+                      "artificial intelligence",
+                      "intelligenza artificiale",
+                      "chatgpt",
+                      "gemini",
+                      "claude",
+                      "openai",
+                      "anthropic",
+                      "copilot",
+                      "deepseek"
+                  ],
+
+                  "Tech": [
+                      "iphone",
+                      "ipad",
+                      "android",
+                      "samsung",
+                      "google",
+                      "microsoft",
+                      "apple",
+                      "windows",
+                      "linux",
+                      "tesla",
+                      "nvidia",
+                      "meta",
+                      "amazon"
+                  ],
+
+                  "Sport": [
+                      "calcio",
+                      "serie a",
+                      "serie b",
+                      "serie c",
+                      "champions",
+                      "europa league",
+                      "nba",
+                      "tennis",
+                      "formula 1",
+                      "f1",
+                      "moto gp",
+                      "motogp",
+                      "football",
+                      "basket",
+                      "golf",
+                      "fiorentina",
+                      "milan",
+                      "inter",
+                      "juventus",
+                      "roma",
+                      "napoli",
+                      "lazio"
+                  ],
+
+                  "Entertainment": [
+                      "netflix",
+                      "film",
+                      "serie tv",
+                      "serie",
+                      "attore",
+                      "attrice",
+                      "cantante",
+                      "musica",
+                      "cinema",
+                      "reality",
+                      "tv",
+                      "disney",
+                      "prime video"
+                  ],
+
+                  "Business": [
+                      "borsa",
+                      "azioni",
+                      "mercato",
+                      "economia",
+                      "banca",
+                      "euro",
+                      "dollaro",
+                      "inflazione",
+                      "investimenti"
+                  ]
+              }
+
+              for category, keywords in categories.items():
+                  for keyword in keywords:
+                      if keyword in combined:
+                          return category
+
+              return "News"
+
+          # ============================================================
+          # READ TRENDS
+          # ============================================================
+
+          trends = []
+
+          for item in channel.findall("item"):
+
+              title = text(item.find("title"))
+              pub_date = text(item.find("pubDate"))
+
+              if not title:
+                  continue
+
+              ht = item.find(
+                  f"{{{HT_NS}}}approx_traffic"
+              )
+
+              traffic_raw = text(ht)
+
+              traffic = parse_traffic(traffic_raw)
+
+              picture = text(
+                  item.find(f"{{{HT_NS}}}picture")
+              )
+
+              picture_source = text(
+                  item.find(f"{{{HT_NS}}}picture_source")
+              )
+
+              news_items = []
+
+              for news in item.findall(
+                  f"{{{HT_NS}}}news_item"
+              ):
+
+                  news_title = text(
+                      news.find(
+                          f"{{{HT_NS}}}news_item_title"
+                      )
+                  )
+
+                  news_url = text(
+                      news.find(
+                          f"{{{HT_NS}}}news_item_url"
+                      )
+                  )
+
+                  news_source = text(
+                      news.find(
+                          f"{{{HT_NS}}}news_item_source"
+                      )
+                  )
+
+                  news_picture = text(
+                      news.find(
+                          f"{{{HT_NS}}}news_item_picture"
+                      )
+                  )
+
+                  if news_title:
+                      news_items.append({
+                          "title": news_title,
+                          "url": news_url,
+                          "source": news_source,
+                          "picture": news_picture
+                      })
+
+              article_titles = [
+                  n["title"] for n in news_items
+              ]
+
+              sources = sorted(
+                  list(
+                      set(
+                          n["source"]
+                          for n in news_items
+                          if n["source"]
+                      )
+                  )
+              )
+
+              news_count = len(news_items)
+              source_count = len(sources)
+
+              # --------------------------------------------------------
+              # SCORE
+              # --------------------------------------------------------
+
+              traffic_score = traffic_bucket_score(
+                  traffic
+              )
+
+              # News coverage: max 20
+              news_score = min(
+                  20,
+                  news_count * 7
+              )
+
+              # Source diversity: max 10
+              source_score = min(
+                  10,
+                  source_count * 4
+              )
+
+              # RSS items are recent, so we give a baseline
+              # recency score here. Historical acceleration will be
+              # calculated later by comparing snapshots.
+              recency_score = 30
+
+              base_score = (
+                  traffic_score +
+                  recency_score +
+                  news_score +
+                  source_score
+              )
+
+              score = max(
+                  0,
+                  min(
+                      100,
+                      base_score
+                  )
+              )
+
+              category = category_for(
+                  title,
+                  article_titles
+              )
+
+              trends.append({
+
+                  "title": title,
+
+                  "traffic": {
+                      "raw": traffic_raw,
+                      "approx": traffic
+                  },
+
+                  "score": score,
+
+                  "category": category,
+
+                  "picture": picture,
+
+                  "picture_source": picture_source,
+
+                  "news_count": news_count,
+
+                  "source_count": source_count,
+
+                  "sources": sources,
+
+                  "news": news_items,
+
+                  "google_trends_url": RSS_URL
+
+              })
+
+          # ============================================================
+          # SORT
+          # ============================================================
+
+          trends.sort(
+              key=lambda x: x["score"],
+              reverse=True
+          )
+
+          # ============================================================
+          # SNAPSHOT
+          # ============================================================
+
+          snapshot = {
+
+              "timestamp": timestamp,
+
+              "date": date_key,
+
+              "time": time_key,
+
+              "geo": "IT",
+
+              "source": "Google Trends Trending Now RSS",
+
+              "source_url": RSS_URL,
+
+              "trend_count": len(trends),
+
+              "trends": trends
+
+          }
+
+          # ============================================================
+          # LOAD TODAY'S HISTORY
+          # ============================================================
+
+          history_file = (
+              HISTORY_DIR /
+              f"{date_key}.json"
+          )
+
+          if history_file.exists():
+
+              try:
+                  with history_file.open(
+                      "r",
+                      encoding="utf-8"
+                  ) as f:
+                      history = json.load(f)
+
+              except Exception:
+                  history = {
+                      "date": date_key,
+                      "geo": "IT",
+                      "snapshots": []
+                  }
+
+          else:
+
+              history = {
+                  "date": date_key,
+                  "geo": "IT",
+                  "source": "Google Trends Trending Now RSS",
+                  "snapshots": []
+              }
+
+          # ============================================================
+          # ADD SNAPSHOT
+          # ============================================================
+
+          history["snapshots"].append(snapshot)
+
+          # Keep only the last 24 hours in today's file
+          cutoff = now - timedelta(hours=24)
+
+          filtered_snapshots = []
+
+          for s in history["snapshots"]:
+
+              try:
+                  s_time = datetime.fromisoformat(
+                      s["timestamp"].replace(
+                          "Z",
+                          "+00:00"
+                      )
+                  )
+
+                  if s_time >= cutoff:
+                      filtered_snapshots.append(s)
+
+              except Exception:
+                  pass
+
+          history["snapshots"] = filtered_snapshots
+
+          # ============================================================
+          # SAVE TODAY
+          # ============================================================
+
+          with history_file.open(
+              "w",
+              encoding="utf-8"
+          ) as f:
+
+              json.dump(
+                  history,
+                  f,
+                  ensure_ascii=False,
+                  indent=2
+              )
+
+          # ============================================================
+          # LATEST
+          # ============================================================
+
+          latest_file = DATA_DIR / "latest.json"
+
+          with latest_file.open(
+              "w",
+              encoding="utf-8"
+          ) as f:
+
+              json.dump(
+                  snapshot,
+                  f,
+                  ensure_ascii=False,
+                  indent=2
+              )
+
+          # ============================================================
+          # CLEAN OLD DAILY FILES
+          # ============================================================
+
+          keep_after = now - timedelta(days=30)
+
+          for file in HISTORY_DIR.glob("*.json"):
+
+              try:
+
+                  file_date = datetime.strptime(
+                      file.stem,
+                      "%Y-%m-%d"
+                  ).replace(
+                      tzinfo=timezone.utc
+                  )
+
+                  if file_date < keep_after:
+                      file.unlink()
+                      print(
+                          f"Deleted old history: {file}"
+                      )
+
+              except Exception:
+                  pass
+
+          # ============================================================
+          # OUTPUT
+          # ============================================================
+
+          print("")
+          print("========================================")
+          print("SHORTPROMPT TREND RADAR")
+          print("========================================")
+          print(
+              f"Timestamp: {timestamp}"
+          )
+          print(
+              f"Trends: {len(trends)}"
+          )
+          print("")
+
+          for index, trend in enumerate(
+              trends,
+              start=1
+          ):
+
+              print(
+                  f"{index}. "
+                  f"{trend['title']} | "
+                  f"{trend['traffic']['raw']} | "
+                  f"Score {trend['score']} | "
+                  f"{trend['category']}"
+              )
+
+          print("")
+          print(
+              f"Saved: {history_file}"
+          )
+
+          print(
+              f"Latest: {latest_file}"
+          )
+
+          PY
+
+      # ------------------------------------------------------------
+      # COMMIT DATA
+      # ------------------------------------------------------------
+      - name: Commit Trend Radar data
+        run: |
+          git config user.name "ShortPrompt Trend Radar"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add data/
+
+          if git diff --cached --quiet; then
+            echo "No data changes to commit."
+            exit 0
+          fi
+
+          git commit -m "Update Trend Radar data"
+
+          git push
