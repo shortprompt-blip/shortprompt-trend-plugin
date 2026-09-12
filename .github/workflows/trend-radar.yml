@@ -2,10 +2,7 @@ name: ShortPrompt Trend Radar
 
 on:
   schedule:
-    # Ogni 15 minuti.
-    # Orari sfalsati per evitare i picchi allo scoccare dell'ora.
     - cron: '7,22,37,52 * * * *'
-
   workflow_dispatch:
 
 permissions:
@@ -13,23 +10,12 @@ permissions:
 
 jobs:
   collect-trends:
-
-    name: Collect Google Trends
-
+    name: Collect and Analyze Google Trends
     runs-on: ubuntu-latest
 
     steps:
-
-      # ============================================================
-      # CHECKOUT
-      # ============================================================
-
       - name: Checkout repository
         uses: actions/checkout@v5
-
-      # ============================================================
-      # NODE.JS 24
-      # ============================================================
 
       - name: Setup Node.js
         uses: actions/setup-node@v7
@@ -37,968 +23,1126 @@ jobs:
           node-version: '24'
           package-manager-cache: false
 
-      # ============================================================
-      # VERIFY ENVIRONMENT
-      # ============================================================
-
-      - name: Verify Node.js
+      - name: Verify environment
         run: |
           node --version
           npm --version
           python3 --version
 
-      # ============================================================
-      # COLLECT GOOGLE TRENDS RSS
-      # ============================================================
-
-      - name: Collect Google Trends
+      - name: Collect and analyze Google Trends
         env:
           TZ: Europe/Rome
         run: |
-
           python3 <<'PY'
-
           import json
+          import math
           import os
           import re
-          import sys
           import urllib.request
           import xml.etree.ElementTree as ET
-
-          from datetime import (
-              datetime,
-              timezone,
-              timedelta
-          )
-
+          from datetime import datetime, timedelta, timezone
           from pathlib import Path
 
+          # ================================================================
+          # CONFIG
+          # ================================================================
 
-          # ============================================================
-          # CONFIGURATION
-          # ============================================================
-
-          RSS_URL = (
-              "https://trends.google.com/"
-              "trending/rss?geo=IT"
-          )
+          FEED_URL = "https://trends.google.com/trending/rss?geo=IT"
 
           DATA_DIR = Path("data")
+          HISTORY_DIR = DATA_DIR / "history"
 
-          HISTORY_DIR = (
-              DATA_DIR /
-              "history"
-          )
+          LATEST_FILE = DATA_DIR / "latest.json"
+          STATE_FILE = DATA_DIR / "trends-state.json"
 
-          DATA_DIR.mkdir(
-              parents=True,
-              exist_ok=True
-          )
+          HISTORY_DAYS = 30
+          HISTORY_HOURS = 24
 
-          HISTORY_DIR.mkdir(
-              parents=True,
-              exist_ok=True
-          )
+          DATA_DIR.mkdir(parents=True, exist_ok=True)
+          HISTORY_DIR.mkdir(parents=True, exist_ok=True)
 
-          HT_NS = (
-              "https://trends.google.com/trending/rss"
-          )
+          # ================================================================
+          # TIME
+          # ================================================================
 
+          now = datetime.now(timezone.utc).astimezone()
+          now_iso = now.isoformat()
 
-          # ============================================================
-          # CURRENT TIME
-          # ============================================================
+          # ================================================================
+          # XML NAMESPACES
+          # ================================================================
 
-          now = datetime.now(
-              timezone.utc
-          )
+          HT_NS = "https://trends.google.com/trending/rss"
 
-          timestamp = now.isoformat()
-
-          date_key = now.strftime(
-              "%Y-%m-%d"
-          )
-
-          time_key = now.strftime(
-              "%H:%M"
-          )
-
-
-          # ============================================================
-          # DOWNLOAD GOOGLE TRENDS RSS
-          # ============================================================
-
-          request = urllib.request.Request(
-              RSS_URL,
-              headers={
-                  "User-Agent":
-                      "ShortPrompt-Trend-Radar/1.0"
-              }
-          )
-
-          try:
-
-              with urllib.request.urlopen(
-                  request,
-                  timeout=20
-              ) as response:
-
-                  xml_data = response.read()
-
-          except Exception as error:
-
-              print(
-                  "ERROR: Google Trends RSS "
-                  f"download failed: {error}"
-              )
-
-              sys.exit(1)
-
-
-          print(
-              f"RSS downloaded: "
-              f"{len(xml_data)} bytes"
-          )
-
-
-          # ============================================================
-          # PARSE XML
-          # ============================================================
-
-          try:
-
-              root = ET.fromstring(
-                  xml_data
-              )
-
-          except Exception as error:
-
-              print(
-                  "ERROR: XML parsing failed: "
-                  f"{error}"
-              )
-
-              sys.exit(1)
-
-
-          channel = root.find(
-              "channel"
-          )
-
-          if channel is None:
-
-              print(
-                  "ERROR: RSS channel not found"
-              )
-
-              sys.exit(1)
-
-
-          # ============================================================
+          # ================================================================
           # HELPERS
-          # ============================================================
+          # ================================================================
 
-          def get_text(element):
-
-              if element is None:
+          def clean_text(value):
+              if value is None:
                   return ""
+              return re.sub(r"\s+", " ", value).strip()
 
-              return (
-                  element.text or ""
-              ).strip()
-
+          def normalize_title(value):
+              value = clean_text(value).lower()
+              value = re.sub(r"\s+", " ", value)
+              return value.strip()
 
           def parse_traffic(value):
-
               """
-              Converts Google approximate traffic:
-
+              Google RSS exposes buckets such as:
               100+
               200+
               1,000+
               10K+
               100K+
               1M+
-
-              into numeric values.
               """
-
               if not value:
                   return 0
 
-              value = (
-                  value
-                  .strip()
-                  .upper()
-                  .replace("+", "")
-                  .replace(" ", "")
-              )
+              value = value.strip().upper().replace(",", "")
 
-              multiplier = 1
+              match = re.match(r"([0-9.]+)\s*([KMB]?)", value)
 
-              if value.endswith("K"):
-
-                  multiplier = 1000
-                  value = value[:-1]
-
-              elif value.endswith("M"):
-
-                  multiplier = 1000000
-                  value = value[:-1]
-
-              elif value.endswith("B"):
-
-                  multiplier = 1000000000
-                  value = value[:-1]
-
-              value = value.replace(
-                  ",",
-                  "."
-              )
-
-              try:
-
-                  return int(
-                      float(value) *
-                      multiplier
-                  )
-
-              except Exception:
-
+              if not match:
                   return 0
 
+              number = float(match.group(1))
+              suffix = match.group(2)
 
-          def traffic_score(traffic):
+              multiplier = {
+                  "": 1,
+                  "K": 1000,
+                  "M": 1000000,
+                  "B": 1000000000
+              }.get(suffix, 1)
 
+              return int(number * multiplier)
+
+          def traffic_bucket(value):
               """
-              Base Google traffic signal.
-
-              This is NOT a growth metric.
+              Keeps the original Google bucket for display.
               """
+              return clean_text(value)
 
-              if traffic >= 1000000:
-                  return 40
+          def safe_float(value):
+              try:
+                  return float(value)
+              except:
+                  return 0.0
 
-              if traffic >= 100000:
-                  return 36
+          # ================================================================
+          # CATEGORY CLASSIFICATION
+          # ================================================================
 
-              if traffic >= 10000:
-                  return 32
+          CATEGORY_KEYWORDS = {
+              "AI": [
+                  "ai",
+                  "intelligenza artificiale",
+                  "chatgpt",
+                  "gemini",
+                  "claude",
+                  "openai",
+                  "anthropic",
+                  "deepmind",
+                  "copilot",
+                  "llm",
+                  "machine learning",
+                  "robot"
+              ],
 
-              if traffic >= 5000:
-                  return 28
+              "Tech": [
+                  "apple",
+                  "iphone",
+                  "ipad",
+                  "android",
+                  "samsung",
+                  "google",
+                  "microsoft",
+                  "windows",
+                  "linux",
+                  "meta",
+                  "tesla",
+                  "nvidia",
+                  "intel",
+                  "amd",
+                  "sony",
+                  "playstation",
+                  "xbox",
+                  "whatsapp",
+                  "instagram",
+                  "facebook",
+                  "tiktok",
+                  "youtube",
+                  "netflix",
+                  "spotify"
+              ],
 
-              if traffic >= 1000:
-                  return 24
+              "Sport": [
+                  "calcio",
+                  "serie a",
+                  "serie b",
+                  "serie c",
+                  "champions",
+                  "europa league",
+                  "conference league",
+                  "mondiali",
+                  "formula 1",
+                  "f1",
+                  "motogp",
+                  "tennis",
+                  "basket",
+                  "nba",
+                  "atp",
+                  "wta",
+                  "olimpiadi",
+                  "giro d'italia",
+                  "tour de france"
+              ],
 
-              if traffic >= 500:
-                  return 20
+              "Entertainment": [
+                  "film",
+                  "cinema",
+                  "serie tv",
+                  "serie",
+                  "netflix",
+                  "prime video",
+                  "disney",
+                  "attore",
+                  "attrice",
+                  "cantante",
+                  "concerto",
+                  "musica",
+                  "festival",
+                  "reality",
+                  "grande fratello",
+                  "sanremo"
+              ],
 
-              if traffic >= 200:
-                  return 15
+              "Business": [
+                  "borsa",
+                  "azioni",
+                  "bitcoin",
+                  "ethereum",
+                  "crypto",
+                  "criptovalute",
+                  "economia",
+                  "inflazione",
+                  "bce",
+                  "fed",
+                  "banche",
+                  "tim",
+                  "enel",
+                  "eni",
+                  "stellantis"
+              ]
+          }
 
-              if traffic >= 100:
-                  return 10
-
-              return 5
-
-
-          def detect_category(
-              title,
-              article_titles
-          ):
-
-              text = (
-                  title +
-                  " " +
-                  " ".join(
-                      article_titles
-                  )
+          def classify_category(title, news_titles):
+              text = " ".join(
+                  [title] +
+                  [x for x in news_titles if x]
               ).lower()
 
+              scores = {}
 
-              categories = {
-
-                  "AI": [
-
-                      "ai",
-                      "artificial intelligence",
-                      "intelligenza artificiale",
-                      "chatgpt",
-                      "gemini",
-                      "claude",
-                      "openai",
-                      "anthropic",
-                      "copilot",
-                      "deepseek"
-
-                  ],
-
-
-                  "Tech": [
-
-                      "iphone",
-                      "ipad",
-                      "android",
-                      "samsung",
-                      "google",
-                      "microsoft",
-                      "apple",
-                      "windows",
-                      "linux",
-                      "tesla",
-                      "nvidia",
-                      "meta",
-                      "amazon"
-
-                  ],
-
-
-                  "Sport": [
-
-                      "calcio",
-                      "serie a",
-                      "serie b",
-                      "serie c",
-                      "champions",
-                      "europa league",
-                      "nba",
-                      "tennis",
-                      "formula 1",
-                      "f1",
-                      "moto gp",
-                      "motogp",
-                      "football",
-                      "basket",
-                      "golf",
-                      "fiorentina",
-                      "milan",
-                      "inter",
-                      "juventus",
-                      "roma",
-                      "napoli",
-                      "lazio"
-
-                  ],
-
-
-                  "Entertainment": [
-
-                      "netflix",
-                      "film",
-                      "serie tv",
-                      "serie",
-                      "attore",
-                      "attrice",
-                      "cantante",
-                      "musica",
-                      "cinema",
-                      "reality",
-                      "tv",
-                      "disney",
-                      "prime video"
-
-                  ],
-
-
-                  "Business": [
-
-                      "borsa",
-                      "azioni",
-                      "mercato",
-                      "economia",
-                      "banca",
-                      "euro",
-                      "dollaro",
-                      "inflazione",
-                      "investimenti"
-
-                  ]
-
-              }
-
-
-              for category, keywords in categories.items():
+              for category, keywords in CATEGORY_KEYWORDS.items():
+                  score = 0
 
                   for keyword in keywords:
-
                       if keyword in text:
+                          score += 1
 
-                          return category
+                  scores[category] = score
 
+              best_category = max(scores, key=scores.get)
 
-              return "News"
+              if scores[best_category] == 0:
+                  return "News"
 
+              return best_category
 
-          # ============================================================
-          # READ TRENDS
-          # ============================================================
+          # ================================================================
+          # FETCH RSS
+          # ================================================================
+
+          print("Fetching Google Trends RSS...")
+
+          request = urllib.request.Request(
+              FEED_URL,
+              headers={
+                  "User-Agent": (
+                      "Mozilla/5.0 "
+                      "(compatible; ShortPrompt-Trend-Radar/1.0)"
+                  )
+              }
+          )
+
+          with urllib.request.urlopen(request, timeout=20) as response:
+              xml_data = response.read()
+
+          print(f"RSS downloaded: {len(xml_data)} bytes")
+
+          root = ET.fromstring(xml_data)
+
+          # ================================================================
+          # PARSE TRENDS
+          # ================================================================
 
           trends = []
 
+          channel = root.find("channel")
 
-          for item in channel.findall(
-              "item"
-          ):
+          if channel is None:
+              raise RuntimeError("Google Trends RSS channel not found.")
 
-              title = get_text(
-                  item.find("title")
+          for item in channel.findall("item"):
+
+              title = clean_text(
+                  item.findtext("title")
               )
-
-              pub_date = get_text(
-                  item.find("pubDate")
-              )
-
 
               if not title:
                   continue
 
+              normalized = normalize_title(title)
 
-              traffic_element = item.find(
-                  f"{{{HT_NS}}}approx_traffic"
+              description = clean_text(
+                  item.findtext("description")
               )
 
-              traffic_raw = get_text(
-                  traffic_element
+              pub_date = clean_text(
+                  item.findtext("pubDate")
               )
 
-              traffic = parse_traffic(
-                  traffic_raw
+              traffic_raw = clean_text(
+                  item.findtext(f"{{{HT_NS}}}approx_traffic")
               )
 
-
-              picture = get_text(
-                  item.find(
-                      f"{{{HT_NS}}}picture"
-                  )
+              picture = clean_text(
+                  item.findtext(f"{{{HT_NS}}}picture")
               )
 
-
-              picture_source = get_text(
-                  item.find(
-                      f"{{{HT_NS}}}picture_source"
-                  )
+              picture_source = clean_text(
+                  item.findtext(f"{{{HT_NS}}}picture_source")
               )
-
-
-              # --------------------------------------------------------
-              # NEWS
-              # --------------------------------------------------------
 
               news_items = []
 
+              for news in item.findall(f"{{{HT_NS}}}news_item"):
 
-              for news in item.findall(
-                  f"{{{HT_NS}}}news_item"
-              ):
-
-                  news_title = get_text(
-                      news.find(
+                  news_title = clean_text(
+                      news.findtext(
                           f"{{{HT_NS}}}news_item_title"
                       )
                   )
 
-                  news_url = get_text(
-                      news.find(
+                  news_snippet = clean_text(
+                      news.findtext(
+                          f"{{{HT_NS}}}news_item_snippet"
+                      )
+                  )
+
+                  news_url = clean_text(
+                      news.findtext(
                           f"{{{HT_NS}}}news_item_url"
                       )
                   )
 
-                  news_source = get_text(
-                      news.find(
-                          f"{{{HT_NS}}}news_item_source"
-                      )
-                  )
-
-                  news_picture = get_text(
-                      news.find(
+                  news_picture = clean_text(
+                      news.findtext(
                           f"{{{HT_NS}}}news_item_picture"
                       )
                   )
 
-
-                  if news_title:
-
-                      news_items.append({
-
-                          "title":
-                              news_title,
-
-                          "url":
-                              news_url,
-
-                          "source":
-                              news_source,
-
-                          "picture":
-                              news_picture
-
-                      })
-
-
-              article_titles = [
-
-                  item["title"]
-
-                  for item in news_items
-
-              ]
-
-
-              sources = sorted(
-                  list(
-                      set(
-
-                          item["source"]
-
-                          for item in news_items
-
-                          if item["source"]
-
+                  news_source = clean_text(
+                      news.findtext(
+                          f"{{{HT_NS}}}news_item_source"
                       )
                   )
-              )
 
+                  news_items.append({
+                      "title": news_title,
+                      "snippet": news_snippet,
+                      "url": news_url,
+                      "picture": news_picture,
+                      "source": news_source
+                  })
 
-              news_count = len(
-                  news_items
-              )
+              news_titles = [
+                  n["title"]
+                  for n in news_items
+                  if n["title"]
+              ]
 
-              source_count = len(
-                  sources
-              )
-
-
-              # ========================================================
-              # BASE SCORE
-              # ========================================================
-
-              search_score = traffic_score(
-                  traffic
-              )
-
-              news_score = min(
-                  20,
-                  news_count * 7
-              )
-
-              source_score = min(
-                  10,
-                  source_count * 4
-              )
-
-              recency_score = 30
-
-
-              score = (
-
-                  search_score +
-                  news_score +
-                  source_score +
-                  recency_score
-
-              )
-
-
-              score = max(
-                  0,
-                  min(
-                      100,
-                      score
+              sources = sorted(
+                  set(
+                      n["source"]
+                      for n in news_items
+                      if n["source"]
                   )
               )
 
-
-              category = detect_category(
-                  title,
-                  article_titles
-              )
-
-
               trends.append({
-
-                  "title":
+                  "title": title,
+                  "key": normalized,
+                  "traffic": traffic_raw,
+                  "traffic_value": parse_traffic(traffic_raw),
+                  "description": description,
+                  "google_pub_date": pub_date,
+                  "picture": picture,
+                  "picture_source": picture_source,
+                  "news_count": len(news_items),
+                  "source_count": len(sources),
+                  "sources": sources,
+                  "news": news_items,
+                  "category": classify_category(
                       title,
-
-                  "pub_date":
-                      pub_date,
-
-                  "traffic": {
-
-                      "raw":
-                          traffic_raw,
-
-                      "approx":
-                          traffic
-
-                  },
-
-                  "score":
-                      score,
-
-                  "category":
-                      category,
-
-                  "picture":
-                      picture,
-
-                  "picture_source":
-                      picture_source,
-
-                  "news_count":
-                      news_count,
-
-                  "source_count":
-                      source_count,
-
-                  "sources":
-                      sources,
-
-                  "news":
-                      news_items,
-
-                  "google_trends_url":
-                      RSS_URL
-
+                      news_titles
+                  )
               })
 
+          print(f"Trends found: {len(trends)}")
 
-          # ============================================================
-          # SORT BY SCORE
-          # ============================================================
+          # ================================================================
+          # LOAD CURRENT STATE
+          # ================================================================
 
-          trends.sort(
-              key=lambda trend:
-                  trend["score"],
-              reverse=True
+          if STATE_FILE.exists():
+              try:
+                  with STATE_FILE.open(
+                      "r",
+                      encoding="utf-8"
+                  ) as f:
+                      state = json.load(f)
+          except Exception:
+              state = {}
+          else:
+              if not isinstance(state, dict):
+                  state = {}
+          else:
+              state = {}
+
+          # ================================================================
+          # LOAD RECENT HISTORY
+          # ================================================================
+
+          recent_snapshots = []
+
+          cutoff = now - timedelta(hours=HISTORY_HOURS)
+
+          for history_file in sorted(HISTORY_DIR.glob("*.json")):
+
+              try:
+                  with history_file.open(
+                      "r",
+                      encoding="utf-8"
+                  ) as f:
+                      history_data = json.load(f)
+              except Exception:
+                  continue
+
+              if not isinstance(history_data, list):
+                  continue
+
+              for snapshot in history_data:
+
+                  timestamp_raw = snapshot.get("timestamp")
+
+                  if not timestamp_raw:
+                      continue
+
+                  try:
+                      timestamp = datetime.fromisoformat(
+                          timestamp_raw
+                      )
+                  except Exception:
+                      continue
+
+                  if timestamp >= cutoff:
+                      recent_snapshots.append(snapshot)
+
+          recent_snapshots.sort(
+              key=lambda x: x.get("timestamp", "")
           )
 
+          # ================================================================
+          # BUILD HISTORICAL LOOKUPS
+          # ================================================================
 
-          # ============================================================
-          # CREATE SNAPSHOT
-          # ============================================================
+          def find_previous(key, minutes):
+
+              target = now - timedelta(minutes=minutes)
+
+              best = None
+              best_delta = None
+
+              for snapshot in recent_snapshots:
+
+                  timestamp_raw = snapshot.get("timestamp")
+
+                  try:
+                      timestamp = datetime.fromisoformat(
+                          timestamp_raw
+                      )
+                  except Exception:
+                      continue
+
+                  if timestamp > target:
+                      continue
+
+                  delta = target - timestamp
+
+                  if best_delta is None or delta < best_delta:
+                      best = snapshot
+                      best_delta = delta
+
+              if best is None:
+                  return None
+
+              for trend in best.get("trends", []):
+
+                  if trend.get("key") == key:
+                      return trend
+
+              return None
+
+          def get_change(current, previous):
+
+              if previous is None:
+                  return None
+
+              old = safe_float(
+                  previous.get("traffic_value", 0)
+              )
+
+              new = safe_float(current)
+
+              if old <= 0:
+                  return None
+
+              return round(
+                  ((new - old) / old) * 100,
+                  1
+              )
+
+          # ================================================================
+          # SCORE FUNCTIONS
+          # ================================================================
+
+          def traffic_score(value):
+              """
+              RSS gives traffic buckets rather than exact growth.
+              Logarithmic normalization prevents 1M+ from dominating
+              everything else.
+              """
+              if value <= 0:
+                  return 0
+
+              score = (
+                  math.log10(value + 1) / 6
+              ) * 40
+
+              return min(40, round(score, 1))
+
+          def recency_score():
+              return 30
+
+          def news_score(news_count):
+              return min(
+                  20,
+                  round(news_count * 5, 1)
+              )
+
+          def source_score(source_count):
+              return min(
+                  10,
+                  round(source_count * 3.33, 1)
+              )
+
+          def persistence_score(appearances):
+              """
+              Maximum 10 points.
+              """
+              return min(
+                  10,
+                  round(appearances * 1.0, 1)
+              )
+
+          def growth_score(changes):
+              """
+              Converts observed short-term growth into a score.
+              This is NOT Google-provided growth data.
+              It is calculated from our collected snapshots.
+              """
+              valid = [
+                  x for x in changes
+                  if isinstance(x, (int, float))
+              ]
+
+              if not valid:
+                  return 0
+
+              positive = [
+                  x for x in valid
+                  if x > 0
+              ]
+
+              if not positive:
+                  return 0
+
+              avg = sum(positive) / len(positive)
+
+              return min(
+                  20,
+                  round(
+                      math.log10(avg + 1) * 10,
+                      1
+                  )
+              )
+
+          # ================================================================
+          # ANALYZE CURRENT TRENDS
+          # ================================================================
+
+          enriched_trends = []
+
+          current_keys = set()
+
+          for trend in trends:
+
+              key = trend["key"]
+              current_keys.add(key)
+
+              previous_state = state.get(key, {})
+
+              first_seen = previous_state.get(
+                  "first_seen",
+                  now_iso
+              )
+
+              appearances = int(
+                  previous_state.get(
+                      "appearances",
+                      0
+                  )
+              ) + 1
+
+              previous_30m = find_previous(
+                  key,
+                  30
+              )
+
+              previous_1h = find_previous(
+                  key,
+                  60
+              )
+
+              previous_3h = find_previous(
+                  key,
+                  180
+              )
+
+              previous_6h = find_previous(
+                  key,
+                  360
+              )
+
+              previous_24h = find_previous(
+                  key,
+                  1440
+              )
+
+              change_30m = get_change(
+                  trend["traffic_value"],
+                  previous_30m
+              )
+
+              change_1h = get_change(
+                  trend["traffic_value"],
+                  previous_1h
+              )
+
+              change_3h = get_change(
+                  trend["traffic_value"],
+                  previous_3h
+              )
+
+              change_6h = get_change(
+                  trend["traffic_value"],
+                  previous_6h
+              )
+
+              change_24h = get_change(
+                  trend["traffic_value"],
+                  previous_24h
+              )
+
+              changes = [
+                  change_30m,
+                  change_1h,
+                  change_3h,
+                  change_6h,
+                  change_24h
+              ]
+
+              growth_points = growth_score(
+                  changes
+              )
+
+              persistence_points = persistence_score(
+                  appearances
+              )
+
+              base_score = (
+                  traffic_score(
+                      trend["traffic_value"]
+                  )
+                  +
+                  recency_score()
+                  +
+                  news_score(
+                      trend["news_count"]
+                  )
+                  +
+                  source_score(
+                      trend["source_count"]
+                  )
+              )
+
+              final_score = min(
+                  100,
+                  round(
+                      base_score
+                      +
+                      growth_points
+                      +
+                      persistence_points,
+                      1
+                  )
+              )
+
+              # ------------------------------------------------------------
+              # STATUS
+              # ------------------------------------------------------------
+
+              if (
+                  change_30m is not None
+                  and change_1h is not None
+                  and change_30m >= 50
+                  and change_1h >= 25
+              ):
+                  status = "ACCELERATING"
+
+              elif (
+                  change_1h is not None
+                  and change_1h >= 20
+              ):
+                  status = "RISING"
+
+              elif (
+                  appearances <= 2
+                  and (
+                      trend["traffic_value"] >= 100
+                      or trend["news_count"] >= 2
+                  )
+              ):
+                  status = "EMERGING"
+
+              elif (
+                  change_6h is not None
+                  and change_6h <= -25
+              ):
+                  status = "COOLING"
+
+              elif (
+                  change_24h is not None
+                  and abs(change_24h) < 20
+              ):
+                  status = "STABLE"
+
+              else:
+                  status = "HOT"
+
+              # ------------------------------------------------------------
+              # DURATION
+              # ------------------------------------------------------------
+
+              try:
+                  first_seen_dt = datetime.fromisoformat(
+                      first_seen
+                  )
+
+                  duration_seconds = max(
+                      0,
+                      int(
+                          (
+                              now -
+                              first_seen_dt
+                          ).total_seconds()
+                      )
+                  )
+
+              except Exception:
+                  duration_seconds = 0
+
+              duration_minutes = (
+                  duration_seconds // 60
+              )
+
+              # ------------------------------------------------------------
+              # UPDATE STATE
+              # ------------------------------------------------------------
+
+              state[key] = {
+                  "title": trend["title"],
+                  "first_seen": first_seen,
+                  "last_seen": now_iso,
+                  "appearances": appearances,
+                  "last_traffic": trend["traffic"],
+                  "last_traffic_value": trend["traffic_value"],
+                  "category": trend["category"],
+                  "status": status,
+                  "score": final_score
+              }
+
+              enriched_trends.append({
+                  "rank": len(enriched_trends) + 1,
+
+                  "title": trend["title"],
+                  "key": key,
+
+                  "category": trend["category"],
+
+                  "status": status,
+                  "score": final_score,
+
+                  "traffic": trend["traffic"],
+                  "traffic_value": trend["traffic_value"],
+
+                  "first_seen": first_seen,
+                  "last_seen": now_iso,
+
+                  "appearances": appearances,
+
+                  "duration_minutes": duration_minutes,
+
+                  "growth_30m": change_30m,
+                  "growth_1h": change_1h,
+                  "growth_3h": change_3h,
+                  "growth_6h": change_6h,
+                  "growth_24h": change_24h,
+
+                  "news_count": trend["news_count"],
+                  "source_count": trend["source_count"],
+                  "sources": trend["sources"],
+
+                  "picture": trend["picture"],
+                  "picture_source": trend["picture_source"],
+
+                  "news": trend["news"]
+              })
+
+          # ================================================================
+          # SORT BY TREND SCORE
+          # ================================================================
+
+          enriched_trends.sort(
+              key=lambda x: (
+                  -safe_float(
+                      x.get("score", 0)
+                  ),
+                  -safe_float(
+                      x.get("traffic_value", 0)
+                  )
+              )
+          )
+
+          for index, trend in enumerate(
+              enriched_trends,
+              start=1
+          ):
+              trend["rank"] = index
+
+          # ================================================================
+          # CURRENT SNAPSHOT
+          # ================================================================
 
           snapshot = {
-
-              "timestamp":
-                  timestamp,
-
-              "date":
-                  date_key,
-
-              "time":
-                  time_key,
-
-              "geo":
-                  "IT",
-
-              "source":
-                  "Google Trends Trending Now RSS",
-
-              "source_url":
-                  RSS_URL,
-
-              "trend_count":
-                  len(trends),
-
-              "trends":
-                  trends
-
+              "timestamp": now_iso,
+              "source": "Google Trends RSS",
+              "geo": "IT",
+              "feed_url": FEED_URL,
+              "trend_count": len(enriched_trends),
+              "trends": enriched_trends
           }
 
+          # ================================================================
+          # COMPACT HISTORY SNAPSHOT
+          # ================================================================
 
-          # ============================================================
-          # HISTORY FILE
-          # ============================================================
+          compact_snapshot = {
+              "timestamp": now_iso,
+              "trends": [
+                  {
+                      "key": trend["key"],
+                      "title": trend["title"],
+                      "traffic": trend["traffic"],
+                      "traffic_value": trend["traffic_value"]
+                  }
+                  for trend in trends
+              ]
+          }
+
+          # ================================================================
+          # SAVE DAILY HISTORY
+          # ================================================================
 
           history_file = (
-
               HISTORY_DIR /
-              f"{date_key}.json"
-
+              f"{now.strftime('%Y-%m-%d')}.json"
           )
 
+          day_history = []
 
           if history_file.exists():
 
               try:
-
                   with history_file.open(
                       "r",
                       encoding="utf-8"
-                  ) as file:
+                  ) as f:
+                      day_history = json.load(f)
 
-                      history = json.load(
-                          file
-                      )
+                  if not isinstance(day_history, list):
+                      day_history = []
 
               except Exception:
+                  day_history = []
 
-                  history = {
-
-                      "date":
-                          date_key,
-
-                      "geo":
-                          "IT",
-
-                      "source":
-                          "Google Trends Trending Now RSS",
-
-                      "snapshots":
-                          []
-
-                  }
-
-          else:
-
-              history = {
-
-                  "date":
-                      date_key,
-
-                  "geo":
-                      "IT",
-
-                  "source":
-                      "Google Trends Trending Now RSS",
-
-                  "snapshots":
-                      []
-
-              }
-
-
-          # ============================================================
-          # ADD SNAPSHOT
-          # ============================================================
-
-          history[
-              "snapshots"
-          ].append(
-              snapshot
+          day_history.append(
+              compact_snapshot
           )
 
-
-          # ============================================================
-          # KEEP LAST 24 HOURS
-          # ============================================================
-
-          cutoff = (
-              now -
-              timedelta(hours=24)
+          # Keep only last 24 hours for current day.
+          day_cutoff = now - timedelta(
+              hours=HISTORY_HOURS
           )
 
+          cleaned_history = []
 
-          filtered_snapshots = []
-
-
-          for snapshot_item in history[
-              "snapshots"
-          ]:
+          for item in day_history:
 
               try:
-
-                  snapshot_time = (
-                      datetime.fromisoformat(
-                          snapshot_item[
-                              "timestamp"
-                          ].replace(
-                              "Z",
-                              "+00:00"
-                          )
-                      )
+                  item_time = datetime.fromisoformat(
+                      item["timestamp"]
                   )
-
-
-                  if snapshot_time >= cutoff:
-
-                      filtered_snapshots.append(
-                          snapshot_item
-                      )
-
               except Exception:
+                  continue
 
-                  pass
+              if item_time >= day_cutoff:
+                  cleaned_history.append(item)
 
-
-          history[
-              "snapshots"
-          ] = filtered_snapshots
-
-
-          # ============================================================
-          # SAVE DAILY HISTORY
-          # ============================================================
+          cleaned_history.sort(
+              key=lambda x: x.get(
+                  "timestamp",
+                  ""
+              )
+          )
 
           with history_file.open(
               "w",
               encoding="utf-8"
-          ) as file:
-
+          ) as f:
               json.dump(
-
-                  history,
-
-                  file,
-
+                  cleaned_history,
+                  f,
                   ensure_ascii=False,
-
                   indent=2
-
               )
 
-
-          # ============================================================
+          # ================================================================
           # SAVE LATEST
-          # ============================================================
+          # ================================================================
 
-          latest_file = (
-              DATA_DIR /
-              "latest.json"
-          )
-
-
-          with latest_file.open(
+          with LATEST_FILE.open(
               "w",
               encoding="utf-8"
-          ) as file:
-
+          ) as f:
               json.dump(
-
                   snapshot,
-
-                  file,
-
+                  f,
                   ensure_ascii=False,
-
                   indent=2
-
               )
 
+          # ================================================================
+          # SAVE STATE
+          # ================================================================
 
-          # ============================================================
+          with STATE_FILE.open(
+              "w",
+              encoding="utf-8"
+          ) as f:
+              json.dump(
+                  state,
+                  f,
+                  ensure_ascii=False,
+                  indent=2
+              )
+
+          # ================================================================
           # DELETE HISTORY OLDER THAN 30 DAYS
-          # ============================================================
+          # ================================================================
 
-          keep_after = (
-              now -
-              timedelta(days=30)
+          history_cutoff_date = (
+              now.date() -
+              timedelta(days=HISTORY_DAYS)
           )
 
-
-          for history_path in HISTORY_DIR.glob(
-              "*.json"
-          ):
+          for history_file in HISTORY_DIR.glob("*.json"):
 
               try:
-
-                  file_date = (
-                      datetime.strptime(
-                          history_path.stem,
-                          "%Y-%m-%d"
-                      ).replace(
-                          tzinfo=timezone.utc
-                      )
-                  )
-
-
-                  if file_date < keep_after:
-
-                      history_path.unlink()
-
-                      print(
-                          "Deleted old history:",
-                          history_path
-                      )
-
+                  file_date = datetime.strptime(
+                      history_file.stem,
+                      "%Y-%m-%d"
+                  ).date()
               except Exception:
+                  continue
 
-                  pass
+              if file_date < history_cutoff_date:
+                  print(
+                      f"Deleting old history: "
+                      f"{history_file}"
+                  )
+                  history_file.unlink()
 
+          # ================================================================
+          # CLEAN STATE
+          # ================================================================
 
-          # ============================================================
-          # CONSOLE OUTPUT
-          # ============================================================
+          # Remove trends that have not appeared for 7 days.
+          state_cutoff = now - timedelta(days=7)
 
-          print("")
-          print(
-              "========================================"
-          )
-          print(
-              "SHORTPROMPT TREND RADAR"
-          )
-          print(
-              "========================================"
-          )
+          stale_keys = []
 
-          print(
-              f"Timestamp: {timestamp}"
-          )
+          for key, item in state.items():
 
-          print(
-              f"Trends: {len(trends)}"
-          )
+              try:
+                  last_seen = datetime.fromisoformat(
+                      item.get("last_seen")
+                  )
+              except Exception:
+                  stale_keys.append(key)
+                  continue
 
-          print("")
+              if last_seen < state_cutoff:
+                  stale_keys.append(key)
 
+          for key in stale_keys:
+              del state[key]
 
-          for index, trend in enumerate(
-              trends,
-              start=1
-          ):
-
-              print(
-
-                  f"{index}. "
-                  f"{trend['title']} | "
-                  f"{trend['traffic']['raw']} | "
-                  f"Score {trend['score']} | "
-                  f"{trend['category']}"
-
+          with STATE_FILE.open(
+              "w",
+              encoding="utf-8"
+          ) as f:
+              json.dump(
+                  state,
+                  f,
+                  ensure_ascii=False,
+                  indent=2
               )
 
+          # ================================================================
+          # LOG
+          # ================================================================
 
           print("")
+          print("========================================")
+          print("SHORTPROMPT TREND RADAR")
+          print("========================================")
+          print(f"Timestamp: {now_iso}")
+          print(f"Trends: {len(enriched_trends)}")
+          print("")
 
-          print(
-              f"Saved: {history_file}"
-          )
+          for trend in enriched_trends:
 
-          print(
-              f"Latest: {latest_file}"
-          )
+              print(
+                  f"{trend['rank']:02d}. "
+                  f"{trend['title']} | "
+                  f"{trend['status']} | "
+                  f"{trend['score']}/100 | "
+                  f"{trend['traffic']}"
+              )
+
+          print("")
+          print("Files generated:")
+          print(f"- {LATEST_FILE}")
+          print(f"- {STATE_FILE}")
+          print(f"- {history_file}")
+          print("")
 
           PY
 
-      # ============================================================
-      # COMMIT DATA
-      # ============================================================
+      - name: Validate generated JSON
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+
+          files = [
+              Path("data/latest.json"),
+              Path("data/trends-state.json")
+          ]
+
+          for file in files:
+              if not file.exists():
+                  raise SystemExit(
+                      f"Missing file: {file}"
+                  )
+
+              with file.open(
+                  "r",
+                  encoding="utf-8"
+              ) as f:
+                  json.load(f)
+
+              print(
+                  f"Valid JSON: {file}"
+              )
+
+          history_files = list(
+              Path("data/history").glob("*.json")
+          )
+
+          print(
+              f"History files: {len(history_files)}"
+          )
+
+          for file in history_files:
+              with file.open(
+                  "r",
+                  encoding="utf-8"
+              ) as f:
+                  json.load(f)
+
+              print(
+                  f"Valid JSON: {file}"
+              )
+          PY
 
       - name: Commit Trend Radar data
         run: |
-
-          git config user.name \
-            "ShortPrompt Trend Radar"
-
-          git config user.email \
-            "41898282+github-actions[bot]@users.noreply.github.com"
-
+          git config user.name "ShortPrompt Trend Radar"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add data/
 
-
           if git diff --cached --quiet; then
-
             echo "No data changes to commit."
-
             exit 0
-
           fi
 
-
-          git commit \
-            -m "Update Trend Radar data"
-
-
+          git commit -m "Update Trend Radar data"
           git push
