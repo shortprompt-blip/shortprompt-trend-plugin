@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "schema": "shortprompt-trend-radar-v3",
-  "timestamp": "2026-09-13T02:49:29.927939+02:00",
+  "timestamp": "2026-09-13T03:00:37.055887+02:00",
   "source": "Google Trends RSS",
   "geo": "IT",
   "feed_url": "https://trends.google.com/trending/rss?geo=IT",
@@ -18,20 +18,20 @@
   "traffic_note": "Google Trends RSS traffic values are approximate bands.",
   "trends": [
     {
-      "title": "ciclista",
-      "key": "ciclista",
-      "normalized_title": "ciclista",
-      "category": "AI",
+      "title": "ryan garcia vs conor benn",
+      "key": "ryan garcia vs conor benn",
+      "normalized_title": "ryan garcia vs conor benn",
+      "category": "News",
       "status": "RISING",
       "acceleration": "MEDIUM",
-      "score": 46.2,
-      "traffic": "1000+",
-      "traffic_level": 4,
-      "traffic_value": 1000,
+      "score": 45.2,
+      "traffic": "500+",
+      "traffic_level": 3,
+      "traffic_value": 500,
       "first_seen": "2026-09-13T00:18:57.706920+02:00",
-      "last_seen": "2026-09-13T02:49:29.927939+02:00",
-      "appearances": 10,
-      "duration_minutes": 150,
+      "last_seen": "2026-09-13T03:00:37.055887+02:00",
+      "appearances": 11,
+      "duration_minutes": 161,
       "momentum": 1.0,
       "momentum_30m": 1,
       "momentum_1h": 1.0,
@@ -47,8 +47,74 @@
       "direction_1h": "UP",
       "direction_3h": "UNKNOWN",
       "occurrences_1h": 2,
-      "occurrences_3h": 9,
-      "occurrences_6h": 9,
+      "occurrences_3h": 10,
+      "occurrences_6h": 10,
+      "news_count": 3,
+      "source_count": 3,
+      "sources": [
+        "BBC",
+        "DAZN",
+        "UFC.com"
+      ],
+      "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSL9E7veNIMFym8awcCZI55G_OaTyBr_a4abyK33GK2Vky6_btJgCKm6Sh5w84",
+      "picture_source": "UFC.com",
+      "news": [
+        {
+          "title": "Results + Scorecards | Garcia vs Benn",
+          "snippet": "",
+          "url": "https://www.ufc.com/news/garcia-vs-benn-results",
+          "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSL9E7veNIMFym8awcCZI55G_OaTyBr_a4abyK33GK2Vky6_btJgCKm6Sh5w84",
+          "source": "UFC.com"
+        },
+        {
+          "title": "Garcia vs Benn: Conor Benn & Ryan Garcia both make weight for WBC title fight",
+          "snippet": "",
+          "url": "https://www.bbc.com/sport/boxing/articles/c4gqj1g5d27o",
+          "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHWamsrBwfSXQBm--huzW2B44LKW4FtjY5Yi7P66PB0XHU2P5-HZzykFlX4zw",
+          "source": "BBC"
+        },
+        {
+          "title": "'Get the job done kid' - Eubank Jr. picks his Garcia vs. Benn winner",
+          "snippet": "",
+          "url": "https://www.dazn.com/en-US/news/boxing/ryan-garcia-conor-benn-chris-eubank-jr-picks-winner/84x208cpkuaj1w0tvmo3xy5ig",
+          "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0secEbfGi49AEZAOGXbBPowXx4hCqRriRvEafS8szzWo9_XJuGmITsCG8K28",
+          "source": "DAZN"
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "title": "ciclista",
+      "key": "ciclista",
+      "normalized_title": "ciclista",
+      "category": "AI",
+      "status": "HOT",
+      "acceleration": "WEAK",
+      "score": 34.5,
+      "traffic": "1000+",
+      "traffic_level": 4,
+      "traffic_value": 1000,
+      "first_seen": "2026-09-13T00:18:57.706920+02:00",
+      "last_seen": "2026-09-13T03:00:37.055887+02:00",
+      "appearances": 11,
+      "duration_minutes": 161,
+      "momentum": 0.38,
+      "momentum_30m": 0,
+      "momentum_1h": 0.38,
+      "momentum_3h": 0.38,
+      "momentum_status": "POSITIVE",
+      "why_now": "segnali di crescita nelle finestre piu lunghe; +fascia nell'ultima ora; 3 notizie da 3 fonti",
+      "change_30m_bands": 0,
+      "change_1h_bands": 1,
+      "change_3h_bands": null,
+      "change_6h_bands": null,
+      "change_24h_bands": null,
+      "direction_30m": "FLAT",
+      "direction_1h": "UP",
+      "direction_3h": "UNKNOWN",
+      "occurrences_1h": 2,
+      "occurrences_3h": 10,
+      "occurrences_6h": 10,
       "news_count": 3,
       "source_count": 3,
       "sources": [
@@ -81,72 +147,6 @@
           "source": "Cyclingnews"
         }
       ],
-      "rank": 1
-    },
-    {
-      "title": "ryan garcia vs conor benn",
-      "key": "ryan garcia vs conor benn",
-      "normalized_title": "ryan garcia vs conor benn",
-      "category": "News",
-      "status": "RISING",
-      "acceleration": "MEDIUM",
-      "score": 44.4,
-      "traffic": "500+",
-      "traffic_level": 3,
-      "traffic_value": 500,
-      "first_seen": "2026-09-13T00:18:57.706920+02:00",
-      "last_seen": "2026-09-13T02:49:29.927939+02:00",
-      "appearances": 10,
-      "duration_minutes": 150,
-      "momentum": 1.0,
-      "momentum_30m": 1,
-      "momentum_1h": 1.0,
-      "momentum_3h": 1.0,
-      "momentum_status": "POSITIVE",
-      "why_now": "aumento del traffico nel breve periodo; +fascia negli ultimi 30 minuti; +fascia nell'ultima ora",
-      "change_30m_bands": 1,
-      "change_1h_bands": 1,
-      "change_3h_bands": null,
-      "change_6h_bands": null,
-      "change_24h_bands": null,
-      "direction_30m": "UP",
-      "direction_1h": "UP",
-      "direction_3h": "UNKNOWN",
-      "occurrences_1h": 2,
-      "occurrences_3h": 9,
-      "occurrences_6h": 9,
-      "news_count": 3,
-      "source_count": 3,
-      "sources": [
-        "BBC",
-        "DAZN",
-        "UFC.com"
-      ],
-      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyVjy55XV2jMJ5ckuhuLMmBKu13MnHvV-ypanJ2f-4owaz7gFEtuRGlayB7wE",
-      "picture_source": "UFC.com",
-      "news": [
-        {
-          "title": "Results + Scorecards | Garcia vs Benn",
-          "snippet": "",
-          "url": "https://www.ufc.com/news/garcia-vs-benn-results",
-          "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyVjy55XV2jMJ5ckuhuLMmBKu13MnHvV-ypanJ2f-4owaz7gFEtuRGlayB7wE",
-          "source": "UFC.com"
-        },
-        {
-          "title": "Garcia vs Benn: Conor Benn & Ryan Garcia both make weight for WBC title fight",
-          "snippet": "",
-          "url": "https://www.bbc.com/sport/boxing/articles/c4gqj1g5d27o",
-          "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHWamsrBwfSXQBm--huzW2B44LKW4FtjY5Yi7P66PB0XHU2P5-HZzykFlX4zw",
-          "source": "BBC"
-        },
-        {
-          "title": "'Get the job done kid' - Eubank Jr. picks his Garcia vs. Benn winner",
-          "snippet": "",
-          "url": "https://www.dazn.com/en-US/news/boxing/ryan-garcia-conor-benn-chris-eubank-jr-picks-winner/84x208cpkuaj1w0tvmo3xy5ig",
-          "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0secEbfGi49AEZAOGXbBPowXx4hCqRriRvEafS8szzWo9_XJuGmITsCG8K28",
-          "source": "DAZN"
-        }
-      ],
       "rank": 2
     },
     {
@@ -154,33 +154,33 @@
       "key": "inter miami nashville",
       "normalized_title": "inter miami nashville",
       "category": "Sport",
-      "status": "RISING",
-      "acceleration": "MEDIUM",
-      "score": 43.0,
+      "status": "HOT",
+      "acceleration": "WEAK",
+      "score": 31.3,
       "traffic": "1000+",
       "traffic_level": 4,
       "traffic_value": 1000,
       "first_seen": "2026-09-13T01:18:53.093905+02:00",
-      "last_seen": "2026-09-13T02:49:29.927939+02:00",
-      "appearances": 6,
-      "duration_minutes": 90,
-      "momentum": 1.0,
-      "momentum_30m": 1,
-      "momentum_1h": 1.0,
-      "momentum_3h": 1.0,
+      "last_seen": "2026-09-13T03:00:37.055887+02:00",
+      "appearances": 7,
+      "duration_minutes": 101,
+      "momentum": 0.38,
+      "momentum_30m": 0,
+      "momentum_1h": 0.38,
+      "momentum_3h": 0.38,
       "momentum_status": "POSITIVE",
-      "why_now": "aumento del traffico nel breve periodo; +fascia negli ultimi 30 minuti; +fascia nell'ultima ora",
-      "change_30m_bands": 1,
+      "why_now": "segnali di crescita nelle finestre piu lunghe; +fascia nell'ultima ora; 3 notizie da 3 fonti",
+      "change_30m_bands": 0,
       "change_1h_bands": 1,
       "change_3h_bands": null,
       "change_6h_bands": null,
       "change_24h_bands": null,
-      "direction_30m": "UP",
+      "direction_30m": "FLAT",
       "direction_1h": "UP",
       "direction_3h": "UNKNOWN",
       "occurrences_1h": 2,
-      "occurrences_3h": 5,
-      "occurrences_6h": 5,
+      "occurrences_3h": 6,
+      "occurrences_6h": 6,
       "news_count": 3,
       "source_count": 3,
       "sources": [
@@ -216,37 +216,102 @@
       "rank": 3
     },
     {
-      "title": "celine dion",
-      "key": "celine dion",
-      "normalized_title": "celine dion",
-      "category": "Entertainment",
-      "status": "RISING",
-      "acceleration": "MEDIUM",
-      "score": 37.9,
+      "title": "ryan garcia",
+      "key": "ryan garcia",
+      "normalized_title": "ryan garcia",
+      "category": "News",
+      "status": "HOT",
+      "acceleration": "NONE",
+      "score": 31.3,
       "traffic": "200+",
       "traffic_level": 2,
       "traffic_value": 200,
-      "first_seen": "2026-09-13T01:30:45.465975+02:00",
-      "last_seen": "2026-09-13T02:49:29.927939+02:00",
-      "appearances": 5,
-      "duration_minutes": 78,
+      "first_seen": "2026-09-13T02:28:08.749861+02:00",
+      "last_seen": "2026-09-13T03:00:37.055887+02:00",
+      "appearances": 3,
+      "duration_minutes": 32,
       "momentum": 1.0,
       "momentum_30m": 1,
       "momentum_1h": 1.0,
       "momentum_3h": 1.0,
       "momentum_status": "POSITIVE",
-      "why_now": "aumento del traffico nel breve periodo; +fascia negli ultimi 30 minuti; +fascia nell'ultima ora",
+      "why_now": "+fascia negli ultimi 30 minuti; 3 notizie da 2 fonti",
       "change_30m_bands": 1,
-      "change_1h_bands": 1,
+      "change_1h_bands": null,
       "change_3h_bands": null,
       "change_6h_bands": null,
       "change_24h_bands": null,
       "direction_30m": "UP",
+      "direction_1h": "UNKNOWN",
+      "direction_3h": "UNKNOWN",
+      "occurrences_1h": 2,
+      "occurrences_3h": 2,
+      "occurrences_6h": 2,
+      "news_count": 3,
+      "source_count": 2,
+      "sources": [
+        "Heavy.com",
+        "UFC.com"
+      ],
+      "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNhWMGUo8xIffpfztBy9dZpi67eOr8ILWsCOn14VF_GmFZ2iD_8LHp5m4UGcM",
+      "picture_source": "Heavy.com",
+      "news": [
+        {
+          "title": "Andrea Celina, Ryan Garcia’s Ex-Wife & Children: 5 Fast Facts You Need to Know",
+          "snippet": "",
+          "url": "https://heavy.com/sports/boxing/ryan-garcia-ex-wife-children-kids-andrea-celina/",
+          "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNhWMGUo8xIffpfztBy9dZpi67eOr8ILWsCOn14VF_GmFZ2iD_8LHp5m4UGcM",
+          "source": "Heavy.com"
+        },
+        {
+          "title": "Ryan Garcia Parents & Family: 5 Fast Facts You Need to Know",
+          "snippet": "",
+          "url": "https://heavy.com/sports/boxing/ryan-garcia-familly-parents/",
+          "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8HWaCZgZknwh2YL4lVsarBe5t2IVylXWId439I_6bviaayCt-9XpxZJaMlsk",
+          "source": "Heavy.com"
+        },
+        {
+          "title": "Results + Scorecards | Garcia vs Benn",
+          "snippet": "",
+          "url": "https://www.ufc.com/news/garcia-vs-benn-results",
+          "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSL9E7veNIMFym8awcCZI55G_OaTyBr_a4abyK33GK2Vky6_btJgCKm6Sh5w84",
+          "source": "UFC.com"
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "title": "celine dion",
+      "key": "celine dion",
+      "normalized_title": "celine dion",
+      "category": "Entertainment",
+      "status": "HOT",
+      "acceleration": "WEAK",
+      "score": 26.2,
+      "traffic": "200+",
+      "traffic_level": 2,
+      "traffic_value": 200,
+      "first_seen": "2026-09-13T01:30:45.465975+02:00",
+      "last_seen": "2026-09-13T03:00:37.055887+02:00",
+      "appearances": 6,
+      "duration_minutes": 89,
+      "momentum": 0.38,
+      "momentum_30m": 0,
+      "momentum_1h": 0.38,
+      "momentum_3h": 0.38,
+      "momentum_status": "POSITIVE",
+      "why_now": "segnali di crescita nelle finestre piu lunghe; +fascia nell'ultima ora; 3 notizie da 3 fonti",
+      "change_30m_bands": 0,
+      "change_1h_bands": 1,
+      "change_3h_bands": null,
+      "change_6h_bands": null,
+      "change_24h_bands": null,
+      "direction_30m": "FLAT",
       "direction_1h": "UP",
       "direction_3h": "UNKNOWN",
       "occurrences_1h": 2,
-      "occurrences_3h": 4,
-      "occurrences_6h": 4,
+      "occurrences_3h": 5,
+      "occurrences_6h": 5,
       "news_count": 3,
       "source_count": 3,
       "sources": [
@@ -279,138 +344,7 @@
           "source": "ABC News & Headlines – Australian Broadcasting Corporation"
         }
       ],
-      "rank": 4
-    },
-    {
-      "title": "ryan garcia",
-      "key": "ryan garcia",
-      "normalized_title": "ryan garcia",
-      "category": "News",
-      "status": "HOT",
-      "acceleration": "NONE",
-      "score": 22.5,
-      "traffic": "200+",
-      "traffic_level": 2,
-      "traffic_value": 200,
-      "first_seen": "2026-09-13T02:28:08.749861+02:00",
-      "last_seen": "2026-09-13T02:49:29.927939+02:00",
-      "appearances": 2,
-      "duration_minutes": 21,
-      "momentum": 0,
-      "momentum_30m": 0,
-      "momentum_1h": 0,
-      "momentum_3h": 0,
-      "momentum_status": "FLAT",
-      "why_now": "3 notizie da 2 fonti",
-      "change_30m_bands": null,
-      "change_1h_bands": null,
-      "change_3h_bands": null,
-      "change_6h_bands": null,
-      "change_24h_bands": null,
-      "direction_30m": "UNKNOWN",
-      "direction_1h": "UNKNOWN",
-      "direction_3h": "UNKNOWN",
-      "occurrences_1h": 1,
-      "occurrences_3h": 1,
-      "occurrences_6h": 1,
-      "news_count": 3,
-      "source_count": 2,
-      "sources": [
-        "Heavy.com",
-        "UFC.com"
-      ],
-      "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNhWMGUo8xIffpfztBy9dZpi67eOr8ILWsCOn14VF_GmFZ2iD_8LHp5m4UGcM",
-      "picture_source": "Heavy.com",
-      "news": [
-        {
-          "title": "Andrea Celina, Ryan Garcia’s Ex-Wife & Children: 5 Fast Facts You Need to Know",
-          "snippet": "",
-          "url": "https://heavy.com/sports/boxing/ryan-garcia-ex-wife-children-kids-andrea-celina/",
-          "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNhWMGUo8xIffpfztBy9dZpi67eOr8ILWsCOn14VF_GmFZ2iD_8LHp5m4UGcM",
-          "source": "Heavy.com"
-        },
-        {
-          "title": "Ryan Garcia Parents & Family: 5 Fast Facts You Need to Know",
-          "snippet": "",
-          "url": "https://heavy.com/sports/boxing/ryan-garcia-familly-parents/",
-          "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8HWaCZgZknwh2YL4lVsarBe5t2IVylXWId439I_6bviaayCt-9XpxZJaMlsk",
-          "source": "Heavy.com"
-        },
-        {
-          "title": "Results + Scorecards | Garcia vs Benn",
-          "snippet": "",
-          "url": "https://www.ufc.com/news/garcia-vs-benn-results",
-          "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyVjy55XV2jMJ5ckuhuLMmBKu13MnHvV-ypanJ2f-4owaz7gFEtuRGlayB7wE",
-          "source": "UFC.com"
-        }
-      ],
       "rank": 5
-    },
-    {
-      "title": "garcia vs benn",
-      "key": "garcia vs benn",
-      "normalized_title": "garcia vs benn",
-      "category": "News",
-      "status": "HOT",
-      "acceleration": "NONE",
-      "score": 20.6,
-      "traffic": "100+",
-      "traffic_level": 1,
-      "traffic_value": 100,
-      "first_seen": "2026-09-13T02:28:08.749861+02:00",
-      "last_seen": "2026-09-13T02:49:29.927939+02:00",
-      "appearances": 2,
-      "duration_minutes": 21,
-      "momentum": 0,
-      "momentum_30m": 0,
-      "momentum_1h": 0,
-      "momentum_3h": 0,
-      "momentum_status": "FLAT",
-      "why_now": "3 notizie da 3 fonti",
-      "change_30m_bands": null,
-      "change_1h_bands": null,
-      "change_3h_bands": null,
-      "change_6h_bands": null,
-      "change_24h_bands": null,
-      "direction_30m": "UNKNOWN",
-      "direction_1h": "UNKNOWN",
-      "direction_3h": "UNKNOWN",
-      "occurrences_1h": 1,
-      "occurrences_3h": 1,
-      "occurrences_6h": 1,
-      "news_count": 3,
-      "source_count": 3,
-      "sources": [
-        "DAZN",
-        "Fox News",
-        "Sports Illustrated"
-      ],
-      "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ4v2-eqc_y7u5Gjo3_4HPqyRcZVE5oRSOMwq04qE_PvLI74MvuE7Se4uj_1V8",
-      "picture_source": "DAZN",
-      "news": [
-        {
-          "title": "Ryan Garcia vs Conor Benn en vivo: cómo y dónde ver online el combate de boxeo en Argentina, Colombia, Ecuador, Uruguay, Venezuela, Chile, Bolivia, Paraguay, Perú y Latinoamérica",
-          "snippet": "",
-          "url": "https://www.dazn.com/es-MX/news/boxeo/ryan-garcia-vs-conor-benn-en-vivo-como-y-donde-ver-online-el-combate-de-boxeo-en-argentina-colombia-ecuador-uruguay-venezuela-chile-bolivia-paraguay-peru-y-latinoamerica/b3t1sqezvtki13sym5gq140sz",
-          "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ4v2-eqc_y7u5Gjo3_4HPqyRcZVE5oRSOMwq04qE_PvLI74MvuE7Se4uj_1V8",
-          "source": "DAZN"
-        },
-        {
-          "title": "Código de bonificación de bet365: Apuesta 10 $ y llévate 365 $ en el combate entre Connor Benn y Ryan García, tanto si ganas como si pierdes la apuesta",
-          "snippet": "",
-          "url": "https://noticias.foxnews.com/outkick-sports/bet365-bonus-code-bet-10-get-365-connor-benn-vs-ryan-garcia-whether-your-bet-wins-loses",
-          "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMjIaJG8XMChYTuV2mKn54AaJBx0fJLVrSR7h96UmNxQUfmgwZ68i2Q6gNbL0",
-          "source": "Fox News"
-        },
-        {
-          "title": "Canelo dejó libre septiembre y México todavía busca a su heredero",
-          "snippet": "",
-          "url": "https://www.si.com/mx/box/canelo-dejo-libre-septiembre-y-mexico-todavia-busca-a-su-heredero",
-          "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTH3O3udHHtdQgUtX1l3sysFQUmZQmWAF7dHIdLqnpHupn4c2NqDKYTscKQpwg",
-          "source": "Sports Illustrated"
-        }
-      ],
-      "rank": 6
     },
     {
       "title": "robin williams",
@@ -419,14 +353,14 @@
       "category": "News",
       "status": "STABLE",
       "acceleration": "NONE",
-      "score": 19.4,
+      "score": 20.2,
       "traffic": "200+",
       "traffic_level": 2,
       "traffic_value": 200,
       "first_seen": "2026-09-13T00:18:57.706920+02:00",
-      "last_seen": "2026-09-13T02:49:29.927939+02:00",
-      "appearances": 10,
-      "duration_minutes": 150,
+      "last_seen": "2026-09-13T03:00:37.055887+02:00",
+      "appearances": 11,
+      "duration_minutes": 161,
       "momentum": 0.0,
       "momentum_30m": 0,
       "momentum_1h": 0.0,
@@ -442,8 +376,8 @@
       "direction_1h": "FLAT",
       "direction_3h": "UNKNOWN",
       "occurrences_1h": 2,
-      "occurrences_3h": 9,
-      "occurrences_6h": 9,
+      "occurrences_3h": 10,
+      "occurrences_6h": 10,
       "news_count": 3,
       "source_count": 3,
       "sources": [
@@ -476,7 +410,7 @@
           "source": "The Times"
         }
       ],
-      "rank": 7
+      "rank": 6
     },
     {
       "title": "theo james",
@@ -485,14 +419,14 @@
       "category": "Tech",
       "status": "STABLE",
       "acceleration": "NONE",
-      "score": 18.6,
+      "score": 19.4,
       "traffic": "200+",
       "traffic_level": 2,
       "traffic_value": 200,
       "first_seen": "2026-09-13T00:31:28.488082+02:00",
-      "last_seen": "2026-09-13T02:49:29.927939+02:00",
-      "appearances": 9,
-      "duration_minutes": 138,
+      "last_seen": "2026-09-13T03:00:37.055887+02:00",
+      "appearances": 10,
+      "duration_minutes": 149,
       "momentum": 0.0,
       "momentum_30m": 0,
       "momentum_1h": 0.0,
@@ -508,8 +442,8 @@
       "direction_1h": "FLAT",
       "direction_3h": "UNKNOWN",
       "occurrences_1h": 2,
-      "occurrences_3h": 8,
-      "occurrences_6h": 8,
+      "occurrences_3h": 9,
+      "occurrences_6h": 9,
       "news_count": 3,
       "source_count": 3,
       "sources": [
@@ -542,7 +476,7 @@
           "source": "PureWow"
         }
       ],
-      "rank": 8
+      "rank": 7
     },
     {
       "title": "wta ranking",
@@ -551,14 +485,14 @@
       "category": "Sport",
       "status": "STABLE",
       "acceleration": "NONE",
-      "score": 17.8,
+      "score": 18.6,
       "traffic": "200+",
       "traffic_level": 2,
       "traffic_value": 200,
       "first_seen": "2026-09-13T00:45:48.081019+02:00",
-      "last_seen": "2026-09-13T02:49:29.927939+02:00",
-      "appearances": 8,
-      "duration_minutes": 123,
+      "last_seen": "2026-09-13T03:00:37.055887+02:00",
+      "appearances": 9,
+      "duration_minutes": 134,
       "momentum": 0.0,
       "momentum_30m": 0,
       "momentum_1h": 0.0,
@@ -574,8 +508,8 @@
       "direction_1h": "FLAT",
       "direction_3h": "UNKNOWN",
       "occurrences_1h": 2,
-      "occurrences_3h": 7,
-      "occurrences_6h": 7,
+      "occurrences_3h": 8,
+      "occurrences_6h": 8,
       "news_count": 3,
       "source_count": 3,
       "sources": [
@@ -608,23 +542,23 @@
           "source": "infohub.kz"
         }
       ],
-      "rank": 9
+      "rank": 8
     },
     {
       "title": "matthew mcconaughey",
       "key": "matthew mcconaughey",
       "normalized_title": "matthew mcconaughey",
-      "category": "AI",
+      "category": "Sport",
       "status": "STABLE",
       "acceleration": "NONE",
-      "score": 17.5,
+      "score": 18.3,
       "traffic": "100+",
       "traffic_level": 1,
       "traffic_value": 100,
       "first_seen": "2026-09-13T00:18:57.706920+02:00",
-      "last_seen": "2026-09-13T02:49:29.927939+02:00",
-      "appearances": 10,
-      "duration_minutes": 150,
+      "last_seen": "2026-09-13T03:00:37.055887+02:00",
+      "appearances": 11,
+      "duration_minutes": 161,
       "momentum": 0.0,
       "momentum_30m": 0,
       "momentum_1h": 0.0,
@@ -640,13 +574,13 @@
       "direction_1h": "FLAT",
       "direction_3h": "UNKNOWN",
       "occurrences_1h": 2,
-      "occurrences_3h": 9,
-      "occurrences_6h": 9,
+      "occurrences_3h": 10,
+      "occurrences_6h": 10,
       "news_count": 3,
       "source_count": 3,
       "sources": [
+        "Fox News",
         "InStyle",
-        "People.com",
         "Reuters Connect"
       ],
       "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQajN9nsrc9XAl5VTSA8bZMHjUOS3hApoZTnRC_r1ia5JodZGd0HBTME8K6_eM",
@@ -667,11 +601,77 @@
           "source": "InStyle"
         },
         {
-          "title": "Matthew McConaughey and Woody Harrelson Wear Each Other’s Vintage Photos, Plus Ciara, Julia Roberts and More",
+          "title": "Texas vs Ohio State is more than a rematch: A BBQ-fueled collision between college football power brokers",
           "snippet": "",
-          "url": "https://people.com/star-tracks-friday-september-11-2026-new-celebrity-photos-updated-daily-12115127",
-          "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPNbNAuq78FvDSwcmdhj5vo-WioYNczGwJWHk7kLRspJJn6oD86fcHxAv6DL0",
-          "source": "People.com"
+          "url": "https://www.foxnews.com/outkick-sports/texas-vs-ohio-state-more-than-rematch-bbq-fueled-collision-between-college-football-power-brokers",
+          "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSMj6IshusVb48QONYE72kvpf1Q16VwJ2Mxws-mfFZBi8PZ0DAGFjNaGBTZZow",
+          "source": "Fox News"
+        }
+      ],
+      "rank": 9
+    },
+    {
+      "title": "garcia vs benn",
+      "key": "garcia vs benn",
+      "normalized_title": "garcia vs benn",
+      "category": "News",
+      "status": "HOT",
+      "acceleration": "NONE",
+      "score": 16.9,
+      "traffic": "100+",
+      "traffic_level": 1,
+      "traffic_value": 100,
+      "first_seen": "2026-09-13T02:28:08.749861+02:00",
+      "last_seen": "2026-09-13T03:00:37.055887+02:00",
+      "appearances": 3,
+      "duration_minutes": 32,
+      "momentum": 0.0,
+      "momentum_30m": 0,
+      "momentum_1h": 0.0,
+      "momentum_3h": 0.0,
+      "momentum_status": "FLAT",
+      "why_now": "3 notizie da 3 fonti",
+      "change_30m_bands": 0,
+      "change_1h_bands": null,
+      "change_3h_bands": null,
+      "change_6h_bands": null,
+      "change_24h_bands": null,
+      "direction_30m": "FLAT",
+      "direction_1h": "UNKNOWN",
+      "direction_3h": "UNKNOWN",
+      "occurrences_1h": 2,
+      "occurrences_3h": 2,
+      "occurrences_6h": 2,
+      "news_count": 3,
+      "source_count": 3,
+      "sources": [
+        "DAZN",
+        "Fox News",
+        "Sports Illustrated"
+      ],
+      "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ4v2-eqc_y7u5Gjo3_4HPqyRcZVE5oRSOMwq04qE_PvLI74MvuE7Se4uj_1V8",
+      "picture_source": "DAZN",
+      "news": [
+        {
+          "title": "Ryan Garcia vs Conor Benn en vivo: cómo y dónde ver online el combate de boxeo en Argentina, Colombia, Ecuador, Uruguay, Venezuela, Chile, Bolivia, Paraguay, Perú y Latinoamérica",
+          "snippet": "",
+          "url": "https://www.dazn.com/es-MX/news/boxeo/ryan-garcia-vs-conor-benn-en-vivo-como-y-donde-ver-online-el-combate-de-boxeo-en-argentina-colombia-ecuador-uruguay-venezuela-chile-bolivia-paraguay-peru-y-latinoamerica/b3t1sqezvtki13sym5gq140sz",
+          "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ4v2-eqc_y7u5Gjo3_4HPqyRcZVE5oRSOMwq04qE_PvLI74MvuE7Se4uj_1V8",
+          "source": "DAZN"
+        },
+        {
+          "title": "Código de bonificación de bet365: Apuesta 10 $ y llévate 365 $ en el combate entre Connor Benn y Ryan García, tanto si ganas como si pierdes la apuesta",
+          "snippet": "",
+          "url": "https://noticias.foxnews.com/outkick-sports/bet365-bonus-code-bet-10-get-365-connor-benn-vs-ryan-garcia-whether-your-bet-wins-loses",
+          "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMjIaJG8XMChYTuV2mKn54AaJBx0fJLVrSR7h96UmNxQUfmgwZ68i2Q6gNbL0",
+          "source": "Fox News"
+        },
+        {
+          "title": "Canelo dejó libre septiembre y México todavía busca a su heredero",
+          "snippet": "",
+          "url": "https://www.si.com/mx/box/canelo-dejo-libre-septiembre-y-mexico-todavia-busca-a-su-heredero",
+          "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTH3O3udHHtdQgUtX1l3sysFQUmZQmWAF7dHIdLqnpHupn4c2NqDKYTscKQpwg",
+          "source": "Sports Illustrated"
         }
       ],
       "rank": 10
@@ -698,63 +698,63 @@
       "trend_count": 10,
       "top_trends": [
         {
-          "title": "ciclista",
-          "score": 46.2,
-          "status": "RISING",
-          "traffic": "1000+"
-        },
-        {
           "title": "ryan garcia vs conor benn",
-          "score": 44.4,
+          "score": 45.2,
           "status": "RISING",
           "traffic": "500+"
         },
         {
-          "title": "inter miami - nashville",
-          "score": 43.0,
-          "status": "RISING",
+          "title": "ciclista",
+          "score": 34.5,
+          "status": "HOT",
           "traffic": "1000+"
         },
         {
-          "title": "celine dion",
-          "score": 37.9,
-          "status": "RISING",
-          "traffic": "200+"
+          "title": "inter miami - nashville",
+          "score": 31.3,
+          "status": "HOT",
+          "traffic": "1000+"
         },
         {
           "title": "ryan garcia",
-          "score": 22.5,
+          "score": 31.3,
           "status": "HOT",
           "traffic": "200+"
         },
         {
-          "title": "garcia vs benn",
-          "score": 20.6,
+          "title": "celine dion",
+          "score": 26.2,
           "status": "HOT",
-          "traffic": "100+"
+          "traffic": "200+"
         },
         {
           "title": "robin williams",
-          "score": 19.4,
+          "score": 20.2,
           "status": "STABLE",
           "traffic": "200+"
         },
         {
           "title": "theo james",
-          "score": 18.6,
+          "score": 19.4,
           "status": "STABLE",
           "traffic": "200+"
         },
         {
           "title": "wta ranking",
-          "score": 17.8,
+          "score": 18.6,
           "status": "STABLE",
           "traffic": "200+"
         },
         {
           "title": "matthew mcconaughey",
-          "score": 17.5,
+          "score": 18.3,
           "status": "STABLE",
+          "traffic": "100+"
+        },
+        {
+          "title": "garcia vs benn",
+          "score": 16.9,
+          "status": "HOT",
           "traffic": "100+"
         }
       ]
@@ -765,62 +765,62 @@
       "trend_count": 10,
       "top_trends": [
         {
-          "title": "monterrey - tigres",
-          "score": 34.9,
+          "title": "skattebo",
+          "score": 32.4,
           "status": "EMERGING",
-          "traffic": "5000+"
-        },
-        {
-          "title": "alianza lima - universitario",
-          "score": 30.5,
-          "status": "EMERGING",
-          "traffic": "1000+"
+          "traffic": "2000+"
         },
         {
           "title": "ryan wingo",
           "score": 28.7,
-          "status": "EMERGING",
-          "traffic": "500+"
+          "status": "HOT",
+          "traffic": "2000+"
         },
         {
-          "title": "mark magsayo",
+          "title": "caleb downs",
           "score": 28.7,
           "status": "EMERGING",
           "traffic": "500+"
         },
         {
-          "title": "arch manning nil",
+          "title": "shedeur sanders",
           "score": 28.7,
           "status": "EMERGING",
           "traffic": "500+"
         },
         {
-          "title": "clima para amanhã",
+          "title": "météo demain",
           "score": 28.7,
           "status": "EMERGING",
           "traffic": "500+"
         },
         {
-          "title": "lamar jackson",
+          "title": "hank brown",
           "score": 28.7,
           "status": "EMERGING",
           "traffic": "500+"
         },
         {
-          "title": "fiu football",
+          "title": "tony diaz",
           "score": 28.7,
           "status": "EMERGING",
           "traffic": "500+"
         },
         {
-          "title": "shakur stevenson",
+          "title": "ohio state defensive coordinator",
           "score": 28.7,
           "status": "EMERGING",
           "traffic": "500+"
         },
         {
-          "title": "nigel benn",
-          "score": 26.7,
+          "title": "mahira khan",
+          "score": 28.7,
+          "status": "EMERGING",
+          "traffic": "500+"
+        },
+        {
+          "title": "parker washington",
+          "score": 28.7,
           "status": "EMERGING",
           "traffic": "500+"
         }
@@ -832,62 +832,62 @@
       "trend_count": 10,
       "top_trends": [
         {
-          "title": "inter miami vs nashville",
-          "score": 45.7,
-          "status": "RISING",
-          "traffic": "2000+"
-        },
-        {
-          "title": "paramount",
+          "title": "mahira khan",
           "score": 26.2,
           "status": "EMERGING",
           "traffic": "200+"
         },
         {
-          "title": "brics countries",
+          "title": "iran war",
+          "score": 24.3,
+          "status": "EMERGING",
+          "traffic": "100+"
+        },
+        {
+          "title": "ufc 331",
+          "score": 24.3,
+          "status": "EMERGING",
+          "traffic": "100+"
+        },
+        {
+          "title": "paramount",
           "score": 22.5,
           "status": "HOT",
+          "traffic": "200+"
+        },
+        {
+          "title": "virgin bet",
+          "score": 19.6,
+          "status": "STABLE",
           "traffic": "200+"
         },
         {
           "title": "santos vs cruzeiro",
-          "score": 22.5,
-          "status": "HOT",
-          "traffic": "200+"
-        },
-        {
-          "title": "texas vs ohio state",
-          "score": 22.5,
-          "status": "HOT",
-          "traffic": "200+"
-        },
-        {
-          "title": "paramount plus",
-          "score": 20.6,
-          "status": "HOT",
-          "traffic": "100+"
-        },
-        {
-          "title": "virgin bet",
           "score": 18.8,
           "status": "HOT",
           "traffic": "200+"
         },
         {
-          "title": "will smith",
-          "score": 13.5,
-          "status": "STABLE",
+          "title": "texas vs ohio state",
+          "score": 18.3,
+          "status": "HOT",
+          "traffic": "200+"
+        },
+        {
+          "title": "paramount plus",
+          "score": 16.9,
+          "status": "HOT",
           "traffic": "100+"
         },
         {
-          "title": "emmy rossum",
-          "score": 10.8,
+          "title": "will smith",
+          "score": 14.3,
           "status": "STABLE",
           "traffic": "100+"
         },
         {
           "title": "criminal minds",
-          "score": 5.8,
+          "score": 6.6,
           "status": "STABLE",
           "traffic": "100+"
         }
@@ -899,64 +899,64 @@
       "trend_count": 10,
       "top_trends": [
         {
-          "title": "celine dion",
-          "score": 43.0,
-          "status": "RISING",
-          "traffic": "1000+"
-        },
-        {
-          "title": "inter miami – nashville sc",
-          "score": 43.0,
-          "status": "RISING",
-          "traffic": "1000+"
-        },
-        {
-          "title": "oasis",
+          "title": "verkaufsoffener sonntag nrw",
           "score": 42.1,
           "status": "RISING",
           "traffic": "200+"
         },
         {
-          "title": "jean silva",
-          "score": 26.2,
-          "status": "EMERGING",
-          "traffic": "200+"
-        },
-        {
-          "title": "marwan rahiki",
-          "score": 21.6,
-          "status": "STABLE",
+          "title": "tommy mcmillen",
+          "score": 32.8,
+          "status": "HOT",
           "traffic": "500+"
         },
         {
-          "title": "t",
-          "score": 20.6,
+          "title": "celine dion",
+          "score": 31.3,
           "status": "HOT",
-          "traffic": "100+"
+          "traffic": "1000+"
         },
         {
-          "title": "white house down",
-          "score": 18.1,
-          "status": "STABLE",
+          "title": "inter miami – nashville sc",
+          "score": 31.3,
+          "status": "HOT",
+          "traffic": "1000+"
+        },
+        {
+          "title": "oasis",
+          "score": 25.4,
+          "status": "HOT",
           "traffic": "200+"
         },
         {
-          "title": "verkaufsoffener sonntag nrw",
-          "score": 16.9,
+          "title": "jean silva",
+          "score": 22.5,
           "status": "HOT",
-          "traffic": "100+"
+          "traffic": "200+"
         },
         {
           "title": "b",
+          "score": 17.7,
+          "status": "STABLE",
+          "traffic": "100+"
+        },
+        {
+          "title": "t",
           "score": 16.9,
           "status": "HOT",
           "traffic": "100+"
         },
         {
           "title": "ajax amsterdam",
-          "score": 13.5,
+          "score": 14.3,
           "status": "STABLE",
           "traffic": "100+"
+        },
+        {
+          "title": "white house down",
+          "score": 13.9,
+          "status": "STABLE",
+          "traffic": "200+"
         }
       ]
     },
@@ -967,60 +967,60 @@
       "top_trends": [
         {
           "title": "inter miami – nashville",
-          "score": 45.7,
-          "status": "RISING",
+          "score": 34.0,
+          "status": "HOT",
           "traffic": "2000+"
         },
         {
-          "title": "brandon moreno",
-          "score": 35.1,
+          "title": "joseph morales",
+          "score": 31.2,
           "status": "HOT",
           "traffic": "1000+"
         },
         {
-          "title": "santos – cruzeiro",
-          "score": 24.3,
-          "status": "EMERGING",
-          "traffic": "100+"
-        },
-        {
           "title": "mariage",
-          "score": 23.7,
+          "score": 24.5,
           "status": "STABLE",
           "traffic": "1000+"
         },
         {
-          "title": "sémaglutide",
-          "score": 18.6,
-          "status": "STABLE",
-          "traffic": "200+"
-        },
-        {
-          "title": "oasis",
-          "score": 17.7,
-          "status": "STABLE",
+          "title": "santos – cruzeiro",
+          "score": 20.6,
+          "status": "HOT",
           "traffic": "100+"
         },
         {
-          "title": "22 septembre",
-          "score": 17.3,
+          "title": "jose delgado",
+          "score": 20.3,
+          "status": "HOT",
+          "traffic": "500+"
+        },
+        {
+          "title": "sémaglutide",
+          "score": 19.4,
           "status": "STABLE",
           "traffic": "200+"
         },
         {
           "title": "celine dion jeune",
-          "score": 16.7,
+          "score": 17.5,
           "status": "STABLE",
           "traffic": "100+"
         },
         {
           "title": "coach",
-          "score": 14.3,
+          "score": 15.1,
           "status": "STABLE",
           "traffic": "100+"
         },
         {
           "title": "overwatch",
+          "score": 14.3,
+          "status": "STABLE",
+          "traffic": "100+"
+        },
+        {
+          "title": "oasis",
           "score": 13.5,
           "status": "STABLE",
           "traffic": "100+"
@@ -1033,189 +1033,83 @@
       "trend_count": 10,
       "top_trends": [
         {
-          "title": "brandon moreno",
+          "title": "alberto núñez feijóo",
+          "score": 59.5,
+          "status": "ACCELERATING",
+          "traffic": "20000+"
+        },
+        {
+          "title": "santos - cruzeiro",
           "score": 44.6,
           "status": "RISING",
           "traffic": "500+"
         },
         {
-          "title": "alberto núñez feijóo",
-          "score": 43.0,
+          "title": "brandon moreno",
+          "score": 40.4,
           "status": "RISING",
-          "traffic": "1000+"
+          "traffic": "500+"
         },
         {
-          "title": "santos - cruzeiro",
-          "score": 33.8,
+          "title": "alianza lima - universitario",
+          "score": 25.0,
           "status": "HOT",
           "traffic": "500+"
         },
         {
           "title": "inter miami - nashville sc",
-          "score": 33.2,
-          "status": "HOT",
+          "score": 24.0,
+          "status": "STABLE",
           "traffic": "2000+"
         },
         {
-          "title": "alianza lima - universitario",
-          "score": 28.7,
-          "status": "EMERGING",
-          "traffic": "500+"
-        },
-        {
-          "title": "florence pugh",
-          "score": 27.0,
-          "status": "HOT",
-          "traffic": "200+"
-        },
-        {
           "title": "tommy mcmillen",
-          "score": 23.9,
+          "score": 19.7,
           "status": "STABLE",
           "traffic": "1000+"
         },
         {
           "title": "jean silva",
-          "score": 22.5,
+          "score": 18.8,
           "status": "HOT",
+          "traffic": "200+"
+        },
+        {
+          "title": "florence pugh",
+          "score": 17.8,
+          "status": "STABLE",
+          "traffic": "200+"
+        },
+        {
+          "title": "boyacá chicó - medellín",
+          "score": 17.0,
+          "status": "STABLE",
           "traffic": "200+"
         },
         {
           "title": "josé miguel delgado",
-          "score": 20.6,
+          "score": 16.9,
           "status": "HOT",
           "traffic": "100+"
-        },
-        {
-          "title": "boyacá chicó - medellín",
-          "score": 16.2,
-          "status": "STABLE",
-          "traffic": "200+"
         }
       ]
     }
   },
   "global_trends": [
     {
-      "title": "inter miami - nashville",
-      "key": "inter miami nashville",
-      "global_score": 46.3,
-      "italy_score": 43.0,
-      "crossover_score": 51.7,
-      "opportunity_score": 47.4,
-      "global_status": "RISING",
-      "italy_status": "RISING",
-      "why_now": "aumento del traffico nel breve periodo; +fascia negli ultimi 30 minuti; +fascia nell'ultima ora",
-      "markets": {
-        "IT": {
-          "title": "inter miami - nashville",
-          "score": 43.0,
-          "status": "RISING",
-          "acceleration": "MEDIUM",
-          "traffic": "1000+",
-          "traffic_level": 4,
-          "momentum": 1.0,
-          "news_count": 3
-        },
-        "FR": {
-          "title": "inter miami – nashville",
-          "score": 45.7,
-          "status": "RISING",
-          "acceleration": "MEDIUM",
-          "traffic": "2000+",
-          "traffic_level": 5,
-          "momentum": 1.0,
-          "news_count": 3
-        }
-      },
-      "market_count": 2,
-      "market_codes": [
-        "FR",
-        "IT"
-      ],
-      "rank": 1
-    },
-    {
-      "title": "celine dion",
-      "key": "celine dion",
-      "global_score": 43.9,
-      "italy_score": 37.9,
-      "crossover_score": 49.1,
-      "opportunity_score": 44.6,
-      "global_status": "RISING",
-      "italy_status": "RISING",
-      "why_now": "aumento del traffico nel breve periodo; +fascia negli ultimi 30 minuti; +fascia nell'ultima ora",
-      "markets": {
-        "IT": {
-          "title": "celine dion",
-          "score": 37.9,
-          "status": "RISING",
-          "acceleration": "MEDIUM",
-          "traffic": "200+",
-          "traffic_level": 2,
-          "momentum": 1.0,
-          "news_count": 3
-        },
-        "DE": {
-          "title": "celine dion",
-          "score": 43.0,
-          "status": "RISING",
-          "acceleration": "MEDIUM",
-          "traffic": "1000+",
-          "traffic_level": 4,
-          "momentum": 1.0,
-          "news_count": 3
-        }
-      },
-      "market_count": 2,
-      "market_codes": [
-        "DE",
-        "IT"
-      ],
-      "rank": 2
-    },
-    {
-      "title": "ciclista",
-      "key": "ciclista",
-      "global_score": 42.0,
-      "italy_score": 46.2,
-      "crossover_score": 47.8,
-      "opportunity_score": 43.1,
-      "global_status": "STABLE",
-      "italy_status": "RISING",
-      "why_now": "aumento del traffico nel breve periodo; +fascia negli ultimi 30 minuti; +fascia nell'ultima ora",
-      "markets": {
-        "IT": {
-          "title": "ciclista",
-          "score": 46.2,
-          "status": "RISING",
-          "acceleration": "MEDIUM",
-          "traffic": "1000+",
-          "traffic_level": 4,
-          "momentum": 1.0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "IT"
-      ],
-      "rank": 3
-    },
-    {
       "title": "ryan garcia vs conor benn",
       "key": "ryan garcia vs conor benn",
-      "global_score": 40.5,
-      "italy_score": 44.4,
-      "crossover_score": 46.5,
-      "opportunity_score": 41.8,
+      "global_score": 41.2,
+      "italy_score": 45.2,
+      "crossover_score": 47.1,
+      "opportunity_score": 42.4,
       "global_status": "STABLE",
       "italy_status": "RISING",
       "why_now": "aumento del traffico nel breve periodo; +fascia negli ultimi 30 minuti; +fascia nell'ultima ora",
       "markets": {
         "IT": {
           "title": "ryan garcia vs conor benn",
-          "score": 44.4,
+          "score": 45.2,
           "status": "RISING",
           "acceleration": "MEDIUM",
           "traffic": "500+",
@@ -1228,71 +1122,32 @@
       "market_codes": [
         "IT"
       ],
-      "rank": 4
+      "rank": 1
     },
     {
-      "title": "brandon moreno",
-      "key": "brandon moreno",
-      "global_score": 42.7,
-      "italy_score": 0,
-      "crossover_score": 25.2,
-      "opportunity_score": 26.0,
-      "global_status": "RISING",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
+      "title": "inter miami - nashville",
+      "key": "inter miami nashville",
+      "global_score": 32.9,
+      "italy_score": 31.3,
+      "crossover_score": 30.2,
+      "opportunity_score": 33.7,
+      "global_status": "STABLE",
+      "italy_status": "HOT",
+      "why_now": "segnali di crescita nelle finestre piu lunghe; +fascia nell'ultima ora; 3 notizie da 3 fonti",
       "markets": {
-        "FR": {
-          "title": "brandon moreno",
-          "score": 35.1,
+        "IT": {
+          "title": "inter miami - nashville",
+          "score": 31.3,
           "status": "HOT",
           "acceleration": "WEAK",
           "traffic": "1000+",
           "traffic_level": 4,
-          "momentum": 1.0,
+          "momentum": 0.38,
           "news_count": 3
         },
-        "ES": {
-          "title": "brandon moreno",
-          "score": 44.6,
-          "status": "RISING",
-          "acceleration": "MEDIUM",
-          "traffic": "500+",
-          "traffic_level": 3,
-          "momentum": 1.0,
-          "news_count": 3
-        }
-      },
-      "market_count": 2,
-      "market_codes": [
-        "ES",
-        "FR"
-      ],
-      "rank": 5
-    },
-    {
-      "title": "inter miami – nashville sc",
-      "key": "inter miami nashville sc",
-      "global_score": 41.4,
-      "italy_score": 0,
-      "crossover_score": 24.6,
-      "opportunity_score": 25.4,
-      "global_status": "RISING",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "DE": {
-          "title": "inter miami – nashville sc",
-          "score": 43.0,
-          "status": "RISING",
-          "acceleration": "MEDIUM",
-          "traffic": "1000+",
-          "traffic_level": 4,
-          "momentum": 1.0,
-          "news_count": 3
-        },
-        "ES": {
-          "title": "inter miami - nashville sc",
-          "score": 33.2,
+        "FR": {
+          "title": "inter miami – nashville",
+          "score": 34.0,
           "status": "HOT",
           "acceleration": "WEAK",
           "traffic": "2000+",
@@ -1303,93 +1158,149 @@
       },
       "market_count": 2,
       "market_codes": [
-        "DE",
-        "ES"
+        "FR",
+        "IT"
       ],
-      "rank": 6
+      "rank": 2
     },
     {
-      "title": "oasis",
-      "key": "oasis",
-      "global_score": 39.2,
-      "italy_score": 0,
-      "crossover_score": 23.6,
-      "opportunity_score": 24.4,
-      "global_status": "RISING",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
+      "title": "celine dion",
+      "key": "celine dion",
+      "global_score": 30.5,
+      "italy_score": 26.2,
+      "crossover_score": 27.6,
+      "opportunity_score": 30.8,
+      "global_status": "STABLE",
+      "italy_status": "HOT",
+      "why_now": "segnali di crescita nelle finestre piu lunghe; +fascia nell'ultima ora; 3 notizie da 3 fonti",
       "markets": {
-        "DE": {
-          "title": "oasis",
-          "score": 42.1,
-          "status": "RISING",
-          "acceleration": "MEDIUM",
+        "IT": {
+          "title": "celine dion",
+          "score": 26.2,
+          "status": "HOT",
+          "acceleration": "WEAK",
           "traffic": "200+",
           "traffic_level": 2,
-          "momentum": 1.0,
+          "momentum": 0.38,
           "news_count": 3
         },
-        "FR": {
-          "title": "oasis",
-          "score": 17.7,
-          "status": "STABLE",
-          "acceleration": "NONE",
-          "traffic": "100+",
-          "traffic_level": 1,
-          "momentum": 0.0,
+        "DE": {
+          "title": "celine dion",
+          "score": 31.3,
+          "status": "HOT",
+          "acceleration": "WEAK",
+          "traffic": "1000+",
+          "traffic_level": 4,
+          "momentum": -0.88,
           "news_count": 3
         }
       },
       "market_count": 2,
       "market_codes": [
         "DE",
-        "FR"
+        "IT"
       ],
-      "rank": 7
+      "rank": 3
     },
     {
-      "title": "inter miami vs nashville",
-      "key": "inter miami vs nashville",
-      "global_score": 41.6,
-      "italy_score": 0,
-      "crossover_score": 21.7,
-      "opportunity_score": 21.9,
+      "title": "ciclista",
+      "key": "ciclista",
+      "global_score": 30.6,
+      "italy_score": 34.5,
+      "crossover_score": 27.1,
+      "opportunity_score": 30.2,
       "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
+      "italy_status": "HOT",
+      "why_now": "segnali di crescita nelle finestre piu lunghe; +fascia nell'ultima ora; 3 notizie da 3 fonti",
       "markets": {
-        "GB": {
-          "title": "inter miami vs nashville",
-          "score": 45.7,
-          "status": "RISING",
-          "acceleration": "MEDIUM",
-          "traffic": "2000+",
-          "traffic_level": 5,
+        "IT": {
+          "title": "ciclista",
+          "score": 34.5,
+          "status": "HOT",
+          "acceleration": "WEAK",
+          "traffic": "1000+",
+          "traffic_level": 4,
+          "momentum": 0.38,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "IT"
+      ],
+      "rank": 4
+    },
+    {
+      "title": "ryan garcia",
+      "key": "ryan garcia",
+      "global_score": 28.0,
+      "italy_score": 31.3,
+      "crossover_score": 25.0,
+      "opportunity_score": 29.2,
+      "global_status": "STABLE",
+      "italy_status": "HOT",
+      "why_now": "+fascia negli ultimi 30 minuti; 3 notizie da 2 fonti",
+      "markets": {
+        "IT": {
+          "title": "ryan garcia",
+          "score": 31.3,
+          "status": "HOT",
+          "acceleration": "NONE",
+          "traffic": "200+",
+          "traffic_level": 2,
           "momentum": 1.0,
           "news_count": 3
         }
       },
       "market_count": 1,
       "market_codes": [
-        "GB"
+        "IT"
       ],
-      "rank": 8
+      "rank": 5
+    },
+    {
+      "title": "alberto núñez feijóo",
+      "key": "alberto nunez feijoo",
+      "global_score": 55.6,
+      "italy_score": 0,
+      "crossover_score": 28.0,
+      "opportunity_score": 28.1,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "ES": {
+          "title": "alberto núñez feijóo",
+          "score": 59.5,
+          "status": "ACCELERATING",
+          "acceleration": "STRONG",
+          "traffic": "20000+",
+          "traffic_level": 8,
+          "momentum": 4.38,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "ES"
+      ],
+      "rank": 6
     },
     {
       "title": "santos – cruzeiro",
       "key": "santos cruzeiro",
-      "global_score": 32.1,
+      "global_score": 41.3,
       "italy_score": 0,
-      "crossover_score": 20.4,
-      "opportunity_score": 21.3,
-      "global_status": "STABLE",
+      "crossover_score": 24.6,
+      "opportunity_score": 25.4,
+      "global_status": "RISING",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "FR": {
           "title": "santos – cruzeiro",
-          "score": 24.3,
-          "status": "EMERGING",
+          "score": 20.6,
+          "status": "HOT",
           "acceleration": "NONE",
           "traffic": "100+",
           "traffic_level": 1,
@@ -1398,9 +1309,9 @@
         },
         "ES": {
           "title": "santos - cruzeiro",
-          "score": 33.8,
-          "status": "HOT",
-          "acceleration": "NONE",
+          "score": 44.6,
+          "status": "RISING",
+          "acceleration": "MEDIUM",
           "traffic": "500+",
           "traffic_level": 3,
           "momentum": 1.0,
@@ -1412,26 +1323,132 @@
         "ES",
         "FR"
       ],
+      "rank": 7
+    },
+    {
+      "title": "tommy mcmillen",
+      "key": "tommy mcmillen",
+      "global_score": 30.9,
+      "italy_score": 0,
+      "crossover_score": 19.9,
+      "opportunity_score": 20.8,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "DE": {
+          "title": "tommy mcmillen",
+          "score": 32.8,
+          "status": "HOT",
+          "acceleration": "WEAK",
+          "traffic": "500+",
+          "traffic_level": 3,
+          "momentum": 1.0,
+          "news_count": 3
+        },
+        "ES": {
+          "title": "tommy mcmillen",
+          "score": 19.7,
+          "status": "STABLE",
+          "acceleration": "NONE",
+          "traffic": "1000+",
+          "traffic_level": 4,
+          "momentum": 0.0,
+          "news_count": 3
+        }
+      },
+      "market_count": 2,
+      "market_codes": [
+        "DE",
+        "ES"
+      ],
+      "rank": 8
+    },
+    {
+      "title": "verkaufsoffener sonntag nrw",
+      "key": "verkaufsoffener sonntag nrw",
+      "global_score": 38.7,
+      "italy_score": 0,
+      "crossover_score": 20.4,
+      "opportunity_score": 20.6,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "DE": {
+          "title": "verkaufsoffener sonntag nrw",
+          "score": 42.1,
+          "status": "RISING",
+          "acceleration": "MEDIUM",
+          "traffic": "200+",
+          "traffic_level": 2,
+          "momentum": 1.0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "DE"
+      ],
       "rank": 9
     },
     {
-      "title": "alberto núñez feijóo",
-      "key": "alberto nunez feijoo",
-      "global_score": 39.4,
+      "title": "inter miami – nashville sc",
+      "key": "inter miami nashville sc",
+      "global_score": 30.3,
       "italy_score": 0,
-      "crossover_score": 20.7,
-      "opportunity_score": 20.9,
+      "crossover_score": 19.6,
+      "opportunity_score": 20.5,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "DE": {
+          "title": "inter miami – nashville sc",
+          "score": 31.3,
+          "status": "HOT",
+          "acceleration": "WEAK",
+          "traffic": "1000+",
+          "traffic_level": 4,
+          "momentum": 0.38,
+          "news_count": 3
+        },
+        "ES": {
+          "title": "inter miami - nashville sc",
+          "score": 24.0,
+          "status": "STABLE",
+          "acceleration": "NONE",
+          "traffic": "2000+",
+          "traffic_level": 5,
+          "momentum": 0.0,
+          "news_count": 3
+        }
+      },
+      "market_count": 2,
+      "market_codes": [
+        "DE",
+        "ES"
+      ],
+      "rank": 10
+    },
+    {
+      "title": "brandon moreno",
+      "key": "brandon moreno",
+      "global_score": 37.3,
+      "italy_score": 0,
+      "crossover_score": 19.8,
+      "opportunity_score": 20.0,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "ES": {
-          "title": "alberto núñez feijóo",
-          "score": 43.0,
+          "title": "brandon moreno",
+          "score": 40.4,
           "status": "RISING",
           "acceleration": "MEDIUM",
-          "traffic": "1000+",
-          "traffic_level": 4,
+          "traffic": "500+",
+          "traffic_level": 3,
           "momentum": 1.0,
           "news_count": 3
         }
@@ -1440,59 +1457,21 @@
       "market_codes": [
         "ES"
       ],
-      "rank": 10
-    },
-    {
-      "title": "ryan garcia",
-      "key": "ryan garcia",
-      "global_score": 21.0,
-      "italy_score": 22.5,
-      "crossover_score": 19.2,
-      "opportunity_score": 20.9,
-      "global_status": "STABLE",
-      "italy_status": "HOT",
-      "why_now": "3 notizie da 2 fonti",
-      "markets": {
-        "IT": {
-          "title": "ryan garcia",
-          "score": 22.5,
-          "status": "HOT",
-          "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "IT"
-      ],
       "rank": 11
     },
     {
-      "title": "alianza lima - universitario",
-      "key": "alianza lima universitario",
-      "global_score": 30.2,
+      "title": "mahira khan",
+      "key": "mahira khan",
+      "global_score": 28.7,
       "italy_score": 0,
-      "crossover_score": 19.6,
-      "opportunity_score": 20.5,
+      "crossover_score": 18.9,
+      "opportunity_score": 19.8,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "US": {
-          "title": "alianza lima - universitario",
-          "score": 30.5,
-          "status": "EMERGING",
-          "acceleration": "NONE",
-          "traffic": "1000+",
-          "traffic_level": 4,
-          "momentum": 0,
-          "news_count": 3
-        },
-        "ES": {
-          "title": "alianza lima - universitario",
+          "title": "mahira khan",
           "score": 28.7,
           "status": "EMERGING",
           "acceleration": "NONE",
@@ -1500,34 +1479,44 @@
           "traffic_level": 3,
           "momentum": 0,
           "news_count": 3
+        },
+        "GB": {
+          "title": "mahira khan",
+          "score": 26.2,
+          "status": "EMERGING",
+          "acceleration": "NONE",
+          "traffic": "200+",
+          "traffic_level": 2,
+          "momentum": 0,
+          "news_count": 3
         }
       },
       "market_count": 2,
       "market_codes": [
-        "ES",
+        "GB",
         "US"
       ],
       "rank": 12
     },
     {
-      "title": "garcia vs benn",
-      "key": "garcia vs benn",
-      "global_score": 19.5,
-      "italy_score": 20.6,
-      "crossover_score": 18.0,
-      "opportunity_score": 19.6,
+      "title": "robin williams",
+      "key": "robin williams",
+      "global_score": 19.2,
+      "italy_score": 20.2,
+      "crossover_score": 17.7,
+      "opportunity_score": 19.3,
       "global_status": "STABLE",
-      "italy_status": "HOT",
+      "italy_status": "STABLE",
       "why_now": "3 notizie da 3 fonti",
       "markets": {
         "IT": {
-          "title": "garcia vs benn",
-          "score": 20.6,
-          "status": "HOT",
+          "title": "robin williams",
+          "score": 20.2,
+          "status": "STABLE",
           "acceleration": "NONE",
-          "traffic": "100+",
-          "traffic_level": 1,
-          "momentum": 0,
+          "traffic": "200+",
+          "traffic_level": 2,
+          "momentum": 0.0,
           "news_count": 3
         }
       },
@@ -1538,47 +1527,8 @@
       "rank": 13
     },
     {
-      "title": "jean silva",
-      "key": "jean silva",
-      "global_score": 26.6,
-      "italy_score": 0,
-      "crossover_score": 18.0,
-      "opportunity_score": 18.9,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "DE": {
-          "title": "jean silva",
-          "score": 26.2,
-          "status": "EMERGING",
-          "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
-          "momentum": 0,
-          "news_count": 3
-        },
-        "ES": {
-          "title": "jean silva",
-          "score": 22.5,
-          "status": "HOT",
-          "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 2,
-      "market_codes": [
-        "DE",
-        "ES"
-      ],
-      "rank": 14
-    },
-    {
-      "title": "robin williams",
-      "key": "robin williams",
+      "title": "theo james",
+      "key": "theo james",
       "global_score": 18.5,
       "italy_score": 19.4,
       "crossover_score": 17.1,
@@ -1588,7 +1538,7 @@
       "why_now": "3 notizie da 3 fonti",
       "markets": {
         "IT": {
-          "title": "robin williams",
+          "title": "theo james",
           "score": 19.4,
           "status": "STABLE",
           "acceleration": "NONE",
@@ -1602,11 +1552,50 @@
       "market_codes": [
         "IT"
       ],
+      "rank": 14
+    },
+    {
+      "title": "oasis",
+      "key": "oasis",
+      "global_score": 25.1,
+      "italy_score": 0,
+      "crossover_score": 17.3,
+      "opportunity_score": 18.2,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "DE": {
+          "title": "oasis",
+          "score": 25.4,
+          "status": "HOT",
+          "acceleration": "WEAK",
+          "traffic": "200+",
+          "traffic_level": 2,
+          "momentum": 0.38,
+          "news_count": 3
+        },
+        "FR": {
+          "title": "oasis",
+          "score": 13.5,
+          "status": "STABLE",
+          "acceleration": "NONE",
+          "traffic": "100+",
+          "traffic_level": 1,
+          "momentum": 0.0,
+          "news_count": 3
+        }
+      },
+      "market_count": 2,
+      "market_codes": [
+        "DE",
+        "FR"
+      ],
       "rank": 15
     },
     {
-      "title": "theo james",
-      "key": "theo james",
+      "title": "wta ranking",
+      "key": "wta ranking",
       "global_score": 17.9,
       "italy_score": 18.6,
       "crossover_score": 16.6,
@@ -1616,7 +1605,7 @@
       "why_now": "3 notizie da 3 fonti",
       "markets": {
         "IT": {
-          "title": "theo james",
+          "title": "wta ranking",
           "score": 18.6,
           "status": "STABLE",
           "acceleration": "NONE",
@@ -1633,47 +1622,19 @@
       "rank": 16
     },
     {
-      "title": "wta ranking",
-      "key": "wta ranking",
-      "global_score": 17.2,
-      "italy_score": 17.8,
-      "crossover_score": 16.1,
-      "opportunity_score": 17.6,
-      "global_status": "STABLE",
-      "italy_status": "STABLE",
-      "why_now": "3 notizie da 3 fonti",
-      "markets": {
-        "IT": {
-          "title": "wta ranking",
-          "score": 17.8,
-          "status": "STABLE",
-          "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
-          "momentum": 0.0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "IT"
-      ],
-      "rank": 17
-    },
-    {
       "title": "matthew mcconaughey",
       "key": "matthew mcconaughey",
-      "global_score": 17.0,
-      "italy_score": 17.5,
-      "crossover_score": 15.9,
-      "opportunity_score": 17.4,
+      "global_score": 17.6,
+      "italy_score": 18.3,
+      "crossover_score": 16.4,
+      "opportunity_score": 17.9,
       "global_status": "STABLE",
       "italy_status": "STABLE",
       "why_now": "3 notizie da 3 fonti",
       "markets": {
         "IT": {
           "title": "matthew mcconaughey",
-          "score": 17.5,
+          "score": 18.3,
           "status": "STABLE",
           "acceleration": "NONE",
           "traffic": "100+",
@@ -1686,26 +1647,93 @@
       "market_codes": [
         "IT"
       ],
+      "rank": 17
+    },
+    {
+      "title": "jean silva",
+      "key": "jean silva",
+      "global_score": 23.6,
+      "italy_score": 0,
+      "crossover_score": 16.6,
+      "opportunity_score": 17.6,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "DE": {
+          "title": "jean silva",
+          "score": 22.5,
+          "status": "HOT",
+          "acceleration": "NONE",
+          "traffic": "200+",
+          "traffic_level": 2,
+          "momentum": 0,
+          "news_count": 3
+        },
+        "ES": {
+          "title": "jean silva",
+          "score": 18.8,
+          "status": "HOT",
+          "acceleration": "NONE",
+          "traffic": "200+",
+          "traffic_level": 2,
+          "momentum": 0.0,
+          "news_count": 3
+        }
+      },
+      "market_count": 2,
+      "market_codes": [
+        "DE",
+        "ES"
+      ],
       "rank": 18
     },
     {
-      "title": "monterrey - tigres",
-      "key": "monterrey tigres",
-      "global_score": 30.9,
+      "title": "garcia vs benn",
+      "key": "garcia vs benn",
+      "global_score": 16.5,
+      "italy_score": 16.9,
+      "crossover_score": 15.5,
+      "opportunity_score": 16.9,
+      "global_status": "STABLE",
+      "italy_status": "HOT",
+      "why_now": "3 notizie da 3 fonti",
+      "markets": {
+        "IT": {
+          "title": "garcia vs benn",
+          "score": 16.9,
+          "status": "HOT",
+          "acceleration": "NONE",
+          "traffic": "100+",
+          "traffic_level": 1,
+          "momentum": 0.0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "IT"
+      ],
+      "rank": 19
+    },
+    {
+      "title": "skattebo",
+      "key": "skattebo",
+      "global_score": 28.9,
       "italy_score": 0,
-      "crossover_score": 16.9,
-      "opportunity_score": 17.2,
+      "crossover_score": 16.0,
+      "opportunity_score": 16.3,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "US": {
-          "title": "monterrey - tigres",
-          "score": 34.9,
+          "title": "skattebo",
+          "score": 32.4,
           "status": "EMERGING",
           "acceleration": "NONE",
-          "traffic": "5000+",
-          "traffic_level": 6,
+          "traffic": "2000+",
+          "traffic_level": 5,
           "momentum": 0,
           "news_count": 3
         }
@@ -1714,7 +1742,35 @@
       "market_codes": [
         "US"
       ],
-      "rank": 19
+      "rank": 20
+    },
+    {
+      "title": "joseph morales",
+      "key": "joseph morales",
+      "global_score": 28.0,
+      "italy_score": 0,
+      "crossover_score": 15.6,
+      "opportunity_score": 15.9,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "FR": {
+          "title": "joseph morales",
+          "score": 31.2,
+          "status": "HOT",
+          "acceleration": "WEAK",
+          "traffic": "1000+",
+          "traffic_level": 4,
+          "momentum": 1.0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "FR"
+      ],
+      "rank": 21
     },
     {
       "title": "ryan wingo",
@@ -1730,66 +1786,10 @@
         "US": {
           "title": "ryan wingo",
           "score": 28.7,
-          "status": "EMERGING",
+          "status": "HOT",
           "acceleration": "NONE",
-          "traffic": "500+",
-          "traffic_level": 3,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "US"
-      ],
-      "rank": 20
-    },
-    {
-      "title": "mark magsayo",
-      "key": "mark magsayo",
-      "global_score": 26.0,
-      "italy_score": 0,
-      "crossover_score": 14.7,
-      "opportunity_score": 15.0,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "US": {
-          "title": "mark magsayo",
-          "score": 28.7,
-          "status": "EMERGING",
-          "acceleration": "NONE",
-          "traffic": "500+",
-          "traffic_level": 3,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "US"
-      ],
-      "rank": 21
-    },
-    {
-      "title": "arch manning nil",
-      "key": "arch manning nil",
-      "global_score": 26.0,
-      "italy_score": 0,
-      "crossover_score": 14.7,
-      "opportunity_score": 15.0,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "US": {
-          "title": "arch manning nil",
-          "score": 28.7,
-          "status": "EMERGING",
-          "acceleration": "NONE",
-          "traffic": "500+",
-          "traffic_level": 3,
+          "traffic": "2000+",
+          "traffic_level": 5,
           "momentum": 0,
           "news_count": 3
         }
@@ -1801,8 +1801,8 @@
       "rank": 22
     },
     {
-      "title": "clima para amanhã",
-      "key": "clima para amanha",
+      "title": "caleb downs",
+      "key": "caleb downs",
       "global_score": 26.0,
       "italy_score": 0,
       "crossover_score": 14.7,
@@ -1812,7 +1812,7 @@
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "US": {
-          "title": "clima para amanhã",
+          "title": "caleb downs",
           "score": 28.7,
           "status": "EMERGING",
           "acceleration": "NONE",
@@ -1829,8 +1829,8 @@
       "rank": 23
     },
     {
-      "title": "lamar jackson",
-      "key": "lamar jackson",
+      "title": "shedeur sanders",
+      "key": "shedeur sanders",
       "global_score": 26.0,
       "italy_score": 0,
       "crossover_score": 14.7,
@@ -1840,7 +1840,7 @@
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "US": {
-          "title": "lamar jackson",
+          "title": "shedeur sanders",
           "score": 28.7,
           "status": "EMERGING",
           "acceleration": "NONE",
@@ -1857,8 +1857,8 @@
       "rank": 24
     },
     {
-      "title": "fiu football",
-      "key": "fiu football",
+      "title": "météo demain",
+      "key": "meteo demain",
       "global_score": 26.0,
       "italy_score": 0,
       "crossover_score": 14.7,
@@ -1868,7 +1868,7 @@
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "US": {
-          "title": "fiu football",
+          "title": "météo demain",
           "score": 28.7,
           "status": "EMERGING",
           "acceleration": "NONE",
@@ -1885,8 +1885,8 @@
       "rank": 25
     },
     {
-      "title": "shakur stevenson",
-      "key": "shakur stevenson",
+      "title": "hank brown",
+      "key": "hank brown",
       "global_score": 26.0,
       "italy_score": 0,
       "crossover_score": 14.7,
@@ -1896,7 +1896,7 @@
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "US": {
-          "title": "shakur stevenson",
+          "title": "hank brown",
           "score": 28.7,
           "status": "EMERGING",
           "acceleration": "NONE",
@@ -1913,47 +1913,47 @@
       "rank": 26
     },
     {
-      "title": "florence pugh",
-      "key": "florence pugh",
-      "global_score": 24.6,
+      "title": "tony diaz",
+      "key": "tony diaz",
+      "global_score": 26.0,
       "italy_score": 0,
-      "crossover_score": 14.1,
-      "opportunity_score": 14.4,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "ES": {
-          "title": "florence pugh",
-          "score": 27.0,
-          "status": "HOT",
-          "acceleration": "WEAK",
-          "traffic": "200+",
-          "traffic_level": 2,
-          "momentum": 0.38,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "ES"
-      ],
-      "rank": 27
-    },
-    {
-      "title": "nigel benn",
-      "key": "nigel benn",
-      "global_score": 24.4,
-      "italy_score": 0,
-      "crossover_score": 14.0,
-      "opportunity_score": 14.3,
+      "crossover_score": 14.7,
+      "opportunity_score": 15.0,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "US": {
-          "title": "nigel benn",
-          "score": 26.7,
+          "title": "tony diaz",
+          "score": 28.7,
+          "status": "EMERGING",
+          "acceleration": "NONE",
+          "traffic": "500+",
+          "traffic_level": 3,
+          "momentum": 0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "US"
+      ],
+      "rank": 27
+    },
+    {
+      "title": "ohio state defensive coordinator",
+      "key": "ohio state defensive coordinator",
+      "global_score": 26.0,
+      "italy_score": 0,
+      "crossover_score": 14.7,
+      "opportunity_score": 15.0,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "US": {
+          "title": "ohio state defensive coordinator",
+          "score": 28.7,
           "status": "EMERGING",
           "acceleration": "NONE",
           "traffic": "500+",
@@ -1969,52 +1969,52 @@
       "rank": 28
     },
     {
-      "title": "paramount",
-      "key": "paramount",
-      "global_score": 24.0,
+      "title": "parker washington",
+      "key": "parker washington",
+      "global_score": 26.0,
       "italy_score": 0,
-      "crossover_score": 13.8,
-      "opportunity_score": 14.2,
+      "crossover_score": 14.7,
+      "opportunity_score": 15.0,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
-        "GB": {
-          "title": "paramount",
-          "score": 26.2,
+        "US": {
+          "title": "parker washington",
+          "score": 28.7,
           "status": "EMERGING",
           "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
+          "traffic": "500+",
+          "traffic_level": 3,
           "momentum": 0,
           "news_count": 3
         }
       },
       "market_count": 1,
       "market_codes": [
-        "GB"
+        "US"
       ],
       "rank": 29
     },
     {
-      "title": "tommy mcmillen",
-      "key": "tommy mcmillen",
-      "global_score": 22.1,
+      "title": "alianza lima - universitario",
+      "key": "alianza lima universitario",
+      "global_score": 23.0,
       "italy_score": 0,
-      "crossover_score": 12.9,
-      "opportunity_score": 13.3,
+      "crossover_score": 13.3,
+      "opportunity_score": 13.7,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "ES": {
-          "title": "tommy mcmillen",
-          "score": 23.9,
-          "status": "STABLE",
+          "title": "alianza lima - universitario",
+          "score": 25.0,
+          "status": "HOT",
           "acceleration": "NONE",
-          "traffic": "1000+",
-          "traffic_level": 4,
-          "momentum": 0.0,
+          "traffic": "500+",
+          "traffic_level": 3,
+          "momentum": 0,
           "news_count": 3
         }
       },
@@ -2027,17 +2027,17 @@
     {
       "title": "mariage",
       "key": "mariage",
-      "global_score": 22.0,
+      "global_score": 22.6,
       "italy_score": 0,
-      "crossover_score": 12.9,
-      "opportunity_score": 13.3,
+      "crossover_score": 13.2,
+      "opportunity_score": 13.6,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "FR": {
           "title": "mariage",
-          "score": 23.7,
+          "score": 24.5,
           "status": "STABLE",
           "acceleration": "NONE",
           "traffic": "1000+",
@@ -2053,23 +2053,23 @@
       "rank": 31
     },
     {
-      "title": "brics countries",
-      "key": "brics countries",
-      "global_score": 21.0,
+      "title": "iran war",
+      "key": "iran war",
+      "global_score": 22.4,
       "italy_score": 0,
-      "crossover_score": 12.5,
-      "opportunity_score": 12.8,
+      "crossover_score": 13.1,
+      "opportunity_score": 13.5,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "GB": {
-          "title": "brics countries",
-          "score": 22.5,
-          "status": "HOT",
+          "title": "iran war",
+          "score": 24.3,
+          "status": "EMERGING",
           "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
+          "traffic": "100+",
+          "traffic_level": 1,
           "momentum": 0,
           "news_count": 3
         }
@@ -2081,23 +2081,23 @@
       "rank": 32
     },
     {
-      "title": "santos vs cruzeiro",
-      "key": "santos vs cruzeiro",
-      "global_score": 21.0,
+      "title": "ufc 331",
+      "key": "ufc 331",
+      "global_score": 22.4,
       "italy_score": 0,
-      "crossover_score": 12.5,
-      "opportunity_score": 12.8,
+      "crossover_score": 13.1,
+      "opportunity_score": 13.5,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "GB": {
-          "title": "santos vs cruzeiro",
-          "score": 22.5,
-          "status": "HOT",
+          "title": "ufc 331",
+          "score": 24.3,
+          "status": "EMERGING",
           "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
+          "traffic": "100+",
+          "traffic_level": 1,
           "momentum": 0,
           "news_count": 3
         }
@@ -2109,8 +2109,8 @@
       "rank": 33
     },
     {
-      "title": "texas vs ohio state",
-      "key": "texas vs ohio state",
+      "title": "paramount",
+      "key": "paramount",
       "global_score": 21.0,
       "italy_score": 0,
       "crossover_score": 12.5,
@@ -2120,13 +2120,13 @@
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "GB": {
-          "title": "texas vs ohio state",
+          "title": "paramount",
           "score": 22.5,
           "status": "HOT",
           "acceleration": "NONE",
           "traffic": "200+",
           "traffic_level": 2,
-          "momentum": -1.0,
+          "momentum": 0,
           "news_count": 3
         }
       },
@@ -2137,52 +2137,52 @@
       "rank": 34
     },
     {
-      "title": "marwan rahiki",
-      "key": "marwan rahiki",
-      "global_score": 20.3,
+      "title": "jose delgado",
+      "key": "jose delgado",
+      "global_score": 19.2,
       "italy_score": 0,
-      "crossover_score": 12.1,
-      "opportunity_score": 12.5,
+      "crossover_score": 11.6,
+      "opportunity_score": 12.0,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
-        "DE": {
-          "title": "marwan rahiki",
-          "score": 21.6,
-          "status": "STABLE",
+        "FR": {
+          "title": "jose delgado",
+          "score": 20.3,
+          "status": "HOT",
           "acceleration": "NONE",
           "traffic": "500+",
           "traffic_level": 3,
-          "momentum": 0,
+          "momentum": 0.0,
           "news_count": 3
         }
       },
       "market_count": 1,
       "market_codes": [
-        "DE"
+        "FR"
       ],
       "rank": 35
     },
     {
-      "title": "paramount plus",
-      "key": "paramount plus",
-      "global_score": 19.5,
+      "title": "virgin bet",
+      "key": "virgin bet",
+      "global_score": 18.7,
       "italy_score": 0,
-      "crossover_score": 11.8,
-      "opportunity_score": 12.2,
+      "crossover_score": 11.4,
+      "opportunity_score": 11.8,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "GB": {
-          "title": "paramount plus",
-          "score": 20.6,
-          "status": "HOT",
+          "title": "virgin bet",
+          "score": 19.6,
+          "status": "STABLE",
           "acceleration": "NONE",
-          "traffic": "100+",
-          "traffic_level": 1,
-          "momentum": 0,
+          "traffic": "200+",
+          "traffic_level": 2,
+          "momentum": 0.0,
           "news_count": 3
         }
       },
@@ -2193,64 +2193,36 @@
       "rank": 36
     },
     {
-      "title": "t",
-      "key": "t",
-      "global_score": 19.5,
+      "title": "sémaglutide",
+      "key": "semaglutide",
+      "global_score": 18.5,
       "italy_score": 0,
-      "crossover_score": 11.8,
-      "opportunity_score": 12.2,
+      "crossover_score": 11.3,
+      "opportunity_score": 11.7,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
-        "DE": {
-          "title": "t",
-          "score": 20.6,
-          "status": "HOT",
+        "FR": {
+          "title": "sémaglutide",
+          "score": 19.4,
+          "status": "STABLE",
           "acceleration": "NONE",
-          "traffic": "100+",
-          "traffic_level": 1,
-          "momentum": 0,
+          "traffic": "200+",
+          "traffic_level": 2,
+          "momentum": 0.0,
           "news_count": 3
         }
       },
       "market_count": 1,
       "market_codes": [
-        "DE"
+        "FR"
       ],
       "rank": 37
     },
     {
-      "title": "josé miguel delgado",
-      "key": "jose miguel delgado",
-      "global_score": 19.5,
-      "italy_score": 0,
-      "crossover_score": 11.8,
-      "opportunity_score": 12.2,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "ES": {
-          "title": "josé miguel delgado",
-          "score": 20.6,
-          "status": "HOT",
-          "acceleration": "NONE",
-          "traffic": "100+",
-          "traffic_level": 1,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "ES"
-      ],
-      "rank": 38
-    },
-    {
-      "title": "virgin bet",
-      "key": "virgin bet",
+      "title": "santos vs cruzeiro",
+      "key": "santos vs cruzeiro",
       "global_score": 18.0,
       "italy_score": 0,
       "crossover_score": 11.1,
@@ -2260,7 +2232,7 @@
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "GB": {
-          "title": "virgin bet",
+          "title": "santos vs cruzeiro",
           "score": 18.8,
           "status": "HOT",
           "acceleration": "NONE",
@@ -2274,22 +2246,78 @@
       "market_codes": [
         "GB"
       ],
-      "rank": 39
+      "rank": 38
     },
     {
-      "title": "sémaglutide",
-      "key": "semaglutide",
-      "global_score": 17.9,
+      "title": "texas vs ohio state",
+      "key": "texas vs ohio state",
+      "global_score": 17.6,
       "italy_score": 0,
-      "crossover_score": 11.1,
-      "opportunity_score": 11.5,
+      "crossover_score": 10.9,
+      "opportunity_score": 11.3,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
-        "FR": {
-          "title": "sémaglutide",
-          "score": 18.6,
+        "GB": {
+          "title": "texas vs ohio state",
+          "score": 18.3,
+          "status": "HOT",
+          "acceleration": "NONE",
+          "traffic": "200+",
+          "traffic_level": 2,
+          "momentum": -1.0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "GB"
+      ],
+      "rank": 39
+    },
+    {
+      "title": "b",
+      "key": "b",
+      "global_score": 17.2,
+      "italy_score": 0,
+      "crossover_score": 10.7,
+      "opportunity_score": 11.2,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "DE": {
+          "title": "b",
+          "score": 17.7,
+          "status": "STABLE",
+          "acceleration": "NONE",
+          "traffic": "100+",
+          "traffic_level": 1,
+          "momentum": 0.0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "DE"
+      ],
+      "rank": 40
+    },
+    {
+      "title": "florence pugh",
+      "key": "florence pugh",
+      "global_score": 17.2,
+      "italy_score": 0,
+      "crossover_score": 10.7,
+      "opportunity_score": 11.2,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "ES": {
+          "title": "florence pugh",
+          "score": 17.8,
           "status": "STABLE",
           "acceleration": "NONE",
           "traffic": "200+",
@@ -2300,57 +2328,29 @@
       },
       "market_count": 1,
       "market_codes": [
-        "FR"
-      ],
-      "rank": 40
-    },
-    {
-      "title": "white house down",
-      "key": "white house down",
-      "global_score": 17.5,
-      "italy_score": 0,
-      "crossover_score": 10.9,
-      "opportunity_score": 11.3,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "DE": {
-          "title": "white house down",
-          "score": 18.1,
-          "status": "STABLE",
-          "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
-          "momentum": 0.0,
-          "news_count": 2
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "DE"
+        "ES"
       ],
       "rank": 41
     },
     {
-      "title": "22 septembre",
-      "key": "22 septembre",
-      "global_score": 16.8,
+      "title": "celine dion jeune",
+      "key": "celine dion jeune",
+      "global_score": 17.0,
       "italy_score": 0,
-      "crossover_score": 10.6,
-      "opportunity_score": 11.0,
+      "crossover_score": 10.7,
+      "opportunity_score": 11.1,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "FR": {
-          "title": "22 septembre",
-          "score": 17.3,
+          "title": "celine dion jeune",
+          "score": 17.5,
           "status": "STABLE",
           "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
-          "momentum": 0,
+          "traffic": "100+",
+          "traffic_level": 1,
+          "momentum": 0.0,
           "news_count": 3
         }
       },
@@ -2361,107 +2361,107 @@
       "rank": 42
     },
     {
-      "title": "verkaufsoffener sonntag nrw",
-      "key": "verkaufsoffener sonntag nrw",
-      "global_score": 16.5,
-      "italy_score": 0,
-      "crossover_score": 10.4,
-      "opportunity_score": 10.9,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "DE": {
-          "title": "verkaufsoffener sonntag nrw",
-          "score": 16.9,
-          "status": "HOT",
-          "acceleration": "NONE",
-          "traffic": "100+",
-          "traffic_level": 1,
-          "momentum": 0.0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "DE"
-      ],
-      "rank": 43
-    },
-    {
-      "title": "b",
-      "key": "b",
-      "global_score": 16.5,
-      "italy_score": 0,
-      "crossover_score": 10.4,
-      "opportunity_score": 10.9,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "DE": {
-          "title": "b",
-          "score": 16.9,
-          "status": "HOT",
-          "acceleration": "NONE",
-          "traffic": "100+",
-          "traffic_level": 1,
-          "momentum": 0.0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "DE"
-      ],
-      "rank": 44
-    },
-    {
-      "title": "celine dion jeune",
-      "key": "celine dion jeune",
-      "global_score": 16.4,
-      "italy_score": 0,
-      "crossover_score": 10.4,
-      "opportunity_score": 10.8,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "FR": {
-          "title": "celine dion jeune",
-          "score": 16.7,
-          "status": "STABLE",
-          "acceleration": "NONE",
-          "traffic": "100+",
-          "traffic_level": 1,
-          "momentum": 0.0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "FR"
-      ],
-      "rank": 45
-    },
-    {
       "title": "boyacá chicó - medellín",
       "key": "boyaca chico medellin",
-      "global_score": 16.0,
+      "global_score": 16.6,
       "italy_score": 0,
-      "crossover_score": 10.2,
-      "opportunity_score": 10.6,
+      "crossover_score": 10.5,
+      "opportunity_score": 10.9,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "ES": {
           "title": "boyacá chicó - medellín",
-          "score": 16.2,
+          "score": 17.0,
           "status": "STABLE",
           "acceleration": "NONE",
           "traffic": "200+",
           "traffic_level": 2,
+          "momentum": 0.0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "ES"
+      ],
+      "rank": 43
+    },
+    {
+      "title": "paramount plus",
+      "key": "paramount plus",
+      "global_score": 16.5,
+      "italy_score": 0,
+      "crossover_score": 10.4,
+      "opportunity_score": 10.9,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "GB": {
+          "title": "paramount plus",
+          "score": 16.9,
+          "status": "HOT",
+          "acceleration": "NONE",
+          "traffic": "100+",
+          "traffic_level": 1,
+          "momentum": 0.0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "GB"
+      ],
+      "rank": 44
+    },
+    {
+      "title": "t",
+      "key": "t",
+      "global_score": 16.5,
+      "italy_score": 0,
+      "crossover_score": 10.4,
+      "opportunity_score": 10.9,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "DE": {
+          "title": "t",
+          "score": 16.9,
+          "status": "HOT",
+          "acceleration": "NONE",
+          "traffic": "100+",
+          "traffic_level": 1,
+          "momentum": 0.0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "DE"
+      ],
+      "rank": 45
+    },
+    {
+      "title": "josé miguel delgado",
+      "key": "jose miguel delgado",
+      "global_score": 16.5,
+      "italy_score": 0,
+      "crossover_score": 10.4,
+      "opportunity_score": 10.9,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "ES": {
+          "title": "josé miguel delgado",
+          "score": 16.9,
+          "status": "HOT",
+          "acceleration": "NONE",
+          "traffic": "100+",
+          "traffic_level": 1,
           "momentum": 0.0,
           "news_count": 3
         }
@@ -2475,17 +2475,17 @@
     {
       "title": "coach",
       "key": "coach",
-      "global_score": 14.4,
+      "global_score": 15.1,
       "italy_score": 0,
-      "crossover_score": 9.5,
-      "opportunity_score": 9.9,
+      "crossover_score": 9.8,
+      "opportunity_score": 10.2,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "FR": {
           "title": "coach",
-          "score": 14.3,
+          "score": 15.1,
           "status": "STABLE",
           "acceleration": "NONE",
           "traffic": "100+",
@@ -2503,17 +2503,17 @@
     {
       "title": "will smith",
       "key": "will smith",
-      "global_score": 13.8,
+      "global_score": 14.4,
       "italy_score": 0,
-      "crossover_score": 9.2,
-      "opportunity_score": 9.7,
+      "crossover_score": 9.5,
+      "opportunity_score": 9.9,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "GB": {
           "title": "will smith",
-          "score": 13.5,
+          "score": 14.3,
           "status": "STABLE",
           "acceleration": "NONE",
           "traffic": "100+",
@@ -2531,17 +2531,17 @@
     {
       "title": "ajax amsterdam",
       "key": "ajax amsterdam",
-      "global_score": 13.8,
+      "global_score": 14.4,
       "italy_score": 0,
-      "crossover_score": 9.2,
-      "opportunity_score": 9.7,
+      "crossover_score": 9.5,
+      "opportunity_score": 9.9,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "DE": {
           "title": "ajax amsterdam",
-          "score": 13.5,
+          "score": 14.3,
           "status": "STABLE",
           "acceleration": "NONE",
           "traffic": "100+",
@@ -2559,17 +2559,17 @@
     {
       "title": "overwatch",
       "key": "overwatch",
-      "global_score": 13.8,
+      "global_score": 14.4,
       "italy_score": 0,
-      "crossover_score": 9.2,
-      "opportunity_score": 9.7,
+      "crossover_score": 9.5,
+      "opportunity_score": 9.9,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "FR": {
           "title": "overwatch",
-          "score": 13.5,
+          "score": 14.3,
           "status": "STABLE",
           "acceleration": "NONE",
           "traffic": "100+",
@@ -2585,47 +2585,47 @@
       "rank": 50
     },
     {
-      "title": "emmy rossum",
-      "key": "emmy rossum",
-      "global_score": 11.6,
+      "title": "white house down",
+      "key": "white house down",
+      "global_score": 14.1,
       "italy_score": 0,
-      "crossover_score": 8.2,
-      "opportunity_score": 8.7,
+      "crossover_score": 9.3,
+      "opportunity_score": 9.8,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
-        "GB": {
-          "title": "emmy rossum",
-          "score": 10.8,
+        "DE": {
+          "title": "white house down",
+          "score": 13.9,
           "status": "STABLE",
           "acceleration": "NONE",
-          "traffic": "100+",
-          "traffic_level": 1,
+          "traffic": "200+",
+          "traffic_level": 2,
           "momentum": 0.0,
           "news_count": 2
         }
       },
       "market_count": 1,
       "market_codes": [
-        "GB"
+        "DE"
       ],
       "rank": 51
     },
     {
       "title": "criminal minds",
       "key": "criminal minds",
-      "global_score": 7.6,
+      "global_score": 8.3,
       "italy_score": 0,
-      "crossover_score": 6.4,
-      "opportunity_score": 6.9,
+      "crossover_score": 6.7,
+      "opportunity_score": 7.2,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "GB": {
           "title": "criminal minds",
-          "score": 5.8,
+          "score": 6.6,
           "status": "STABLE",
           "acceleration": "NONE",
           "traffic": "100+",
@@ -2645,32 +2645,32 @@
     {
       "title": "inter miami - nashville",
       "key": "inter miami nashville",
-      "global_score": 46.3,
-      "italy_score": 43.0,
-      "crossover_score": 51.7,
-      "opportunity_score": 47.4,
-      "global_status": "RISING",
-      "italy_status": "RISING",
-      "why_now": "aumento del traffico nel breve periodo; +fascia negli ultimi 30 minuti; +fascia nell'ultima ora",
+      "global_score": 32.9,
+      "italy_score": 31.3,
+      "crossover_score": 30.2,
+      "opportunity_score": 33.7,
+      "global_status": "STABLE",
+      "italy_status": "HOT",
+      "why_now": "segnali di crescita nelle finestre piu lunghe; +fascia nell'ultima ora; 3 notizie da 3 fonti",
       "markets": {
         "IT": {
           "title": "inter miami - nashville",
-          "score": 43.0,
-          "status": "RISING",
-          "acceleration": "MEDIUM",
+          "score": 31.3,
+          "status": "HOT",
+          "acceleration": "WEAK",
           "traffic": "1000+",
           "traffic_level": 4,
-          "momentum": 1.0,
+          "momentum": 0.38,
           "news_count": 3
         },
         "FR": {
           "title": "inter miami – nashville",
-          "score": 45.7,
-          "status": "RISING",
-          "acceleration": "MEDIUM",
+          "score": 34.0,
+          "status": "HOT",
+          "acceleration": "WEAK",
           "traffic": "2000+",
           "traffic_level": 5,
-          "momentum": 1.0,
+          "momentum": 0.38,
           "news_count": 3
         }
       },
@@ -2679,37 +2679,37 @@
         "FR",
         "IT"
       ],
-      "rank": 1
+      "rank": 2
     },
     {
       "title": "celine dion",
       "key": "celine dion",
-      "global_score": 43.9,
-      "italy_score": 37.9,
-      "crossover_score": 49.1,
-      "opportunity_score": 44.6,
-      "global_status": "RISING",
-      "italy_status": "RISING",
-      "why_now": "aumento del traffico nel breve periodo; +fascia negli ultimi 30 minuti; +fascia nell'ultima ora",
+      "global_score": 30.5,
+      "italy_score": 26.2,
+      "crossover_score": 27.6,
+      "opportunity_score": 30.8,
+      "global_status": "STABLE",
+      "italy_status": "HOT",
+      "why_now": "segnali di crescita nelle finestre piu lunghe; +fascia nell'ultima ora; 3 notizie da 3 fonti",
       "markets": {
         "IT": {
           "title": "celine dion",
-          "score": 37.9,
-          "status": "RISING",
-          "acceleration": "MEDIUM",
+          "score": 26.2,
+          "status": "HOT",
+          "acceleration": "WEAK",
           "traffic": "200+",
           "traffic_level": 2,
-          "momentum": 1.0,
+          "momentum": 0.38,
           "news_count": 3
         },
         "DE": {
           "title": "celine dion",
-          "score": 43.0,
-          "status": "RISING",
-          "acceleration": "MEDIUM",
+          "score": 31.3,
+          "status": "HOT",
+          "acceleration": "WEAK",
           "traffic": "1000+",
           "traffic_level": 4,
-          "momentum": 1.0,
+          "momentum": -0.88,
           "news_count": 3
         }
       },
@@ -2718,7 +2718,7 @@
         "DE",
         "IT"
       ],
-      "rank": 2
+      "rank": 3
     }
   ],
   "global_scoring": {
