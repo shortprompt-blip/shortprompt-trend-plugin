@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "schema": "shortprompt-trend-radar-v3",
-  "timestamp": "2026-09-16T20:49:02.974843+02:00",
+  "timestamp": "2026-09-16T20:59:38.774324+02:00",
   "source": "Google Trends RSS",
   "geo": "IT",
   "feed_url": "https://trends.google.com/trending/rss?geo=IT",
@@ -22,22 +22,22 @@
       "key": "pescara gubbio",
       "normalized_title": "pescara gubbio",
       "category": "Entertainment",
-      "status": "EMERGING",
+      "status": "HOT",
       "acceleration": "NONE",
-      "score": 30.5,
+      "score": 26.8,
       "traffic": "1000+",
       "traffic_level": 4,
       "traffic_value": 1000,
       "first_seen": "2026-09-16T20:49:02.974843+02:00",
-      "last_seen": "2026-09-16T20:49:02.974843+02:00",
-      "appearances": 1,
-      "duration_minutes": 0,
+      "last_seen": "2026-09-16T20:59:38.774324+02:00",
+      "appearances": 2,
+      "duration_minutes": 10,
       "momentum": 0,
       "momentum_30m": 0,
       "momentum_1h": 0,
       "momentum_3h": 0,
       "momentum_status": "FLAT",
-      "why_now": "3 notizie da 3 fonti; nuova entrata nel radar",
+      "why_now": "3 notizie da 3 fonti",
       "change_30m_bands": null,
       "change_1h_bands": null,
       "change_3h_bands": null,
@@ -46,9 +46,9 @@
       "direction_30m": "UNKNOWN",
       "direction_1h": "UNKNOWN",
       "direction_3h": "UNKNOWN",
-      "occurrences_1h": 0,
-      "occurrences_3h": 0,
-      "occurrences_6h": 0,
+      "occurrences_1h": 1,
+      "occurrences_3h": 1,
+      "occurrences_6h": 1,
       "news_count": 3,
       "source_count": 3,
       "sources": [
@@ -84,18 +84,18 @@
       "rank": 1
     },
     {
-      "title": "perugia - spezia",
-      "key": "perugia spezia",
-      "normalized_title": "perugia spezia",
-      "category": "Sport",
+      "title": "barcelona vs racing santander",
+      "key": "barcelona vs racing santander",
+      "normalized_title": "barcelona vs racing santander",
+      "category": "News",
       "status": "EMERGING",
       "acceleration": "NONE",
-      "score": 30.5,
-      "traffic": "1000+",
-      "traffic_level": 4,
-      "traffic_value": 1000,
-      "first_seen": "2026-09-16T20:49:02.974843+02:00",
-      "last_seen": "2026-09-16T20:49:02.974843+02:00",
+      "score": 26.2,
+      "traffic": "200+",
+      "traffic_level": 2,
+      "traffic_value": 200,
+      "first_seen": "2026-09-16T20:59:38.774324+02:00",
+      "last_seen": "2026-09-16T20:59:38.774324+02:00",
       "appearances": 1,
       "duration_minutes": 0,
       "momentum": 0,
@@ -118,52 +118,382 @@
       "news_count": 3,
       "source_count": 3,
       "sources": [
-        "AC Perugia Calcio",
-        "Il Secolo XIX",
-        "PerugiaToday"
+        "DAZN",
+        "Mundo Deportivo",
+        "SPORT"
       ],
-      "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR_r8wjG59WgWFHyJaNWgoyRyZdOPbU7PjKG6hyT3JmXp1ZcOIFMa4wI6fo6OA",
-      "picture_source": "Il Secolo XIX",
+      "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTooe7nA4-tf5zNUEAM9yTMr1Rq1ZhfBR69OVV2fwaExisUGX4eS0jU0vadYjA",
+      "picture_source": "DAZN",
       "news": [
         {
-          "title": "Turati opera solo un cambio, Cancellieri non recupera: le formazioni ufficiali di Perugia-Spezia",
+          "title": "Cómo ver Barcelona vs Racing de Santander en vivo: canales, streaming y horarios de LaLiga 2026/27 para México, Latinoamérica y USA",
           "snippet": "",
-          "url": "https://www.ilsecoloxix.it/sport/news/turati-opera-solo-un-cambio-cancellieri-non-recupera-le-formazioni-ufficiali-di-perugia-spezia-himk1b35/",
-          "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR_r8wjG59WgWFHyJaNWgoyRyZdOPbU7PjKG6hyT3JmXp1ZcOIFMa4wI6fo6OA",
-          "source": "Il Secolo XIX"
+          "url": "https://www.dazn.com/es-MX/news/f%C3%BAtbol/como-ver-barcelona-vs-racing-de-santander-vivo-canales-streaming-horarios-laliga/11eunvgwot6y1tky1a2s971tt",
+          "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTooe7nA4-tf5zNUEAM9yTMr1Rq1ZhfBR69OVV2fwaExisUGX4eS0jU0vadYjA",
+          "source": "DAZN"
         },
         {
-          "title": "Calcio serie C, Perugia - Spezia: la diretta della partita",
+          "title": "Cuatro cambios, alguno sorprendente, en el once del Barça",
           "snippet": "",
-          "url": "https://www.perugiatoday.it/sport/calcio/serie-c-perugia-spezia-16-9-2026-diretta-partita.html",
-          "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTOQE1ceYhxt2MUnVMkqNrRJXcbEZf_R3kxgp1f3Pb9Rz3UeZuxNhJJfu0SANQ",
-          "source": "PerugiaToday"
+          "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260916/1004228103/rotaciones.html",
+          "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQh44wtp2tO6WqO2XDE3wOohQXSgMhuSTM-rzuTuQ5zN_dB9an7zPy3ZuQcuVs",
+          "source": "Mundo Deportivo"
         },
         {
-          "title": "I GRIFONI SONO TORNATI AD ALLENARSI PER PREPARARE LA GARA CONTRO LO SPEZIA",
+          "title": "La convocatoria del Barça ante el Racing de Santander",
           "snippet": "",
-          "url": "https://acperugiacalcio.com/i-grifoni-sono-tornati-ad-allenarsi-per-preparare-la-gara-contro-lo-spezia/",
-          "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTUwcJ7hefgrrNsp8OnAhx7nTkh3eNPDecBqU_2GlPL1106W7BvxY460mIpXRs",
-          "source": "AC Perugia Calcio"
+          "url": "https://www.sport.es/es/noticias/barca/convocatoria-barca-racing-santander-134335671",
+          "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTYf_QGxrqUiSkEY9nhBsBAZZ0IWIGB3M6dnmO_66Bf6RWxNEav1ImT0TnnFQ0",
+          "source": "SPORT"
         }
       ],
       "rank": 2
     },
     {
-      "title": "partite stasera",
-      "key": "partite stasera",
-      "normalized_title": "partite stasera",
-      "category": "Sport",
+      "title": "livorno - vado",
+      "key": "livorno vado",
+      "normalized_title": "livorno vado",
+      "category": "Business",
+      "status": "EMERGING",
+      "acceleration": "NONE",
+      "score": 26.2,
+      "traffic": "200+",
+      "traffic_level": 2,
+      "traffic_value": 200,
+      "first_seen": "2026-09-16T20:59:38.774324+02:00",
+      "last_seen": "2026-09-16T20:59:38.774324+02:00",
+      "appearances": 1,
+      "duration_minutes": 0,
+      "momentum": 0,
+      "momentum_30m": 0,
+      "momentum_1h": 0,
+      "momentum_3h": 0,
+      "momentum_status": "FLAT",
+      "why_now": "3 notizie da 3 fonti; nuova entrata nel radar",
+      "change_30m_bands": null,
+      "change_1h_bands": null,
+      "change_3h_bands": null,
+      "change_6h_bands": null,
+      "change_24h_bands": null,
+      "direction_30m": "UNKNOWN",
+      "direction_1h": "UNKNOWN",
+      "direction_3h": "UNKNOWN",
+      "occurrences_1h": 0,
+      "occurrences_3h": 0,
+      "occurrences_6h": 0,
+      "news_count": 3,
+      "source_count": 3,
+      "sources": [
+        "Livorno 24",
+        "LivornoToday",
+        "Radio Bruno"
+      ],
+      "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNUrQN_gHhC7g_vP9X5b5MBYkvNycYvOOzwm_BBVGRLhudsE9WjIRrRaeSJPc",
+      "picture_source": "LivornoToday",
+      "news": [
+        {
+          "title": "Livorno-Vado, le formazioni ufficiali",
+          "snippet": "",
+          "url": "https://www.livornotoday.it/sport/calcio/live-livorno-vado-diretta-streaming-seriec.html",
+          "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNUrQN_gHhC7g_vP9X5b5MBYkvNycYvOOzwm_BBVGRLhudsE9WjIRrRaeSJPc",
+          "source": "LivornoToday"
+        },
+        {
+          "title": "Livorno-Vado su Radio Bruno dalle 21 di mercoledì 16 settembre",
+          "snippet": "",
+          "url": "https://www.radiobruno.it/livorno-vado-su-radio-bruno-dalle-21-di-mercoledi-16-settembre/",
+          "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsiYOcbqTojEjEXOBWgu-PBjTivILolAJiTFBSC2akdizqbTAK50TaAdvBHGM",
+          "source": "Radio Bruno"
+        },
+        {
+          "title": "Michele Maccorin di Pordenone designato per Livorno-Vado, è una prima assoluto per gli amaranto",
+          "snippet": "",
+          "url": "https://www.livorno24.com/michele-maccorin-di-pordenone-designato-per-livorno-vado-e-una-prima-assoluto-per-gli-amaranto/",
+          "picture": "",
+          "source": "Livorno 24"
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "title": "narges mohammadi",
+      "key": "narges mohammadi",
+      "normalized_title": "narges mohammadi",
+      "category": "News",
+      "status": "EMERGING",
+      "acceleration": "NONE",
+      "score": 26.2,
+      "traffic": "200+",
+      "traffic_level": 2,
+      "traffic_value": 200,
+      "first_seen": "2026-09-16T20:59:38.774324+02:00",
+      "last_seen": "2026-09-16T20:59:38.774324+02:00",
+      "appearances": 1,
+      "duration_minutes": 0,
+      "momentum": 0,
+      "momentum_30m": 0,
+      "momentum_1h": 0,
+      "momentum_3h": 0,
+      "momentum_status": "FLAT",
+      "why_now": "3 notizie da 3 fonti; nuova entrata nel radar",
+      "change_30m_bands": null,
+      "change_1h_bands": null,
+      "change_3h_bands": null,
+      "change_6h_bands": null,
+      "change_24h_bands": null,
+      "direction_30m": "UNKNOWN",
+      "direction_1h": "UNKNOWN",
+      "direction_3h": "UNKNOWN",
+      "occurrences_1h": 0,
+      "occurrences_3h": 0,
+      "occurrences_6h": 0,
+      "news_count": 3,
+      "source_count": 3,
+      "sources": [
+        "Amnesty International Italia",
+        "CNN",
+        "la Repubblica"
+      ],
+      "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQfNYVz8nlpZec2YFytAiVif3hMsx5OaLlZiAmjGrABrR82-SF_6L7heiJIRbQ",
+      "picture_source": "CNN",
+      "news": [
+        {
+          "title": "Nobel peace laureate Narges Mohammadi describes how she smuggled writing fragments out of prison to write memoir",
+          "snippet": "",
+          "url": "https://www.cnn.com/2026/09/16/middleeast/narges-mohammadi-interview-intl",
+          "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQfNYVz8nlpZec2YFytAiVif3hMsx5OaLlZiAmjGrABrR82-SF_6L7heiJIRbQ",
+          "source": "CNN"
+        },
+        {
+          "title": "Iran: crimini contro l’umanità nella repressione delle proteste",
+          "snippet": "",
+          "url": "https://www.amnesty.it/iran-crimini-contro-umanita-repressione-proteste/",
+          "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzwlcPIGN54eQF4akqzASY4FCwuwK5vabyu2f85XJNAwZIidK2lYepR3zDz10",
+          "source": "Amnesty International Italia"
+        },
+        {
+          "title": "L’ipocrisia della sinistra verso le donne iraniane: la libertà è anche un nostro diritto, non un valore occid…",
+          "snippet": "",
+          "url": "https://www.repubblica.it/esteri/2026/09/16/news/ipocrisia_sinistra_donne_iraniane_liberta_e_anche_nostro_diritto_non_valore_occidentale-425588536/",
+          "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTBNFrvUgPoXPXyU_l0TkIVM4SmooJmKBuiVvAxG7jfWoomoJlmMMh5WG1fbTs",
+          "source": "la Repubblica"
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "title": "putin",
+      "key": "putin",
+      "normalized_title": "putin",
+      "category": "News",
+      "status": "EMERGING",
+      "acceleration": "NONE",
+      "score": 26.2,
+      "traffic": "200+",
+      "traffic_level": 2,
+      "traffic_value": 200,
+      "first_seen": "2026-09-16T20:59:38.774324+02:00",
+      "last_seen": "2026-09-16T20:59:38.774324+02:00",
+      "appearances": 1,
+      "duration_minutes": 0,
+      "momentum": 0,
+      "momentum_30m": 0,
+      "momentum_1h": 0,
+      "momentum_3h": 0,
+      "momentum_status": "FLAT",
+      "why_now": "3 notizie da 3 fonti; nuova entrata nel radar",
+      "change_30m_bands": null,
+      "change_1h_bands": null,
+      "change_3h_bands": null,
+      "change_6h_bands": null,
+      "change_24h_bands": null,
+      "direction_30m": "UNKNOWN",
+      "direction_1h": "UNKNOWN",
+      "direction_3h": "UNKNOWN",
+      "occurrences_1h": 0,
+      "occurrences_3h": 0,
+      "occurrences_6h": 0,
+      "news_count": 3,
+      "source_count": 3,
+      "sources": [
+        "Il Post",
+        "Il Sole 24 ORE",
+        "Sky TG24"
+      ],
+      "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS67M4nIxGhMJBJ0llzWi1ji-ZxvD5cjEzSE7-sEcbeHauD-Ytdu4f6jd8N724",
+      "picture_source": "Sky TG24",
+      "news": [
+        {
+          "title": "Putin chiama i russi alle urne: 'Nessuno riuscirà a dividerci'. LIVE",
+          "snippet": "",
+          "url": "https://tg24.sky.it/mondo/2026/09/16/guerra-ucraina-russia-ultime-notizie-diretta",
+          "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS67M4nIxGhMJBJ0llzWi1ji-ZxvD5cjEzSE7-sEcbeHauD-Ytdu4f6jd8N724",
+          "source": "Sky TG24"
+        },
+        {
+          "title": "Putin chiama i russi alle urne: «Nessuno riuscirà a dividerci»",
+          "snippet": "",
+          "url": "https://www.ilsole24ore.com/art/fbi-russia-pianifica-omicidi-mirati-usa-ed-europa-AJrmEdEB",
+          "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQaCtpKfTy0HuJyrepIxk2noFZDCePP_OAU9Xi7V3OuXdLoicSy82ErejZ43wg",
+          "source": "Il Sole 24 ORE"
+        },
+        {
+          "title": "Dibattiti politici che non lo sono, in Russia",
+          "snippet": "",
+          "url": "https://www.ilpost.it/2026/09/14/dibattiti-politici-russia-elezioni-legislative-2026/",
+          "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdVt6arvkscH78giZ9VeceO1o6PVOig02U8ZWuiXqzNve4k2-uXA4taRs6Ta0",
+          "source": "Il Post"
+        }
+      ],
+      "rank": 5
+    },
+    {
+      "title": "ursula von der leyen",
+      "key": "ursula von der leyen",
+      "normalized_title": "ursula von der leyen",
+      "category": "AI",
+      "status": "EMERGING",
+      "acceleration": "NONE",
+      "score": 26.2,
+      "traffic": "200+",
+      "traffic_level": 2,
+      "traffic_value": 200,
+      "first_seen": "2026-09-16T20:59:38.774324+02:00",
+      "last_seen": "2026-09-16T20:59:38.774324+02:00",
+      "appearances": 1,
+      "duration_minutes": 0,
+      "momentum": 0,
+      "momentum_30m": 0,
+      "momentum_1h": 0,
+      "momentum_3h": 0,
+      "momentum_status": "FLAT",
+      "why_now": "3 notizie da 3 fonti; nuova entrata nel radar",
+      "change_30m_bands": null,
+      "change_1h_bands": null,
+      "change_3h_bands": null,
+      "change_6h_bands": null,
+      "change_24h_bands": null,
+      "direction_30m": "UNKNOWN",
+      "direction_1h": "UNKNOWN",
+      "direction_3h": "UNKNOWN",
+      "occurrences_1h": 0,
+      "occurrences_3h": 0,
+      "occurrences_6h": 0,
+      "news_count": 3,
+      "source_count": 3,
+      "sources": [
+        "ANSA",
+        "Avvenire",
+        "Il Foglio"
+      ],
+      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRYh3hn6IECPh8QDn_QZzswoQIVr11IlPlQlRasnieJ_VU9wbFJw2l3bKAgzk",
+      "picture_source": "Avvenire",
+      "news": [
+        {
+          "title": "Social, Ucraina, migranti: Von der Leyen traccia la nuova rotta dell’Ue",
+          "snippet": "",
+          "url": "https://www.avvenire.it/attualita/minori-ucraina-migranti-von-der-leyen-traccia-la-nuova-rotta-dellue_113099",
+          "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRYh3hn6IECPh8QDn_QZzswoQIVr11IlPlQlRasnieJ_VU9wbFJw2l3bKAgzk",
+          "source": "Avvenire"
+        },
+        {
+          "title": "Cosa ha detto Ursula von der Leyen nel discorso sullo Stato dell'Unione",
+          "snippet": "",
+          "url": "https://www.ilfoglio.it/esteri/2026/09/16/news/cosa-ha-detto-von-der-leyen-nel-discorso-sullo-stato-dellunione--407733",
+          "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUuT5zwWGCfnkewYB1YXTgNMON_23kXYzEqSu_4NLNQE3GqJnQ9e-R6-D9leU",
+          "source": "Il Foglio"
+        },
+        {
+          "title": "La road map di von der Leyen per un'Europa geopolitica",
+          "snippet": "",
+          "url": "https://www.ansa.it/europa/notizie/rubriche/altrenews/2026/09/16/ansa-scheda-la-road-map-di-von-der-leyen-per-uneuropa-geopolitica_519f93f9-ca24-4e8a-b410-8436553c8e38.html",
+          "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRdW0SHJdT4D_8vPrVwBLmumwv3-weg3pnWee0LPAVPFXw1ZAbdvS9GiI3Nsjo",
+          "source": "ANSA"
+        }
+      ],
+      "rank": 6
+    },
+    {
+      "title": "alex marquez",
+      "key": "alex marquez",
+      "normalized_title": "alex marquez",
+      "category": "News",
+      "status": "EMERGING",
+      "acceleration": "NONE",
+      "score": 26.2,
+      "traffic": "200+",
+      "traffic_level": 2,
+      "traffic_value": 200,
+      "first_seen": "2026-09-16T20:59:38.774324+02:00",
+      "last_seen": "2026-09-16T20:59:38.774324+02:00",
+      "appearances": 1,
+      "duration_minutes": 0,
+      "momentum": 0,
+      "momentum_30m": 0,
+      "momentum_1h": 0,
+      "momentum_3h": 0,
+      "momentum_status": "FLAT",
+      "why_now": "3 notizie da 3 fonti; nuova entrata nel radar",
+      "change_30m_bands": null,
+      "change_1h_bands": null,
+      "change_3h_bands": null,
+      "change_6h_bands": null,
+      "change_24h_bands": null,
+      "direction_30m": "UNKNOWN",
+      "direction_1h": "UNKNOWN",
+      "direction_3h": "UNKNOWN",
+      "occurrences_1h": 0,
+      "occurrences_3h": 0,
+      "occurrences_6h": 0,
+      "news_count": 3,
+      "source_count": 3,
+      "sources": [
+        "MotoGP News",
+        "SPEEDWEEK.com",
+        "www.motogp.com"
+      ],
+      "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4_TOu_gKqrfxrMfhu78K2C8weXmReJsWcz3xmX7AUNXMtT1f99eE6Bb-aH_U",
+      "picture_source": "SPEEDWEEK.com",
+      "news": [
+        {
+          "title": "Alex Márquez on his move to KTM: “I believe in the project!”",
+          "snippet": "",
+          "url": "https://www.speedweek.com/en/a/motogp/alex-marquez-ktm-move-motogp-future",
+          "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4_TOu_gKqrfxrMfhu78K2C8weXmReJsWcz3xmX7AUNXMtT1f99eE6Bb-aH_U",
+          "source": "SPEEDWEEK.com"
+        },
+        {
+          "title": "Alex Marquez’s critics told to consider how Luca Marini would treat Valentino Rossi on track",
+          "snippet": "",
+          "url": "https://www.motogpnews.com/2026/09/16/alex-marquezs-critics-told-to-consider-how-luca-marini-would-treat-valentino-rossi-on-track/",
+          "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3BUOXstRXiJNIbv4ES-DgI4FY2JPcRqnOjCMaqd9_Lj2-y3v7nat7R-t6xVs",
+          "source": "MotoGP News"
+        },
+        {
+          "title": "Alex Marquez: \"In qualifica abbiamo perso l'opportunità di vincere\"",
+          "snippet": "",
+          "url": "https://www.motogp.com/it/videos/2026/09/14/alex-marquez-wir-haben-die-chance-auf-den-sieg-schon-im-qualifying-verspielt/1089943",
+          "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjVdIgEYE5Q9e0IOmaKbfLxS4YSXBRv3440u7UF66eM3uel1dc9QNbsT_GCUk",
+          "source": "www.motogp.com"
+        }
+      ],
+      "rank": 7
+    },
+    {
+      "title": "concorrenti grande fratello 2026",
+      "key": "concorrenti grande fratello 2026",
+      "normalized_title": "concorrenti grande fratello 2026",
+      "category": "AI",
       "status": "HOT",
       "acceleration": "NONE",
-      "score": 30.3,
-      "traffic": "20000+",
-      "traffic_level": 8,
-      "traffic_value": 20000,
-      "first_seen": "2026-09-12T20:21:19.482745+02:00",
-      "last_seen": "2026-09-16T20:49:02.974843+02:00",
-      "appearances": 3,
-      "duration_minutes": 5787,
+      "score": 25.0,
+      "traffic": "500+",
+      "traffic_level": 3,
+      "traffic_value": 500,
+      "first_seen": "2026-09-16T20:49:02.974843+02:00",
+      "last_seen": "2026-09-16T20:59:38.774324+02:00",
+      "appearances": 2,
+      "duration_minutes": 10,
       "momentum": 0,
       "momentum_30m": 0,
       "momentum_1h": 0,
@@ -178,75 +508,9 @@
       "direction_30m": "UNKNOWN",
       "direction_1h": "UNKNOWN",
       "direction_3h": "UNKNOWN",
-      "occurrences_1h": 0,
-      "occurrences_3h": 0,
-      "occurrences_6h": 0,
-      "news_count": 3,
-      "source_count": 3,
-      "sources": [
-        "Bolognafc",
-        "Corriere Bergamo",
-        "La Gazzetta dello Sport"
-      ],
-      "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTGZFr16s-NJXI3x18LtDhP1NiliHIteai0hSTBMwPCZSH9IlHIOJlL8aU3JBI",
-      "picture_source": "La Gazzetta dello Sport",
-      "news": [
-        {
-          "title": "Tedesco, Milutinovic, De Boer, Bianchi che voleva vendere Totti e poi... Quando il profeta dall'estero fa flop",
-          "snippet": "",
-          "url": "https://www.gazzetta.it/Calcio/Serie-A/storie/16-09-2026/allenatori-stranieri-flop-serie-a-tedesco-de-boer-menotti-bianchi/pronti-via-anzi-addio.shtml",
-          "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTGZFr16s-NJXI3x18LtDhP1NiliHIteai0hSTBMwPCZSH9IlHIOJlL8aU3JBI",
-          "source": "La Gazzetta dello Sport"
-        },
-        {
-          "title": "Nota del Club",
-          "snippet": "",
-          "url": "https://www.bolognafc.it/nota-del-club-45/",
-          "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF5jkWnGH13Q94borMCgI8hPlihSD6Uz_evMasmkQsTqiT7R6Yi097iff1qzY",
-          "source": "Bolognafc"
-        },
-        {
-          "title": "Atalanta, Palladino risolve il contratto con i Percassi: sarà il nuovo allenatore del Bologna",
-          "snippet": "",
-          "url": "https://bergamo.corriere.it/notizie/26_settembre_16/atalanta-palladino-risolve-il-contratto-con-i-percassi-sara-il-nuovo-allenatore-del-bologna-811ffc36-cd60-41c1-8f82-0157172b1xlk.shtml",
-          "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSP0c7seLAUbDgRqyAYgeg8ENRwqGsj9u2EoKSWAGWf21hp7FviXjyksfMdLnk",
-          "source": "Corriere Bergamo"
-        }
-      ],
-      "rank": 3
-    },
-    {
-      "title": "concorrenti grande fratello 2026",
-      "key": "concorrenti grande fratello 2026",
-      "normalized_title": "concorrenti grande fratello 2026",
-      "category": "AI",
-      "status": "EMERGING",
-      "acceleration": "NONE",
-      "score": 28.7,
-      "traffic": "500+",
-      "traffic_level": 3,
-      "traffic_value": 500,
-      "first_seen": "2026-09-16T20:49:02.974843+02:00",
-      "last_seen": "2026-09-16T20:49:02.974843+02:00",
-      "appearances": 1,
-      "duration_minutes": 0,
-      "momentum": 0,
-      "momentum_30m": 0,
-      "momentum_1h": 0,
-      "momentum_3h": 0,
-      "momentum_status": "FLAT",
-      "why_now": "3 notizie da 3 fonti; nuova entrata nel radar",
-      "change_30m_bands": null,
-      "change_1h_bands": null,
-      "change_3h_bands": null,
-      "change_6h_bands": null,
-      "change_24h_bands": null,
-      "direction_30m": "UNKNOWN",
-      "direction_1h": "UNKNOWN",
-      "direction_3h": "UNKNOWN",
-      "occurrences_1h": 0,
-      "occurrences_3h": 0,
-      "occurrences_6h": 0,
+      "occurrences_1h": 1,
+      "occurrences_3h": 1,
+      "occurrences_6h": 1,
       "news_count": 3,
       "source_count": 3,
       "sources": [
@@ -279,95 +543,29 @@
           "source": "ANSA"
         }
       ],
-      "rank": 4
-    },
-    {
-      "title": "vis pesaro - reggiana",
-      "key": "vis pesaro reggiana",
-      "normalized_title": "vis pesaro reggiana",
-      "category": "Business",
-      "status": "EMERGING",
-      "acceleration": "NONE",
-      "score": 28.7,
-      "traffic": "500+",
-      "traffic_level": 3,
-      "traffic_value": 500,
-      "first_seen": "2026-09-16T20:49:02.974843+02:00",
-      "last_seen": "2026-09-16T20:49:02.974843+02:00",
-      "appearances": 1,
-      "duration_minutes": 0,
-      "momentum": 0,
-      "momentum_30m": 0,
-      "momentum_1h": 0,
-      "momentum_3h": 0,
-      "momentum_status": "FLAT",
-      "why_now": "3 notizie da 3 fonti; nuova entrata nel radar",
-      "change_30m_bands": null,
-      "change_1h_bands": null,
-      "change_3h_bands": null,
-      "change_6h_bands": null,
-      "change_24h_bands": null,
-      "direction_30m": "UNKNOWN",
-      "direction_1h": "UNKNOWN",
-      "direction_3h": "UNKNOWN",
-      "occurrences_1h": 0,
-      "occurrences_3h": 0,
-      "occurrences_6h": 0,
-      "news_count": 3,
-      "source_count": 3,
-      "sources": [
-        "Corriere Adriatico",
-        "Gazzetta di Reggio",
-        "Il Resto del Carlino"
-      ],
-      "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTKL-wHzr9oE1BT1V7RTtEFcoF7XI7kUoZ0xRFD-1PBAi6khibZJZCu_q9kzNw",
-      "picture_source": "Il Resto del Carlino",
-      "news": [
-        {
-          "title": "\"Attenzione, non sarà affatto una passeggiata\"",
-          "snippet": "",
-          "url": "https://www.ilrestodelcarlino.it/reggio-emilia/cronaca/attenzione-non-sara-affatto-una-cb56000f",
-          "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTKL-wHzr9oE1BT1V7RTtEFcoF7XI7kUoZ0xRFD-1PBAi6khibZJZCu_q9kzNw",
-          "source": "Il Resto del Carlino"
-        },
-        {
-          "title": "Vis, Reggiana nel mirino. Sfida stasera al Benelli. Gennari: «Pronti a dare tutto». Per i biancorossi 4 assenti",
-          "snippet": "",
-          "url": "https://www.corriereadriatico.it/sport/vis_pesaro_reggiana_benelli_partita_ultimissime-9765141.html",
-          "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRQP3qYco7dldmeUzwRL3GtMfS4Pm-Bem7CfX9-5aMMvDKTgKNXQqAc8TL8rTE",
-          "source": "Corriere Adriatico"
-        },
-        {
-          "title": "Vis Pesaro-Reggiana, per i granata la missione è spiccare il volo",
-          "snippet": "",
-          "url": "https://www.gazzettadireggio.it/sport/2026/09/16/news/vis-pesaro-reggiana-per-i-granata-la-missione-e-spiccare-il-volo-1.100918298",
-          "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRphrqktTFEImdVxCqyvwJnkc-DLdHcMQ6K_zqtt7W7t4hvYJJv-2Gd1BS8iY",
-          "source": "Gazzetta di Reggio"
-        }
-      ],
-      "rank": 5
+      "rank": 8
     },
     {
       "title": "cars",
       "key": "cars",
       "normalized_title": "cars",
       "category": "Business",
-      "status": "EMERGING",
+      "status": "HOT",
       "acceleration": "NONE",
-      "score": 26.2,
+      "score": 22.5,
       "traffic": "200+",
       "traffic_level": 2,
       "traffic_value": 200,
       "first_seen": "2026-09-16T20:49:02.974843+02:00",
-      "last_seen": "2026-09-16T20:49:02.974843+02:00",
-      "appearances": 1,
-      "duration_minutes": 0,
+      "last_seen": "2026-09-16T20:59:38.774324+02:00",
+      "appearances": 2,
+      "duration_minutes": 10,
       "momentum": 0,
       "momentum_30m": 0,
       "momentum_1h": 0,
       "momentum_3h": 0,
       "momentum_status": "FLAT",
-      "why_now": "3 notizie da 3 fonti; nuova entrata nel radar",
+      "why_now": "3 notizie da 3 fonti",
       "change_30m_bands": null,
       "change_1h_bands": null,
       "change_3h_bands": null,
@@ -376,9 +574,9 @@
       "direction_30m": "UNKNOWN",
       "direction_1h": "UNKNOWN",
       "direction_3h": "UNKNOWN",
-      "occurrences_1h": 0,
-      "occurrences_3h": 0,
-      "occurrences_6h": 0,
+      "occurrences_1h": 1,
+      "occurrences_3h": 1,
+      "occurrences_6h": 1,
       "news_count": 3,
       "source_count": 3,
       "sources": [
@@ -411,161 +609,29 @@
           "source": "FOX 13 Tampa Bay"
         }
       ],
-      "rank": 6
-    },
-    {
-      "title": "sunderland - az",
-      "key": "sunderland az",
-      "normalized_title": "sunderland az",
-      "category": "AI",
-      "status": "EMERGING",
-      "acceleration": "NONE",
-      "score": 26.2,
-      "traffic": "200+",
-      "traffic_level": 2,
-      "traffic_value": 200,
-      "first_seen": "2026-09-16T20:49:02.974843+02:00",
-      "last_seen": "2026-09-16T20:49:02.974843+02:00",
-      "appearances": 1,
-      "duration_minutes": 0,
-      "momentum": 0,
-      "momentum_30m": 0,
-      "momentum_1h": 0,
-      "momentum_3h": 0,
-      "momentum_status": "FLAT",
-      "why_now": "3 notizie da 3 fonti; nuova entrata nel radar",
-      "change_30m_bands": null,
-      "change_1h_bands": null,
-      "change_3h_bands": null,
-      "change_6h_bands": null,
-      "change_24h_bands": null,
-      "direction_30m": "UNKNOWN",
-      "direction_1h": "UNKNOWN",
-      "direction_3h": "UNKNOWN",
-      "occurrences_1h": 0,
-      "occurrences_3h": 0,
-      "occurrences_6h": 0,
-      "news_count": 3,
-      "source_count": 3,
-      "sources": [
-        "BBC",
-        "OneFootball",
-        "The Guardian"
-      ],
-      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTTuy5e_pTjGHKOPkdEgE99t9BLwGN-bQwx7pHrZb-i7DNPwZNxea75JtjYpU",
-      "picture_source": "BBC",
-      "news": [
-        {
-          "title": "UEFA Europa League LIVE: Sunderland vs AZ Alkmaar - live text commentary, stats and score updates",
-          "snippet": "",
-          "url": "https://www.bbc.com/sport/football/live/ckz7zpw38n59t",
-          "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTTuy5e_pTjGHKOPkdEgE99t9BLwGN-bQwx7pHrZb-i7DNPwZNxea75JtjYpU",
-          "source": "BBC"
-        },
-        {
-          "title": "Xhaka promises ‘fire’ from Sunderland on long-awaited return to Europe",
-          "snippet": "",
-          "url": "https://www.theguardian.com/football/2026/sep/16/xhaka-sunderland-european-riches-alkmaar",
-          "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ61RyCXaZ3u8BA0PSByBShh1EXlFMw8IIWD-X6JNg1pheHQC-HhQ-lkmyftu4",
-          "source": "The Guardian"
-        },
-        {
-          "title": "Sir Bob Murray says Sunderland’s European return feels like a dream and hints at plans",
-          "snippet": "",
-          "url": "https://onefootball.com/en/news/sir-bob-murray-says-sunderlands-european-return-feels-like-a-dream-and-hints-at-plans-43469730",
-          "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRMg3-AdEkVmCa6kYgBIUjK0DapKvIJJxpQdJdPT-rXQ-_5IS7i7vx9RZwzQBE",
-          "source": "OneFootball"
-        }
-      ],
-      "rank": 7
-    },
-    {
-      "title": "grosseto calcio",
-      "key": "grosseto calcio",
-      "normalized_title": "grosseto calcio",
-      "category": "Sport",
-      "status": "EMERGING",
-      "acceleration": "NONE",
-      "score": 24.3,
-      "traffic": "100+",
-      "traffic_level": 1,
-      "traffic_value": 100,
-      "first_seen": "2026-09-16T20:49:02.974843+02:00",
-      "last_seen": "2026-09-16T20:49:02.974843+02:00",
-      "appearances": 1,
-      "duration_minutes": 0,
-      "momentum": 0,
-      "momentum_30m": 0,
-      "momentum_1h": 0,
-      "momentum_3h": 0,
-      "momentum_status": "FLAT",
-      "why_now": "3 notizie da 3 fonti; nuova entrata nel radar",
-      "change_30m_bands": null,
-      "change_1h_bands": null,
-      "change_3h_bands": null,
-      "change_6h_bands": null,
-      "change_24h_bands": null,
-      "direction_30m": "UNKNOWN",
-      "direction_1h": "UNKNOWN",
-      "direction_3h": "UNKNOWN",
-      "occurrences_1h": 0,
-      "occurrences_3h": 0,
-      "occurrences_6h": 0,
-      "news_count": 3,
-      "source_count": 3,
-      "sources": [
-        "Campobasso FC",
-        "RaiNews",
-        "www.sportdaily.it"
-      ],
-      "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTb_Wt2ZoUqJMZ4eFF8lXg0o0GYVXJGMtkOX1okKgfW9gYoTNgHRIDsuDLZ7Wo",
-      "picture_source": "RaiNews",
-      "news": [
-        {
-          "title": "Nel turno infrasettimanale Campobasso in trasferta a Grosseto",
-          "snippet": "",
-          "url": "https://www.rainews.it/tgr/molise/video/2026/09/calcio-serie-c-giornata-5-grosseto-campobasso-ea5dd645-bee7-4e35-b591-4991d61d9004.html",
-          "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTb_Wt2ZoUqJMZ4eFF8lXg0o0GYVXJGMtkOX1okKgfW9gYoTNgHRIDsuDLZ7Wo",
-          "source": "RaiNews"
-        },
-        {
-          "title": "Serie C: diretta Grosseto-Campobasso, Mercoledì 16 settembre",
-          "snippet": "",
-          "url": "https://www.sportdaily.it/diretta-formazioni-grosseto-campobasso-16-settembre-2026",
-          "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQEfngMTLexlS4YcfJHH-RddnA7OkVhFTwjdnmTHsZkpJIGZ0_7h0kdAYKTguE",
-          "source": "www.sportdaily.it"
-        },
-        {
-          "title": "Grosseto-Campobasso, al via la vendita per il settore ospiti",
-          "snippet": "",
-          "url": "https://cb1919.com/comunicato-ufficiale/grosseto-campobasso-al-via-la-vendita-per-il-settore-ospiti/",
-          "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROLEqvX4_gVFoUa89YOGvTrPO19k-ZWa-A6yK6c8kk8yAClMvEqnCHPMyycxU",
-          "source": "Campobasso FC"
-        }
-      ],
-      "rank": 8
+      "rank": 9
     },
     {
       "title": "chelsy davy",
       "key": "chelsy davy",
       "normalized_title": "chelsy davy",
       "category": "AI",
-      "status": "EMERGING",
+      "status": "HOT",
       "acceleration": "NONE",
-      "score": 22.8,
+      "score": 19.1,
       "traffic": "100+",
       "traffic_level": 1,
       "traffic_value": 100,
       "first_seen": "2026-09-16T20:49:02.974843+02:00",
-      "last_seen": "2026-09-16T20:49:02.974843+02:00",
-      "appearances": 1,
-      "duration_minutes": 0,
+      "last_seen": "2026-09-16T20:59:38.774324+02:00",
+      "appearances": 2,
+      "duration_minutes": 10,
       "momentum": 0,
       "momentum_30m": 0,
       "momentum_1h": 0,
       "momentum_3h": 0,
       "momentum_status": "FLAT",
-      "why_now": "2 notizie da 2 fonti; nuova entrata nel radar",
+      "why_now": "2 notizie da 2 fonti",
       "change_30m_bands": null,
       "change_1h_bands": null,
       "change_3h_bands": null,
@@ -574,9 +640,9 @@
       "direction_30m": "UNKNOWN",
       "direction_1h": "UNKNOWN",
       "direction_3h": "UNKNOWN",
-      "occurrences_1h": 0,
-      "occurrences_3h": 0,
-      "occurrences_6h": 0,
+      "occurrences_1h": 1,
+      "occurrences_3h": 1,
+      "occurrences_6h": 1,
       "news_count": 2,
       "source_count": 2,
       "sources": [
@@ -601,72 +667,6 @@
           "source": "Grazia"
         }
       ],
-      "rank": 9
-    },
-    {
-      "title": "risarcimento",
-      "key": "risarcimento",
-      "normalized_title": "risarcimento",
-      "category": "News",
-      "status": "STABLE",
-      "acceleration": "NONE",
-      "score": 16.8,
-      "traffic": "200+",
-      "traffic_level": 2,
-      "traffic_value": 200,
-      "first_seen": "2026-09-13T12:57:49.260348+02:00",
-      "last_seen": "2026-09-16T20:49:02.974843+02:00",
-      "appearances": 8,
-      "duration_minutes": 4791,
-      "momentum": 0,
-      "momentum_30m": 0,
-      "momentum_1h": 0,
-      "momentum_3h": 0,
-      "momentum_status": "FLAT",
-      "why_now": "3 notizie da 3 fonti",
-      "change_30m_bands": null,
-      "change_1h_bands": null,
-      "change_3h_bands": null,
-      "change_6h_bands": null,
-      "change_24h_bands": null,
-      "direction_30m": "UNKNOWN",
-      "direction_1h": "UNKNOWN",
-      "direction_3h": "UNKNOWN",
-      "occurrences_1h": 0,
-      "occurrences_3h": 0,
-      "occurrences_6h": 0,
-      "news_count": 3,
-      "source_count": 3,
-      "sources": [
-        "Il Fatto Quotidiano",
-        "Il Post",
-        "La Gazzetta dello Sport"
-      ],
-      "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzGIo-YBNxWEY8Hycrlg8MxnupKck82ySfYWw2C0FU3HI3yK49zJlpqxnYE2k",
-      "picture_source": "Il Post",
-      "news": [
-        {
-          "title": "Kim Kardashian riceverà un risarcimento simbolico di un euro per la rapina subita a Parigi nel 2016",
-          "snippet": "",
-          "url": "https://www.ilpost.it/2026/09/15/kim-kardashian-risarcimento-un-euro-rapina-parigi-2016/",
-          "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzGIo-YBNxWEY8Hycrlg8MxnupKck82ySfYWw2C0FU3HI3yK49zJlpqxnYE2k",
-          "source": "Il Post"
-        },
-        {
-          "title": "Kim Kardashian, cena a Parigi con Lewis Hamilton dopo la sentenza sulla rapina subita nel 2016",
-          "snippet": "",
-          "url": "https://www.gazzetta.it/spettacolo-tv-gossip/16-09-2026/lewis-hamilton-e-kim-kardashian-cena-romantica-a-parigi-dopo-la-sentenza.shtml",
-          "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUXfuUb67d_KhQNPFV3oDdoPbwUdwTaxpKmH94n2_ttA1bg1c_lbrEHme0vR8",
-          "source": "La Gazzetta dello Sport"
-        },
-        {
-          "title": "\"Cerco responsabilità, non soldi\": Kim Kardashian chiede solo un euro di risarcimento per la rapina da 10 milioni subita a Parigi",
-          "snippet": "",
-          "url": "https://www.ilfattoquotidiano.it/2026/09/16/cerco-responsabilita-non-soldi-kim-kardashian-chiede-solo-un-euro-di-risarcimento-per-la-rapina-da-10-milioni-subita-a-parigi/8507800/",
-          "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSraXNav0Rd9EIUF0SYZXen0wjNdpV96N_ThMEQB0R_Az-NORLf1vH__g5PjLI",
-          "source": "Il Fatto Quotidiano"
-        }
-      ],
       "rank": 10
     }
   ],
@@ -681,7 +681,7 @@
       "ES"
     ],
     "market_count": 6,
-    "global_trend_count": 57,
+    "global_trend_count": 51,
     "crossover_count": 1
   },
   "markets": {
@@ -692,63 +692,63 @@
       "top_trends": [
         {
           "title": "pescara - gubbio",
-          "score": 30.5,
-          "status": "EMERGING",
-          "traffic": "1000+"
-        },
-        {
-          "title": "perugia - spezia",
-          "score": 30.5,
-          "status": "EMERGING",
-          "traffic": "1000+"
-        },
-        {
-          "title": "partite stasera",
-          "score": 30.3,
+          "score": 26.8,
           "status": "HOT",
-          "traffic": "20000+"
+          "traffic": "1000+"
+        },
+        {
+          "title": "barcelona vs racing santander",
+          "score": 26.2,
+          "status": "EMERGING",
+          "traffic": "200+"
+        },
+        {
+          "title": "livorno - vado",
+          "score": 26.2,
+          "status": "EMERGING",
+          "traffic": "200+"
+        },
+        {
+          "title": "narges mohammadi",
+          "score": 26.2,
+          "status": "EMERGING",
+          "traffic": "200+"
+        },
+        {
+          "title": "putin",
+          "score": 26.2,
+          "status": "EMERGING",
+          "traffic": "200+"
+        },
+        {
+          "title": "ursula von der leyen",
+          "score": 26.2,
+          "status": "EMERGING",
+          "traffic": "200+"
+        },
+        {
+          "title": "alex marquez",
+          "score": 26.2,
+          "status": "EMERGING",
+          "traffic": "200+"
         },
         {
           "title": "concorrenti grande fratello 2026",
-          "score": 28.7,
-          "status": "EMERGING",
-          "traffic": "500+"
-        },
-        {
-          "title": "vis pesaro - reggiana",
-          "score": 28.7,
-          "status": "EMERGING",
+          "score": 25.0,
+          "status": "HOT",
           "traffic": "500+"
         },
         {
           "title": "cars",
-          "score": 26.2,
-          "status": "EMERGING",
+          "score": 22.5,
+          "status": "HOT",
           "traffic": "200+"
-        },
-        {
-          "title": "sunderland - az",
-          "score": 26.2,
-          "status": "EMERGING",
-          "traffic": "200+"
-        },
-        {
-          "title": "grosseto calcio",
-          "score": 24.3,
-          "status": "EMERGING",
-          "traffic": "100+"
         },
         {
           "title": "chelsy davy",
-          "score": 22.8,
-          "status": "EMERGING",
+          "score": 19.1,
+          "status": "HOT",
           "traffic": "100+"
-        },
-        {
-          "title": "risarcimento",
-          "score": 16.8,
-          "status": "STABLE",
-          "traffic": "200+"
         }
       ]
     },
@@ -758,64 +758,64 @@
       "trend_count": 10,
       "top_trends": [
         {
-          "title": "cnbc",
+          "title": "30 year mortgage rates",
+          "score": 36.8,
+          "status": "EMERGING",
+          "traffic": "10000+"
+        },
+        {
+          "title": "s&p 500",
           "score": 34.9,
           "status": "EMERGING",
           "traffic": "5000+"
         },
         {
-          "title": "spy stock",
-          "score": 34.9,
-          "status": "EMERGING",
-          "traffic": "5000+"
-        },
-        {
-          "title": "tommy pham",
+          "title": "levante - athletic",
           "score": 30.5,
           "status": "EMERGING",
           "traffic": "1000+"
         },
         {
-          "title": "spy",
-          "score": 30.5,
-          "status": "EMERGING",
-          "traffic": "1000+"
-        },
-        {
-          "title": "sunderland vs az alkmaar",
-          "score": 30.5,
-          "status": "EMERGING",
-          "traffic": "1000+"
-        },
-        {
-          "title": "mary cosby",
-          "score": 30.5,
-          "status": "EMERGING",
-          "traffic": "1000+"
-        },
-        {
-          "title": "bloomberg",
+          "title": "barcelona vs racing santander",
           "score": 28.7,
           "status": "EMERGING",
           "traffic": "500+"
         },
         {
+          "title": "guardians",
+          "score": 28.4,
+          "status": "HOT",
+          "traffic": "10000+"
+        },
+        {
+          "title": "jordan mason",
+          "score": 26.3,
+          "status": "HOT",
+          "traffic": "1000+"
+        },
+        {
+          "title": "wsj",
+          "score": 24.3,
+          "status": "EMERGING",
+          "traffic": "100+"
+        },
+        {
+          "title": "qqq stock",
+          "score": 24.3,
+          "status": "EMERGING",
+          "traffic": "100+"
+        },
+        {
           "title": "qqq",
-          "score": 24.3,
-          "status": "EMERGING",
-          "traffic": "100+"
+          "score": 22.5,
+          "status": "HOT",
+          "traffic": "200+"
         },
         {
-          "title": "fc27",
-          "score": 24.3,
-          "status": "EMERGING",
+          "title": "s and p 500",
+          "score": 20.1,
+          "status": "HOT",
           "traffic": "100+"
-        },
-        {
-          "title": "sp500",
-          "score": 20.6,
-          "status": "STABLE",
-          "traffic": "2000+"
         }
       ]
     },
@@ -825,62 +825,62 @@
       "trend_count": 10,
       "top_trends": [
         {
-          "title": "kristin scott thomas",
-          "score": 38.7,
+          "title": "carabao",
+          "score": 41.2,
           "status": "EMERGING",
-          "traffic": "20000+"
+          "traffic": "50000+"
         },
         {
-          "title": "itv",
-          "score": 30.5,
+          "title": "levante vs athletic",
+          "score": 26.2,
           "status": "EMERGING",
-          "traffic": "1000+"
+          "traffic": "200+"
         },
         {
-          "title": "shea lacey",
-          "score": 30.5,
+          "title": "fc barcelona – racing santander",
+          "score": 26.2,
           "status": "EMERGING",
-          "traffic": "1000+"
+          "traffic": "200+"
+        },
+        {
+          "title": "leverkusen vs celje",
+          "score": 26.2,
+          "status": "EMERGING",
+          "traffic": "200+"
         },
         {
           "title": "tv guide",
-          "score": 28.7,
-          "status": "EMERGING",
+          "score": 25.0,
+          "status": "HOT",
           "traffic": "500+"
         },
         {
           "title": "olympiakos – jagiellonia białystok",
-          "score": 26.2,
-          "status": "EMERGING",
+          "score": 22.5,
+          "status": "HOT",
           "traffic": "200+"
         },
         {
           "title": "kabul",
-          "score": 26.2,
-          "status": "EMERGING",
-          "traffic": "200+"
-        },
-        {
-          "title": "olympiacos vs jagiellonia białystok",
-          "score": 26.2,
-          "status": "EMERGING",
+          "score": 22.5,
+          "status": "HOT",
           "traffic": "200+"
         },
         {
           "title": "nick jonas",
-          "score": 24.3,
-          "status": "EMERGING",
+          "score": 20.6,
+          "status": "HOT",
           "traffic": "100+"
         },
         {
-          "title": "dow jones",
-          "score": 24.3,
-          "status": "EMERGING",
+          "title": "s&p 500",
+          "score": 16.7,
+          "status": "STABLE",
           "traffic": "100+"
         },
         {
           "title": "nasdaq 100",
-          "score": 20.1,
+          "score": 16.4,
           "status": "HOT",
           "traffic": "100+"
         }
@@ -892,63 +892,63 @@
       "trend_count": 10,
       "top_trends": [
         {
-          "title": "rbb",
+          "title": "barcelona vs racing santander",
           "score": 28.7,
           "status": "EMERGING",
           "traffic": "500+"
         },
         {
-          "title": "tv programm heute abend",
+          "title": "برشلونة ضد رسينغ",
           "score": 28.7,
           "status": "EMERGING",
           "traffic": "500+"
         },
         {
-          "title": "sunderland – az",
+          "title": "fc barcelona – racing santander",
+          "score": 28.7,
+          "status": "EMERGING",
+          "traffic": "500+"
+        },
+        {
+          "title": "levante – ath. bilbao",
           "score": 26.2,
           "status": "EMERGING",
           "traffic": "200+"
         },
         {
-          "title": "hella von sinnen",
+          "title": "zauberhafte schwestern 2",
           "score": 26.2,
           "status": "EMERGING",
           "traffic": "200+"
         },
         {
-          "title": "nasdaq 100",
+          "title": "ολυμπιακόσ εναντίον γιαγκιελόνια μπιαλίστοκ",
           "score": 26.2,
           "status": "EMERGING",
           "traffic": "200+"
         },
         {
-          "title": "archäologie",
-          "score": 26.2,
-          "status": "EMERGING",
-          "traffic": "200+"
-        },
-        {
-          "title": "milan vs benfica",
+          "title": "росія",
           "score": 26.2,
           "status": "EMERGING",
           "traffic": "200+"
         },
         {
           "title": "gwyneth paltrow",
-          "score": 26.2,
-          "status": "EMERGING",
+          "score": 22.5,
+          "status": "HOT",
           "traffic": "200+"
         },
         {
-          "title": "simon rolfes",
-          "score": 26.2,
-          "status": "EMERGING",
+          "title": "sunderland – az",
+          "score": 22.5,
+          "status": "HOT",
           "traffic": "200+"
         },
         {
-          "title": "zurück in die zukunft 2",
-          "score": 17.7,
-          "status": "EMERGING",
+          "title": "travis kelce",
+          "score": 14.4,
+          "status": "STABLE",
           "traffic": "200+"
         }
       ]
@@ -959,64 +959,64 @@
       "trend_count": 10,
       "top_trends": [
         {
-          "title": "anderlecht – lyon",
+          "title": "barcelone – santander",
           "score": 36.8,
           "status": "EMERGING",
           "traffic": "10000+"
         },
         {
-          "title": "sturm graz – rennes",
-          "score": 31.2,
-          "status": "HOT",
-          "traffic": "5000+"
-        },
-        {
-          "title": "manchester united – brighton",
-          "score": 31.2,
-          "status": "HOT",
-          "traffic": "5000+"
-        },
-        {
-          "title": "ac milan – benfica",
-          "score": 28.7,
-          "status": "HOT",
+          "title": "chaton",
+          "score": 32.4,
+          "status": "EMERGING",
           "traffic": "2000+"
         },
         {
-          "title": "pape paris",
+          "title": "kirghizistan",
+          "score": 32.4,
+          "status": "EMERGING",
+          "traffic": "2000+"
+        },
+        {
+          "title": "levante – ath. bilbao",
+          "score": 30.5,
+          "status": "EMERGING",
+          "traffic": "1000+"
+        },
+        {
+          "title": "kurdistan",
           "score": 28.7,
           "status": "EMERGING",
           "traffic": "500+"
         },
         {
-          "title": "lyman",
+          "title": "barcelona vs racing santander",
+          "score": 28.7,
+          "status": "EMERGING",
+          "traffic": "500+"
+        },
+        {
+          "title": "generation z",
           "score": 26.2,
           "status": "EMERGING",
           "traffic": "200+"
         },
         {
-          "title": "maire de cannes",
+          "title": "joão lucas reis da silva",
           "score": 26.2,
           "status": "EMERGING",
           "traffic": "200+"
         },
         {
-          "title": "sunderland – az",
+          "title": "iq",
           "score": 26.2,
           "status": "EMERGING",
           "traffic": "200+"
         },
         {
-          "title": "aide carburant",
+          "title": "le républicain lorrain",
           "score": 26.2,
           "status": "EMERGING",
           "traffic": "200+"
-        },
-        {
-          "title": "patron incognito",
-          "score": 24.3,
-          "status": "EMERGING",
-          "traffic": "100+"
         }
       ]
     },
@@ -1026,62 +1026,62 @@
       "trend_count": 10,
       "top_trends": [
         {
-          "title": "barcelona vs racing santander",
-          "score": 36.8,
+          "title": "barcelona - racing de santander",
+          "score": 41.2,
           "status": "EMERGING",
-          "traffic": "10000+"
+          "traffic": "50000+"
         },
         {
-          "title": "bombero",
-          "score": 32.4,
-          "status": "EMERGING",
+          "title": "météo demain",
+          "score": 40.7,
+          "status": "HOT",
           "traffic": "2000+"
         },
         {
-          "title": "congreso de los diputados",
-          "score": 30.5,
-          "status": "EMERGING",
-          "traffic": "1000+"
-        },
-        {
-          "title": "coventry city - aston villa",
-          "score": 30.5,
-          "status": "EMERGING",
-          "traffic": "1000+"
+          "title": "bombero",
+          "score": 28.7,
+          "status": "HOT",
+          "traffic": "2000+"
         },
         {
           "title": "levante athletic",
-          "score": 28.7,
+          "score": 26.8,
+          "status": "HOT",
+          "traffic": "1000+"
+        },
+        {
+          "title": "congreso de los diputados",
+          "score": 26.8,
+          "status": "HOT",
+          "traffic": "1000+"
+        },
+        {
+          "title": "arnau ortiz",
+          "score": 26.2,
           "status": "EMERGING",
-          "traffic": "500+"
+          "traffic": "200+"
+        },
+        {
+          "title": "maye musk",
+          "score": 26.2,
+          "status": "EMERGING",
+          "traffic": "200+"
         },
         {
           "title": "barcelone – santander",
-          "score": 26.2,
-          "status": "EMERGING",
-          "traffic": "200+"
+          "score": 25.0,
+          "status": "HOT",
+          "traffic": "500+"
         },
         {
           "title": "leverkusen - celje",
-          "score": 26.2,
-          "status": "EMERGING",
-          "traffic": "200+"
-        },
-        {
-          "title": "sunderland afc - az",
-          "score": 26.2,
-          "status": "EMERGING",
-          "traffic": "200+"
-        },
-        {
-          "title": "alineaciones de deportivo la coruña contra sevilla fc",
-          "score": 26.2,
-          "status": "EMERGING",
+          "score": 22.5,
+          "status": "HOT",
           "traffic": "200+"
         },
         {
           "title": "georgina rodríguez",
-          "score": 21.1,
+          "score": 17.4,
           "status": "STABLE",
           "traffic": "500+"
         }
@@ -1090,70 +1090,81 @@
   },
   "global_trends": [
     {
-      "title": "sunderland - az",
-      "key": "sunderland az",
-      "global_score": 30.0,
+      "title": "barcelona vs racing santander",
+      "key": "barcelona vs racing santander",
+      "global_score": 34.8,
       "italy_score": 26.2,
-      "crossover_score": 30.4,
-      "opportunity_score": 33.4,
+      "crossover_score": 35.5,
+      "opportunity_score": 39.1,
       "global_status": "STABLE",
       "italy_status": "EMERGING",
       "why_now": "3 notizie da 3 fonti; nuova entrata nel radar",
       "markets": {
         "IT": {
-          "title": "sunderland - az",
+          "title": "barcelona vs racing santander",
           "score": 26.2,
           "status": "EMERGING",
           "acceleration": "NONE",
           "traffic": "200+",
           "traffic_level": 2,
+          "momentum": 0,
+          "news_count": 3
+        },
+        "US": {
+          "title": "barcelona vs racing santander",
+          "score": 28.7,
+          "status": "EMERGING",
+          "acceleration": "NONE",
+          "traffic": "500+",
+          "traffic_level": 3,
           "momentum": 0,
           "news_count": 3
         },
         "DE": {
-          "title": "sunderland – az",
-          "score": 26.2,
+          "title": "barcelona vs racing santander",
+          "score": 28.7,
           "status": "EMERGING",
           "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
+          "traffic": "500+",
+          "traffic_level": 3,
           "momentum": 0,
           "news_count": 3
         },
         "FR": {
-          "title": "sunderland – az",
-          "score": 26.2,
+          "title": "barcelona vs racing santander",
+          "score": 28.7,
           "status": "EMERGING",
           "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
+          "traffic": "500+",
+          "traffic_level": 3,
           "momentum": 0,
           "news_count": 3
         }
       },
-      "market_count": 3,
+      "market_count": 4,
       "market_codes": [
         "DE",
         "FR",
-        "IT"
+        "IT",
+        "US"
       ],
       "rank": 1
     },
     {
       "title": "pescara - gubbio",
       "key": "pescara gubbio",
-      "global_score": 27.4,
-      "italy_score": 30.5,
-      "crossover_score": 24.5,
-      "opportunity_score": 26.6,
+      "global_score": 24.4,
+      "italy_score": 26.8,
+      "crossover_score": 22.0,
+      "opportunity_score": 24.0,
       "global_status": "STABLE",
-      "italy_status": "EMERGING",
-      "why_now": "3 notizie da 3 fonti; nuova entrata nel radar",
+      "italy_status": "HOT",
+      "why_now": "3 notizie da 3 fonti",
       "markets": {
         "IT": {
           "title": "pescara - gubbio",
-          "score": 30.5,
-          "status": "EMERGING",
+          "score": 26.8,
+          "status": "HOT",
           "acceleration": "NONE",
           "traffic": "1000+",
           "traffic_level": 4,
@@ -1168,23 +1179,23 @@
       "rank": 2
     },
     {
-      "title": "perugia - spezia",
-      "key": "perugia spezia",
-      "global_score": 27.4,
-      "italy_score": 30.5,
-      "crossover_score": 24.5,
-      "opportunity_score": 26.6,
+      "title": "livorno - vado",
+      "key": "livorno vado",
+      "global_score": 24.0,
+      "italy_score": 26.2,
+      "crossover_score": 21.7,
+      "opportunity_score": 23.6,
       "global_status": "STABLE",
       "italy_status": "EMERGING",
       "why_now": "3 notizie da 3 fonti; nuova entrata nel radar",
       "markets": {
         "IT": {
-          "title": "perugia - spezia",
-          "score": 30.5,
+          "title": "livorno - vado",
+          "score": 26.2,
           "status": "EMERGING",
           "acceleration": "NONE",
-          "traffic": "1000+",
-          "traffic_level": 4,
+          "traffic": "200+",
+          "traffic_level": 2,
           "momentum": 0,
           "news_count": 3
         }
@@ -1196,23 +1207,23 @@
       "rank": 3
     },
     {
-      "title": "partite stasera",
-      "key": "partite stasera",
-      "global_score": 27.2,
-      "italy_score": 30.3,
-      "crossover_score": 24.3,
-      "opportunity_score": 26.5,
+      "title": "narges mohammadi",
+      "key": "narges mohammadi",
+      "global_score": 24.0,
+      "italy_score": 26.2,
+      "crossover_score": 21.7,
+      "opportunity_score": 23.6,
       "global_status": "STABLE",
-      "italy_status": "HOT",
-      "why_now": "3 notizie da 3 fonti",
+      "italy_status": "EMERGING",
+      "why_now": "3 notizie da 3 fonti; nuova entrata nel radar",
       "markets": {
         "IT": {
-          "title": "partite stasera",
-          "score": 30.3,
-          "status": "HOT",
+          "title": "narges mohammadi",
+          "score": 26.2,
+          "status": "EMERGING",
           "acceleration": "NONE",
-          "traffic": "20000+",
-          "traffic_level": 8,
+          "traffic": "200+",
+          "traffic_level": 2,
           "momentum": 0,
           "news_count": 3
         }
@@ -1224,23 +1235,23 @@
       "rank": 4
     },
     {
-      "title": "concorrenti grande fratello 2026",
-      "key": "concorrenti grande fratello 2026",
-      "global_score": 26.0,
-      "italy_score": 28.7,
-      "crossover_score": 23.3,
-      "opportunity_score": 25.4,
+      "title": "putin",
+      "key": "putin",
+      "global_score": 24.0,
+      "italy_score": 26.2,
+      "crossover_score": 21.7,
+      "opportunity_score": 23.6,
       "global_status": "STABLE",
       "italy_status": "EMERGING",
       "why_now": "3 notizie da 3 fonti; nuova entrata nel radar",
       "markets": {
         "IT": {
-          "title": "concorrenti grande fratello 2026",
-          "score": 28.7,
+          "title": "putin",
+          "score": 26.2,
           "status": "EMERGING",
           "acceleration": "NONE",
-          "traffic": "500+",
-          "traffic_level": 3,
+          "traffic": "200+",
+          "traffic_level": 2,
           "momentum": 0,
           "news_count": 3
         }
@@ -1252,23 +1263,23 @@
       "rank": 5
     },
     {
-      "title": "vis pesaro - reggiana",
-      "key": "vis pesaro reggiana",
-      "global_score": 26.0,
-      "italy_score": 28.7,
-      "crossover_score": 23.3,
-      "opportunity_score": 25.4,
+      "title": "ursula von der leyen",
+      "key": "ursula von der leyen",
+      "global_score": 24.0,
+      "italy_score": 26.2,
+      "crossover_score": 21.7,
+      "opportunity_score": 23.6,
       "global_status": "STABLE",
       "italy_status": "EMERGING",
       "why_now": "3 notizie da 3 fonti; nuova entrata nel radar",
       "markets": {
         "IT": {
-          "title": "vis pesaro - reggiana",
-          "score": 28.7,
+          "title": "ursula von der leyen",
+          "score": 26.2,
           "status": "EMERGING",
           "acceleration": "NONE",
-          "traffic": "500+",
-          "traffic_level": 3,
+          "traffic": "200+",
+          "traffic_level": 2,
           "momentum": 0,
           "news_count": 3
         }
@@ -1280,8 +1291,8 @@
       "rank": 6
     },
     {
-      "title": "cars",
-      "key": "cars",
+      "title": "alex marquez",
+      "key": "alex marquez",
       "global_score": 24.0,
       "italy_score": 26.2,
       "crossover_score": 21.7,
@@ -1291,7 +1302,7 @@
       "why_now": "3 notizie da 3 fonti; nuova entrata nel radar",
       "markets": {
         "IT": {
-          "title": "cars",
+          "title": "alex marquez",
           "score": 26.2,
           "status": "EMERGING",
           "acceleration": "NONE",
@@ -1308,23 +1319,23 @@
       "rank": 7
     },
     {
-      "title": "grosseto calcio",
-      "key": "grosseto calcio",
-      "global_score": 22.4,
-      "italy_score": 24.3,
-      "crossover_score": 20.4,
-      "opportunity_score": 22.2,
+      "title": "concorrenti grande fratello 2026",
+      "key": "concorrenti grande fratello 2026",
+      "global_score": 23.0,
+      "italy_score": 25.0,
+      "crossover_score": 20.9,
+      "opportunity_score": 22.7,
       "global_status": "STABLE",
-      "italy_status": "EMERGING",
-      "why_now": "3 notizie da 3 fonti; nuova entrata nel radar",
+      "italy_status": "HOT",
+      "why_now": "3 notizie da 3 fonti",
       "markets": {
         "IT": {
-          "title": "grosseto calcio",
-          "score": 24.3,
-          "status": "EMERGING",
+          "title": "concorrenti grande fratello 2026",
+          "score": 25.0,
+          "status": "HOT",
           "acceleration": "NONE",
-          "traffic": "100+",
-          "traffic_level": 1,
+          "traffic": "500+",
+          "traffic_level": 3,
           "momentum": 0,
           "news_count": 3
         }
@@ -1336,61 +1347,178 @@
       "rank": 8
     },
     {
-      "title": "chelsy davy",
-      "key": "chelsy davy",
-      "global_score": 21.2,
-      "italy_score": 22.8,
-      "crossover_score": 19.4,
-      "opportunity_score": 21.1,
+      "title": "barcelone – santander",
+      "key": "barcelone santander",
+      "global_score": 34.3,
+      "italy_score": 0,
+      "crossover_score": 21.4,
+      "opportunity_score": 22.3,
       "global_status": "STABLE",
-      "italy_status": "EMERGING",
-      "why_now": "2 notizie da 2 fonti; nuova entrata nel radar",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
       "markets": {
-        "IT": {
-          "title": "chelsy davy",
-          "score": 22.8,
+        "FR": {
+          "title": "barcelone – santander",
+          "score": 36.8,
           "status": "EMERGING",
           "acceleration": "NONE",
-          "traffic": "100+",
-          "traffic_level": 1,
+          "traffic": "10000+",
+          "traffic_level": 7,
           "momentum": 0,
-          "news_count": 2
+          "news_count": 3
+        },
+        "ES": {
+          "title": "barcelone – santander",
+          "score": 25.0,
+          "status": "HOT",
+          "acceleration": "NONE",
+          "traffic": "500+",
+          "traffic_level": 3,
+          "momentum": 0,
+          "news_count": 3
+        }
+      },
+      "market_count": 2,
+      "market_codes": [
+        "ES",
+        "FR"
+      ],
+      "rank": 9
+    },
+    {
+      "title": "cars",
+      "key": "cars",
+      "global_score": 21.0,
+      "italy_score": 22.5,
+      "crossover_score": 19.2,
+      "opportunity_score": 20.9,
+      "global_status": "STABLE",
+      "italy_status": "HOT",
+      "why_now": "3 notizie da 3 fonti",
+      "markets": {
+        "IT": {
+          "title": "cars",
+          "score": 22.5,
+          "status": "HOT",
+          "acceleration": "NONE",
+          "traffic": "200+",
+          "traffic_level": 2,
+          "momentum": 0,
+          "news_count": 3
         }
       },
       "market_count": 1,
       "market_codes": [
         "IT"
       ],
-      "rank": 9
+      "rank": 10
     },
     {
-      "title": "nasdaq 100",
-      "key": "nasdaq 100",
-      "global_score": 26.3,
+      "title": "levante - athletic",
+      "key": "levante athletic",
+      "global_score": 30.0,
       "italy_score": 0,
-      "crossover_score": 17.8,
-      "opportunity_score": 18.8,
+      "crossover_score": 19.5,
+      "opportunity_score": 20.4,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
-        "GB": {
-          "title": "nasdaq 100",
-          "score": 20.1,
-          "status": "HOT",
+        "US": {
+          "title": "levante - athletic",
+          "score": 30.5,
+          "status": "EMERGING",
           "acceleration": "NONE",
-          "traffic": "100+",
-          "traffic_level": 1,
+          "traffic": "1000+",
+          "traffic_level": 4,
           "momentum": 0,
           "news_count": 3
         },
+        "ES": {
+          "title": "levante athletic",
+          "score": 26.8,
+          "status": "HOT",
+          "acceleration": "NONE",
+          "traffic": "1000+",
+          "traffic_level": 4,
+          "momentum": 0,
+          "news_count": 3
+        }
+      },
+      "market_count": 2,
+      "market_codes": [
+        "ES",
+        "US"
+      ],
+      "rank": 11
+    },
+    {
+      "title": "levante – ath. bilbao",
+      "key": "levante ath bilbao",
+      "global_score": 30.0,
+      "italy_score": 0,
+      "crossover_score": 19.5,
+      "opportunity_score": 20.4,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
         "DE": {
-          "title": "nasdaq 100",
+          "title": "levante – ath. bilbao",
           "score": 26.2,
           "status": "EMERGING",
           "acceleration": "NONE",
           "traffic": "200+",
           "traffic_level": 2,
+          "momentum": 0,
+          "news_count": 3
+        },
+        "FR": {
+          "title": "levante – ath. bilbao",
+          "score": 30.5,
+          "status": "EMERGING",
+          "acceleration": "NONE",
+          "traffic": "1000+",
+          "traffic_level": 4,
+          "momentum": 0,
+          "news_count": 3
+        }
+      },
+      "market_count": 2,
+      "market_codes": [
+        "DE",
+        "FR"
+      ],
+      "rank": 12
+    },
+    {
+      "title": "fc barcelona – racing santander",
+      "key": "fc barcelona racing santander",
+      "global_score": 28.7,
+      "italy_score": 0,
+      "crossover_score": 18.9,
+      "opportunity_score": 19.8,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "GB": {
+          "title": "fc barcelona – racing santander",
+          "score": 26.2,
+          "status": "EMERGING",
+          "acceleration": "NONE",
+          "traffic": "200+",
+          "traffic_level": 2,
+          "momentum": 0,
+          "news_count": 3
+        },
+        "DE": {
+          "title": "fc barcelona – racing santander",
+          "score": 28.7,
+          "status": "EMERGING",
+          "acceleration": "NONE",
+          "traffic": "500+",
+          "traffic_level": 3,
           "momentum": 0,
           "news_count": 3
         }
@@ -1400,26 +1528,26 @@
         "DE",
         "GB"
       ],
-      "rank": 10
+      "rank": 13
     },
     {
-      "title": "kristin scott thomas",
-      "key": "kristin scott thomas",
-      "global_score": 34.0,
+      "title": "carabao",
+      "key": "carabao",
+      "global_score": 36.0,
       "italy_score": 0,
-      "crossover_score": 18.3,
-      "opportunity_score": 18.6,
+      "crossover_score": 19.2,
+      "opportunity_score": 19.4,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "GB": {
-          "title": "kristin scott thomas",
-          "score": 38.7,
+          "title": "carabao",
+          "score": 41.2,
           "status": "EMERGING",
           "acceleration": "NONE",
-          "traffic": "20000+",
-          "traffic_level": 8,
+          "traffic": "50000+",
+          "traffic_level": 9,
           "momentum": 0,
           "news_count": 3
         }
@@ -1428,54 +1556,26 @@
       "market_codes": [
         "GB"
       ],
-      "rank": 11
+      "rank": 14
     },
     {
-      "title": "anderlecht – lyon",
-      "key": "anderlecht lyon",
-      "global_score": 32.4,
+      "title": "barcelona - racing de santander",
+      "key": "barcelona racing de santander",
+      "global_score": 36.0,
       "italy_score": 0,
-      "crossover_score": 17.6,
-      "opportunity_score": 17.9,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "FR": {
-          "title": "anderlecht – lyon",
-          "score": 36.8,
-          "status": "EMERGING",
-          "acceleration": "NONE",
-          "traffic": "10000+",
-          "traffic_level": 7,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "FR"
-      ],
-      "rank": 12
-    },
-    {
-      "title": "barcelona vs racing santander",
-      "key": "barcelona vs racing santander",
-      "global_score": 32.4,
-      "italy_score": 0,
-      "crossover_score": 17.6,
-      "opportunity_score": 17.9,
+      "crossover_score": 19.2,
+      "opportunity_score": 19.4,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "ES": {
-          "title": "barcelona vs racing santander",
-          "score": 36.8,
+          "title": "barcelona - racing de santander",
+          "score": 41.2,
           "status": "EMERGING",
           "acceleration": "NONE",
-          "traffic": "10000+",
-          "traffic_level": 7,
+          "traffic": "50000+",
+          "traffic_level": 9,
           "momentum": 0,
           "news_count": 3
         }
@@ -1484,107 +1584,23 @@
       "market_codes": [
         "ES"
       ],
-      "rank": 13
-    },
-    {
-      "title": "cnbc",
-      "key": "cnbc",
-      "global_score": 30.9,
-      "italy_score": 0,
-      "crossover_score": 16.9,
-      "opportunity_score": 17.2,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "US": {
-          "title": "cnbc",
-          "score": 34.9,
-          "status": "EMERGING",
-          "acceleration": "NONE",
-          "traffic": "5000+",
-          "traffic_level": 6,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "US"
-      ],
-      "rank": 14
-    },
-    {
-      "title": "spy stock",
-      "key": "spy stock",
-      "global_score": 30.9,
-      "italy_score": 0,
-      "crossover_score": 16.9,
-      "opportunity_score": 17.2,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "US": {
-          "title": "spy stock",
-          "score": 34.9,
-          "status": "EMERGING",
-          "acceleration": "NONE",
-          "traffic": "5000+",
-          "traffic_level": 6,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "US"
-      ],
       "rank": 15
     },
     {
-      "title": "risarcimento",
-      "key": "risarcimento",
-      "global_score": 16.4,
-      "italy_score": 16.8,
-      "crossover_score": 15.4,
-      "opportunity_score": 16.9,
-      "global_status": "STABLE",
-      "italy_status": "STABLE",
-      "why_now": "3 notizie da 3 fonti",
-      "markets": {
-        "IT": {
-          "title": "risarcimento",
-          "score": 16.8,
-          "status": "STABLE",
-          "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "IT"
-      ],
-      "rank": 16
-    },
-    {
-      "title": "bombero",
-      "key": "bombero",
-      "global_score": 28.9,
+      "title": "météo demain",
+      "key": "meteo demain",
+      "global_score": 35.6,
       "italy_score": 0,
-      "crossover_score": 16.0,
-      "opportunity_score": 16.3,
+      "crossover_score": 19.0,
+      "opportunity_score": 19.3,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "ES": {
-          "title": "bombero",
-          "score": 32.4,
-          "status": "EMERGING",
+          "title": "météo demain",
+          "score": 40.7,
+          "status": "HOT",
           "acceleration": "NONE",
           "traffic": "2000+",
           "traffic_level": 5,
@@ -1596,54 +1612,121 @@
       "market_codes": [
         "ES"
       ],
+      "rank": 16
+    },
+    {
+      "title": "chelsy davy",
+      "key": "chelsy davy",
+      "global_score": 18.3,
+      "italy_score": 19.1,
+      "crossover_score": 17.0,
+      "opportunity_score": 18.5,
+      "global_status": "STABLE",
+      "italy_status": "HOT",
+      "why_now": "2 notizie da 2 fonti",
+      "markets": {
+        "IT": {
+          "title": "chelsy davy",
+          "score": 19.1,
+          "status": "HOT",
+          "acceleration": "NONE",
+          "traffic": "100+",
+          "traffic_level": 1,
+          "momentum": 0,
+          "news_count": 2
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "IT"
+      ],
       "rank": 17
     },
     {
-      "title": "sturm graz – rennes",
-      "key": "sturm graz rennes",
-      "global_score": 28.0,
+      "title": "30 year mortgage rates",
+      "key": "30 year mortgage rates",
+      "global_score": 32.4,
       "italy_score": 0,
-      "crossover_score": 15.6,
-      "opportunity_score": 15.9,
+      "crossover_score": 17.6,
+      "opportunity_score": 17.9,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
-        "FR": {
-          "title": "sturm graz – rennes",
-          "score": 31.2,
-          "status": "HOT",
+        "US": {
+          "title": "30 year mortgage rates",
+          "score": 36.8,
+          "status": "EMERGING",
           "acceleration": "NONE",
-          "traffic": "5000+",
-          "traffic_level": 6,
+          "traffic": "10000+",
+          "traffic_level": 7,
           "momentum": 0,
           "news_count": 3
         }
       },
       "market_count": 1,
       "market_codes": [
-        "FR"
+        "US"
       ],
       "rank": 18
     },
     {
-      "title": "manchester united – brighton",
-      "key": "manchester united brighton",
-      "global_score": 28.0,
+      "title": "s&p 500",
+      "key": "s and p 500",
+      "global_score": 21.7,
       "italy_score": 0,
-      "crossover_score": 15.6,
-      "opportunity_score": 15.9,
+      "crossover_score": 15.8,
+      "opportunity_score": 16.8,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "US": {
+          "title": "s and p 500",
+          "score": 20.1,
+          "status": "HOT",
+          "acceleration": "NONE",
+          "traffic": "100+",
+          "traffic_level": 1,
+          "momentum": 0,
+          "news_count": 3
+        },
+        "GB": {
+          "title": "s&p 500",
+          "score": 16.7,
+          "status": "STABLE",
+          "acceleration": "NONE",
+          "traffic": "100+",
+          "traffic_level": 1,
+          "momentum": 0,
+          "news_count": 3
+        }
+      },
+      "market_count": 2,
+      "market_codes": [
+        "GB",
+        "US"
+      ],
+      "rank": 19
+    },
+    {
+      "title": "chaton",
+      "key": "chaton",
+      "global_score": 28.9,
+      "italy_score": 0,
+      "crossover_score": 16.0,
+      "opportunity_score": 16.3,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "FR": {
-          "title": "manchester united – brighton",
-          "score": 31.2,
-          "status": "HOT",
+          "title": "chaton",
+          "score": 32.4,
+          "status": "EMERGING",
           "acceleration": "NONE",
-          "traffic": "5000+",
-          "traffic_level": 6,
+          "traffic": "2000+",
+          "traffic_level": 5,
           "momentum": 0,
           "news_count": 3
         }
@@ -1652,110 +1735,138 @@
       "market_codes": [
         "FR"
       ],
-      "rank": 19
-    },
-    {
-      "title": "tommy pham",
-      "key": "tommy pham",
-      "global_score": 27.4,
-      "italy_score": 0,
-      "crossover_score": 15.3,
-      "opportunity_score": 15.6,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "US": {
-          "title": "tommy pham",
-          "score": 30.5,
-          "status": "EMERGING",
-          "acceleration": "NONE",
-          "traffic": "1000+",
-          "traffic_level": 4,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "US"
-      ],
       "rank": 20
     },
     {
-      "title": "spy",
-      "key": "spy",
-      "global_score": 27.4,
+      "title": "kirghizistan",
+      "key": "kirghizistan",
+      "global_score": 28.9,
       "italy_score": 0,
-      "crossover_score": 15.3,
-      "opportunity_score": 15.6,
+      "crossover_score": 16.0,
+      "opportunity_score": 16.3,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
-        "US": {
-          "title": "spy",
-          "score": 30.5,
+        "FR": {
+          "title": "kirghizistan",
+          "score": 32.4,
           "status": "EMERGING",
           "acceleration": "NONE",
-          "traffic": "1000+",
-          "traffic_level": 4,
+          "traffic": "2000+",
+          "traffic_level": 5,
           "momentum": 0,
           "news_count": 3
         }
       },
       "market_count": 1,
       "market_codes": [
-        "US"
+        "FR"
       ],
       "rank": 21
     },
     {
-      "title": "sunderland vs az alkmaar",
-      "key": "sunderland vs az alkmaar",
-      "global_score": 27.4,
+      "title": "برشلونة ضد رسينغ",
+      "key": "برشلونة ضد رسينغ",
+      "global_score": 26.0,
       "italy_score": 0,
-      "crossover_score": 15.3,
-      "opportunity_score": 15.6,
+      "crossover_score": 14.7,
+      "opportunity_score": 15.0,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
-        "US": {
-          "title": "sunderland vs az alkmaar",
-          "score": 30.5,
+        "DE": {
+          "title": "برشلونة ضد رسينغ",
+          "score": 28.7,
           "status": "EMERGING",
           "acceleration": "NONE",
-          "traffic": "1000+",
-          "traffic_level": 4,
+          "traffic": "500+",
+          "traffic_level": 3,
           "momentum": 0,
           "news_count": 3
         }
       },
       "market_count": 1,
       "market_codes": [
-        "US"
+        "DE"
       ],
       "rank": 22
     },
     {
-      "title": "mary cosby",
-      "key": "mary cosby",
-      "global_score": 27.4,
+      "title": "kurdistan",
+      "key": "kurdistan",
+      "global_score": 26.0,
       "italy_score": 0,
-      "crossover_score": 15.3,
-      "opportunity_score": 15.6,
+      "crossover_score": 14.7,
+      "opportunity_score": 15.0,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "FR": {
+          "title": "kurdistan",
+          "score": 28.7,
+          "status": "EMERGING",
+          "acceleration": "NONE",
+          "traffic": "500+",
+          "traffic_level": 3,
+          "momentum": 0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "FR"
+      ],
+      "rank": 23
+    },
+    {
+      "title": "bombero",
+      "key": "bombero",
+      "global_score": 26.0,
+      "italy_score": 0,
+      "crossover_score": 14.7,
+      "opportunity_score": 15.0,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "ES": {
+          "title": "bombero",
+          "score": 28.7,
+          "status": "HOT",
+          "acceleration": "NONE",
+          "traffic": "2000+",
+          "traffic_level": 5,
+          "momentum": 0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "ES"
+      ],
+      "rank": 24
+    },
+    {
+      "title": "guardians",
+      "key": "guardians",
+      "global_score": 25.7,
+      "italy_score": 0,
+      "crossover_score": 14.6,
+      "opportunity_score": 14.9,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "US": {
-          "title": "mary cosby",
-          "score": 30.5,
-          "status": "EMERGING",
+          "title": "guardians",
+          "score": 28.4,
+          "status": "HOT",
           "acceleration": "NONE",
-          "traffic": "1000+",
-          "traffic_level": 4,
+          "traffic": "10000+",
+          "traffic_level": 7,
           "momentum": 0,
           "news_count": 3
         }
@@ -1763,80 +1874,24 @@
       "market_count": 1,
       "market_codes": [
         "US"
-      ],
-      "rank": 23
-    },
-    {
-      "title": "itv",
-      "key": "itv",
-      "global_score": 27.4,
-      "italy_score": 0,
-      "crossover_score": 15.3,
-      "opportunity_score": 15.6,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "GB": {
-          "title": "itv",
-          "score": 30.5,
-          "status": "EMERGING",
-          "acceleration": "NONE",
-          "traffic": "1000+",
-          "traffic_level": 4,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "GB"
-      ],
-      "rank": 24
-    },
-    {
-      "title": "shea lacey",
-      "key": "shea lacey",
-      "global_score": 27.4,
-      "italy_score": 0,
-      "crossover_score": 15.3,
-      "opportunity_score": 15.6,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "GB": {
-          "title": "shea lacey",
-          "score": 30.5,
-          "status": "EMERGING",
-          "acceleration": "NONE",
-          "traffic": "1000+",
-          "traffic_level": 4,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "GB"
       ],
       "rank": 25
     },
     {
       "title": "congreso de los diputados",
       "key": "congreso de los diputados",
-      "global_score": 27.4,
+      "global_score": 24.4,
       "italy_score": 0,
-      "crossover_score": 15.3,
-      "opportunity_score": 15.6,
+      "crossover_score": 14.0,
+      "opportunity_score": 14.3,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "ES": {
           "title": "congreso de los diputados",
-          "score": 30.5,
-          "status": "EMERGING",
+          "score": 26.8,
+          "status": "HOT",
           "acceleration": "NONE",
           "traffic": "1000+",
           "traffic_level": 4,
@@ -1851,20 +1906,20 @@
       "rank": 26
     },
     {
-      "title": "coventry city - aston villa",
-      "key": "coventry city aston villa",
-      "global_score": 27.4,
+      "title": "jordan mason",
+      "key": "jordan mason",
+      "global_score": 24.0,
       "italy_score": 0,
-      "crossover_score": 15.3,
-      "opportunity_score": 15.6,
+      "crossover_score": 13.8,
+      "opportunity_score": 14.2,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
-        "ES": {
-          "title": "coventry city - aston villa",
-          "score": 30.5,
-          "status": "EMERGING",
+        "US": {
+          "title": "jordan mason",
+          "score": 26.3,
+          "status": "HOT",
           "acceleration": "NONE",
           "traffic": "1000+",
           "traffic_level": 4,
@@ -1874,56 +1929,56 @@
       },
       "market_count": 1,
       "market_codes": [
-        "ES"
+        "US"
       ],
       "rank": 27
     },
     {
-      "title": "bloomberg",
-      "key": "bloomberg",
-      "global_score": 26.0,
+      "title": "levante vs athletic",
+      "key": "levante vs athletic",
+      "global_score": 24.0,
       "italy_score": 0,
-      "crossover_score": 14.7,
-      "opportunity_score": 15.0,
+      "crossover_score": 13.8,
+      "opportunity_score": 14.2,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
-        "US": {
-          "title": "bloomberg",
-          "score": 28.7,
+        "GB": {
+          "title": "levante vs athletic",
+          "score": 26.2,
           "status": "EMERGING",
           "acceleration": "NONE",
-          "traffic": "500+",
-          "traffic_level": 3,
+          "traffic": "200+",
+          "traffic_level": 2,
           "momentum": 0,
           "news_count": 3
         }
       },
       "market_count": 1,
       "market_codes": [
-        "US"
+        "GB"
       ],
       "rank": 28
     },
     {
-      "title": "tv guide",
-      "key": "tv guide",
-      "global_score": 26.0,
+      "title": "leverkusen vs celje",
+      "key": "leverkusen vs celje",
+      "global_score": 24.0,
       "italy_score": 0,
-      "crossover_score": 14.7,
-      "opportunity_score": 15.0,
+      "crossover_score": 13.8,
+      "opportunity_score": 14.2,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "GB": {
-          "title": "tv guide",
-          "score": 28.7,
+          "title": "leverkusen vs celje",
+          "score": 26.2,
           "status": "EMERGING",
           "acceleration": "NONE",
-          "traffic": "500+",
-          "traffic_level": 3,
+          "traffic": "200+",
+          "traffic_level": 2,
           "momentum": 0,
           "news_count": 3
         }
@@ -1935,23 +1990,23 @@
       "rank": 29
     },
     {
-      "title": "rbb",
-      "key": "rbb",
-      "global_score": 26.0,
+      "title": "zauberhafte schwestern 2",
+      "key": "zauberhafte schwestern 2",
+      "global_score": 24.0,
       "italy_score": 0,
-      "crossover_score": 14.7,
-      "opportunity_score": 15.0,
+      "crossover_score": 13.8,
+      "opportunity_score": 14.2,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "DE": {
-          "title": "rbb",
-          "score": 28.7,
+          "title": "zauberhafte schwestern 2",
+          "score": 26.2,
           "status": "EMERGING",
           "acceleration": "NONE",
-          "traffic": "500+",
-          "traffic_level": 3,
+          "traffic": "200+",
+          "traffic_level": 2,
           "momentum": 0,
           "news_count": 3
         }
@@ -1963,23 +2018,23 @@
       "rank": 30
     },
     {
-      "title": "tv programm heute abend",
-      "key": "tv programm heute abend",
-      "global_score": 26.0,
+      "title": "ολυμπιακόσ εναντίον γιαγκιελόνια μπιαλίστοκ",
+      "key": "ολυμπιακοσ εναντιον γιαγκιελονια μπιαλιστοκ",
+      "global_score": 24.0,
       "italy_score": 0,
-      "crossover_score": 14.7,
-      "opportunity_score": 15.0,
+      "crossover_score": 13.8,
+      "opportunity_score": 14.2,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "DE": {
-          "title": "tv programm heute abend",
-          "score": 28.7,
+          "title": "ολυμπιακόσ εναντίον γιαγκιελόνια μπιαλίστοκ",
+          "score": 26.2,
           "status": "EMERGING",
           "acceleration": "NONE",
-          "traffic": "500+",
-          "traffic_level": 3,
+          "traffic": "200+",
+          "traffic_level": 2,
           "momentum": 0,
           "news_count": 3
         }
@@ -1991,51 +2046,51 @@
       "rank": 31
     },
     {
-      "title": "ac milan – benfica",
-      "key": "ac milan benfica",
-      "global_score": 26.0,
+      "title": "росія",
+      "key": "росія",
+      "global_score": 24.0,
       "italy_score": 0,
-      "crossover_score": 14.7,
-      "opportunity_score": 15.0,
+      "crossover_score": 13.8,
+      "opportunity_score": 14.2,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
-        "FR": {
-          "title": "ac milan – benfica",
-          "score": 28.7,
-          "status": "HOT",
+        "DE": {
+          "title": "росія",
+          "score": 26.2,
+          "status": "EMERGING",
           "acceleration": "NONE",
-          "traffic": "2000+",
-          "traffic_level": 5,
+          "traffic": "200+",
+          "traffic_level": 2,
           "momentum": 0,
           "news_count": 3
         }
       },
       "market_count": 1,
       "market_codes": [
-        "FR"
+        "DE"
       ],
       "rank": 32
     },
     {
-      "title": "pape paris",
-      "key": "pape paris",
-      "global_score": 26.0,
+      "title": "generation z",
+      "key": "generation z",
+      "global_score": 24.0,
       "italy_score": 0,
-      "crossover_score": 14.7,
-      "opportunity_score": 15.0,
+      "crossover_score": 13.8,
+      "opportunity_score": 14.2,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "FR": {
-          "title": "pape paris",
-          "score": 28.7,
+          "title": "generation z",
+          "score": 26.2,
           "status": "EMERGING",
           "acceleration": "NONE",
-          "traffic": "500+",
-          "traffic_level": 3,
+          "traffic": "200+",
+          "traffic_level": 2,
           "momentum": 0,
           "news_count": 3
         }
@@ -2047,20 +2102,160 @@
       "rank": 33
     },
     {
-      "title": "levante athletic",
-      "key": "levante athletic",
-      "global_score": 26.0,
+      "title": "joão lucas reis da silva",
+      "key": "joao lucas reis da silva",
+      "global_score": 24.0,
       "italy_score": 0,
-      "crossover_score": 14.7,
-      "opportunity_score": 15.0,
+      "crossover_score": 13.8,
+      "opportunity_score": 14.2,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "FR": {
+          "title": "joão lucas reis da silva",
+          "score": 26.2,
+          "status": "EMERGING",
+          "acceleration": "NONE",
+          "traffic": "200+",
+          "traffic_level": 2,
+          "momentum": 0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "FR"
+      ],
+      "rank": 34
+    },
+    {
+      "title": "iq",
+      "key": "iq",
+      "global_score": 24.0,
+      "italy_score": 0,
+      "crossover_score": 13.8,
+      "opportunity_score": 14.2,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "FR": {
+          "title": "iq",
+          "score": 26.2,
+          "status": "EMERGING",
+          "acceleration": "NONE",
+          "traffic": "200+",
+          "traffic_level": 2,
+          "momentum": 0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "FR"
+      ],
+      "rank": 35
+    },
+    {
+      "title": "le républicain lorrain",
+      "key": "le republicain lorrain",
+      "global_score": 24.0,
+      "italy_score": 0,
+      "crossover_score": 13.8,
+      "opportunity_score": 14.2,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "FR": {
+          "title": "le républicain lorrain",
+          "score": 26.2,
+          "status": "EMERGING",
+          "acceleration": "NONE",
+          "traffic": "200+",
+          "traffic_level": 2,
+          "momentum": 0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "FR"
+      ],
+      "rank": 36
+    },
+    {
+      "title": "arnau ortiz",
+      "key": "arnau ortiz",
+      "global_score": 24.0,
+      "italy_score": 0,
+      "crossover_score": 13.8,
+      "opportunity_score": 14.2,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "ES": {
-          "title": "levante athletic",
-          "score": 28.7,
+          "title": "arnau ortiz",
+          "score": 26.2,
           "status": "EMERGING",
+          "acceleration": "NONE",
+          "traffic": "200+",
+          "traffic_level": 2,
+          "momentum": 0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "ES"
+      ],
+      "rank": 37
+    },
+    {
+      "title": "maye musk",
+      "key": "maye musk",
+      "global_score": 24.0,
+      "italy_score": 0,
+      "crossover_score": 13.8,
+      "opportunity_score": 14.2,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "ES": {
+          "title": "maye musk",
+          "score": 26.2,
+          "status": "EMERGING",
+          "acceleration": "NONE",
+          "traffic": "200+",
+          "traffic_level": 2,
+          "momentum": 0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "ES"
+      ],
+      "rank": 38
+    },
+    {
+      "title": "tv guide",
+      "key": "tv guide",
+      "global_score": 23.0,
+      "italy_score": 0,
+      "crossover_score": 13.3,
+      "opportunity_score": 13.7,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "GB": {
+          "title": "tv guide",
+          "score": 25.0,
+          "status": "HOT",
           "acceleration": "NONE",
           "traffic": "500+",
           "traffic_level": 3,
@@ -2070,25 +2265,109 @@
       },
       "market_count": 1,
       "market_codes": [
-        "ES"
+        "GB"
       ],
-      "rank": 34
+      "rank": 39
+    },
+    {
+      "title": "wsj",
+      "key": "wsj",
+      "global_score": 22.4,
+      "italy_score": 0,
+      "crossover_score": 13.1,
+      "opportunity_score": 13.5,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "US": {
+          "title": "wsj",
+          "score": 24.3,
+          "status": "EMERGING",
+          "acceleration": "NONE",
+          "traffic": "100+",
+          "traffic_level": 1,
+          "momentum": 0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "US"
+      ],
+      "rank": 40
+    },
+    {
+      "title": "qqq stock",
+      "key": "qqq stock",
+      "global_score": 22.4,
+      "italy_score": 0,
+      "crossover_score": 13.1,
+      "opportunity_score": 13.5,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "US": {
+          "title": "qqq stock",
+          "score": 24.3,
+          "status": "EMERGING",
+          "acceleration": "NONE",
+          "traffic": "100+",
+          "traffic_level": 1,
+          "momentum": 0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "US"
+      ],
+      "rank": 41
+    },
+    {
+      "title": "qqq",
+      "key": "qqq",
+      "global_score": 21.0,
+      "italy_score": 0,
+      "crossover_score": 12.5,
+      "opportunity_score": 12.8,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "US": {
+          "title": "qqq",
+          "score": 22.5,
+          "status": "HOT",
+          "acceleration": "NONE",
+          "traffic": "200+",
+          "traffic_level": 2,
+          "momentum": 0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "US"
+      ],
+      "rank": 42
     },
     {
       "title": "olympiakos – jagiellonia białystok",
       "key": "olympiakos jagiellonia białystok",
-      "global_score": 24.0,
+      "global_score": 21.0,
       "italy_score": 0,
-      "crossover_score": 13.8,
-      "opportunity_score": 14.2,
+      "crossover_score": 12.5,
+      "opportunity_score": 12.8,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "GB": {
           "title": "olympiakos – jagiellonia białystok",
-          "score": 26.2,
-          "status": "EMERGING",
+          "score": 22.5,
+          "status": "HOT",
           "acceleration": "NONE",
           "traffic": "200+",
           "traffic_level": 2,
@@ -2100,23 +2379,23 @@
       "market_codes": [
         "GB"
       ],
-      "rank": 35
+      "rank": 43
     },
     {
       "title": "kabul",
       "key": "kabul",
-      "global_score": 24.0,
+      "global_score": 21.0,
       "italy_score": 0,
-      "crossover_score": 13.8,
-      "opportunity_score": 14.2,
+      "crossover_score": 12.5,
+      "opportunity_score": 12.8,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "GB": {
           "title": "kabul",
-          "score": 26.2,
-          "status": "EMERGING",
+          "score": 22.5,
+          "status": "HOT",
           "acceleration": "NONE",
           "traffic": "200+",
           "traffic_level": 2,
@@ -2128,135 +2407,23 @@
       "market_codes": [
         "GB"
       ],
-      "rank": 36
-    },
-    {
-      "title": "olympiacos vs jagiellonia białystok",
-      "key": "olympiacos vs jagiellonia białystok",
-      "global_score": 24.0,
-      "italy_score": 0,
-      "crossover_score": 13.8,
-      "opportunity_score": 14.2,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "GB": {
-          "title": "olympiacos vs jagiellonia białystok",
-          "score": 26.2,
-          "status": "EMERGING",
-          "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "GB"
-      ],
-      "rank": 37
-    },
-    {
-      "title": "hella von sinnen",
-      "key": "hella von sinnen",
-      "global_score": 24.0,
-      "italy_score": 0,
-      "crossover_score": 13.8,
-      "opportunity_score": 14.2,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "DE": {
-          "title": "hella von sinnen",
-          "score": 26.2,
-          "status": "EMERGING",
-          "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "DE"
-      ],
-      "rank": 38
-    },
-    {
-      "title": "archäologie",
-      "key": "archaologie",
-      "global_score": 24.0,
-      "italy_score": 0,
-      "crossover_score": 13.8,
-      "opportunity_score": 14.2,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "DE": {
-          "title": "archäologie",
-          "score": 26.2,
-          "status": "EMERGING",
-          "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "DE"
-      ],
-      "rank": 39
-    },
-    {
-      "title": "milan vs benfica",
-      "key": "milan vs benfica",
-      "global_score": 24.0,
-      "italy_score": 0,
-      "crossover_score": 13.8,
-      "opportunity_score": 14.2,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "DE": {
-          "title": "milan vs benfica",
-          "score": 26.2,
-          "status": "EMERGING",
-          "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "DE"
-      ],
-      "rank": 40
+      "rank": 44
     },
     {
       "title": "gwyneth paltrow",
       "key": "gwyneth paltrow",
-      "global_score": 24.0,
+      "global_score": 21.0,
       "italy_score": 0,
-      "crossover_score": 13.8,
-      "opportunity_score": 14.2,
+      "crossover_score": 12.5,
+      "opportunity_score": 12.8,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "DE": {
           "title": "gwyneth paltrow",
-          "score": 26.2,
-          "status": "EMERGING",
+          "score": 22.5,
+          "status": "HOT",
           "acceleration": "NONE",
           "traffic": "200+",
           "traffic_level": 2,
@@ -2268,23 +2435,23 @@
       "market_codes": [
         "DE"
       ],
-      "rank": 41
+      "rank": 45
     },
     {
-      "title": "simon rolfes",
-      "key": "simon rolfes",
-      "global_score": 24.0,
+      "title": "sunderland – az",
+      "key": "sunderland az",
+      "global_score": 21.0,
       "italy_score": 0,
-      "crossover_score": 13.8,
-      "opportunity_score": 14.2,
+      "crossover_score": 12.5,
+      "opportunity_score": 12.8,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "DE": {
-          "title": "simon rolfes",
-          "score": 26.2,
-          "status": "EMERGING",
+          "title": "sunderland – az",
+          "score": 22.5,
+          "status": "HOT",
           "acceleration": "NONE",
           "traffic": "200+",
           "traffic_level": 2,
@@ -2295,136 +2462,24 @@
       "market_count": 1,
       "market_codes": [
         "DE"
-      ],
-      "rank": 42
-    },
-    {
-      "title": "lyman",
-      "key": "lyman",
-      "global_score": 24.0,
-      "italy_score": 0,
-      "crossover_score": 13.8,
-      "opportunity_score": 14.2,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "FR": {
-          "title": "lyman",
-          "score": 26.2,
-          "status": "EMERGING",
-          "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "FR"
-      ],
-      "rank": 43
-    },
-    {
-      "title": "maire de cannes",
-      "key": "maire de cannes",
-      "global_score": 24.0,
-      "italy_score": 0,
-      "crossover_score": 13.8,
-      "opportunity_score": 14.2,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "FR": {
-          "title": "maire de cannes",
-          "score": 26.2,
-          "status": "EMERGING",
-          "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "FR"
-      ],
-      "rank": 44
-    },
-    {
-      "title": "aide carburant",
-      "key": "aide carburant",
-      "global_score": 24.0,
-      "italy_score": 0,
-      "crossover_score": 13.8,
-      "opportunity_score": 14.2,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "FR": {
-          "title": "aide carburant",
-          "score": 26.2,
-          "status": "EMERGING",
-          "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "FR"
-      ],
-      "rank": 45
-    },
-    {
-      "title": "barcelone – santander",
-      "key": "barcelone santander",
-      "global_score": 24.0,
-      "italy_score": 0,
-      "crossover_score": 13.8,
-      "opportunity_score": 14.2,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "ES": {
-          "title": "barcelone – santander",
-          "score": 26.2,
-          "status": "EMERGING",
-          "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "ES"
       ],
       "rank": 46
     },
     {
       "title": "leverkusen - celje",
       "key": "leverkusen celje",
-      "global_score": 24.0,
+      "global_score": 21.0,
       "italy_score": 0,
-      "crossover_score": 13.8,
-      "opportunity_score": 14.2,
+      "crossover_score": 12.5,
+      "opportunity_score": 12.8,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "ES": {
           "title": "leverkusen - celje",
-          "score": 26.2,
-          "status": "EMERGING",
+          "score": 22.5,
+          "status": "HOT",
           "acceleration": "NONE",
           "traffic": "200+",
           "traffic_level": 2,
@@ -2439,132 +2494,20 @@
       "rank": 47
     },
     {
-      "title": "sunderland afc - az",
-      "key": "sunderland afc az",
-      "global_score": 24.0,
-      "italy_score": 0,
-      "crossover_score": 13.8,
-      "opportunity_score": 14.2,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "ES": {
-          "title": "sunderland afc - az",
-          "score": 26.2,
-          "status": "EMERGING",
-          "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "ES"
-      ],
-      "rank": 48
-    },
-    {
-      "title": "alineaciones de deportivo la coruña contra sevilla fc",
-      "key": "alineaciones de deportivo la coruna contra sevilla fc",
-      "global_score": 24.0,
-      "italy_score": 0,
-      "crossover_score": 13.8,
-      "opportunity_score": 14.2,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "ES": {
-          "title": "alineaciones de deportivo la coruña contra sevilla fc",
-          "score": 26.2,
-          "status": "EMERGING",
-          "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "ES"
-      ],
-      "rank": 49
-    },
-    {
-      "title": "qqq",
-      "key": "qqq",
-      "global_score": 22.4,
-      "italy_score": 0,
-      "crossover_score": 13.1,
-      "opportunity_score": 13.5,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "US": {
-          "title": "qqq",
-          "score": 24.3,
-          "status": "EMERGING",
-          "acceleration": "NONE",
-          "traffic": "100+",
-          "traffic_level": 1,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "US"
-      ],
-      "rank": 50
-    },
-    {
-      "title": "fc27",
-      "key": "fc27",
-      "global_score": 22.4,
-      "italy_score": 0,
-      "crossover_score": 13.1,
-      "opportunity_score": 13.5,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "US": {
-          "title": "fc27",
-          "score": 24.3,
-          "status": "EMERGING",
-          "acceleration": "NONE",
-          "traffic": "100+",
-          "traffic_level": 1,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "US"
-      ],
-      "rank": 51
-    },
-    {
       "title": "nick jonas",
       "key": "nick jonas",
-      "global_score": 22.4,
+      "global_score": 19.5,
       "italy_score": 0,
-      "crossover_score": 13.1,
-      "opportunity_score": 13.5,
+      "crossover_score": 11.8,
+      "opportunity_score": 12.2,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "GB": {
           "title": "nick jonas",
-          "score": 24.3,
-          "status": "EMERGING",
+          "score": 20.6,
+          "status": "HOT",
           "acceleration": "NONE",
           "traffic": "100+",
           "traffic_level": 1,
@@ -2576,78 +2519,22 @@
       "market_codes": [
         "GB"
       ],
-      "rank": 52
-    },
-    {
-      "title": "dow jones",
-      "key": "dow jones",
-      "global_score": 22.4,
-      "italy_score": 0,
-      "crossover_score": 13.1,
-      "opportunity_score": 13.5,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "GB": {
-          "title": "dow jones",
-          "score": 24.3,
-          "status": "EMERGING",
-          "acceleration": "NONE",
-          "traffic": "100+",
-          "traffic_level": 1,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "GB"
-      ],
-      "rank": 53
-    },
-    {
-      "title": "patron incognito",
-      "key": "patron incognito",
-      "global_score": 22.4,
-      "italy_score": 0,
-      "crossover_score": 13.1,
-      "opportunity_score": 13.5,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "FR": {
-          "title": "patron incognito",
-          "score": 24.3,
-          "status": "EMERGING",
-          "acceleration": "NONE",
-          "traffic": "100+",
-          "traffic_level": 1,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "FR"
-      ],
-      "rank": 54
+      "rank": 48
     },
     {
       "title": "georgina rodríguez",
       "key": "georgina rodriguez",
-      "global_score": 19.9,
+      "global_score": 16.9,
       "italy_score": 0,
-      "crossover_score": 12.0,
-      "opportunity_score": 12.4,
+      "crossover_score": 10.6,
+      "opportunity_score": 11.0,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "ES": {
           "title": "georgina rodríguez",
-          "score": 21.1,
+          "score": 17.4,
           "status": "STABLE",
           "acceleration": "NONE",
           "traffic": "500+",
@@ -2660,113 +2547,124 @@
       "market_codes": [
         "ES"
       ],
-      "rank": 55
+      "rank": 49
     },
     {
-      "title": "sp500",
-      "key": "sp500",
-      "global_score": 19.5,
+      "title": "nasdaq 100",
+      "key": "nasdaq 100",
+      "global_score": 16.1,
       "italy_score": 0,
-      "crossover_score": 11.8,
-      "opportunity_score": 12.2,
+      "crossover_score": 10.2,
+      "opportunity_score": 10.7,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
-        "US": {
-          "title": "sp500",
-          "score": 20.6,
-          "status": "STABLE",
+        "GB": {
+          "title": "nasdaq 100",
+          "score": 16.4,
+          "status": "HOT",
           "acceleration": "NONE",
-          "traffic": "2000+",
-          "traffic_level": 5,
+          "traffic": "100+",
+          "traffic_level": 1,
           "momentum": 0,
           "news_count": 3
         }
       },
       "market_count": 1,
       "market_codes": [
-        "US"
+        "GB"
       ],
-      "rank": 56
+      "rank": 50
     },
     {
-      "title": "zurück in die zukunft 2",
-      "key": "zuruck in die zukunft 2",
-      "global_score": 17.2,
+      "title": "travis kelce",
+      "key": "travis kelce",
+      "global_score": 14.5,
       "italy_score": 0,
-      "crossover_score": 10.7,
-      "opportunity_score": 11.2,
+      "crossover_score": 9.5,
+      "opportunity_score": 10.0,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "DE": {
-          "title": "zurück in die zukunft 2",
-          "score": 17.7,
-          "status": "EMERGING",
+          "title": "travis kelce",
+          "score": 14.4,
+          "status": "STABLE",
           "acceleration": "NONE",
           "traffic": "200+",
           "traffic_level": 2,
           "momentum": 0,
-          "news_count": 0
+          "news_count": 3
         }
       },
       "market_count": 1,
       "market_codes": [
         "DE"
       ],
-      "rank": 57
+      "rank": 51
     }
   ],
   "crossover_trends": [
     {
-      "title": "sunderland - az",
-      "key": "sunderland az",
-      "global_score": 30.0,
+      "title": "barcelona vs racing santander",
+      "key": "barcelona vs racing santander",
+      "global_score": 34.8,
       "italy_score": 26.2,
-      "crossover_score": 30.4,
-      "opportunity_score": 33.4,
+      "crossover_score": 35.5,
+      "opportunity_score": 39.1,
       "global_status": "STABLE",
       "italy_status": "EMERGING",
       "why_now": "3 notizie da 3 fonti; nuova entrata nel radar",
       "markets": {
         "IT": {
-          "title": "sunderland - az",
+          "title": "barcelona vs racing santander",
           "score": 26.2,
           "status": "EMERGING",
           "acceleration": "NONE",
           "traffic": "200+",
           "traffic_level": 2,
+          "momentum": 0,
+          "news_count": 3
+        },
+        "US": {
+          "title": "barcelona vs racing santander",
+          "score": 28.7,
+          "status": "EMERGING",
+          "acceleration": "NONE",
+          "traffic": "500+",
+          "traffic_level": 3,
           "momentum": 0,
           "news_count": 3
         },
         "DE": {
-          "title": "sunderland – az",
-          "score": 26.2,
+          "title": "barcelona vs racing santander",
+          "score": 28.7,
           "status": "EMERGING",
           "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
+          "traffic": "500+",
+          "traffic_level": 3,
           "momentum": 0,
           "news_count": 3
         },
         "FR": {
-          "title": "sunderland – az",
-          "score": 26.2,
+          "title": "barcelona vs racing santander",
+          "score": 28.7,
           "status": "EMERGING",
           "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
+          "traffic": "500+",
+          "traffic_level": 3,
           "momentum": 0,
           "news_count": 3
         }
       },
-      "market_count": 3,
+      "market_count": 4,
       "market_codes": [
         "DE",
         "FR",
-        "IT"
+        "IT",
+        "US"
       ],
       "rank": 1
     }
