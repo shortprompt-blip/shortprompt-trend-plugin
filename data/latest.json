@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "schema": "shortprompt-trend-radar-v3",
-  "timestamp": "2026-09-17T08:51:45.330664+02:00",
+  "timestamp": "2026-09-17T09:06:28.561676+02:00",
   "source": "Google Trends RSS",
   "geo": "IT",
   "feed_url": "https://trends.google.com/trending/rss?geo=IT",
@@ -18,20 +18,20 @@
   "traffic_note": "Google Trends RSS traffic values are approximate bands.",
   "trends": [
     {
-      "title": "amt genova",
-      "key": "amt genova",
-      "normalized_title": "amt genova",
-      "category": "News",
-      "status": "HOT",
+      "title": "meteo milano",
+      "key": "meteo milano",
+      "normalized_title": "meteo milano",
+      "category": "Sport",
+      "status": "STABLE",
       "acceleration": "NONE",
-      "score": 31.3,
-      "traffic": "200+",
-      "traffic_level": 2,
-      "traffic_value": 200,
-      "first_seen": "2026-09-17T07:59:56.431655+02:00",
-      "last_seen": "2026-09-17T08:51:45.330664+02:00",
-      "appearances": 3,
-      "duration_minutes": 51,
+      "score": 39.3,
+      "traffic": "5000+",
+      "traffic_level": 6,
+      "traffic_value": 5000,
+      "first_seen": "2026-09-16T07:20:13.573404+02:00",
+      "last_seen": "2026-09-17T09:06:28.561676+02:00",
+      "appearances": 9,
+      "duration_minutes": 1546,
       "momentum": 1.0,
       "momentum_30m": 1,
       "momentum_1h": 1.0,
@@ -42,126 +42,60 @@
       "change_1h_bands": null,
       "change_3h_bands": null,
       "change_6h_bands": null,
-      "change_24h_bands": null,
+      "change_24h_bands": 0,
       "direction_30m": "UP",
       "direction_1h": "UNKNOWN",
       "direction_3h": "UNKNOWN",
-      "occurrences_1h": 2,
-      "occurrences_3h": 2,
-      "occurrences_6h": 2,
+      "occurrences_1h": 1,
+      "occurrences_3h": 1,
+      "occurrences_6h": 1,
       "news_count": 3,
       "source_count": 3,
       "sources": [
-        "GenovaToday",
-        "Il Secolo XIX",
-        "la Repubblica"
+        "BresciaToday",
+        "La Provincia Unica Tv",
+        "MilanoToday"
       ],
-      "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSosRhKE8Kn88GqQor3jjoKsyZMstCJeRT2pFR0jMm7k-EMJIUj8Bces2Ls75Y",
-      "picture_source": "la Repubblica",
+      "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQCBQ5-Lat84akiX6zlOM6m4He7QNZoa8M8Qmg8mu3bV9Dsy69m6mjz1LtWl_A",
+      "picture_source": "MilanoToday",
       "news": [
         {
-          "title": "Amt, più corsie riservate e debutto dei bus elettrici per compensare i tagli",
+          "title": "Temporali e pioggia in mattinata a Milano, ma il weekend regala un colpo di coda dell’estate",
           "snippet": "",
-          "url": "https://genova.repubblica.it/cronaca/2026/09/17/news/amt_piu_corsie_riservate_e_debutto_dei_nuovi_bus_elettrici_per_compensare_i_tagli-425589299/",
-          "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSosRhKE8Kn88GqQor3jjoKsyZMstCJeRT2pFR0jMm7k-EMJIUj8Bces2Ls75Y",
-          "source": "la Repubblica"
+          "url": "https://www.milanotoday.it/meteo/previsioni-17-18-19-settembre-colpo-coda-estate.html",
+          "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQCBQ5-Lat84akiX6zlOM6m4He7QNZoa8M8Qmg8mu3bV9Dsy69m6mjz1LtWl_A",
+          "source": "MilanoToday"
         },
         {
-          "title": "Amt, Assoutenti attacca: \"Il nuovo orario taglia 2.368 corse al giorno. Ecco il dettaglio delle linee\"",
+          "title": "🔵 Sono arrivati i temporali: \"Non si escludono episodi di forte intensità\"",
           "snippet": "",
-          "url": "https://www.genovatoday.it/cronaca/amt-linee-bus-tagliate-quali-sono.html",
-          "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTmmd1x_w0i7hca1mDFXiLZYZOq9Vdc6R8GrkXK8pjqLmQpq-RyMVynGKJNIk0",
-          "source": "GenovaToday"
+          "url": "https://www.bresciatoday.it/meteo/di-oggi-temporali-17-settembre.html",
+          "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQIK0xgHnkVVUcZJ24CsLJg1l19ddOQ8mHRWBDJiOqzgiCVAKGoQoAmf4WEwjQ",
+          "source": "BresciaToday"
         },
         {
-          "title": "Amt, Salis al Secolo XIX: \"Piano fondamentale per la salvezza dell'azienda. L'alternativa è il fallimento",
+          "title": "Lombardia, temporali in arrivo: domani piogge intense e rischio di nubifragi",
           "snippet": "",
-          "url": "https://www.ilsecoloxix.it/genova/video/amt-salis-piano-salvezza-alternativa-fallimento-mldrcgx0/",
-          "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDZGatDQ1l2HOFA754U8hp7ruaGJZ5M-e6GdNg3DTU6NT_S3UliYZgo_DFq0Y",
-          "source": "Il Secolo XIX"
+          "url": "https://www.laprovinciaunicatv.it/stories/premium/lecco/lecco-citta/lombardia-temporali-in-arrivo-domani-piogge-intense-e-rischio-di-nubifragi-o_3951569_11/",
+          "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl5a-Yv66PY4J5lPkO8MVa6gYNlmmec6sd4juTOpwpE0sITHkLIhQiTu10baw",
+          "source": "La Provincia Unica Tv"
         }
       ],
       "rank": 1
     },
     {
-      "title": "antonino monteleone",
-      "key": "antonino monteleone",
-      "normalized_title": "antonino monteleone",
+      "title": "sara soldati",
+      "key": "sara soldati",
+      "normalized_title": "sara soldati",
       "category": "News",
-      "status": "HOT",
-      "acceleration": "NONE",
-      "score": 31.3,
-      "traffic": "200+",
-      "traffic_level": 2,
-      "traffic_value": 200,
-      "first_seen": "2026-09-17T07:59:56.431655+02:00",
-      "last_seen": "2026-09-17T08:51:45.330664+02:00",
-      "appearances": 3,
-      "duration_minutes": 51,
-      "momentum": 1.0,
-      "momentum_30m": 1,
-      "momentum_1h": 1.0,
-      "momentum_3h": 1.0,
-      "momentum_status": "POSITIVE",
-      "why_now": "+fascia negli ultimi 30 minuti; 3 notizie da 3 fonti",
-      "change_30m_bands": 1,
-      "change_1h_bands": null,
-      "change_3h_bands": null,
-      "change_6h_bands": null,
-      "change_24h_bands": null,
-      "direction_30m": "UP",
-      "direction_1h": "UNKNOWN",
-      "direction_3h": "UNKNOWN",
-      "occurrences_1h": 2,
-      "occurrences_3h": 2,
-      "occurrences_6h": 2,
-      "news_count": 3,
-      "source_count": 3,
-      "sources": [
-        "Corriere della Sera",
-        "Rai.it",
-        "RaiPlay"
-      ],
-      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWU5hcmzwFIwDW5LakWWPtosHHwb9Nq4dp8biZw2iKD8DYQqe2tmqbQ0TWIaU",
-      "picture_source": "Corriere della Sera",
-      "news": [
-        {
-          "title": "Monteleone, inadeuguato, saccente e ossessivo nel presentare casi di cronaca «morbosa»",
-          "snippet": "",
-          "url": "https://www.corriere.it/spettacoli/26_settembre_16/monteleone-inadeuguato-saccente-e-ossessivo-nel-presentare-casi-di-cronaca-morbosa-19a0703e-da2d-4aa9-ae16-e5b2db870xlk.shtml",
-          "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWU5hcmzwFIwDW5LakWWPtosHHwb9Nq4dp8biZw2iKD8DYQqe2tmqbQ0TWIaU",
-          "source": "Corriere della Sera"
-        },
-        {
-          "title": "Filorosso 2026/27 - Puntata del 15/09/2026 - Video",
-          "snippet": "",
-          "url": "https://www.raiplay.it/video/2026/09/Filorosso---Puntata-del-15092026-f1bc5a78-6389-4b2e-b378-b0003d0fa1ac.html",
-          "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRwPY8atH4S6NdMPQmH8VTsSk_10A4NPaUwZvvPRG0FPMHg9PrkbuVSKMd6Kz4",
-          "source": "RaiPlay"
-        },
-        {
-          "title": "\"Filorosso\" - Conferenza stampa",
-          "snippet": "",
-          "url": "https://www.rai.it/ufficiostampa/assets/template/us-video.html?ssiPath=/video/2026/09/Filorosso---Conferenza-stampa-b7d23063-70bf-4197-b978-ed613253ea63-ssi.html",
-          "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRb3-nweNLmtGJr9oqgmOYorXcUpFn0ieR2Z7CH3NNa6tqXN4h38Gay0fkXu6Q",
-          "source": "Rai.it"
-        }
-      ],
-      "rank": 2
-    },
-    {
-      "title": "andrea dovizioso",
-      "key": "andrea dovizioso",
-      "normalized_title": "andrea dovizioso",
-      "category": "AI",
       "status": "EMERGING",
       "acceleration": "NONE",
-      "score": 24.3,
-      "traffic": "100+",
-      "traffic_level": 1,
-      "traffic_value": 100,
-      "first_seen": "2026-09-17T08:51:45.330664+02:00",
-      "last_seen": "2026-09-17T08:51:45.330664+02:00",
+      "score": 32.4,
+      "traffic": "2000+",
+      "traffic_level": 5,
+      "traffic_value": 2000,
+      "first_seen": "2026-09-17T09:06:28.561676+02:00",
+      "last_seen": "2026-09-17T09:06:28.561676+02:00",
       "appearances": 1,
       "duration_minutes": 0,
       "momentum": 0,
@@ -181,6 +115,204 @@
       "occurrences_1h": 0,
       "occurrences_3h": 0,
       "occurrences_6h": 0,
+      "news_count": 3,
+      "source_count": 3,
+      "sources": [
+        "ANSA",
+        "Il Sole 24 ORE",
+        "la Repubblica"
+      ],
+      "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQSP7BRyZZvo0nAsTkOjzuiRhKvgI1YK5GCB7Y2fUSeisR71weLniezj4nVYac",
+      "picture_source": "ANSA",
+      "news": [
+        {
+          "title": "Del Vecchio e Soldati in Tribunale mano nella mano: 'Siamo una famiglia'",
+          "snippet": "",
+          "url": "https://www.ansa.it/sito/notizie/cronaca/2026/09/16/del-vecchio-e-soldati-in-tribunale-mano-nella-mano-siamo-una-famiglia_14bb03bb-4209-4954-af9d-144e8ce3c9f1.html",
+          "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQSP7BRyZZvo0nAsTkOjzuiRhKvgI1YK5GCB7Y2fUSeisR71weLniezj4nVYac",
+          "source": "ANSA"
+        },
+        {
+          "title": "Delfin, Del Vecchio: \"Pace con Milleri? Sì, se riporta il titolo a 300 euro...\"",
+          "snippet": "",
+          "url": "https://stream24.ilsole24ore.com/video/economia/delfin-vecchio-pace-milleri-si-se-riporta-titolo-300-euro/AJiKhUFB",
+          "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeO3-BJEnLZSCZcszX_-grSk5s1QcUhfPliFMu8nJHDnaDRxyySdIBBCxgDmw",
+          "source": "Il Sole 24 ORE"
+        },
+        {
+          "title": "Del Vecchio-Soldati, pace fatta per l'affidamento della figlia: il bacio davanti alle telecamere",
+          "snippet": "",
+          "url": "https://milano.repubblica.it/cronaca/2026/09/16/video/leonardo_maria_del_vecchio_e_sara_soldati_pace_fatta_per_laffidamento_della_figlia-425589595/",
+          "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrC4kdT04Ap0lDJu5nFc8KZL47OAlu-DX9vlJj9Xgou0zOc4TM9pzCBMx1Srg",
+          "source": "la Repubblica"
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "title": "azerbaigian",
+      "key": "azerbaigian",
+      "normalized_title": "azerbaigian",
+      "category": "AI",
+      "status": "EMERGING",
+      "acceleration": "NONE",
+      "score": 26.2,
+      "traffic": "200+",
+      "traffic_level": 2,
+      "traffic_value": 200,
+      "first_seen": "2026-09-17T09:06:28.561676+02:00",
+      "last_seen": "2026-09-17T09:06:28.561676+02:00",
+      "appearances": 1,
+      "duration_minutes": 0,
+      "momentum": 0,
+      "momentum_30m": 0,
+      "momentum_1h": 0,
+      "momentum_3h": 0,
+      "momentum_status": "FLAT",
+      "why_now": "3 notizie da 3 fonti; nuova entrata nel radar",
+      "change_30m_bands": null,
+      "change_1h_bands": null,
+      "change_3h_bands": null,
+      "change_6h_bands": null,
+      "change_24h_bands": null,
+      "direction_30m": "UNKNOWN",
+      "direction_1h": "UNKNOWN",
+      "direction_3h": "UNKNOWN",
+      "occurrences_1h": 0,
+      "occurrences_3h": 0,
+      "occurrences_6h": 0,
+      "news_count": 3,
+      "source_count": 3,
+      "sources": [
+        "Armenpress",
+        "Christian Post",
+        "Euronews.com"
+      ],
+      "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRwiDEfRGftERmMCBM6tOVUtNOZKzd4IVcYzls0oB3eH6OJEaMDEffc0pOMVA0",
+      "picture_source": "Euronews.com",
+      "news": [
+        {
+          "title": "Azerbaijan insists it will preserve Christian heritage as part of its history",
+          "snippet": "",
+          "url": "https://www.euronews.com/2026/09/16/azerbaijan-insists-it-will-preserve-christian-heritage-as-part-of-its-history",
+          "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRwiDEfRGftERmMCBM6tOVUtNOZKzd4IVcYzls0oB3eH6OJEaMDEffc0pOMVA0",
+          "source": "Euronews.com"
+        },
+        {
+          "title": "They destroyed 108 Armenian churches. Now they're erasing more.",
+          "snippet": "",
+          "url": "https://www.christianpost.com/voices/they-destroyed-108-armenian-churches-now-theyre-erasing-more.html",
+          "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT25vjeebesrDBt32ewe-YR-Nwx7-CLcZ1tMszK5GzHI4Bx-5-lRJEHX0PUJY8",
+          "source": "Christian Post"
+        },
+        {
+          "title": "Pashinyan describes Azerbaijani official’s Gandzasar statements as ‘unacceptable and incomprehensible’",
+          "snippet": "",
+          "url": "https://armenpress.am/en/article/1260585",
+          "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHpmGxXsQM5UzvXdle2QpRmGA-bcEXVSa775eWZQYXkPWu4LeOG8K915luBlE",
+          "source": "Armenpress"
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "title": "peter max",
+      "key": "peter max",
+      "normalized_title": "peter max",
+      "category": "News",
+      "status": "EMERGING",
+      "acceleration": "NONE",
+      "score": 24.3,
+      "traffic": "100+",
+      "traffic_level": 1,
+      "traffic_value": 100,
+      "first_seen": "2026-09-17T09:06:28.561676+02:00",
+      "last_seen": "2026-09-17T09:06:28.561676+02:00",
+      "appearances": 1,
+      "duration_minutes": 0,
+      "momentum": 0,
+      "momentum_30m": 0,
+      "momentum_1h": 0,
+      "momentum_3h": 0,
+      "momentum_status": "FLAT",
+      "why_now": "3 notizie da 3 fonti; nuova entrata nel radar",
+      "change_30m_bands": null,
+      "change_1h_bands": null,
+      "change_3h_bands": null,
+      "change_6h_bands": null,
+      "change_24h_bands": null,
+      "direction_30m": "UNKNOWN",
+      "direction_1h": "UNKNOWN",
+      "direction_3h": "UNKNOWN",
+      "occurrences_1h": 0,
+      "occurrences_3h": 0,
+      "occurrences_6h": 0,
+      "news_count": 3,
+      "source_count": 3,
+      "sources": [
+        "Reuters",
+        "The New York Times",
+        "The Times of Israel"
+      ],
+      "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQcNdqyYTOwCMrqvZt1c2m72uajUy_jCvbryWRVh45OG17mIKpAGV506mjM38U",
+      "picture_source": "The New York Times",
+      "news": [
+        {
+          "title": "Peter Max, Trippy Artist of Counterculture Era and Beyond, Dies at 88",
+          "snippet": "",
+          "url": "https://www.nytimes.com/2026/09/16/arts/peter-max-trippy-artist-of-counterculture-era-and-beyond-dies-at-88.html",
+          "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQcNdqyYTOwCMrqvZt1c2m72uajUy_jCvbryWRVh45OG17mIKpAGV506mjM38U",
+          "source": "The New York Times"
+        },
+        {
+          "title": "Peter Max, whose psychedelic pop art came to symbolize the 60s, dies at 88",
+          "snippet": "",
+          "url": "https://www.timesofisrael.com/peter-max-whose-psychedelic-pop-art-came-to-symbolize-the-60s-dies-at-88/",
+          "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStZMZRtH4Rb_3uQCj-SRVS5V0zc1jf0mDNBKPZyWO_CXAKjQcH60aBw0UtHY8",
+          "source": "The Times of Israel"
+        },
+        {
+          "title": "Peter Max, known for groovy art that came to symbolize the 60s, dies at 88",
+          "snippet": "",
+          "url": "https://www.reuters.com/lifestyle/peter-max-known-groovy-art-that-came-symbolize-60s-dies-88-2026-09-17/",
+          "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnZetzg51IyW31vYQfXV5Lr9AnOioplFtAsXHbSBBVVOVx607EwE95ERRljEo",
+          "source": "Reuters"
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "title": "andrea dovizioso",
+      "key": "andrea dovizioso",
+      "normalized_title": "andrea dovizioso",
+      "category": "AI",
+      "status": "HOT",
+      "acceleration": "NONE",
+      "score": 20.6,
+      "traffic": "100+",
+      "traffic_level": 1,
+      "traffic_value": 100,
+      "first_seen": "2026-09-17T08:51:45.330664+02:00",
+      "last_seen": "2026-09-17T09:06:28.561676+02:00",
+      "appearances": 2,
+      "duration_minutes": 14,
+      "momentum": 0,
+      "momentum_30m": 0,
+      "momentum_1h": 0,
+      "momentum_3h": 0,
+      "momentum_status": "FLAT",
+      "why_now": "3 notizie da 3 fonti",
+      "change_30m_bands": null,
+      "change_1h_bands": null,
+      "change_3h_bands": null,
+      "change_6h_bands": null,
+      "change_24h_bands": null,
+      "direction_30m": "UNKNOWN",
+      "direction_1h": "UNKNOWN",
+      "direction_3h": "UNKNOWN",
+      "occurrences_1h": 1,
+      "occurrences_3h": 1,
+      "occurrences_6h": 1,
       "news_count": 3,
       "source_count": 3,
       "sources": [
@@ -213,95 +345,29 @@
           "source": "Sky Sport"
         }
       ],
-      "rank": 3
-    },
-    {
-      "title": "lecco notizie",
-      "key": "lecco notizie",
-      "normalized_title": "lecco notizie",
-      "category": "News",
-      "status": "EMERGING",
-      "acceleration": "NONE",
-      "score": 24.3,
-      "traffic": "100+",
-      "traffic_level": 1,
-      "traffic_value": 100,
-      "first_seen": "2026-09-17T08:51:45.330664+02:00",
-      "last_seen": "2026-09-17T08:51:45.330664+02:00",
-      "appearances": 1,
-      "duration_minutes": 0,
-      "momentum": 0,
-      "momentum_30m": 0,
-      "momentum_1h": 0,
-      "momentum_3h": 0,
-      "momentum_status": "FLAT",
-      "why_now": "3 notizie da 3 fonti; nuova entrata nel radar",
-      "change_30m_bands": null,
-      "change_1h_bands": null,
-      "change_3h_bands": null,
-      "change_6h_bands": null,
-      "change_24h_bands": null,
-      "direction_30m": "UNKNOWN",
-      "direction_1h": "UNKNOWN",
-      "direction_3h": "UNKNOWN",
-      "occurrences_1h": 0,
-      "occurrences_3h": 0,
-      "occurrences_6h": 0,
-      "news_count": 3,
-      "source_count": 3,
-      "sources": [
-        "Lecco Notizie",
-        "LeccoToday",
-        "Leccoonline"
-      ],
-      "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNHMCfix1eMxfgh-hwM6ea1AvYKj_ASc5-7p2IgpqNWeJ2DU2-kgfM96LHEtA",
-      "picture_source": "LeccoToday",
-      "news": [
-        {
-          "title": "Statale 36: allagamenti, code e disagi all'alba nella Brianza lecchese",
-          "snippet": "",
-          "url": "https://www.leccotoday.it/cronaca/statale-36-brianza-lecchese-allagamenti-code-disagi-.html",
-          "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNHMCfix1eMxfgh-hwM6ea1AvYKj_ASc5-7p2IgpqNWeJ2DU2-kgfM96LHEtA",
-          "source": "LeccoToday"
-        },
-        {
-          "title": "SS36 chiusa a Suello/Civate per allagamenti. Il traffico, in tilt, deviato verso Oggiono",
-          "snippet": "",
-          "url": "https://www.leccoonline.com/notizie/99110/ss36-chiusa-a-suello-civate-per-allagamenti-il-traffico-in-tilt-deviato-verso-oggiono",
-          "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ3y2tk7Sd5hFVEzH8h8XjQcQNbGlEZuWnEcdD24hgq-fh2L2he_PIptC1PIX8",
-          "source": "Leccoonline"
-        },
-        {
-          "title": "Maltempo. SS36 allagata all’altezza dello svincolo di Suello, code in entrambe le direzioni",
-          "snippet": "",
-          "url": "https://lecconotizie.com/cronaca/valmadrera-cronaca/maltempo-ss36-allagata-allaltezza-dello-svincolo-di-suello-code-in-entrambe-le-direzioni/",
-          "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfeYryceQABAgJSwCuvbNFOVgNYOxJy9f_uZkV303FwpUWH3zCu5s6diFcyjU",
-          "source": "Lecco Notizie"
-        }
-      ],
-      "rank": 4
+      "rank": 5
     },
     {
       "title": "cena",
       "key": "cena",
       "normalized_title": "cena",
       "category": "News",
-      "status": "EMERGING",
+      "status": "HOT",
       "acceleration": "NONE",
-      "score": 24.3,
+      "score": 20.6,
       "traffic": "100+",
       "traffic_level": 1,
       "traffic_value": 100,
       "first_seen": "2026-09-17T08:51:45.330664+02:00",
-      "last_seen": "2026-09-17T08:51:45.330664+02:00",
-      "appearances": 1,
-      "duration_minutes": 0,
+      "last_seen": "2026-09-17T09:06:28.561676+02:00",
+      "appearances": 2,
+      "duration_minutes": 14,
       "momentum": 0,
       "momentum_30m": 0,
       "momentum_1h": 0,
       "momentum_3h": 0,
       "momentum_status": "FLAT",
-      "why_now": "3 notizie da 3 fonti; nuova entrata nel radar",
+      "why_now": "3 notizie da 3 fonti",
       "change_30m_bands": null,
       "change_1h_bands": null,
       "change_3h_bands": null,
@@ -310,9 +376,9 @@
       "direction_30m": "UNKNOWN",
       "direction_1h": "UNKNOWN",
       "direction_3h": "UNKNOWN",
-      "occurrences_1h": 0,
-      "occurrences_3h": 0,
-      "occurrences_6h": 0,
+      "occurrences_1h": 1,
+      "occurrences_3h": 1,
+      "occurrences_6h": 1,
       "news_count": 3,
       "source_count": 3,
       "sources": [
@@ -345,78 +411,12 @@
           "source": "Libertà"
         }
       ],
-      "rank": 5
-    },
-    {
-      "title": "ardon jashari",
-      "key": "ardon jashari",
-      "normalized_title": "ardon jashari",
-      "category": "Sport",
-      "status": "HOT",
-      "acceleration": "NONE",
-      "score": 22.5,
-      "traffic": "200+",
-      "traffic_level": 2,
-      "traffic_value": 200,
-      "first_seen": "2026-09-17T08:26:48.625387+02:00",
-      "last_seen": "2026-09-17T08:51:45.330664+02:00",
-      "appearances": 2,
-      "duration_minutes": 24,
-      "momentum": 0,
-      "momentum_30m": 0,
-      "momentum_1h": 0,
-      "momentum_3h": 0,
-      "momentum_status": "FLAT",
-      "why_now": "3 notizie da 3 fonti",
-      "change_30m_bands": null,
-      "change_1h_bands": null,
-      "change_3h_bands": null,
-      "change_6h_bands": null,
-      "change_24h_bands": null,
-      "direction_30m": "UNKNOWN",
-      "direction_1h": "UNKNOWN",
-      "direction_3h": "UNKNOWN",
-      "occurrences_1h": 1,
-      "occurrences_3h": 1,
-      "occurrences_6h": 1,
-      "news_count": 3,
-      "source_count": 3,
-      "sources": [
-        "La Gazzetta dello Sport",
-        "Quotidiano Sportivo",
-        "UEFA.com"
-      ],
-      "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRf3pHmc3RZAjaanlh9dIAVStnbAtQlOVQvzIzdpbm1n8frdWxyWusXhFezpg",
-      "picture_source": "UEFA.com",
-      "news": [
-        {
-          "title": "Europa League Matchday 1 highlights and round-up: Benfica, Sunderland, Lyon sparkle on opening night",
-          "snippet": "",
-          "url": "https://www.uefa.com/uefaeuropaleague/news/02a9-219ba00d8c3a-2fc9c36259e8-1000--europa-league-matchday-1-highlights-and-round-up-benfica-/",
-          "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRf3pHmc3RZAjaanlh9dIAVStnbAtQlOVQvzIzdpbm1n8frdWxyWusXhFezpg",
-          "source": "UEFA.com"
-        },
-        {
-          "title": "Europa League results for Wednesday, September 16th",
-          "snippet": "",
-          "url": "https://sport.quotidiano.net/en/calcio/europa-league/europa-league-tutti-i-risultati-di-mercoledi-16-settembre-55939542",
-          "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxeiI2-Z4a7n7ALJ08Suq7aIQg2VAZvwK53eVrxREaZ6Gai7oEkMiyZ0DJumM",
-          "source": "Quotidiano Sportivo"
-        },
-        {
-          "title": "Difesa bucata, attacco che non segna: il Benfica ha messo a nudo i limiti del Milan",
-          "snippet": "",
-          "url": "https://www.gazzetta.it/Calcio/Serie-A/Milan/17-09-2026/amorim-problemi-milan-attacco-dfesa.shtml",
-          "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvuuVrOrk9wkh7aU0dqGPewjEX3ru7Y1VaXNYyxunzhlmCmwDTCxJTJvjLHCU",
-          "source": "La Gazzetta dello Sport"
-        }
-      ],
       "rank": 6
     },
     {
-      "title": "gaza",
-      "key": "gaza",
-      "normalized_title": "gaza",
+      "title": "lecco notizie",
+      "key": "lecco notizie",
+      "normalized_title": "lecco notizie",
       "category": "News",
       "status": "HOT",
       "acceleration": "NONE",
@@ -424,10 +424,10 @@
       "traffic": "100+",
       "traffic_level": 1,
       "traffic_value": 100,
-      "first_seen": "2026-09-17T08:26:48.625387+02:00",
-      "last_seen": "2026-09-17T08:51:45.330664+02:00",
+      "first_seen": "2026-09-17T08:51:45.330664+02:00",
+      "last_seen": "2026-09-17T09:06:28.561676+02:00",
       "appearances": 2,
-      "duration_minutes": 24,
+      "duration_minutes": 14,
       "momentum": 0,
       "momentum_30m": 0,
       "momentum_1h": 0,
@@ -448,168 +448,36 @@
       "news_count": 3,
       "source_count": 3,
       "sources": [
-        "Al Jazeera",
-        "Internazionale",
-        "The Guardian"
+        "Lecco Notizie",
+        "LeccoToday",
+        "Leccoonline"
       ],
-      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT28IjwcXRJgqNfGj-lH8lS4Ywwt6_FzkaaCoTSvC6VQlvWIYuWpY3EbiHpm6Y",
-      "picture_source": "Internazionale",
+      "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNHMCfix1eMxfgh-hwM6ea1AvYKj_ASc5-7p2IgpqNWeJ2DU2-kgfM96LHEtA",
+      "picture_source": "LeccoToday",
       "news": [
         {
-          "title": "War-damaged Gaza building collapses, killing 20 people sheltering inside",
+          "title": "Statale 36: allagamenti, code e disagi all'alba nella Brianza lecchese",
           "snippet": "",
-          "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/09/16/war-damaged-gaza-building-collapses-killing-12-people-seeking-shelter-inside",
-          "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT28IjwcXRJgqNfGj-lH8lS4Ywwt6_FzkaaCoTSvC6VQlvWIYuWpY3EbiHpm6Y",
-          "source": "Internazionale"
+          "url": "https://www.leccotoday.it/cronaca/statale-36-brianza-lecchese-allagamenti-code-disagi-.html",
+          "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNHMCfix1eMxfgh-hwM6ea1AvYKj_ASc5-7p2IgpqNWeJ2DU2-kgfM96LHEtA",
+          "source": "LeccoToday"
         },
         {
-          "title": "‘Nowhere to go’: Gaza’s damaged buildings turn deadly",
+          "title": "Maltempo. SS36 allagata all’altezza dello svincolo di Suello, code in entrambe le direzioni",
           "snippet": "",
-          "url": "https://www.aljazeera.com/news/2026/9/16/nowhere-to-go-gazas-damaged-buildings-turn-deadly",
-          "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQlW-Df7oLvAuvZs1PCNCEwzmZDakw13ddfZVUofQJygmCKTqfy6ji5pwDJFCM",
-          "source": "Al Jazeera"
+          "url": "https://lecconotizie.com/cronaca/valmadrera-cronaca/maltempo-ss36-allagata-allaltezza-dello-svincolo-di-suello-code-in-entrambe-le-direzioni/",
+          "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfeYryceQABAgJSwCuvbNFOVgNYOxJy9f_uZkV303FwpUWH3zCu5s6diFcyjU",
+          "source": "Lecco Notizie"
         },
         {
-          "title": "At least 21 killed after Israeli-hit building in Gaza City collapses",
+          "title": "SS36 chiusa a Suello/Civate per allagamenti. Il traffico, in tilt, deviato verso Oggiono",
           "snippet": "",
-          "url": "https://www.theguardian.com/world/2026/sep/16/building-gaza-city-damaged-israeli-strikes-collapses-killed",
-          "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSRPEUzv4cI_nH3ryKcKVGC59lgZ1nizNfkOmxErlLkuxoixR_J_dQ15UFawD0",
-          "source": "The Guardian"
+          "url": "https://www.leccoonline.com/notizie/99110/ss36-chiusa-a-suello-civate-per-allagamenti-il-traffico-in-tilt-deviato-verso-oggiono",
+          "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ3y2tk7Sd5hFVEzH8h8XjQcQNbGlEZuWnEcdD24hgq-fh2L2he_PIptC1PIX8",
+          "source": "Leccoonline"
         }
       ],
       "rank": 7
-    },
-    {
-      "title": "pakistan vs thailand",
-      "key": "pakistan vs thailand",
-      "normalized_title": "pakistan vs thailand",
-      "category": "AI",
-      "status": "HOT",
-      "acceleration": "NONE",
-      "score": 20.6,
-      "traffic": "100+",
-      "traffic_level": 1,
-      "traffic_value": 100,
-      "first_seen": "2026-09-17T08:26:48.625387+02:00",
-      "last_seen": "2026-09-17T08:51:45.330664+02:00",
-      "appearances": 2,
-      "duration_minutes": 24,
-      "momentum": 0,
-      "momentum_30m": 0,
-      "momentum_1h": 0,
-      "momentum_3h": 0,
-      "momentum_status": "FLAT",
-      "why_now": "3 notizie da 3 fonti",
-      "change_30m_bands": null,
-      "change_1h_bands": null,
-      "change_3h_bands": null,
-      "change_6h_bands": null,
-      "change_24h_bands": null,
-      "direction_30m": "UNKNOWN",
-      "direction_1h": "UNKNOWN",
-      "direction_3h": "UNKNOWN",
-      "occurrences_1h": 1,
-      "occurrences_3h": 1,
-      "occurrences_6h": 1,
-      "news_count": 3,
-      "source_count": 3,
-      "sources": [
-        "Cricbuzz",
-        "Revsportz",
-        "The Sunday Guardian"
-      ],
-      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDZYpbK-G0GBsR2mf-vxLZTuN5g6_9R1VD3a8e66iTQzMWx0Pl2yzaXPog-k8",
-      "picture_source": "Cricbuzz",
-      "news": [
-        {
-          "title": "Pakistan Women vs Thailand Women, 2nd Quarter Final, Women's Asian Games 2026 Live Cricket Stream, live scores, ball-by-ball commentary, highlights, videos, news, and more in USA & Canada",
-          "snippet": "",
-          "url": "https://www.cricbuzz.com/live-cricket-scores/170920/pakw-vs-thaiw-2nd-quarter-final-womens-asian-games-2026",
-          "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDZYpbK-G0GBsR2mf-vxLZTuN5g6_9R1VD3a8e66iTQzMWx0Pl2yzaXPog-k8",
-          "source": "Cricbuzz"
-        },
-        {
-          "title": "“Experiences from the Asia Cup will motivate us” :Thailand’s Onnicha Kamchomphu ahead of Pakistan clash in the Asian Games",
-          "snippet": "",
-          "url": "https://revsportz.in/experiences-from-the-asia-cup-will-motivate-us-thailands-onnicha-kamchomphu-ahead-of-pakistan-clash-in-the-asian-games/",
-          "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTU4cRQbo7dz7Ic2KtUGLmYxip_Zp7i6q3pAJTcYK45jfRXcN18rhFc2wdoL6I",
-          "source": "Revsportz"
-        },
-        {
-          "title": "Pakistan Women vs Thailand Women Toss Delayed: New Match Time, Reduced Overs For PAK-W vs THA-W Asian Games 2026 Cricket Quarter-Final Match",
-          "snippet": "",
-          "url": "https://sundayguardianlive.com/sports/pakistan-women-vs-thailand-women-toss-delayed-new-match-time-reduced-overs-for-pak-w-vs-tha-w-asian-games-2026-cricket-quarter-final-nisshin-weather-update-286629/",
-          "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkJqAltc2Of9QWYyErnsKiz-50BT33yr8GDUweY6Rm2Qxb3_DPxrXRRCkO4Vo",
-          "source": "The Sunday Guardian"
-        }
-      ],
-      "rank": 8
-    },
-    {
-      "title": "schule",
-      "key": "schule",
-      "normalized_title": "schule",
-      "category": "Business",
-      "status": "HOT",
-      "acceleration": "NONE",
-      "score": 20.1,
-      "traffic": "100+",
-      "traffic_level": 1,
-      "traffic_value": 100,
-      "first_seen": "2026-09-15T19:57:46.501657+02:00",
-      "last_seen": "2026-09-17T08:51:45.330664+02:00",
-      "appearances": 2,
-      "duration_minutes": 2213,
-      "momentum": 0,
-      "momentum_30m": 0,
-      "momentum_1h": 0,
-      "momentum_3h": 0,
-      "momentum_status": "FLAT",
-      "why_now": "3 notizie da 3 fonti",
-      "change_30m_bands": null,
-      "change_1h_bands": null,
-      "change_3h_bands": null,
-      "change_6h_bands": null,
-      "change_24h_bands": null,
-      "direction_30m": "UNKNOWN",
-      "direction_1h": "UNKNOWN",
-      "direction_3h": "UNKNOWN",
-      "occurrences_1h": 0,
-      "occurrences_3h": 0,
-      "occurrences_6h": 0,
-      "news_count": 3,
-      "source_count": 3,
-      "sources": [
-        "GN-Online",
-        "ad-hoc-news.de",
-        "radio rst"
-      ],
-      "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQaPrMmn7IFnmw09le9P6nZ5ddxY8SDK6598WCjNhjHZGdAZUDRv2B5SYBaofw",
-      "picture_source": "ad-hoc-news.de",
-      "news": [
-        {
-          "title": "Islamischer Religionsunterricht: Trotz Verdopplung nur wenige muslimische Schüler im Fach",
-          "snippet": "",
-          "url": "https://www.ad-hoc-news.de/politik/islamischer-religionsunterricht-trotz-verdopplung-nur-wenige-muslimische/70113760",
-          "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQaPrMmn7IFnmw09le9P6nZ5ddxY8SDK6598WCjNhjHZGdAZUDRv2B5SYBaofw",
-          "source": "ad-hoc-news.de"
-        },
-        {
-          "title": "Nur wenige Muslime besuchen Islamunterricht in der Schule",
-          "snippet": "",
-          "url": "https://www.gn-online.de/deutschland-und-welt/nur-wenige-muslime-besuchen-islamunterricht-in-der-schule-622634.html",
-          "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu-MworqnN_Z3kBvaCYyZWRmYDW1wpcN7PfBnSW1jUZ8zf2ABKXX9UrBvT-6I",
-          "source": "GN-Online"
-        },
-        {
-          "title": "Nur wenige Muslime besuchen Islamunterricht in der Schule",
-          "snippet": "",
-          "url": "https://www.radiorst.de/dpa/nur-wenige-muslime-besuchen-islamunterricht-in-der-schule-2757497",
-          "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT4w_vzdprj8nug8v6uyue9ZlrgK_LuhZw5SnjSgVHJ-8qWmnENH3EZbRIhpQI",
-          "source": "radio rst"
-        }
-      ],
-      "rank": 9
     },
     {
       "title": "axios",
@@ -618,31 +486,31 @@
       "category": "AI",
       "status": "STABLE",
       "acceleration": "NONE",
-      "score": 18.9,
+      "score": 20.2,
       "traffic": "200+",
       "traffic_level": 2,
       "traffic_value": 200,
       "first_seen": "2026-09-14T09:49:00.016180+02:00",
-      "last_seen": "2026-09-17T08:51:45.330664+02:00",
-      "appearances": 10,
-      "duration_minutes": 4262,
-      "momentum": 0,
+      "last_seen": "2026-09-17T09:06:28.561676+02:00",
+      "appearances": 11,
+      "duration_minutes": 4277,
+      "momentum": 0.0,
       "momentum_30m": 0,
-      "momentum_1h": 0,
-      "momentum_3h": 0,
+      "momentum_1h": 0.0,
+      "momentum_3h": 0.0,
       "momentum_status": "FLAT",
       "why_now": "3 notizie da 3 fonti",
-      "change_30m_bands": null,
+      "change_30m_bands": 0,
       "change_1h_bands": null,
       "change_3h_bands": null,
       "change_6h_bands": null,
       "change_24h_bands": 0,
-      "direction_30m": "UNKNOWN",
+      "direction_30m": "FLAT",
       "direction_1h": "UNKNOWN",
       "direction_3h": "UNKNOWN",
-      "occurrences_1h": 1,
-      "occurrences_3h": 1,
-      "occurrences_6h": 1,
+      "occurrences_1h": 2,
+      "occurrences_3h": 2,
+      "occurrences_6h": 2,
       "news_count": 3,
       "source_count": 3,
       "sources": [
@@ -675,6 +543,138 @@
           "source": "WSJ"
         }
       ],
+      "rank": 8
+    },
+    {
+      "title": "gaza",
+      "key": "gaza",
+      "normalized_title": "gaza",
+      "category": "Business",
+      "status": "HOT",
+      "acceleration": "NONE",
+      "score": 16.9,
+      "traffic": "100+",
+      "traffic_level": 1,
+      "traffic_value": 100,
+      "first_seen": "2026-09-17T08:26:48.625387+02:00",
+      "last_seen": "2026-09-17T09:06:28.561676+02:00",
+      "appearances": 3,
+      "duration_minutes": 39,
+      "momentum": 0.0,
+      "momentum_30m": 0,
+      "momentum_1h": 0.0,
+      "momentum_3h": 0.0,
+      "momentum_status": "FLAT",
+      "why_now": "3 notizie da 3 fonti",
+      "change_30m_bands": 0,
+      "change_1h_bands": null,
+      "change_3h_bands": null,
+      "change_6h_bands": null,
+      "change_24h_bands": null,
+      "direction_30m": "FLAT",
+      "direction_1h": "UNKNOWN",
+      "direction_3h": "UNKNOWN",
+      "occurrences_1h": 2,
+      "occurrences_3h": 2,
+      "occurrences_6h": 2,
+      "news_count": 3,
+      "source_count": 3,
+      "sources": [
+        "ANSA",
+        "Corriere della Sera",
+        "la Repubblica"
+      ],
+      "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSfn656QGB6bxvppWwmDgJOaMJ6_RX408PRJFrvHKwFcEvZs2Bf_UCiBd2R-8c",
+      "picture_source": "la Repubblica",
+      "news": [
+        {
+          "title": "Gaza, crolla un palazzo: almeno 20 i morti tra cui 8 bambini",
+          "snippet": "",
+          "url": "https://www.repubblica.it/esteri/2026/09/16/news/gaza_crolla_un_palazzo_bambini_tra_le_macerie_striscia-425588255/",
+          "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSfn656QGB6bxvppWwmDgJOaMJ6_RX408PRJFrvHKwFcEvZs2Bf_UCiBd2R-8c",
+          "source": "la Repubblica"
+        },
+        {
+          "title": "Strage a Gaza, tanti bambini tra le vittime del crollo di un palazzo",
+          "snippet": "",
+          "url": "https://www.ansa.it/sito/notizie/mondo/2026/09/16/crolla-un-palazzo-a-gaza-il-bilancio-sale-a-20-morti.-almeno-50-bambini-sotto-le-macerie_fd1a071c-c486-44ea-a27d-f69b144f51af.html",
+          "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTCPyP84SfCwtpZ9s9DyWwWXwKa4bGrEWT281cJhb3LzsPlIjrPivnIFJqdSRA",
+          "source": "ANSA"
+        },
+        {
+          "title": "A Gaza crolla edificio di sei piani, almeno 12 i morti. Soccorritori scavano tra le macerie",
+          "snippet": "",
+          "url": "https://video.corriere.it/esteri/a-gaza-crolla-edificio-di-sei-piani-almeno-12-i-morti-soccorritori-scavano-tra-le-macerie/a0035eb8-e3c3-4c40-871c-953a14dc7xlk",
+          "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrFaE_FkWtzBeRLj9bMO-WPma_nWfsmQzljAcVBXFpsLOTNXfak9ja-ElMreU",
+          "source": "Corriere della Sera"
+        }
+      ],
+      "rank": 9
+    },
+    {
+      "title": "schule",
+      "key": "schule",
+      "normalized_title": "schule",
+      "category": "News",
+      "status": "HOT",
+      "acceleration": "NONE",
+      "score": 16.4,
+      "traffic": "100+",
+      "traffic_level": 1,
+      "traffic_value": 100,
+      "first_seen": "2026-09-15T19:57:46.501657+02:00",
+      "last_seen": "2026-09-17T09:06:28.561676+02:00",
+      "appearances": 3,
+      "duration_minutes": 2228,
+      "momentum": 0,
+      "momentum_30m": 0,
+      "momentum_1h": 0,
+      "momentum_3h": 0,
+      "momentum_status": "FLAT",
+      "why_now": "3 notizie da 3 fonti",
+      "change_30m_bands": null,
+      "change_1h_bands": null,
+      "change_3h_bands": null,
+      "change_6h_bands": null,
+      "change_24h_bands": null,
+      "direction_30m": "UNKNOWN",
+      "direction_1h": "UNKNOWN",
+      "direction_3h": "UNKNOWN",
+      "occurrences_1h": 1,
+      "occurrences_3h": 1,
+      "occurrences_6h": 1,
+      "news_count": 3,
+      "source_count": 3,
+      "sources": [
+        "Kleine Zeitung",
+        "Oberösterreichische Nachrichten",
+        "eichsfeldnachrichten"
+      ],
+      "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfA5Z4hzQgoXrrXAjmq9J8Xe1Ki_cXGbM_yStDKma5IZb50rqLzUuwNAV5yTg",
+      "picture_source": "Kleine Zeitung",
+      "news": [
+        {
+          "title": "Radentheinerin kehrt als Lehrerin an ihre alte Schule zurück",
+          "snippet": "",
+          "url": "https://www.kleinezeitung.at/artikel/41267233/radentheinerin-kehrt-als-lehrerin-an-ihre-alte-schule-zurueck",
+          "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfA5Z4hzQgoXrrXAjmq9J8Xe1Ki_cXGbM_yStDKma5IZb50rqLzUuwNAV5yTg",
+          "source": "Kleine Zeitung"
+        },
+        {
+          "title": "Alte POS IV: Seit zehn Jahren keine Schule – eine Entscheidung fehlt bis heute",
+          "snippet": "",
+          "url": "https://www.eichsfeldnachrichten.de/alte-pos-iv-seit-zehn-jahren-keine-schule-eine-entscheidung-fehlt-bis-heute/",
+          "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT0jBvMAL005eJcqVevfahEgr7L132_L_ILdbLCzvAia8hgcGN1o0jdl5XEYa4",
+          "source": "eichsfeldnachrichten"
+        },
+        {
+          "title": "Als die Bergbauernkinder eine Schule bekamen",
+          "snippet": "",
+          "url": "https://www.nachrichten.at/oberoesterreich/steyr/als-die-bergbauernkinder-eine-schule-bekamen;art68,4212522",
+          "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTrZKDX1P_011Tx97vTOKsJ2XGrE9HYLgmu2mSpPRUUQPH86IO6r1he6kiJlx0",
+          "source": "Oberösterreichische Nachrichten"
+        }
+      ],
       "rank": 10
     }
   ],
@@ -689,8 +689,8 @@
       "ES"
     ],
     "market_count": 6,
-    "global_trend_count": 60,
-    "crossover_count": 0
+    "global_trend_count": 59,
+    "crossover_count": 1
   },
   "markets": {
     "IT": {
@@ -699,64 +699,64 @@
       "trend_count": 10,
       "top_trends": [
         {
-          "title": "amt genova",
-          "score": 31.3,
-          "status": "HOT",
+          "title": "meteo milano",
+          "score": 39.3,
+          "status": "STABLE",
+          "traffic": "5000+"
+        },
+        {
+          "title": "sara soldati",
+          "score": 32.4,
+          "status": "EMERGING",
+          "traffic": "2000+"
+        },
+        {
+          "title": "azerbaigian",
+          "score": 26.2,
+          "status": "EMERGING",
           "traffic": "200+"
         },
         {
-          "title": "antonino monteleone",
-          "score": 31.3,
-          "status": "HOT",
-          "traffic": "200+"
-        },
-        {
-          "title": "andrea dovizioso",
+          "title": "peter max",
           "score": 24.3,
           "status": "EMERGING",
           "traffic": "100+"
         },
         {
-          "title": "lecco notizie",
-          "score": 24.3,
-          "status": "EMERGING",
+          "title": "andrea dovizioso",
+          "score": 20.6,
+          "status": "HOT",
           "traffic": "100+"
         },
         {
           "title": "cena",
-          "score": 24.3,
-          "status": "EMERGING",
-          "traffic": "100+"
-        },
-        {
-          "title": "ardon jashari",
-          "score": 22.5,
-          "status": "HOT",
-          "traffic": "200+"
-        },
-        {
-          "title": "gaza",
           "score": 20.6,
           "status": "HOT",
           "traffic": "100+"
         },
         {
-          "title": "pakistan vs thailand",
+          "title": "lecco notizie",
           "score": 20.6,
-          "status": "HOT",
-          "traffic": "100+"
-        },
-        {
-          "title": "schule",
-          "score": 20.1,
           "status": "HOT",
           "traffic": "100+"
         },
         {
           "title": "axios",
-          "score": 18.9,
+          "score": 20.2,
           "status": "STABLE",
           "traffic": "200+"
+        },
+        {
+          "title": "gaza",
+          "score": 16.9,
+          "status": "HOT",
+          "traffic": "100+"
+        },
+        {
+          "title": "schule",
+          "score": 16.4,
+          "status": "HOT",
+          "traffic": "100+"
         }
       ]
     },
@@ -772,56 +772,56 @@
           "traffic": "1000+"
         },
         {
-          "title": "latest iphone rumors",
-          "score": 53.2,
-          "status": "RISING",
-          "traffic": "1000+"
-        },
-        {
-          "title": "cryptocurrency trading",
-          "score": 53.2,
-          "status": "RISING",
-          "traffic": "1000+"
-        },
-        {
-          "title": "what is a data breach",
-          "score": 51.8,
-          "status": "RISING",
-          "traffic": "1000+"
-        },
-        {
-          "title": "netflix top movies right now",
+          "title": "tennis scores today",
           "score": 48.6,
           "status": "RISING",
           "traffic": "1000+"
         },
         {
-          "title": "tennis scores today",
-          "score": 47.8,
+          "title": "where to watch nfl games",
+          "score": 42.2,
           "status": "RISING",
+          "traffic": "1000+"
+        },
+        {
+          "title": "latest iphone rumors",
+          "score": 40.7,
+          "status": "HOT",
+          "traffic": "1000+"
+        },
+        {
+          "title": "cryptocurrency trading",
+          "score": 40.7,
+          "status": "HOT",
+          "traffic": "1000+"
+        },
+        {
+          "title": "what is a data breach",
+          "score": 40.1,
+          "status": "HOT",
+          "traffic": "1000+"
+        },
+        {
+          "title": "netflix top movies right now",
+          "score": 36.9,
+          "status": "HOT",
           "traffic": "1000+"
         },
         {
           "title": "nfl schedule this week",
-          "score": 47.0,
-          "status": "RISING",
-          "traffic": "1000+"
-        },
-        {
-          "title": "where to watch nfl games",
-          "score": 46.4,
-          "status": "RISING",
-          "traffic": "1000+"
-        },
-        {
-          "title": "matthew lillard scream",
-          "score": 27.5,
+          "score": 35.3,
           "status": "HOT",
-          "traffic": "5000+"
+          "traffic": "1000+"
+        },
+        {
+          "title": "accident lawyer",
+          "score": 26.2,
+          "status": "EMERGING",
+          "traffic": "200+"
         },
         {
           "title": "thema",
-          "score": 22.5,
+          "score": 18.8,
           "status": "HOT",
           "traffic": "200+"
         }
@@ -833,64 +833,64 @@
       "trend_count": 10,
       "top_trends": [
         {
-          "title": "anglia",
-          "score": 34.9,
+          "title": "joanne froggatt",
+          "score": 32.4,
           "status": "EMERGING",
-          "traffic": "5000+"
-        },
-        {
-          "title": "weather today",
-          "score": 34.9,
-          "status": "EMERGING",
-          "traffic": "5000+"
-        },
-        {
-          "title": "uk state pension triple lock",
-          "score": 28.7,
-          "status": "HOT",
           "traffic": "2000+"
         },
         {
-          "title": "london weather",
-          "score": 28.7,
-          "status": "HOT",
-          "traffic": "2000+"
-        },
-        {
-          "title": "wow forever beta",
+          "title": "morocco",
           "score": 24.3,
           "status": "EMERGING",
           "traffic": "100+"
         },
         {
-          "title": "nikolay storonsky",
+          "title": "strands hint",
           "score": 24.3,
           "status": "EMERGING",
           "traffic": "100+"
         },
         {
-          "title": "data breach",
+          "title": "rory mcilroy bmw pga pro-am",
           "score": 24.3,
           "status": "EMERGING",
           "traffic": "100+"
         },
         {
-          "title": "orai",
+          "title": "macklemore net worth",
+          "score": 24.3,
+          "status": "EMERGING",
+          "traffic": "100+"
+        },
+        {
+          "title": "warrington guardian",
           "score": 22.3,
           "status": "EMERGING",
           "traffic": "100+"
         },
         {
-          "title": "weather sheffield",
-          "score": 18.6,
+          "title": "nikolay storonsky",
+          "score": 20.6,
           "status": "HOT",
           "traffic": "100+"
         },
         {
-          "title": "metoffice",
-          "score": 18.3,
+          "title": "wow forever beta",
+          "score": 20.6,
           "status": "HOT",
-          "traffic": "200+"
+          "traffic": "100+"
+        },
+        {
+          "title": "data breach",
+          "score": 20.6,
+          "status": "HOT",
+          "traffic": "100+"
+        },
+        {
+          "title": "orai",
+          "score": 20.6,
+          "status": "HOT",
+          "traffic": "100+"
         }
       ]
     },
@@ -900,62 +900,62 @@
       "trend_count": 10,
       "top_trends": [
         {
-          "title": "mallorca magazin",
-          "score": 47.9,
-          "status": "ACCELERATING",
-          "traffic": "500+"
-        },
-        {
-          "title": "bahnübergang",
-          "score": 40.4,
-          "status": "RISING",
-          "traffic": "500+"
-        },
-        {
-          "title": "schnaudertal",
-          "score": 28.7,
-          "status": "HOT",
+          "title": "leipzig",
+          "score": 32.4,
+          "status": "EMERGING",
           "traffic": "2000+"
         },
         {
-          "title": "jerome powell",
+          "title": "strategic bitcoin reserve",
+          "score": 31.3,
+          "status": "HOT",
+          "traffic": "200+"
+        },
+        {
+          "title": "frechen",
+          "score": 31.3,
+          "status": "HOT",
+          "traffic": "200+"
+        },
+        {
+          "title": "explosion frankfurt heute",
+          "score": 31.2,
+          "status": "HOT",
+          "traffic": "5000+"
+        },
+        {
+          "title": "vfb tickets",
           "score": 26.2,
           "status": "EMERGING",
           "traffic": "200+"
         },
         {
-          "title": "explosion frankfurt heute",
-          "score": 24.3,
-          "status": "EMERGING",
-          "traffic": "100+"
+          "title": "schnaudertal",
+          "score": 25.0,
+          "status": "HOT",
+          "traffic": "2000+"
         },
         {
-          "title": "peter max",
+          "title": "jerome powell",
           "score": 22.5,
           "status": "HOT",
           "traffic": "200+"
         },
         {
-          "title": "strategic bitcoin reserve",
-          "score": 20.6,
+          "title": "peter max",
+          "score": 18.8,
           "status": "HOT",
-          "traffic": "100+"
+          "traffic": "200+"
         },
         {
           "title": "bilfinger",
-          "score": 20.6,
+          "score": 16.9,
           "status": "HOT",
           "traffic": "100+"
         },
         {
           "title": "haßberge",
-          "score": 20.6,
-          "status": "HOT",
-          "traffic": "100+"
-        },
-        {
-          "title": "frechen",
-          "score": 20.6,
+          "score": 16.9,
           "status": "HOT",
           "traffic": "100+"
         }
@@ -968,61 +968,61 @@
       "top_trends": [
         {
           "title": "le monument préféré des français",
-          "score": 32.4,
-          "status": "EMERGING",
+          "score": 28.7,
+          "status": "HOT",
           "traffic": "2000+"
         },
         {
-          "title": "pix",
-          "score": 28.7,
-          "status": "EMERGING",
-          "traffic": "500+"
+          "title": "alice rufo",
+          "score": 26.8,
+          "status": "HOT",
+          "traffic": "1000+"
         },
         {
-          "title": "alice rufo",
-          "score": 28.7,
-          "status": "EMERGING",
+          "title": "pix",
+          "score": 25.0,
+          "status": "HOT",
           "traffic": "500+"
         },
         {
           "title": "laure lavalette",
-          "score": 28.7,
-          "status": "EMERGING",
+          "score": 25.0,
+          "status": "HOT",
           "traffic": "500+"
         },
         {
           "title": "israéliens",
-          "score": 28.7,
-          "status": "EMERGING",
+          "score": 25.0,
+          "status": "HOT",
           "traffic": "500+"
         },
         {
           "title": "harry roselmack",
-          "score": 24.3,
-          "status": "EMERGING",
-          "traffic": "100+"
-        },
-        {
-          "title": "17 septembre",
-          "score": 24.3,
-          "status": "EMERGING",
-          "traffic": "100+"
-        },
-        {
-          "title": "jean-baptiste élissalde",
           "score": 22.5,
           "status": "HOT",
           "traffic": "200+"
         },
         {
+          "title": "17 septembre",
+          "score": 20.6,
+          "status": "HOT",
+          "traffic": "100+"
+        },
+        {
+          "title": "edouard geffray",
+          "score": 16.9,
+          "status": "STABLE",
+          "traffic": "500+"
+        },
+        {
           "title": "julianna margulies",
-          "score": 19.3,
+          "score": 15.6,
           "status": "HOT",
           "traffic": "100+"
         },
         {
           "title": "francesco bagnaia",
-          "score": 12.5,
+          "score": 13.8,
           "status": "STABLE",
           "traffic": "100+"
         }
@@ -1034,62 +1034,62 @@
       "trend_count": 10,
       "top_trends": [
         {
+          "title": "tiempo de hoy",
+          "score": 31.3,
+          "status": "HOT",
+          "traffic": "200+"
+        },
+        {
           "title": "teams",
-          "score": 30.5,
-          "status": "EMERGING",
+          "score": 26.8,
+          "status": "HOT",
           "traffic": "1000+"
         },
         {
           "title": "imserso",
-          "score": 28.7,
-          "status": "EMERGING",
+          "score": 25.0,
+          "status": "HOT",
           "traffic": "500+"
         },
         {
           "title": "el tiempo en malaga",
-          "score": 26.2,
-          "status": "EMERGING",
-          "traffic": "200+"
-        },
-        {
-          "title": "tiempo de hoy",
           "score": 22.5,
           "status": "HOT",
           "traffic": "200+"
         },
         {
-          "title": "wetter",
-          "score": 21.6,
+          "title": "aemet malaga",
+          "score": 17.2,
+          "status": "HOT",
+          "traffic": "100+"
+        },
+        {
+          "title": "alcalde de madrid",
+          "score": 16.5,
           "status": "STABLE",
-          "traffic": "1000+"
+          "traffic": "200+"
         },
         {
           "title": "pogoda",
-          "score": 19.1,
+          "score": 15.4,
           "status": "STABLE",
           "traffic": "200+"
         },
         {
           "title": "barca ayer",
-          "score": 17.7,
-          "status": "STABLE",
+          "score": 13.5,
+          "status": "HOT",
           "traffic": "100+"
         },
         {
           "title": "clima hoy",
-          "score": 17.7,
+          "score": 13.5,
           "status": "STABLE",
           "traffic": "100+"
         },
         {
-          "title": "alcalde de madrid",
-          "score": 15.2,
-          "status": "STABLE",
-          "traffic": "200+"
-        },
-        {
           "title": "времето",
-          "score": 8.2,
+          "score": 9.0,
           "status": "STABLE",
           "traffic": "100+"
         }
@@ -1098,23 +1098,23 @@
   },
   "global_trends": [
     {
-      "title": "amt genova",
-      "key": "amt genova",
-      "global_score": 28.0,
-      "italy_score": 31.3,
-      "crossover_score": 25.0,
-      "opportunity_score": 29.2,
+      "title": "meteo milano",
+      "key": "meteo milano",
+      "global_score": 34.4,
+      "italy_score": 39.3,
+      "crossover_score": 30.3,
+      "opportunity_score": 34.9,
       "global_status": "STABLE",
-      "italy_status": "HOT",
+      "italy_status": "STABLE",
       "why_now": "+fascia negli ultimi 30 minuti; 3 notizie da 3 fonti",
       "markets": {
         "IT": {
-          "title": "amt genova",
-          "score": 31.3,
-          "status": "HOT",
+          "title": "meteo milano",
+          "score": 39.3,
+          "status": "STABLE",
           "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
+          "traffic": "5000+",
+          "traffic_level": 6,
           "momentum": 1.0,
           "news_count": 3
         }
@@ -1126,24 +1126,24 @@
       "rank": 1
     },
     {
-      "title": "antonino monteleone",
-      "key": "antonino monteleone",
-      "global_score": 28.0,
-      "italy_score": 31.3,
-      "crossover_score": 25.0,
-      "opportunity_score": 29.2,
+      "title": "sara soldati",
+      "key": "sara soldati",
+      "global_score": 28.9,
+      "italy_score": 32.4,
+      "crossover_score": 25.7,
+      "opportunity_score": 28.0,
       "global_status": "STABLE",
-      "italy_status": "HOT",
-      "why_now": "+fascia negli ultimi 30 minuti; 3 notizie da 3 fonti",
+      "italy_status": "EMERGING",
+      "why_now": "3 notizie da 3 fonti; nuova entrata nel radar",
       "markets": {
         "IT": {
-          "title": "antonino monteleone",
-          "score": 31.3,
-          "status": "HOT",
+          "title": "sara soldati",
+          "score": 32.4,
+          "status": "EMERGING",
           "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
-          "momentum": 1.0,
+          "traffic": "2000+",
+          "traffic_level": 5,
+          "momentum": 0,
           "news_count": 3
         }
       },
@@ -1152,6 +1152,45 @@
         "IT"
       ],
       "rank": 2
+    },
+    {
+      "title": "peter max",
+      "key": "peter max",
+      "global_score": 24.9,
+      "italy_score": 24.3,
+      "crossover_score": 24.5,
+      "opportunity_score": 26.9,
+      "global_status": "STABLE",
+      "italy_status": "EMERGING",
+      "why_now": "3 notizie da 3 fonti; nuova entrata nel radar",
+      "markets": {
+        "IT": {
+          "title": "peter max",
+          "score": 24.3,
+          "status": "EMERGING",
+          "acceleration": "NONE",
+          "traffic": "100+",
+          "traffic_level": 1,
+          "momentum": 0,
+          "news_count": 3
+        },
+        "DE": {
+          "title": "peter max",
+          "score": 18.8,
+          "status": "HOT",
+          "acceleration": "NONE",
+          "traffic": "200+",
+          "traffic_level": 2,
+          "momentum": 0.0,
+          "news_count": 3
+        }
+      },
+      "market_count": 2,
+      "market_codes": [
+        "DE",
+        "IT"
+      ],
+      "rank": 3
     },
     {
       "title": "artificial intelligence news",
@@ -1179,78 +1218,50 @@
       "market_codes": [
         "US"
       ],
-      "rank": 3
-    },
-    {
-      "title": "latest iphone rumors",
-      "key": "latest iphone rumors",
-      "global_score": 47.6,
-      "italy_score": 0,
-      "crossover_score": 24.4,
-      "opportunity_score": 24.5,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "US": {
-          "title": "latest iphone rumors",
-          "score": 53.2,
-          "status": "RISING",
-          "acceleration": "MEDIUM",
-          "traffic": "1000+",
-          "traffic_level": 4,
-          "momentum": 1.0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "US"
-      ],
       "rank": 4
     },
     {
-      "title": "cryptocurrency trading",
-      "key": "cryptocurrency trading",
-      "global_score": 47.6,
-      "italy_score": 0,
-      "crossover_score": 24.4,
-      "opportunity_score": 24.5,
+      "title": "azerbaigian",
+      "key": "azerbaigian",
+      "global_score": 24.0,
+      "italy_score": 26.2,
+      "crossover_score": 21.7,
+      "opportunity_score": 23.6,
       "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
+      "italy_status": "EMERGING",
+      "why_now": "3 notizie da 3 fonti; nuova entrata nel radar",
       "markets": {
-        "US": {
-          "title": "cryptocurrency trading",
-          "score": 53.2,
-          "status": "RISING",
-          "acceleration": "MEDIUM",
-          "traffic": "1000+",
-          "traffic_level": 4,
-          "momentum": 1.0,
+        "IT": {
+          "title": "azerbaigian",
+          "score": 26.2,
+          "status": "EMERGING",
+          "acceleration": "NONE",
+          "traffic": "200+",
+          "traffic_level": 2,
+          "momentum": 0,
           "news_count": 3
         }
       },
       "market_count": 1,
       "market_codes": [
-        "US"
+        "IT"
       ],
       "rank": 5
     },
     {
-      "title": "what is a data breach",
-      "key": "what is a data breach",
-      "global_score": 46.4,
+      "title": "tennis scores today",
+      "key": "tennis scores today",
+      "global_score": 43.9,
       "italy_score": 0,
-      "crossover_score": 23.9,
-      "opportunity_score": 24.0,
+      "crossover_score": 22.8,
+      "opportunity_score": 22.9,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "US": {
-          "title": "what is a data breach",
-          "score": 51.8,
+          "title": "tennis scores today",
+          "score": 48.6,
           "status": "RISING",
           "acceleration": "MEDIUM",
           "traffic": "1000+",
@@ -1266,108 +1277,136 @@
       "rank": 6
     },
     {
-      "title": "mallorca magazin",
-      "key": "mallorca magazin",
-      "global_score": 46.3,
+      "title": "where to watch nfl games",
+      "key": "where to watch nfl games",
+      "global_score": 38.8,
       "italy_score": 0,
-      "crossover_score": 23.8,
-      "opportunity_score": 24.0,
+      "crossover_score": 20.5,
+      "opportunity_score": 20.7,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
-        "DE": {
-          "title": "mallorca magazin",
-          "score": 47.9,
-          "status": "ACCELERATING",
-          "acceleration": "STRONG",
-          "traffic": "500+",
-          "traffic_level": 3,
-          "momentum": 2.0,
+        "US": {
+          "title": "where to watch nfl games",
+          "score": 42.2,
+          "status": "RISING",
+          "acceleration": "MEDIUM",
+          "traffic": "1000+",
+          "traffic_level": 4,
+          "momentum": 1.0,
           "news_count": 3
         }
       },
       "market_count": 1,
       "market_codes": [
-        "DE"
+        "US"
       ],
       "rank": 7
     },
     {
-      "title": "netflix top movies right now",
-      "key": "netflix top movies right now",
-      "global_score": 43.9,
-      "italy_score": 0,
-      "crossover_score": 22.8,
-      "opportunity_score": 22.9,
+      "title": "andrea dovizioso",
+      "key": "andrea dovizioso",
+      "global_score": 19.5,
+      "italy_score": 20.6,
+      "crossover_score": 18.0,
+      "opportunity_score": 19.6,
       "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
+      "italy_status": "HOT",
+      "why_now": "3 notizie da 3 fonti",
       "markets": {
-        "US": {
-          "title": "netflix top movies right now",
-          "score": 48.6,
-          "status": "RISING",
-          "acceleration": "MEDIUM",
-          "traffic": "1000+",
-          "traffic_level": 4,
-          "momentum": 1.0,
+        "IT": {
+          "title": "andrea dovizioso",
+          "score": 20.6,
+          "status": "HOT",
+          "acceleration": "NONE",
+          "traffic": "100+",
+          "traffic_level": 1,
+          "momentum": 0,
           "news_count": 3
         }
       },
       "market_count": 1,
       "market_codes": [
-        "US"
+        "IT"
       ],
       "rank": 8
     },
     {
-      "title": "tennis scores today",
-      "key": "tennis scores today",
-      "global_score": 43.2,
-      "italy_score": 0,
-      "crossover_score": 22.4,
-      "opportunity_score": 22.6,
+      "title": "cena",
+      "key": "cena",
+      "global_score": 19.5,
+      "italy_score": 20.6,
+      "crossover_score": 18.0,
+      "opportunity_score": 19.6,
       "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
+      "italy_status": "HOT",
+      "why_now": "3 notizie da 3 fonti",
       "markets": {
-        "US": {
-          "title": "tennis scores today",
-          "score": 47.8,
-          "status": "RISING",
-          "acceleration": "MEDIUM",
-          "traffic": "1000+",
-          "traffic_level": 4,
-          "momentum": 1.0,
+        "IT": {
+          "title": "cena",
+          "score": 20.6,
+          "status": "HOT",
+          "acceleration": "NONE",
+          "traffic": "100+",
+          "traffic_level": 1,
+          "momentum": 0,
           "news_count": 3
         }
       },
       "market_count": 1,
       "market_codes": [
-        "US"
+        "IT"
       ],
       "rank": 9
     },
     {
-      "title": "nfl schedule this week",
-      "key": "nfl schedule this week",
-      "global_score": 42.6,
+      "title": "lecco notizie",
+      "key": "lecco notizie",
+      "global_score": 19.5,
+      "italy_score": 20.6,
+      "crossover_score": 18.0,
+      "opportunity_score": 19.6,
+      "global_status": "STABLE",
+      "italy_status": "HOT",
+      "why_now": "3 notizie da 3 fonti",
+      "markets": {
+        "IT": {
+          "title": "lecco notizie",
+          "score": 20.6,
+          "status": "HOT",
+          "acceleration": "NONE",
+          "traffic": "100+",
+          "traffic_level": 1,
+          "momentum": 0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "IT"
+      ],
+      "rank": 10
+    },
+    {
+      "title": "latest iphone rumors",
+      "key": "latest iphone rumors",
+      "global_score": 35.6,
       "italy_score": 0,
-      "crossover_score": 22.2,
-      "opportunity_score": 22.4,
+      "crossover_score": 19.0,
+      "opportunity_score": 19.3,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "US": {
-          "title": "nfl schedule this week",
-          "score": 47.0,
-          "status": "RISING",
-          "acceleration": "MEDIUM",
+          "title": "latest iphone rumors",
+          "score": 40.7,
+          "status": "HOT",
+          "acceleration": "WEAK",
           "traffic": "1000+",
           "traffic_level": 4,
-          "momentum": 1.0,
+          "momentum": 0.38,
           "news_count": 3
         }
       },
@@ -1375,83 +1414,55 @@
       "market_codes": [
         "US"
       ],
-      "rank": 10
-    },
-    {
-      "title": "andrea dovizioso",
-      "key": "andrea dovizioso",
-      "global_score": 22.4,
-      "italy_score": 24.3,
-      "crossover_score": 20.4,
-      "opportunity_score": 22.2,
-      "global_status": "STABLE",
-      "italy_status": "EMERGING",
-      "why_now": "3 notizie da 3 fonti; nuova entrata nel radar",
-      "markets": {
-        "IT": {
-          "title": "andrea dovizioso",
-          "score": 24.3,
-          "status": "EMERGING",
-          "acceleration": "NONE",
-          "traffic": "100+",
-          "traffic_level": 1,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "IT"
-      ],
       "rank": 11
     },
     {
-      "title": "lecco notizie",
-      "key": "lecco notizie",
-      "global_score": 22.4,
-      "italy_score": 24.3,
-      "crossover_score": 20.4,
-      "opportunity_score": 22.2,
+      "title": "cryptocurrency trading",
+      "key": "cryptocurrency trading",
+      "global_score": 35.6,
+      "italy_score": 0,
+      "crossover_score": 19.0,
+      "opportunity_score": 19.3,
       "global_status": "STABLE",
-      "italy_status": "EMERGING",
-      "why_now": "3 notizie da 3 fonti; nuova entrata nel radar",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
       "markets": {
-        "IT": {
-          "title": "lecco notizie",
-          "score": 24.3,
-          "status": "EMERGING",
-          "acceleration": "NONE",
-          "traffic": "100+",
-          "traffic_level": 1,
-          "momentum": 0,
+        "US": {
+          "title": "cryptocurrency trading",
+          "score": 40.7,
+          "status": "HOT",
+          "acceleration": "WEAK",
+          "traffic": "1000+",
+          "traffic_level": 4,
+          "momentum": 0.38,
           "news_count": 3
         }
       },
       "market_count": 1,
       "market_codes": [
-        "IT"
+        "US"
       ],
       "rank": 12
     },
     {
-      "title": "cena",
-      "key": "cena",
-      "global_score": 22.4,
-      "italy_score": 24.3,
-      "crossover_score": 20.4,
-      "opportunity_score": 22.2,
+      "title": "axios",
+      "key": "axios",
+      "global_score": 19.2,
+      "italy_score": 20.2,
+      "crossover_score": 17.7,
+      "opportunity_score": 19.3,
       "global_status": "STABLE",
-      "italy_status": "EMERGING",
-      "why_now": "3 notizie da 3 fonti; nuova entrata nel radar",
+      "italy_status": "STABLE",
+      "why_now": "3 notizie da 3 fonti",
       "markets": {
         "IT": {
-          "title": "cena",
-          "score": 24.3,
-          "status": "EMERGING",
+          "title": "axios",
+          "score": 20.2,
+          "status": "STABLE",
           "acceleration": "NONE",
-          "traffic": "100+",
-          "traffic_level": 1,
-          "momentum": 0,
+          "traffic": "200+",
+          "traffic_level": 2,
+          "momentum": 0.0,
           "news_count": 3
         }
       },
@@ -1462,24 +1473,24 @@
       "rank": 13
     },
     {
-      "title": "where to watch nfl games",
-      "key": "where to watch nfl games",
-      "global_score": 42.1,
+      "title": "what is a data breach",
+      "key": "what is a data breach",
+      "global_score": 35.1,
       "italy_score": 0,
-      "crossover_score": 21.9,
-      "opportunity_score": 22.1,
+      "crossover_score": 18.8,
+      "opportunity_score": 19.0,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "US": {
-          "title": "where to watch nfl games",
-          "score": 46.4,
-          "status": "RISING",
-          "acceleration": "MEDIUM",
+          "title": "what is a data breach",
+          "score": 40.1,
+          "status": "HOT",
+          "acceleration": "WEAK",
           "traffic": "1000+",
           "traffic_level": 4,
-          "momentum": 1.0,
+          "momentum": 0.38,
           "news_count": 3
         }
       },
@@ -1490,80 +1501,80 @@
       "rank": 14
     },
     {
-      "title": "ardon jashari",
-      "key": "ardon jashari",
-      "global_score": 21.0,
-      "italy_score": 22.5,
-      "crossover_score": 19.2,
-      "opportunity_score": 20.9,
-      "global_status": "STABLE",
-      "italy_status": "HOT",
-      "why_now": "3 notizie da 3 fonti",
-      "markets": {
-        "IT": {
-          "title": "ardon jashari",
-          "score": 22.5,
-          "status": "HOT",
-          "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "IT"
-      ],
-      "rank": 15
-    },
-    {
-      "title": "bahnübergang",
-      "key": "bahnubergang",
-      "global_score": 37.3,
+      "title": "netflix top movies right now",
+      "key": "netflix top movies right now",
+      "global_score": 32.5,
       "italy_score": 0,
-      "crossover_score": 19.8,
-      "opportunity_score": 20.0,
+      "crossover_score": 17.6,
+      "opportunity_score": 17.9,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
-        "DE": {
-          "title": "bahnübergang",
-          "score": 40.4,
-          "status": "RISING",
-          "acceleration": "MEDIUM",
-          "traffic": "500+",
-          "traffic_level": 3,
-          "momentum": 1.0,
+        "US": {
+          "title": "netflix top movies right now",
+          "score": 36.9,
+          "status": "HOT",
+          "acceleration": "WEAK",
+          "traffic": "1000+",
+          "traffic_level": 4,
+          "momentum": 0.38,
           "news_count": 3
         }
       },
       "market_count": 1,
       "market_codes": [
-        "DE"
+        "US"
+      ],
+      "rank": 15
+    },
+    {
+      "title": "nfl schedule this week",
+      "key": "nfl schedule this week",
+      "global_score": 31.2,
+      "italy_score": 0,
+      "crossover_score": 17.0,
+      "opportunity_score": 17.3,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "US": {
+          "title": "nfl schedule this week",
+          "score": 35.3,
+          "status": "HOT",
+          "acceleration": "WEAK",
+          "traffic": "1000+",
+          "traffic_level": 4,
+          "momentum": 0.38,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "US"
       ],
       "rank": 16
     },
     {
       "title": "gaza",
       "key": "gaza",
-      "global_score": 19.5,
-      "italy_score": 20.6,
-      "crossover_score": 18.0,
-      "opportunity_score": 19.6,
+      "global_score": 16.5,
+      "italy_score": 16.9,
+      "crossover_score": 15.5,
+      "opportunity_score": 16.9,
       "global_status": "STABLE",
       "italy_status": "HOT",
       "why_now": "3 notizie da 3 fonti",
       "markets": {
         "IT": {
           "title": "gaza",
-          "score": 20.6,
+          "score": 16.9,
           "status": "HOT",
           "acceleration": "NONE",
           "traffic": "100+",
           "traffic_level": 1,
-          "momentum": 0,
+          "momentum": 0.0,
           "news_count": 3
         }
       },
@@ -1574,19 +1585,19 @@
       "rank": 17
     },
     {
-      "title": "pakistan vs thailand",
-      "key": "pakistan vs thailand",
-      "global_score": 19.5,
-      "italy_score": 20.6,
-      "crossover_score": 18.0,
-      "opportunity_score": 19.6,
+      "title": "schule",
+      "key": "schule",
+      "global_score": 16.1,
+      "italy_score": 16.4,
+      "crossover_score": 15.2,
+      "opportunity_score": 16.6,
       "global_status": "STABLE",
       "italy_status": "HOT",
       "why_now": "3 notizie da 3 fonti",
       "markets": {
         "IT": {
-          "title": "pakistan vs thailand",
-          "score": 20.6,
+          "title": "schule",
+          "score": 16.4,
           "status": "HOT",
           "acceleration": "NONE",
           "traffic": "100+",
@@ -1602,120 +1613,8 @@
       "rank": 18
     },
     {
-      "title": "schule",
-      "key": "schule",
-      "global_score": 19.1,
-      "italy_score": 20.1,
-      "crossover_score": 17.6,
-      "opportunity_score": 19.2,
-      "global_status": "STABLE",
-      "italy_status": "HOT",
-      "why_now": "3 notizie da 3 fonti",
-      "markets": {
-        "IT": {
-          "title": "schule",
-          "score": 20.1,
-          "status": "HOT",
-          "acceleration": "NONE",
-          "traffic": "100+",
-          "traffic_level": 1,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "IT"
-      ],
-      "rank": 19
-    },
-    {
-      "title": "axios",
-      "key": "axios",
-      "global_score": 18.1,
-      "italy_score": 18.9,
-      "crossover_score": 16.8,
-      "opportunity_score": 18.4,
-      "global_status": "STABLE",
-      "italy_status": "STABLE",
-      "why_now": "3 notizie da 3 fonti",
-      "markets": {
-        "IT": {
-          "title": "axios",
-          "score": 18.9,
-          "status": "STABLE",
-          "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "IT"
-      ],
-      "rank": 20
-    },
-    {
-      "title": "anglia",
-      "key": "anglia",
-      "global_score": 30.9,
-      "italy_score": 0,
-      "crossover_score": 16.9,
-      "opportunity_score": 17.2,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "GB": {
-          "title": "anglia",
-          "score": 34.9,
-          "status": "EMERGING",
-          "acceleration": "NONE",
-          "traffic": "5000+",
-          "traffic_level": 6,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "GB"
-      ],
-      "rank": 21
-    },
-    {
-      "title": "weather today",
-      "key": "weather today",
-      "global_score": 30.9,
-      "italy_score": 0,
-      "crossover_score": 16.9,
-      "opportunity_score": 17.2,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "GB": {
-          "title": "weather today",
-          "score": 34.9,
-          "status": "EMERGING",
-          "acceleration": "NONE",
-          "traffic": "5000+",
-          "traffic_level": 6,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "GB"
-      ],
-      "rank": 22
-    },
-    {
-      "title": "le monument préféré des français",
-      "key": "le monument prefere des francais",
+      "title": "joanne froggatt",
+      "key": "joanne froggatt",
       "global_score": 28.9,
       "italy_score": 0,
       "crossover_score": 16.0,
@@ -1724,8 +1623,8 @@
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
-        "FR": {
-          "title": "le monument préféré des français",
+        "GB": {
+          "title": "joanne froggatt",
           "score": 32.4,
           "status": "EMERGING",
           "acceleration": "NONE",
@@ -1737,109 +1636,25 @@
       },
       "market_count": 1,
       "market_codes": [
-        "FR"
-      ],
-      "rank": 23
-    },
-    {
-      "title": "teams",
-      "key": "teams",
-      "global_score": 27.4,
-      "italy_score": 0,
-      "crossover_score": 15.3,
-      "opportunity_score": 15.6,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "ES": {
-          "title": "teams",
-          "score": 30.5,
-          "status": "EMERGING",
-          "acceleration": "NONE",
-          "traffic": "1000+",
-          "traffic_level": 4,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "ES"
-      ],
-      "rank": 24
-    },
-    {
-      "title": "uk state pension triple lock",
-      "key": "uk state pension triple lock",
-      "global_score": 26.0,
-      "italy_score": 0,
-      "crossover_score": 14.7,
-      "opportunity_score": 15.0,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "GB": {
-          "title": "uk state pension triple lock",
-          "score": 28.7,
-          "status": "HOT",
-          "acceleration": "NONE",
-          "traffic": "2000+",
-          "traffic_level": 5,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
         "GB"
       ],
-      "rank": 25
+      "rank": 19
     },
     {
-      "title": "london weather",
-      "key": "london weather",
-      "global_score": 26.0,
+      "title": "leipzig",
+      "key": "leipzig",
+      "global_score": 28.9,
       "italy_score": 0,
-      "crossover_score": 14.7,
-      "opportunity_score": 15.0,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "GB": {
-          "title": "london weather",
-          "score": 28.7,
-          "status": "HOT",
-          "acceleration": "NONE",
-          "traffic": "2000+",
-          "traffic_level": 5,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "GB"
-      ],
-      "rank": 26
-    },
-    {
-      "title": "schnaudertal",
-      "key": "schnaudertal",
-      "global_score": 26.0,
-      "italy_score": 0,
-      "crossover_score": 14.7,
-      "opportunity_score": 15.0,
+      "crossover_score": 16.0,
+      "opportunity_score": 16.3,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "DE": {
-          "title": "schnaudertal",
-          "score": 28.7,
-          "status": "HOT",
+          "title": "leipzig",
+          "score": 32.4,
+          "status": "EMERGING",
           "acceleration": "NONE",
           "traffic": "2000+",
           "traffic_level": 5,
@@ -1851,11 +1666,123 @@
       "market_codes": [
         "DE"
       ],
-      "rank": 27
+      "rank": 20
     },
     {
-      "title": "pix",
-      "key": "pix",
+      "title": "strategic bitcoin reserve",
+      "key": "strategic bitcoin reserve",
+      "global_score": 28.0,
+      "italy_score": 0,
+      "crossover_score": 15.6,
+      "opportunity_score": 15.9,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "DE": {
+          "title": "strategic bitcoin reserve",
+          "score": 31.3,
+          "status": "HOT",
+          "acceleration": "NONE",
+          "traffic": "200+",
+          "traffic_level": 2,
+          "momentum": 1.0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "DE"
+      ],
+      "rank": 21
+    },
+    {
+      "title": "frechen",
+      "key": "frechen",
+      "global_score": 28.0,
+      "italy_score": 0,
+      "crossover_score": 15.6,
+      "opportunity_score": 15.9,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "DE": {
+          "title": "frechen",
+          "score": 31.3,
+          "status": "HOT",
+          "acceleration": "NONE",
+          "traffic": "200+",
+          "traffic_level": 2,
+          "momentum": 1.0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "DE"
+      ],
+      "rank": 22
+    },
+    {
+      "title": "explosion frankfurt heute",
+      "key": "explosion frankfurt heute",
+      "global_score": 28.0,
+      "italy_score": 0,
+      "crossover_score": 15.6,
+      "opportunity_score": 15.9,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "DE": {
+          "title": "explosion frankfurt heute",
+          "score": 31.2,
+          "status": "HOT",
+          "acceleration": "NONE",
+          "traffic": "5000+",
+          "traffic_level": 6,
+          "momentum": 0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "DE"
+      ],
+      "rank": 23
+    },
+    {
+      "title": "tiempo de hoy",
+      "key": "tiempo de hoy",
+      "global_score": 28.0,
+      "italy_score": 0,
+      "crossover_score": 15.6,
+      "opportunity_score": 15.9,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "ES": {
+          "title": "tiempo de hoy",
+          "score": 31.3,
+          "status": "HOT",
+          "acceleration": "NONE",
+          "traffic": "200+",
+          "traffic_level": 2,
+          "momentum": 1.0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "ES"
+      ],
+      "rank": 24
+    },
+    {
+      "title": "le monument préféré des français",
+      "key": "le monument prefere des francais",
       "global_score": 26.0,
       "italy_score": 0,
       "crossover_score": 14.7,
@@ -1865,12 +1792,12 @@
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "FR": {
-          "title": "pix",
+          "title": "le monument préféré des français",
           "score": 28.7,
-          "status": "EMERGING",
+          "status": "HOT",
           "acceleration": "NONE",
-          "traffic": "500+",
-          "traffic_level": 3,
+          "traffic": "2000+",
+          "traffic_level": 5,
           "momentum": 0,
           "news_count": 3
         }
@@ -1879,26 +1806,26 @@
       "market_codes": [
         "FR"
       ],
-      "rank": 28
+      "rank": 25
     },
     {
       "title": "alice rufo",
       "key": "alice rufo",
-      "global_score": 26.0,
+      "global_score": 24.4,
       "italy_score": 0,
-      "crossover_score": 14.7,
-      "opportunity_score": 15.0,
+      "crossover_score": 14.0,
+      "opportunity_score": 14.3,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "FR": {
           "title": "alice rufo",
-          "score": 28.7,
-          "status": "EMERGING",
+          "score": 26.8,
+          "status": "HOT",
           "acceleration": "NONE",
-          "traffic": "500+",
-          "traffic_level": 3,
+          "traffic": "1000+",
+          "traffic_level": 4,
           "momentum": 0,
           "news_count": 3
         }
@@ -1906,52 +1833,136 @@
       "market_count": 1,
       "market_codes": [
         "FR"
+      ],
+      "rank": 26
+    },
+    {
+      "title": "teams",
+      "key": "teams",
+      "global_score": 24.4,
+      "italy_score": 0,
+      "crossover_score": 14.0,
+      "opportunity_score": 14.3,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "ES": {
+          "title": "teams",
+          "score": 26.8,
+          "status": "HOT",
+          "acceleration": "NONE",
+          "traffic": "1000+",
+          "traffic_level": 4,
+          "momentum": 0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "ES"
+      ],
+      "rank": 27
+    },
+    {
+      "title": "accident lawyer",
+      "key": "accident lawyer",
+      "global_score": 24.0,
+      "italy_score": 0,
+      "crossover_score": 13.8,
+      "opportunity_score": 14.2,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "US": {
+          "title": "accident lawyer",
+          "score": 26.2,
+          "status": "EMERGING",
+          "acceleration": "NONE",
+          "traffic": "200+",
+          "traffic_level": 2,
+          "momentum": 0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "US"
+      ],
+      "rank": 28
+    },
+    {
+      "title": "vfb tickets",
+      "key": "vfb tickets",
+      "global_score": 24.0,
+      "italy_score": 0,
+      "crossover_score": 13.8,
+      "opportunity_score": 14.2,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "DE": {
+          "title": "vfb tickets",
+          "score": 26.2,
+          "status": "EMERGING",
+          "acceleration": "NONE",
+          "traffic": "200+",
+          "traffic_level": 2,
+          "momentum": 0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "DE"
       ],
       "rank": 29
     },
     {
-      "title": "laure lavalette",
-      "key": "laure lavalette",
-      "global_score": 26.0,
+      "title": "schnaudertal",
+      "key": "schnaudertal",
+      "global_score": 23.0,
       "italy_score": 0,
-      "crossover_score": 14.7,
-      "opportunity_score": 15.0,
+      "crossover_score": 13.3,
+      "opportunity_score": 13.7,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
-        "FR": {
-          "title": "laure lavalette",
-          "score": 28.7,
-          "status": "EMERGING",
+        "DE": {
+          "title": "schnaudertal",
+          "score": 25.0,
+          "status": "HOT",
           "acceleration": "NONE",
-          "traffic": "500+",
-          "traffic_level": 3,
-          "momentum": 0,
+          "traffic": "2000+",
+          "traffic_level": 5,
+          "momentum": -1.0,
           "news_count": 3
         }
       },
       "market_count": 1,
       "market_codes": [
-        "FR"
+        "DE"
       ],
       "rank": 30
     },
     {
-      "title": "israéliens",
-      "key": "israeliens",
-      "global_score": 26.0,
+      "title": "pix",
+      "key": "pix",
+      "global_score": 23.0,
       "italy_score": 0,
-      "crossover_score": 14.7,
-      "opportunity_score": 15.0,
+      "crossover_score": 13.3,
+      "opportunity_score": 13.7,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "FR": {
-          "title": "israéliens",
-          "score": 28.7,
-          "status": "EMERGING",
+          "title": "pix",
+          "score": 25.0,
+          "status": "HOT",
           "acceleration": "NONE",
           "traffic": "500+",
           "traffic_level": 3,
@@ -1966,20 +1977,76 @@
       "rank": 31
     },
     {
+      "title": "laure lavalette",
+      "key": "laure lavalette",
+      "global_score": 23.0,
+      "italy_score": 0,
+      "crossover_score": 13.3,
+      "opportunity_score": 13.7,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "FR": {
+          "title": "laure lavalette",
+          "score": 25.0,
+          "status": "HOT",
+          "acceleration": "NONE",
+          "traffic": "500+",
+          "traffic_level": 3,
+          "momentum": 0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "FR"
+      ],
+      "rank": 32
+    },
+    {
+      "title": "israéliens",
+      "key": "israeliens",
+      "global_score": 23.0,
+      "italy_score": 0,
+      "crossover_score": 13.3,
+      "opportunity_score": 13.7,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "FR": {
+          "title": "israéliens",
+          "score": 25.0,
+          "status": "HOT",
+          "acceleration": "NONE",
+          "traffic": "500+",
+          "traffic_level": 3,
+          "momentum": 0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "FR"
+      ],
+      "rank": 33
+    },
+    {
       "title": "imserso",
       "key": "imserso",
-      "global_score": 26.0,
+      "global_score": 23.0,
       "italy_score": 0,
-      "crossover_score": 14.7,
-      "opportunity_score": 15.0,
+      "crossover_score": 13.3,
+      "opportunity_score": 13.7,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "ES": {
           "title": "imserso",
-          "score": 28.7,
-          "status": "EMERGING",
+          "score": 25.0,
+          "status": "HOT",
           "acceleration": "NONE",
           "traffic": "500+",
           "traffic_level": 3,
@@ -1991,95 +2058,11 @@
       "market_codes": [
         "ES"
       ],
-      "rank": 32
-    },
-    {
-      "title": "matthew lillard scream",
-      "key": "matthew lillard scream",
-      "global_score": 25.0,
-      "italy_score": 0,
-      "crossover_score": 14.2,
-      "opportunity_score": 14.6,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "US": {
-          "title": "matthew lillard scream",
-          "score": 27.5,
-          "status": "HOT",
-          "acceleration": "NONE",
-          "traffic": "5000+",
-          "traffic_level": 6,
-          "momentum": 0.0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "US"
-      ],
-      "rank": 33
-    },
-    {
-      "title": "jerome powell",
-      "key": "jerome powell",
-      "global_score": 24.0,
-      "italy_score": 0,
-      "crossover_score": 13.8,
-      "opportunity_score": 14.2,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "DE": {
-          "title": "jerome powell",
-          "score": 26.2,
-          "status": "EMERGING",
-          "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "DE"
-      ],
       "rank": 34
     },
     {
-      "title": "el tiempo en malaga",
-      "key": "el tiempo en malaga",
-      "global_score": 24.0,
-      "italy_score": 0,
-      "crossover_score": 13.8,
-      "opportunity_score": 14.2,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "ES": {
-          "title": "el tiempo en malaga",
-          "score": 26.2,
-          "status": "EMERGING",
-          "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "ES"
-      ],
-      "rank": 35
-    },
-    {
-      "title": "wow forever beta",
-      "key": "wow forever beta",
+      "title": "morocco",
+      "key": "morocco",
       "global_score": 22.4,
       "italy_score": 0,
       "crossover_score": 13.1,
@@ -2089,7 +2072,35 @@
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "GB": {
-          "title": "wow forever beta",
+          "title": "morocco",
+          "score": 24.3,
+          "status": "EMERGING",
+          "acceleration": "NONE",
+          "traffic": "100+",
+          "traffic_level": 1,
+          "momentum": 0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "GB"
+      ],
+      "rank": 35
+    },
+    {
+      "title": "strands hint",
+      "key": "strands hint",
+      "global_score": 22.4,
+      "italy_score": 0,
+      "crossover_score": 13.1,
+      "opportunity_score": 13.5,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "GB": {
+          "title": "strands hint",
           "score": 24.3,
           "status": "EMERGING",
           "acceleration": "NONE",
@@ -2106,8 +2117,8 @@
       "rank": 36
     },
     {
-      "title": "nikolay storonsky",
-      "key": "nikolay storonsky",
+      "title": "rory mcilroy bmw pga pro-am",
+      "key": "rory mcilroy bmw pga pro am",
       "global_score": 22.4,
       "italy_score": 0,
       "crossover_score": 13.1,
@@ -2117,7 +2128,7 @@
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "GB": {
-          "title": "nikolay storonsky",
+          "title": "rory mcilroy bmw pga pro-am",
           "score": 24.3,
           "status": "EMERGING",
           "acceleration": "NONE",
@@ -2134,8 +2145,8 @@
       "rank": 37
     },
     {
-      "title": "data breach",
-      "key": "data breach",
+      "title": "macklemore net worth",
+      "key": "macklemore net worth",
       "global_score": 22.4,
       "italy_score": 0,
       "crossover_score": 13.1,
@@ -2145,7 +2156,7 @@
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "GB": {
-          "title": "data breach",
+          "title": "macklemore net worth",
           "score": 24.3,
           "status": "EMERGING",
           "acceleration": "NONE",
@@ -2162,23 +2173,23 @@
       "rank": 38
     },
     {
-      "title": "explosion frankfurt heute",
-      "key": "explosion frankfurt heute",
-      "global_score": 22.4,
+      "title": "jerome powell",
+      "key": "jerome powell",
+      "global_score": 21.0,
       "italy_score": 0,
-      "crossover_score": 13.1,
-      "opportunity_score": 13.5,
+      "crossover_score": 12.5,
+      "opportunity_score": 12.8,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "DE": {
-          "title": "explosion frankfurt heute",
-          "score": 24.3,
-          "status": "EMERGING",
+          "title": "jerome powell",
+          "score": 22.5,
+          "status": "HOT",
           "acceleration": "NONE",
-          "traffic": "100+",
-          "traffic_level": 1,
+          "traffic": "200+",
+          "traffic_level": 2,
           "momentum": 0,
           "news_count": 3
         }
@@ -2192,21 +2203,21 @@
     {
       "title": "harry roselmack",
       "key": "harry roselmack",
-      "global_score": 22.4,
+      "global_score": 21.0,
       "italy_score": 0,
-      "crossover_score": 13.1,
-      "opportunity_score": 13.5,
+      "crossover_score": 12.5,
+      "opportunity_score": 12.8,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "FR": {
           "title": "harry roselmack",
-          "score": 24.3,
-          "status": "EMERGING",
+          "score": 22.5,
+          "status": "HOT",
           "acceleration": "NONE",
-          "traffic": "100+",
-          "traffic_level": 1,
+          "traffic": "200+",
+          "traffic_level": 2,
           "momentum": 0,
           "news_count": 3
         }
@@ -2218,120 +2229,8 @@
       "rank": 40
     },
     {
-      "title": "17 septembre",
-      "key": "17 septembre",
-      "global_score": 22.4,
-      "italy_score": 0,
-      "crossover_score": 13.1,
-      "opportunity_score": 13.5,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "FR": {
-          "title": "17 septembre",
-          "score": 24.3,
-          "status": "EMERGING",
-          "acceleration": "NONE",
-          "traffic": "100+",
-          "traffic_level": 1,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "FR"
-      ],
-      "rank": 41
-    },
-    {
-      "title": "thema",
-      "key": "thema",
-      "global_score": 21.0,
-      "italy_score": 0,
-      "crossover_score": 12.5,
-      "opportunity_score": 12.8,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "US": {
-          "title": "thema",
-          "score": 22.5,
-          "status": "HOT",
-          "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "US"
-      ],
-      "rank": 42
-    },
-    {
-      "title": "peter max",
-      "key": "peter max",
-      "global_score": 21.0,
-      "italy_score": 0,
-      "crossover_score": 12.5,
-      "opportunity_score": 12.8,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "DE": {
-          "title": "peter max",
-          "score": 22.5,
-          "status": "HOT",
-          "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "DE"
-      ],
-      "rank": 43
-    },
-    {
-      "title": "jean-baptiste élissalde",
-      "key": "jean baptiste elissalde",
-      "global_score": 21.0,
-      "italy_score": 0,
-      "crossover_score": 12.5,
-      "opportunity_score": 12.8,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "FR": {
-          "title": "jean-baptiste élissalde",
-          "score": 22.5,
-          "status": "HOT",
-          "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "FR"
-      ],
-      "rank": 44
-    },
-    {
-      "title": "tiempo de hoy",
-      "key": "tiempo de hoy",
+      "title": "el tiempo en malaga",
+      "key": "el tiempo en malaga",
       "global_score": 21.0,
       "italy_score": 0,
       "crossover_score": 12.5,
@@ -2341,7 +2240,7 @@
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "ES": {
-          "title": "tiempo de hoy",
+          "title": "el tiempo en malaga",
           "score": 22.5,
           "status": "HOT",
           "acceleration": "NONE",
@@ -2355,11 +2254,11 @@
       "market_codes": [
         "ES"
       ],
-      "rank": 45
+      "rank": 41
     },
     {
-      "title": "orai",
-      "key": "orai",
+      "title": "warrington guardian",
+      "key": "warrington guardian",
       "global_score": 20.8,
       "italy_score": 0,
       "crossover_score": 12.4,
@@ -2369,9 +2268,121 @@
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "GB": {
-          "title": "orai",
+          "title": "warrington guardian",
           "score": 22.3,
           "status": "EMERGING",
+          "acceleration": "NONE",
+          "traffic": "100+",
+          "traffic_level": 1,
+          "momentum": 0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "GB"
+      ],
+      "rank": 42
+    },
+    {
+      "title": "nikolay storonsky",
+      "key": "nikolay storonsky",
+      "global_score": 19.5,
+      "italy_score": 0,
+      "crossover_score": 11.8,
+      "opportunity_score": 12.2,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "GB": {
+          "title": "nikolay storonsky",
+          "score": 20.6,
+          "status": "HOT",
+          "acceleration": "NONE",
+          "traffic": "100+",
+          "traffic_level": 1,
+          "momentum": 0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "GB"
+      ],
+      "rank": 43
+    },
+    {
+      "title": "wow forever beta",
+      "key": "wow forever beta",
+      "global_score": 19.5,
+      "italy_score": 0,
+      "crossover_score": 11.8,
+      "opportunity_score": 12.2,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "GB": {
+          "title": "wow forever beta",
+          "score": 20.6,
+          "status": "HOT",
+          "acceleration": "NONE",
+          "traffic": "100+",
+          "traffic_level": 1,
+          "momentum": 0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "GB"
+      ],
+      "rank": 44
+    },
+    {
+      "title": "data breach",
+      "key": "data breach",
+      "global_score": 19.5,
+      "italy_score": 0,
+      "crossover_score": 11.8,
+      "opportunity_score": 12.2,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "GB": {
+          "title": "data breach",
+          "score": 20.6,
+          "status": "HOT",
+          "acceleration": "NONE",
+          "traffic": "100+",
+          "traffic_level": 1,
+          "momentum": 0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "GB"
+      ],
+      "rank": 45
+    },
+    {
+      "title": "orai",
+      "key": "orai",
+      "global_score": 19.5,
+      "italy_score": 0,
+      "crossover_score": 11.8,
+      "opportunity_score": 12.2,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "GB": {
+          "title": "orai",
+          "score": 20.6,
+          "status": "HOT",
           "acceleration": "NONE",
           "traffic": "100+",
           "traffic_level": 1,
@@ -2386,24 +2397,80 @@
       "rank": 46
     },
     {
-      "title": "wetter",
-      "key": "wetter",
-      "global_score": 20.3,
+      "title": "17 septembre",
+      "key": "17 septembre",
+      "global_score": 19.5,
       "italy_score": 0,
-      "crossover_score": 12.1,
-      "opportunity_score": 12.5,
+      "crossover_score": 11.8,
+      "opportunity_score": 12.2,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "FR": {
+          "title": "17 septembre",
+          "score": 20.6,
+          "status": "HOT",
+          "acceleration": "NONE",
+          "traffic": "100+",
+          "traffic_level": 1,
+          "momentum": 0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "FR"
+      ],
+      "rank": 47
+    },
+    {
+      "title": "thema",
+      "key": "thema",
+      "global_score": 18.0,
+      "italy_score": 0,
+      "crossover_score": 11.1,
+      "opportunity_score": 11.5,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "US": {
+          "title": "thema",
+          "score": 18.8,
+          "status": "HOT",
+          "acceleration": "NONE",
+          "traffic": "200+",
+          "traffic_level": 2,
+          "momentum": 0.0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "US"
+      ],
+      "rank": 48
+    },
+    {
+      "title": "aemet malaga",
+      "key": "aemet malaga",
+      "global_score": 16.8,
+      "italy_score": 0,
+      "crossover_score": 10.6,
+      "opportunity_score": 11.0,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "ES": {
-          "title": "wetter",
-          "score": 21.6,
-          "status": "STABLE",
+          "title": "aemet malaga",
+          "score": 17.2,
+          "status": "HOT",
           "acceleration": "NONE",
-          "traffic": "1000+",
-          "traffic_level": 4,
-          "momentum": 0,
+          "traffic": "100+",
+          "traffic_level": 1,
+          "momentum": -1.0,
           "news_count": 3
         }
       },
@@ -2411,83 +2478,27 @@
       "market_codes": [
         "ES"
       ],
-      "rank": 47
-    },
-    {
-      "title": "strategic bitcoin reserve",
-      "key": "strategic bitcoin reserve",
-      "global_score": 19.5,
-      "italy_score": 0,
-      "crossover_score": 11.8,
-      "opportunity_score": 12.2,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "DE": {
-          "title": "strategic bitcoin reserve",
-          "score": 20.6,
-          "status": "HOT",
-          "acceleration": "NONE",
-          "traffic": "100+",
-          "traffic_level": 1,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "DE"
-      ],
-      "rank": 48
+      "rank": 49
     },
     {
       "title": "bilfinger",
       "key": "bilfinger",
-      "global_score": 19.5,
+      "global_score": 16.5,
       "italy_score": 0,
-      "crossover_score": 11.8,
-      "opportunity_score": 12.2,
+      "crossover_score": 10.4,
+      "opportunity_score": 10.9,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "DE": {
           "title": "bilfinger",
-          "score": 20.6,
+          "score": 16.9,
           "status": "HOT",
           "acceleration": "NONE",
           "traffic": "100+",
           "traffic_level": 1,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "DE"
-      ],
-      "rank": 49
-    },
-    {
-      "title": "haßberge",
-      "key": "haßberge",
-      "global_score": 19.5,
-      "italy_score": 0,
-      "crossover_score": 11.8,
-      "opportunity_score": 12.2,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "DE": {
-          "title": "haßberge",
-          "score": 20.6,
-          "status": "HOT",
-          "acceleration": "NONE",
-          "traffic": "100+",
-          "traffic_level": 1,
-          "momentum": 0,
+          "momentum": 0.0,
           "news_count": 3
         }
       },
@@ -2498,24 +2509,24 @@
       "rank": 50
     },
     {
-      "title": "frechen",
-      "key": "frechen",
-      "global_score": 19.5,
+      "title": "haßberge",
+      "key": "haßberge",
+      "global_score": 16.5,
       "italy_score": 0,
-      "crossover_score": 11.8,
-      "opportunity_score": 12.2,
+      "crossover_score": 10.4,
+      "opportunity_score": 10.9,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "DE": {
-          "title": "frechen",
-          "score": 20.6,
+          "title": "haßberge",
+          "score": 16.9,
           "status": "HOT",
           "acceleration": "NONE",
           "traffic": "100+",
           "traffic_level": 1,
-          "momentum": 0,
+          "momentum": 0.0,
           "news_count": 3
         }
       },
@@ -2526,25 +2537,25 @@
       "rank": 51
     },
     {
-      "title": "julianna margulies",
-      "key": "julianna margulies",
-      "global_score": 18.4,
+      "title": "edouard geffray",
+      "key": "edouard geffray",
+      "global_score": 16.5,
       "italy_score": 0,
-      "crossover_score": 11.3,
-      "opportunity_score": 11.7,
+      "crossover_score": 10.4,
+      "opportunity_score": 10.9,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "FR": {
-          "title": "julianna margulies",
-          "score": 19.3,
-          "status": "HOT",
+          "title": "edouard geffray",
+          "score": 16.9,
+          "status": "STABLE",
           "acceleration": "NONE",
-          "traffic": "100+",
-          "traffic_level": 1,
+          "traffic": "500+",
+          "traffic_level": 3,
           "momentum": 0,
-          "news_count": 1
+          "news_count": 3
         }
       },
       "market_count": 1,
@@ -2554,19 +2565,19 @@
       "rank": 52
     },
     {
-      "title": "pogoda",
-      "key": "pogoda",
-      "global_score": 18.3,
+      "title": "alcalde de madrid",
+      "key": "alcalde de madrid",
+      "global_score": 16.2,
       "italy_score": 0,
-      "crossover_score": 11.2,
-      "opportunity_score": 11.6,
+      "crossover_score": 10.3,
+      "opportunity_score": 10.7,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "ES": {
-          "title": "pogoda",
-          "score": 19.1,
+          "title": "alcalde de madrid",
+          "score": 16.5,
           "status": "STABLE",
           "acceleration": "NONE",
           "traffic": "200+",
@@ -2582,107 +2593,51 @@
       "rank": 53
     },
     {
-      "title": "weather sheffield",
-      "key": "weather sheffield",
-      "global_score": 17.9,
+      "title": "julianna margulies",
+      "key": "julianna margulies",
+      "global_score": 15.5,
       "italy_score": 0,
-      "crossover_score": 11.1,
-      "opportunity_score": 11.5,
+      "crossover_score": 10.0,
+      "opportunity_score": 10.4,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
-        "GB": {
-          "title": "weather sheffield",
-          "score": 18.6,
+        "FR": {
+          "title": "julianna margulies",
+          "score": 15.6,
           "status": "HOT",
           "acceleration": "NONE",
           "traffic": "100+",
           "traffic_level": 1,
           "momentum": 0,
-          "news_count": 3
+          "news_count": 1
         }
       },
       "market_count": 1,
       "market_codes": [
-        "GB"
+        "FR"
       ],
       "rank": 54
     },
     {
-      "title": "metoffice",
-      "key": "metoffice",
-      "global_score": 17.6,
+      "title": "pogoda",
+      "key": "pogoda",
+      "global_score": 15.3,
       "italy_score": 0,
-      "crossover_score": 10.9,
-      "opportunity_score": 11.3,
+      "crossover_score": 9.9,
+      "opportunity_score": 10.3,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
-        "GB": {
-          "title": "metoffice",
-          "score": 18.3,
-          "status": "HOT",
+        "ES": {
+          "title": "pogoda",
+          "score": 15.4,
+          "status": "STABLE",
           "acceleration": "NONE",
           "traffic": "200+",
           "traffic_level": 2,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "GB"
-      ],
-      "rank": 55
-    },
-    {
-      "title": "barca ayer",
-      "key": "barca ayer",
-      "global_score": 17.2,
-      "italy_score": 0,
-      "crossover_score": 10.7,
-      "opportunity_score": 11.2,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "ES": {
-          "title": "barca ayer",
-          "score": 17.7,
-          "status": "STABLE",
-          "acceleration": "NONE",
-          "traffic": "100+",
-          "traffic_level": 1,
-          "momentum": -0.62,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "ES"
-      ],
-      "rank": 56
-    },
-    {
-      "title": "clima hoy",
-      "key": "clima hoy",
-      "global_score": 17.2,
-      "italy_score": 0,
-      "crossover_score": 10.7,
-      "opportunity_score": 11.2,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "ES": {
-          "title": "clima hoy",
-          "score": 17.7,
-          "status": "STABLE",
-          "acceleration": "NONE",
-          "traffic": "100+",
-          "traffic_level": 1,
           "momentum": 0.0,
           "news_count": 3
         }
@@ -2691,50 +2646,22 @@
       "market_codes": [
         "ES"
       ],
-      "rank": 57
-    },
-    {
-      "title": "alcalde de madrid",
-      "key": "alcalde de madrid",
-      "global_score": 15.2,
-      "italy_score": 0,
-      "crossover_score": 9.8,
-      "opportunity_score": 10.3,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "ES": {
-          "title": "alcalde de madrid",
-          "score": 15.2,
-          "status": "STABLE",
-          "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "ES"
-      ],
-      "rank": 58
+      "rank": 55
     },
     {
       "title": "francesco bagnaia",
       "key": "francesco bagnaia",
-      "global_score": 13.0,
+      "global_score": 14.0,
       "italy_score": 0,
-      "crossover_score": 8.9,
-      "opportunity_score": 9.3,
+      "crossover_score": 9.3,
+      "opportunity_score": 9.8,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "FR": {
           "title": "francesco bagnaia",
-          "score": 12.5,
+          "score": 13.8,
           "status": "STABLE",
           "acceleration": "NONE",
           "traffic": "100+",
@@ -2747,22 +2674,78 @@
       "market_codes": [
         "FR"
       ],
-      "rank": 59
+      "rank": 56
+    },
+    {
+      "title": "barca ayer",
+      "key": "barca ayer",
+      "global_score": 13.8,
+      "italy_score": 0,
+      "crossover_score": 9.2,
+      "opportunity_score": 9.7,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "ES": {
+          "title": "barca ayer",
+          "score": 13.5,
+          "status": "HOT",
+          "acceleration": "NONE",
+          "traffic": "100+",
+          "traffic_level": 1,
+          "momentum": -1.0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "ES"
+      ],
+      "rank": 57
+    },
+    {
+      "title": "clima hoy",
+      "key": "clima hoy",
+      "global_score": 13.8,
+      "italy_score": 0,
+      "crossover_score": 9.2,
+      "opportunity_score": 9.7,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "ES": {
+          "title": "clima hoy",
+          "score": 13.5,
+          "status": "STABLE",
+          "acceleration": "NONE",
+          "traffic": "100+",
+          "traffic_level": 1,
+          "momentum": 0.0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "ES"
+      ],
+      "rank": 58
     },
     {
       "title": "времето",
       "key": "времето",
-      "global_score": 9.6,
+      "global_score": 10.2,
       "italy_score": 0,
-      "crossover_score": 7.3,
-      "opportunity_score": 7.8,
+      "crossover_score": 7.6,
+      "opportunity_score": 8.1,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "ES": {
           "title": "времето",
-          "score": 8.2,
+          "score": 9.0,
           "status": "STABLE",
           "acceleration": "NONE",
           "traffic": "100+",
@@ -2775,10 +2758,50 @@
       "market_codes": [
         "ES"
       ],
-      "rank": 60
+      "rank": 59
     }
   ],
-  "crossover_trends": [],
+  "crossover_trends": [
+    {
+      "title": "peter max",
+      "key": "peter max",
+      "global_score": 24.9,
+      "italy_score": 24.3,
+      "crossover_score": 24.5,
+      "opportunity_score": 26.9,
+      "global_status": "STABLE",
+      "italy_status": "EMERGING",
+      "why_now": "3 notizie da 3 fonti; nuova entrata nel radar",
+      "markets": {
+        "IT": {
+          "title": "peter max",
+          "score": 24.3,
+          "status": "EMERGING",
+          "acceleration": "NONE",
+          "traffic": "100+",
+          "traffic_level": 1,
+          "momentum": 0,
+          "news_count": 3
+        },
+        "DE": {
+          "title": "peter max",
+          "score": 18.8,
+          "status": "HOT",
+          "acceleration": "NONE",
+          "traffic": "200+",
+          "traffic_level": 2,
+          "momentum": 0.0,
+          "news_count": 3
+        }
+      },
+      "market_count": 2,
+      "market_codes": [
+        "DE",
+        "IT"
+      ],
+      "rank": 3
+    }
+  ],
   "global_scoring": {
     "market_strength": 60,
     "market_average": 20,
