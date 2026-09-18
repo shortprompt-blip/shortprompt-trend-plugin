@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "schema": "shortprompt-trend-radar-v3",
-  "timestamp": "2026-09-18T05:35:01.083549+02:00",
+  "timestamp": "2026-09-18T05:48:07.978927+02:00",
   "source": "Google Trends RSS",
   "geo": "IT",
   "feed_url": "https://trends.google.com/trending/rss?geo=IT",
@@ -18,6 +18,72 @@
   "traffic_note": "Google Trends RSS traffic values are approximate bands.",
   "trends": [
     {
+      "title": "music",
+      "key": "music",
+      "normalized_title": "music",
+      "category": "AI",
+      "status": "STABLE",
+      "acceleration": "NONE",
+      "score": 62.1,
+      "traffic": "2000+",
+      "traffic_level": 5,
+      "traffic_value": 2000,
+      "first_seen": "2026-09-16T03:46:23.224759+02:00",
+      "last_seen": "2026-09-18T05:48:07.978927+02:00",
+      "appearances": 25,
+      "duration_minutes": 3001,
+      "momentum": 0,
+      "momentum_30m": 0,
+      "momentum_1h": 0,
+      "momentum_3h": 0,
+      "momentum_status": "FLAT",
+      "why_now": "3 notizie da 3 fonti",
+      "change_30m_bands": null,
+      "change_1h_bands": null,
+      "change_3h_bands": null,
+      "change_6h_bands": null,
+      "change_24h_bands": 3,
+      "direction_30m": "UNKNOWN",
+      "direction_1h": "UNKNOWN",
+      "direction_3h": "UNKNOWN",
+      "occurrences_1h": 1,
+      "occurrences_3h": 3,
+      "occurrences_6h": 3,
+      "news_count": 3,
+      "source_count": 3,
+      "sources": [
+        "BBC",
+        "CNBC",
+        "CNN"
+      ],
+      "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTIi8wiIyNlS2cYNT21nTS5qbEg3Pm1r9goO2soIgBIywAeiVGwHI_PrFkpCWg",
+      "picture_source": "CNN",
+      "news": [
+        {
+          "title": "Ed Sheeran stadium drama turns to donations and humanitarian cooperation",
+          "snippet": "",
+          "url": "https://www.cnn.com/2026/09/16/entertainment/macklemore-sheeran-robert-kraft-donations-cnc",
+          "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTIi8wiIyNlS2cYNT21nTS5qbEg3Pm1r9goO2soIgBIywAeiVGwHI_PrFkpCWg",
+          "source": "CNN"
+        },
+        {
+          "title": "Ed Sheeran's tour in 'damage control mode'",
+          "snippet": "",
+          "url": "https://www.bbc.com/news/videos/cmwyz8npqnkxo",
+          "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRdy8_lkqKdD9dQjRSljcXmhI4hoJnE0Z6ABmSV-_wxYJovpTyy9KdpUxfBff0",
+          "source": "BBC"
+        },
+        {
+          "title": "Billionaire Kraft says Ed Sheeran sought $2 million aid donation from him amid fracas over Macklemore's Palestine comments",
+          "snippet": "",
+          "url": "https://www.cnbc.com/2026/09/17/kraft-ed-sheeran-macklemore-palestine.html",
+          "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwxqawT7zBk_azGHlgG2fjhGNSsKfc3fYEH_QtdIoJ_9CcACH66aRbCnNHfUk",
+          "source": "CNBC"
+        }
+      ],
+      "rank": 1
+    },
+    {
       "title": "sports",
       "key": "sports",
       "normalized_title": "sports",
@@ -29,9 +95,9 @@
       "traffic_level": 3,
       "traffic_value": 500,
       "first_seen": "2026-09-16T05:21:16.470510+02:00",
-      "last_seen": "2026-09-18T05:35:01.083549+02:00",
-      "appearances": 28,
-      "duration_minutes": 2893,
+      "last_seen": "2026-09-18T05:48:07.978927+02:00",
+      "appearances": 29,
+      "duration_minutes": 2906,
       "momentum": 1.0,
       "momentum_30m": 1,
       "momentum_1h": 1.0,
@@ -47,8 +113,8 @@
       "direction_1h": "UP",
       "direction_3h": "UNKNOWN",
       "occurrences_1h": 4,
-      "occurrences_3h": 7,
-      "occurrences_6h": 7,
+      "occurrences_3h": 8,
+      "occurrences_6h": 8,
       "news_count": 3,
       "source_count": 3,
       "sources": [
@@ -81,23 +147,23 @@
           "source": "Newsday"
         }
       ],
-      "rank": 1
+      "rank": 2
     },
     {
       "title": "fitness",
       "key": "fitness",
       "normalized_title": "fitness",
-      "category": "Business",
+      "category": "News",
       "status": "RISING",
       "acceleration": "MEDIUM",
-      "score": 47.8,
+      "score": 48.6,
       "traffic": "500+",
       "traffic_level": 3,
       "traffic_value": 500,
       "first_seen": "2026-09-16T05:21:16.470510+02:00",
-      "last_seen": "2026-09-18T05:35:01.083549+02:00",
-      "appearances": 13,
-      "duration_minutes": 2893,
+      "last_seen": "2026-09-18T05:48:07.978927+02:00",
+      "appearances": 14,
+      "duration_minutes": 2906,
       "momentum": 1.0,
       "momentum_30m": 1,
       "momentum_1h": 1.0,
@@ -113,41 +179,41 @@
       "direction_1h": "UP",
       "direction_3h": "UNKNOWN",
       "occurrences_1h": 4,
-      "occurrences_3h": 5,
-      "occurrences_6h": 5,
+      "occurrences_3h": 6,
+      "occurrences_6h": 6,
       "news_count": 3,
       "source_count": 3,
       "sources": [
-        "Australasian Leisure Management Magazine",
-        "The Age",
-        "WhatNow"
+        "ABC News & Headlines – Australian Broadcasting Corporation",
+        "BBC",
+        "The Guardian"
       ],
-      "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQjTRpgrcB3ZYVJILJaHuphNk_OPMZ5bFut9zSkF9g8hlyk1dANF2MFY3-NPls",
-      "picture_source": "WhatNow",
+      "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTUYtB4B-3g3CN2g_XGOrylgJMxYKsE2VgpBSdJ5Ju6uFA-1rLBWgazTlo4yAQ",
+      "picture_source": "BBC",
       "news": [
         {
-          "title": "EōS Fitness Plans New Forney Location",
+          "title": "Hyrox athlete apologises for continuing race after soiling herself",
           "snippet": "",
-          "url": "https://whatnow.com/dallas/retail/eos-fitness-plans-new-forney-location/",
-          "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQjTRpgrcB3ZYVJILJaHuphNk_OPMZ5bFut9zSkF9g8hlyk1dANF2MFY3-NPls",
-          "source": "WhatNow"
+          "url": "https://www.bbc.com/news/articles/ck0e35qyqlx0o",
+          "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTUYtB4B-3g3CN2g_XGOrylgJMxYKsE2VgpBSdJ5Ju6uFA-1rLBWgazTlo4yAQ",
+          "source": "BBC"
         },
         {
-          "title": "Tribunal finds Anytime Fitness' 'any gym' marketing misleading over membership transfers",
+          "title": "‘I’m genuinely sorry’: Australian Hyrox athlete who soiled herself apologises to China and rivals",
           "snippet": "",
-          "url": "https://www.ausleisure.com.au/news/tribunal-finds-anytime-fitness-any-gym-marketing-misleading-over-membership-transfers",
-          "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTawAegGVBa6kyYvduvUG2DbS3ackZ3ci3ZAnSztXH6_4XDKNuZjjN8e7VV32c",
-          "source": "Australasian Leisure Management Magazine"
+          "url": "https://www.theguardian.com/sport/2026/sep/17/im-genuinely-sorry-australian-hyrox-athlete-who-soiled-herself-apologises-to-china-and-rivals",
+          "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQGZnwhL7GZdFdYjYHQYBYkWReHZhkqu0iWyCbuG1tBU2B1TYulQn5o_XRM9A0",
+          "source": "The Guardian"
         },
         {
-          "title": "‘Unfair’: Anytime Fitness in the crosshairs over hidden cost to ‘any gym’ promise",
+          "title": "HYROX athlete apologises and withdraws for defecating mid-race",
           "snippet": "",
-          "url": "https://www.theage.com.au/business/companies/anytime-fitness-any-gym-claim-found-to-be-misleading-20260915-p60xdx.html",
-          "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVp14_svQJnmLJJJ04_hBC5i9kIPRgeqEAL2BV2APsFb5ykGtgTkNNXbXZ400",
-          "source": "The Age"
+          "url": "https://www.abc.net.au/news/2026-09-18/soiled-hyrox-athlete-joanna-wietrzyk-apologises-withdraws/107166578",
+          "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSoIuOwmMiMUERjRq7YHblu2BYZifoEMIJuLPB2dyFubaiMh9jlzR1WdQ6SYzU",
+          "source": "ABC News & Headlines – Australian Broadcasting Corporation"
         }
       ],
-      "rank": 2
+      "rank": 3
     },
     {
       "title": "news",
@@ -156,14 +222,14 @@
       "category": "News",
       "status": "RISING",
       "acceleration": "MEDIUM",
-      "score": 46.2,
+      "score": 47.0,
       "traffic": "500+",
       "traffic_level": 3,
       "traffic_value": 500,
       "first_seen": "2026-09-16T04:21:02.720218+02:00",
-      "last_seen": "2026-09-18T05:35:01.083549+02:00",
-      "appearances": 11,
-      "duration_minutes": 2953,
+      "last_seen": "2026-09-18T05:48:07.978927+02:00",
+      "appearances": 12,
+      "duration_minutes": 2967,
       "momentum": 1.0,
       "momentum_30m": 1,
       "momentum_1h": 1.0,
@@ -179,8 +245,8 @@
       "direction_1h": "UP",
       "direction_3h": "UNKNOWN",
       "occurrences_1h": 4,
-      "occurrences_3h": 5,
-      "occurrences_6h": 5,
+      "occurrences_3h": 6,
+      "occurrences_6h": 6,
       "news_count": 3,
       "source_count": 2,
       "sources": [
@@ -212,72 +278,6 @@
           "source": "ANSA"
         }
       ],
-      "rank": 3
-    },
-    {
-      "title": "fishing",
-      "key": "fishing",
-      "normalized_title": "fishing",
-      "category": "Business",
-      "status": "HOT",
-      "acceleration": "WEAK",
-      "score": 32.1,
-      "traffic": "500+",
-      "traffic_level": 3,
-      "traffic_value": 500,
-      "first_seen": "2026-09-18T03:31:56.958973+02:00",
-      "last_seen": "2026-09-18T05:35:01.083549+02:00",
-      "appearances": 9,
-      "duration_minutes": 123,
-      "momentum": 0.38,
-      "momentum_30m": 0,
-      "momentum_1h": 0.38,
-      "momentum_3h": 0.38,
-      "momentum_status": "POSITIVE",
-      "why_now": "segnali di crescita nelle finestre piu lunghe; +fascia nell'ultima ora; 3 notizie da 3 fonti",
-      "change_30m_bands": 0,
-      "change_1h_bands": 1,
-      "change_3h_bands": null,
-      "change_6h_bands": null,
-      "change_24h_bands": null,
-      "direction_30m": "FLAT",
-      "direction_1h": "UP",
-      "direction_3h": "UNKNOWN",
-      "occurrences_1h": 4,
-      "occurrences_3h": 8,
-      "occurrences_6h": 8,
-      "news_count": 3,
-      "source_count": 3,
-      "sources": [
-        "C-SPAN",
-        "Fox News",
-        "The Hill"
-      ],
-      "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ5BSUVk68XISO2Yw7OhItBsVj9fxX8_oUVMv3gxe5OAsvxlhMNQLlH-Zij8Pg",
-      "picture_source": "The Hill",
-      "news": [
-        {
-          "title": "Trump signs orders loosening hunting restrictions, teases Outdoors Act ‘2.0’",
-          "snippet": "",
-          "url": "https://thehill.com/homenews/6097091-trump-executive-order-hunting-restrictions/",
-          "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ5BSUVk68XISO2Yw7OhItBsVj9fxX8_oUVMv3gxe5OAsvxlhMNQLlH-Zij8Pg",
-          "source": "The Hill"
-        },
-        {
-          "title": "WATCH LIVE: Trump hosts outdoorsmen after signing executive orders",
-          "snippet": "",
-          "url": "https://www.foxnews.com/video/6405215444112",
-          "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtKeG2zURcZMC7xIhdBGb0rKPeSoO-3SoIF4ebHrPSnS1GDNjxvnQXB4moGVQ",
-          "source": "Fox News"
-        },
-        {
-          "title": "Pres. Trump Hosts Rose Garden Dinner with American Hunters",
-          "snippet": "",
-          "url": "https://www.c-span.org/event/white-house-event/pres-trump-hosts-rose-garden-dinner-with-american-hunters/447235",
-          "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQzfgiQ2xC_QAznHfCjJBdS_VIwUM3e_WyY9yMc_cwwwvuu1HsD71Adi7C7M40",
-          "source": "C-SPAN"
-        }
-      ],
       "rank": 4
     },
     {
@@ -285,33 +285,33 @@
       "key": "flamengo independiente del valle",
       "normalized_title": "flamengo independiente del valle",
       "category": "Sport",
-      "status": "STABLE",
-      "acceleration": "NONE",
-      "score": 28.9,
+      "status": "RISING",
+      "acceleration": "MEDIUM",
+      "score": 39.7,
       "traffic": "200+",
       "traffic_level": 2,
       "traffic_value": 200,
       "first_seen": "2026-09-18T04:36:18.041167+02:00",
-      "last_seen": "2026-09-18T05:35:01.083549+02:00",
-      "appearances": 5,
-      "duration_minutes": 58,
+      "last_seen": "2026-09-18T05:48:07.978927+02:00",
+      "appearances": 6,
+      "duration_minutes": 71,
       "momentum": 1.0,
       "momentum_30m": 1,
       "momentum_1h": 1.0,
       "momentum_3h": 1.0,
       "momentum_status": "POSITIVE",
-      "why_now": "+fascia negli ultimi 30 minuti; 3 notizie da 2 fonti",
+      "why_now": "aumento del traffico nel breve periodo; +fascia negli ultimi 30 minuti; +fascia nell'ultima ora",
       "change_30m_bands": 1,
-      "change_1h_bands": null,
+      "change_1h_bands": 1,
       "change_3h_bands": null,
       "change_6h_bands": null,
       "change_24h_bands": null,
       "direction_30m": "UP",
-      "direction_1h": "UNKNOWN",
+      "direction_1h": "UP",
       "direction_3h": "UNKNOWN",
       "occurrences_1h": 4,
-      "occurrences_3h": 4,
-      "occurrences_6h": 4,
+      "occurrences_3h": 5,
+      "occurrences_6h": 5,
       "news_count": 3,
       "source_count": 2,
       "sources": [
@@ -346,20 +346,86 @@
       "rank": 5
     },
     {
+      "title": "fishing",
+      "key": "fishing",
+      "normalized_title": "fishing",
+      "category": "Business",
+      "status": "HOT",
+      "acceleration": "WEAK",
+      "score": 32.9,
+      "traffic": "500+",
+      "traffic_level": 3,
+      "traffic_value": 500,
+      "first_seen": "2026-09-18T03:31:56.958973+02:00",
+      "last_seen": "2026-09-18T05:48:07.978927+02:00",
+      "appearances": 10,
+      "duration_minutes": 136,
+      "momentum": 0.38,
+      "momentum_30m": 0,
+      "momentum_1h": 0.38,
+      "momentum_3h": 0.38,
+      "momentum_status": "POSITIVE",
+      "why_now": "segnali di crescita nelle finestre piu lunghe; +fascia nell'ultima ora; 3 notizie da 3 fonti",
+      "change_30m_bands": 0,
+      "change_1h_bands": 1,
+      "change_3h_bands": null,
+      "change_6h_bands": null,
+      "change_24h_bands": null,
+      "direction_30m": "FLAT",
+      "direction_1h": "UP",
+      "direction_3h": "UNKNOWN",
+      "occurrences_1h": 4,
+      "occurrences_3h": 9,
+      "occurrences_6h": 9,
+      "news_count": 3,
+      "source_count": 3,
+      "sources": [
+        "C-SPAN",
+        "Fox News",
+        "The Hill"
+      ],
+      "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ5BSUVk68XISO2Yw7OhItBsVj9fxX8_oUVMv3gxe5OAsvxlhMNQLlH-Zij8Pg",
+      "picture_source": "The Hill",
+      "news": [
+        {
+          "title": "Trump signs orders loosening hunting restrictions, teases Outdoors Act ‘2.0’",
+          "snippet": "",
+          "url": "https://thehill.com/homenews/6097091-trump-executive-order-hunting-restrictions/",
+          "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ5BSUVk68XISO2Yw7OhItBsVj9fxX8_oUVMv3gxe5OAsvxlhMNQLlH-Zij8Pg",
+          "source": "The Hill"
+        },
+        {
+          "title": "WATCH LIVE: Trump hosts outdoorsmen after signing executive orders",
+          "snippet": "",
+          "url": "https://www.foxnews.com/video/6405215444112",
+          "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtKeG2zURcZMC7xIhdBGb0rKPeSoO-3SoIF4ebHrPSnS1GDNjxvnQXB4moGVQ",
+          "source": "Fox News"
+        },
+        {
+          "title": "Pres. Trump Hosts Rose Garden Dinner with American Hunters",
+          "snippet": "",
+          "url": "https://www.c-span.org/event/white-house-event/pres-trump-hosts-rose-garden-dinner-with-american-hunters/447235",
+          "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQzfgiQ2xC_QAznHfCjJBdS_VIwUM3e_WyY9yMc_cwwwvuu1HsD71Adi7C7M40",
+          "source": "C-SPAN"
+        }
+      ],
+      "rank": 6
+    },
+    {
       "title": "meteo palermo",
       "key": "meteo palermo",
       "normalized_title": "meteo palermo",
       "category": "News",
       "status": "STABLE",
       "acceleration": "NONE",
-      "score": 28.7,
+      "score": 29.5,
       "traffic": "1000+",
       "traffic_level": 4,
       "traffic_value": 1000,
       "first_seen": "2026-09-15T05:00:58.109411+02:00",
-      "last_seen": "2026-09-18T05:35:01.083549+02:00",
-      "appearances": 15,
-      "duration_minutes": 4354,
+      "last_seen": "2026-09-18T05:48:07.978927+02:00",
+      "appearances": 16,
+      "duration_minutes": 4367,
       "momentum": 0.0,
       "momentum_30m": 0,
       "momentum_1h": 0.0,
@@ -375,8 +441,8 @@
       "direction_1h": "FLAT",
       "direction_3h": "UNKNOWN",
       "occurrences_1h": 4,
-      "occurrences_3h": 7,
-      "occurrences_6h": 7,
+      "occurrences_3h": 8,
+      "occurrences_6h": 8,
       "news_count": 3,
       "source_count": 3,
       "sources": [
@@ -409,72 +475,6 @@
           "source": "Mediaset Infinity"
         }
       ],
-      "rank": 6
-    },
-    {
-      "title": "meteo napoli",
-      "key": "meteo napoli",
-      "normalized_title": "meteo napoli",
-      "category": "Sport",
-      "status": "STABLE",
-      "acceleration": "NONE",
-      "score": 27.4,
-      "traffic": "2000+",
-      "traffic_level": 5,
-      "traffic_value": 2000,
-      "first_seen": "2026-09-18T03:00:38.869577+02:00",
-      "last_seen": "2026-09-18T05:35:01.083549+02:00",
-      "appearances": 11,
-      "duration_minutes": 154,
-      "momentum": 0.0,
-      "momentum_30m": 0,
-      "momentum_1h": 0.0,
-      "momentum_3h": 0.0,
-      "momentum_status": "FLAT",
-      "why_now": "3 notizie da 3 fonti",
-      "change_30m_bands": 0,
-      "change_1h_bands": 0,
-      "change_3h_bands": null,
-      "change_6h_bands": null,
-      "change_24h_bands": null,
-      "direction_30m": "FLAT",
-      "direction_1h": "FLAT",
-      "direction_3h": "UNKNOWN",
-      "occurrences_1h": 4,
-      "occurrences_3h": 10,
-      "occurrences_6h": 10,
-      "news_count": 3,
-      "source_count": 3,
-      "sources": [
-        "ANSA",
-        "Comune di Napoli",
-        "RaiNews"
-      ],
-      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUKQUYJBSDz3L8-X7_FlD0i64ZCOZMWrW12zc3jo7On_4D-kglgFKXWCVOKaA",
-      "picture_source": "RaiNews",
-      "news": [
-        {
-          "title": "Meteo, tempesta in arrivo: violenti temporali e allerta gialla in 12 regioni",
-          "snippet": "",
-          "url": "https://www.rainews.it/articoli/2026/09/meteo-tempesta-in-arrivo-violenti-temporali-e-allerta-gialla-in-12-regioni-d7bd423b-931d-48ff-a9f3-a2477285d392.html",
-          "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUKQUYJBSDz3L8-X7_FlD0i64ZCOZMWrW12zc3jo7On_4D-kglgFKXWCVOKaA",
-          "source": "RaiNews"
-        },
-        {
-          "title": "Maltempo, scatta l'allerta meteo gialla su tutta la Campania",
-          "snippet": "",
-          "url": "https://www.ansa.it/campania/notizie/2026/09/17/maltempo-scatta-lallerta-meteo-gialla-su-tutta-la-campania_119eee1d-f0d4-4b4e-bad4-c554e842c6ad.html",
-          "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjqUJlXTMlwTBCcHTYSvUmwZU6uLzSg-6ByxncarQS9d2obep9754kizVK-e0",
-          "source": "ANSA"
-        },
-        {
-          "title": "Avviso di allerta meteo gialla per rischio idrogeologico e idraulico valido dalle ore 21:00 di giovedì 17 settembre 2026 alle ore 12:00 di venerdì 18 settembre 2026",
-          "snippet": "",
-          "url": "https://www.comune.napoli.it/novita/avviso-di-allerta-meteo-del-17-09-2026/",
-          "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQDDjo07VoM3Y1Fwj03JWr7ecWl12e46uvNWMN3kUE2wm2ItHVRY7tuQpU1Mxw",
-          "source": "Comune di Napoli"
-        }
-      ],
       "rank": 7
     },
     {
@@ -484,14 +484,14 @@
       "category": "Sport",
       "status": "HOT",
       "acceleration": "NONE",
-      "score": 22.5,
+      "score": 18.8,
       "traffic": "200+",
       "traffic_level": 2,
       "traffic_value": 200,
       "first_seen": "2026-09-18T05:20:25.197488+02:00",
-      "last_seen": "2026-09-18T05:35:01.083549+02:00",
-      "appearances": 2,
-      "duration_minutes": 14,
+      "last_seen": "2026-09-18T05:48:07.978927+02:00",
+      "appearances": 3,
+      "duration_minutes": 27,
       "momentum": 0,
       "momentum_30m": 0,
       "momentum_1h": 0,
@@ -506,9 +506,9 @@
       "direction_30m": "UNKNOWN",
       "direction_1h": "UNKNOWN",
       "direction_3h": "UNKNOWN",
-      "occurrences_1h": 1,
-      "occurrences_3h": 1,
-      "occurrences_6h": 1,
+      "occurrences_1h": 2,
+      "occurrences_3h": 2,
+      "occurrences_6h": 2,
       "news_count": 3,
       "source_count": 3,
       "sources": [
@@ -550,14 +550,14 @@
       "category": "News",
       "status": "HOT",
       "acceleration": "NONE",
-      "score": 22.0,
+      "score": 18.3,
       "traffic": "200+",
       "traffic_level": 2,
       "traffic_value": 200,
       "first_seen": "2026-09-13T16:32:21.455233+02:00",
-      "last_seen": "2026-09-18T05:35:01.083549+02:00",
-      "appearances": 2,
-      "duration_minutes": 6542,
+      "last_seen": "2026-09-18T05:48:07.978927+02:00",
+      "appearances": 3,
+      "duration_minutes": 6555,
       "momentum": 0,
       "momentum_30m": 0,
       "momentum_1h": 0,
@@ -572,9 +572,9 @@
       "direction_30m": "UNKNOWN",
       "direction_1h": "UNKNOWN",
       "direction_3h": "UNKNOWN",
-      "occurrences_1h": 0,
-      "occurrences_3h": 0,
-      "occurrences_6h": 0,
+      "occurrences_1h": 1,
+      "occurrences_3h": 1,
+      "occurrences_6h": 1,
       "news_count": 3,
       "source_count": 3,
       "sources": [
@@ -616,14 +616,14 @@
       "category": "Sport",
       "status": "HOT",
       "acceleration": "NONE",
-      "score": 20.6,
+      "score": 16.9,
       "traffic": "100+",
       "traffic_level": 1,
       "traffic_value": 100,
       "first_seen": "2026-09-18T05:20:25.197488+02:00",
-      "last_seen": "2026-09-18T05:35:01.083549+02:00",
-      "appearances": 2,
-      "duration_minutes": 14,
+      "last_seen": "2026-09-18T05:48:07.978927+02:00",
+      "appearances": 3,
+      "duration_minutes": 27,
       "momentum": 0,
       "momentum_30m": 0,
       "momentum_1h": 0,
@@ -638,9 +638,9 @@
       "direction_30m": "UNKNOWN",
       "direction_1h": "UNKNOWN",
       "direction_3h": "UNKNOWN",
-      "occurrences_1h": 1,
-      "occurrences_3h": 1,
-      "occurrences_6h": 1,
+      "occurrences_1h": 2,
+      "occurrences_3h": 2,
+      "occurrences_6h": 2,
       "news_count": 3,
       "source_count": 3,
       "sources": [
@@ -687,7 +687,7 @@
       "ES"
     ],
     "market_count": 6,
-    "global_trend_count": 53,
+    "global_trend_count": 54,
     "crossover_count": 5
   },
   "markets": {
@@ -697,6 +697,12 @@
       "trend_count": 10,
       "top_trends": [
         {
+          "title": "music",
+          "score": 62.1,
+          "status": "STABLE",
+          "traffic": "2000+"
+        },
+        {
           "title": "sports",
           "score": 59.9,
           "status": "RISING",
@@ -704,55 +710,49 @@
         },
         {
           "title": "fitness",
-          "score": 47.8,
+          "score": 48.6,
           "status": "RISING",
           "traffic": "500+"
         },
         {
           "title": "news",
-          "score": 46.2,
+          "score": 47.0,
           "status": "RISING",
           "traffic": "500+"
         },
         {
+          "title": "flamengo - independiente del valle",
+          "score": 39.7,
+          "status": "RISING",
+          "traffic": "200+"
+        },
+        {
           "title": "fishing",
-          "score": 32.1,
+          "score": 32.9,
           "status": "HOT",
           "traffic": "500+"
         },
         {
-          "title": "flamengo - independiente del valle",
-          "score": 28.9,
-          "status": "STABLE",
-          "traffic": "200+"
-        },
-        {
           "title": "meteo palermo",
-          "score": 28.7,
+          "score": 29.5,
           "status": "STABLE",
           "traffic": "1000+"
         },
         {
-          "title": "meteo napoli",
-          "score": 27.4,
-          "status": "STABLE",
-          "traffic": "2000+"
-        },
-        {
           "title": "conference league",
-          "score": 22.5,
+          "score": 18.8,
           "status": "HOT",
           "traffic": "200+"
         },
         {
           "title": "ricina",
-          "score": 22.0,
+          "score": 18.3,
           "status": "HOT",
           "traffic": "200+"
         },
         {
           "title": "de rossi",
-          "score": 20.6,
+          "score": 16.9,
           "status": "HOT",
           "traffic": "100+"
         }
@@ -764,63 +764,63 @@
       "trend_count": 10,
       "top_trends": [
         {
-          "title": "willson contreras",
+          "title": "rangers game today",
+          "score": 31.2,
+          "status": "STABLE",
+          "traffic": "500+"
+        },
+        {
+          "title": "george clooney",
           "score": 30.5,
           "status": "EMERGING",
           "traffic": "1000+"
         },
         {
-          "title": "rangers game today",
-          "score": 29.9,
-          "status": "STABLE",
-          "traffic": "500+"
-        },
-        {
-          "title": "tiffany",
+          "title": "chris pratt",
           "score": 28.7,
           "status": "EMERGING",
           "traffic": "500+"
         },
         {
-          "title": "trevor story",
+          "title": "willson contreras",
           "score": 25.0,
           "status": "HOT",
           "traffic": "500+"
         },
         {
-          "title": "gary oldman",
-          "score": 24.5,
-          "status": "HOT",
-          "traffic": "500+"
-        },
-        {
-          "title": "amanda mack eku",
-          "score": 23.5,
+          "title": "tiffany",
+          "score": 25.0,
           "status": "HOT",
           "traffic": "500+"
         },
         {
           "title": "sloane stephens",
-          "score": 22.6,
-          "status": "HOT",
+          "score": 23.9,
+          "status": "STABLE",
           "traffic": "1000+"
         },
         {
-          "title": "jeff bezos",
-          "score": 21.3,
+          "title": "hyrox competition",
+          "score": 22.1,
+          "status": "STABLE",
+          "traffic": "500+"
+        },
+        {
+          "title": "gary oldman",
+          "score": 20.8,
+          "status": "HOT",
+          "traffic": "500+"
+        },
+        {
+          "title": "amanda mack eku",
+          "score": 19.8,
           "status": "HOT",
           "traffic": "500+"
         },
         {
           "title": "red sox magic number",
-          "score": 21.1,
+          "score": 17.4,
           "status": "STABLE",
-          "traffic": "500+"
-        },
-        {
-          "title": "hyrox competition",
-          "score": 20.8,
-          "status": "HOT",
           "traffic": "500+"
         }
       ]
@@ -831,64 +831,64 @@
       "trend_count": 10,
       "top_trends": [
         {
-          "title": "flamengo",
-          "score": 44.6,
-          "status": "RISING",
-          "traffic": "500+"
-        },
-        {
-          "title": "music",
-          "score": 25.4,
-          "status": "STABLE",
+          "title": "dj moore",
+          "score": 55.3,
+          "status": "ACCELERATING",
           "traffic": "2000+"
         },
         {
-          "title": "betfair odds",
-          "score": 24.3,
-          "status": "EMERGING",
-          "traffic": "100+"
+          "title": "schools",
+          "score": 40.2,
+          "status": "STABLE",
+          "traffic": "500+"
         },
         {
-          "title": "schools",
-          "score": 23.9,
-          "status": "STABLE",
+          "title": "flamengo vs independiente del valle",
+          "score": 28.7,
+          "status": "EMERGING",
+          "traffic": "500+"
+        },
+        {
+          "title": "games",
+          "score": 26.2,
+          "status": "EMERGING",
           "traffic": "200+"
         },
         {
           "title": "fitness",
-          "score": 22.1,
+          "score": 23.4,
           "status": "STABLE",
           "traffic": "200+"
-        },
-        {
-          "title": "fishing",
-          "score": 19.7,
-          "status": "STABLE",
-          "traffic": "200+"
-        },
-        {
-          "title": "dj moore",
-          "score": 18.3,
-          "status": "STABLE",
-          "traffic": "200+"
-        },
-        {
-          "title": "swimming",
-          "score": 17.3,
-          "status": "STABLE",
-          "traffic": "200+"
-        },
-        {
-          "title": "lillia",
-          "score": 16.1,
-          "status": "STABLE",
-          "traffic": "100+"
         },
         {
           "title": "concerts",
-          "score": 15.4,
+          "score": 22.9,
+          "status": "STABLE",
+          "traffic": "2000+"
+        },
+        {
+          "title": "fishing",
+          "score": 21.0,
           "status": "STABLE",
           "traffic": "200+"
+        },
+        {
+          "title": "betfair odds",
+          "score": 20.6,
+          "status": "HOT",
+          "traffic": "100+"
+        },
+        {
+          "title": "swimming",
+          "score": 18.6,
+          "status": "STABLE",
+          "traffic": "200+"
+        },
+        {
+          "title": "josh allen",
+          "score": 17.7,
+          "status": "STABLE",
+          "traffic": "100+"
         }
       ]
     },
@@ -899,61 +899,61 @@
       "top_trends": [
         {
           "title": "michael van gerwen",
-          "score": 30.5,
-          "status": "EMERGING",
+          "score": 26.8,
+          "status": "HOT",
           "traffic": "1000+"
         },
         {
-          "title": "schiff",
-          "score": 28.7,
+          "title": "biathlon",
+          "score": 26.2,
           "status": "EMERGING",
-          "traffic": "500+"
+          "traffic": "200+"
         },
         {
-          "title": "kryptowährung",
+          "title": "pnp",
           "score": 26.2,
           "status": "EMERGING",
           "traffic": "200+"
         },
         {
           "title": "merz",
-          "score": 24.6,
+          "score": 25.9,
           "status": "STABLE",
           "traffic": "2000+"
         },
         {
+          "title": "schiff",
+          "score": 25.0,
+          "status": "HOT",
+          "traffic": "500+"
+        },
+        {
+          "title": "kryptowährung",
+          "score": 22.5,
+          "status": "HOT",
+          "traffic": "200+"
+        },
+        {
+          "title": "sc magdeburg",
+          "score": 22.1,
+          "status": "HOT",
+          "traffic": "1000+"
+        },
+        {
           "title": "conference league",
-          "score": 24.3,
-          "status": "EMERGING",
+          "score": 20.6,
+          "status": "HOT",
           "traffic": "100+"
         },
         {
           "title": "пособие",
-          "score": 24.3,
-          "status": "EMERGING",
-          "traffic": "100+"
-        },
-        {
-          "title": "donald tusk",
-          "score": 22.5,
-          "status": "HOT",
-          "traffic": "200+"
-        },
-        {
-          "title": "sachsen anhalt regierungsbildung",
-          "score": 22.5,
-          "status": "HOT",
-          "traffic": "200+"
-        },
-        {
-          "title": "moviepilot",
-          "score": 16.4,
+          "score": 20.6,
           "status": "HOT",
           "traffic": "100+"
         },
         {
           "title": "hormus",
-          "score": 15.8,
+          "score": 12.1,
           "status": "HOT",
           "traffic": "100+"
         }
@@ -966,7 +966,7 @@
       "top_trends": [
         {
           "title": "football",
-          "score": 61.1,
+          "score": 61.7,
           "status": "RISING",
           "traffic": "1000+"
         },
@@ -978,51 +978,51 @@
         },
         {
           "title": "plage",
-          "score": 44.0,
+          "score": 44.8,
           "status": "RISING",
           "traffic": "1000+"
         },
         {
           "title": "flamengo",
-          "score": 39.7,
+          "score": 40.5,
           "status": "RISING",
           "traffic": "200+"
         },
         {
           "title": "karulis",
-          "score": 28.9,
-          "status": "STABLE",
+          "score": 39.7,
+          "status": "RISING",
           "traffic": "200+"
         },
         {
           "title": "sports",
-          "score": 26.7,
+          "score": 28.0,
           "status": "STABLE",
           "traffic": "1000+"
         },
         {
+          "title": "flamengo – independiente del valle",
+          "score": 25.2,
+          "status": "HOT",
+          "traffic": "200+"
+        },
+        {
           "title": "accident nancy",
-          "score": 26.2,
-          "status": "EMERGING",
+          "score": 22.5,
+          "status": "HOT",
+          "traffic": "200+"
+        },
+        {
+          "title": "immobilier",
+          "score": 22.0,
+          "status": "STABLE",
           "traffic": "200+"
         },
         {
           "title": "drancy",
-          "score": 24.3,
-          "status": "EMERGING",
+          "score": 20.6,
+          "status": "HOT",
           "traffic": "100+"
-        },
-        {
-          "title": "immobilier",
-          "score": 21.2,
-          "status": "STABLE",
-          "traffic": "200+"
-        },
-        {
-          "title": "flamengo – independiente del valle",
-          "score": 14.4,
-          "status": "STABLE",
-          "traffic": "200+"
         }
       ]
     },
@@ -1033,61 +1033,61 @@
       "top_trends": [
         {
           "title": "cine",
-          "score": 52.8,
+          "score": 53.6,
+          "status": "RISING",
+          "traffic": "1000+"
+        },
+        {
+          "title": "música",
+          "score": 52.0,
           "status": "STABLE",
           "traffic": "1000+"
         },
         {
           "title": "noticias",
-          "score": 40.5,
+          "score": 41.8,
           "status": "STABLE",
           "traffic": "1000+"
         },
         {
           "title": "torque - cienciano",
-          "score": 33.7,
+          "score": 34.5,
           "status": "HOT",
           "traffic": "500+"
         },
         {
-          "title": "bucaramanga - medellín",
-          "score": 31.2,
-          "status": "HOT",
-          "traffic": "200+"
-        },
-        {
-          "title": "películas",
+          "title": "gabriela guillén",
           "score": 28.7,
           "status": "EMERGING",
           "traffic": "500+"
         },
         {
-          "title": "música",
-          "score": 26.4,
-          "status": "STABLE",
-          "traffic": "500+"
+          "title": "películas",
+          "score": 26.8,
+          "status": "HOT",
+          "traffic": "1000+"
         },
         {
           "title": "fútbol",
-          "score": 26.3,
+          "score": 20.7,
           "status": "STABLE",
-          "traffic": "2000+"
+          "traffic": "1000+"
+        },
+        {
+          "title": "supervivientes",
+          "score": 20.3,
+          "status": "HOT",
+          "traffic": "500+"
         },
         {
           "title": "deportes",
-          "score": 17.4,
+          "score": 18.7,
           "status": "STABLE",
           "traffic": "500+"
         },
         {
-          "title": "salamanca",
-          "score": 16.1,
-          "status": "STABLE",
-          "traffic": "100+"
-        },
-        {
           "title": "betfair odds",
-          "score": 15.3,
+          "score": 16.1,
           "status": "STABLE",
           "traffic": "100+"
         }
@@ -1098,10 +1098,10 @@
     {
       "title": "sports",
       "key": "sports",
-      "global_score": 52.6,
+      "global_score": 52.7,
       "italy_score": 59.9,
-      "crossover_score": 59.6,
-      "opportunity_score": 56.3,
+      "crossover_score": 59.7,
+      "opportunity_score": 56.4,
       "global_status": "RISING",
       "italy_status": "RISING",
       "why_now": "aumento del traffico nel breve periodo; +fascia negli ultimi 30 minuti; +fascia nell'ultima ora",
@@ -1118,7 +1118,7 @@
         },
         "FR": {
           "title": "sports",
-          "score": 26.7,
+          "score": 28.0,
           "status": "STABLE",
           "acceleration": "NONE",
           "traffic": "1000+",
@@ -1135,19 +1135,47 @@
       "rank": 1
     },
     {
+      "title": "music",
+      "key": "music",
+      "global_score": 52.7,
+      "italy_score": 62.1,
+      "crossover_score": 45.3,
+      "opportunity_score": 49.1,
+      "global_status": "STABLE",
+      "italy_status": "STABLE",
+      "why_now": "3 notizie da 3 fonti",
+      "markets": {
+        "IT": {
+          "title": "music",
+          "score": 62.1,
+          "status": "STABLE",
+          "acceleration": "NONE",
+          "traffic": "2000+",
+          "traffic_level": 5,
+          "momentum": 0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "IT"
+      ],
+      "rank": 2
+    },
+    {
       "title": "fitness",
       "key": "fitness",
-      "global_score": 43.7,
-      "italy_score": 47.8,
-      "crossover_score": 52.0,
-      "opportunity_score": 48.0,
+      "global_score": 44.4,
+      "italy_score": 48.6,
+      "crossover_score": 52.6,
+      "opportunity_score": 48.6,
       "global_status": "RISING",
       "italy_status": "RISING",
       "why_now": "aumento del traffico nel breve periodo; +fascia negli ultimi 30 minuti; +fascia nell'ultima ora",
       "markets": {
         "IT": {
           "title": "fitness",
-          "score": 47.8,
+          "score": 48.6,
           "status": "RISING",
           "acceleration": "MEDIUM",
           "traffic": "500+",
@@ -1157,7 +1185,7 @@
         },
         "GB": {
           "title": "fitness",
-          "score": 22.1,
+          "score": 23.4,
           "status": "STABLE",
           "acceleration": "NONE",
           "traffic": "200+",
@@ -1171,22 +1199,22 @@
         "GB",
         "IT"
       ],
-      "rank": 2
+      "rank": 3
     },
     {
       "title": "news",
       "key": "news",
-      "global_score": 42.0,
-      "italy_score": 46.2,
-      "crossover_score": 47.8,
-      "opportunity_score": 43.1,
+      "global_score": 42.6,
+      "italy_score": 47.0,
+      "crossover_score": 48.3,
+      "opportunity_score": 43.7,
       "global_status": "STABLE",
       "italy_status": "RISING",
       "why_now": "aumento del traffico nel breve periodo; +fascia negli ultimi 30 minuti; +fascia nell'ultima ora",
       "markets": {
         "IT": {
           "title": "news",
-          "score": 46.2,
+          "score": 47.0,
           "status": "RISING",
           "acceleration": "MEDIUM",
           "traffic": "500+",
@@ -1199,22 +1227,61 @@
       "market_codes": [
         "IT"
       ],
-      "rank": 3
+      "rank": 4
+    },
+    {
+      "title": "flamengo - independiente del valle",
+      "key": "flamengo independiente del valle",
+      "global_score": 38.3,
+      "italy_score": 39.7,
+      "crossover_score": 47.1,
+      "opportunity_score": 42.7,
+      "global_status": "RISING",
+      "italy_status": "RISING",
+      "why_now": "aumento del traffico nel breve periodo; +fascia negli ultimi 30 minuti; +fascia nell'ultima ora",
+      "markets": {
+        "IT": {
+          "title": "flamengo - independiente del valle",
+          "score": 39.7,
+          "status": "RISING",
+          "acceleration": "MEDIUM",
+          "traffic": "200+",
+          "traffic_level": 2,
+          "momentum": 1.0,
+          "news_count": 3
+        },
+        "FR": {
+          "title": "flamengo – independiente del valle",
+          "score": 25.2,
+          "status": "HOT",
+          "acceleration": "WEAK",
+          "traffic": "200+",
+          "traffic_level": 2,
+          "momentum": -0.88,
+          "news_count": 3
+        }
+      },
+      "market_count": 2,
+      "market_codes": [
+        "FR",
+        "IT"
+      ],
+      "rank": 5
     },
     {
       "title": "fishing",
       "key": "fishing",
-      "global_score": 30.4,
-      "italy_score": 32.1,
-      "crossover_score": 29.3,
-      "opportunity_score": 32.9,
+      "global_score": 31.1,
+      "italy_score": 32.9,
+      "crossover_score": 29.9,
+      "opportunity_score": 33.5,
       "global_status": "STABLE",
       "italy_status": "HOT",
       "why_now": "segnali di crescita nelle finestre piu lunghe; +fascia nell'ultima ora; 3 notizie da 3 fonti",
       "markets": {
         "IT": {
           "title": "fishing",
-          "score": 32.1,
+          "score": 32.9,
           "status": "HOT",
           "acceleration": "WEAK",
           "traffic": "500+",
@@ -1224,7 +1291,7 @@
         },
         "GB": {
           "title": "fishing",
-          "score": 19.7,
+          "score": 21.0,
           "status": "STABLE",
           "acceleration": "NONE",
           "traffic": "200+",
@@ -1238,61 +1305,22 @@
         "GB",
         "IT"
       ],
-      "rank": 4
-    },
-    {
-      "title": "flamengo - independiente del valle",
-      "key": "flamengo independiente del valle",
-      "global_score": 27.7,
-      "italy_score": 28.9,
-      "crossover_score": 27.1,
-      "opportunity_score": 31.8,
-      "global_status": "STABLE",
-      "italy_status": "STABLE",
-      "why_now": "+fascia negli ultimi 30 minuti; 3 notizie da 2 fonti",
-      "markets": {
-        "IT": {
-          "title": "flamengo - independiente del valle",
-          "score": 28.9,
-          "status": "STABLE",
-          "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
-          "momentum": 1.0,
-          "news_count": 3
-        },
-        "FR": {
-          "title": "flamengo – independiente del valle",
-          "score": 14.4,
-          "status": "STABLE",
-          "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
-          "momentum": -2.0,
-          "news_count": 3
-        }
-      },
-      "market_count": 2,
-      "market_codes": [
-        "FR",
-        "IT"
-      ],
-      "rank": 5
+      "rank": 6
     },
     {
       "title": "football",
       "key": "football",
-      "global_score": 53.9,
+      "global_score": 54.4,
       "italy_score": 0,
-      "crossover_score": 27.3,
-      "opportunity_score": 27.3,
+      "crossover_score": 27.5,
+      "opportunity_score": 27.5,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "FR": {
           "title": "football",
-          "score": 61.1,
+          "score": 61.7,
           "status": "RISING",
           "acceleration": "MEDIUM",
           "traffic": "1000+",
@@ -1305,100 +1333,50 @@
       "market_codes": [
         "FR"
       ],
-      "rank": 6
+      "rank": 7
     },
     {
-      "title": "flamengo",
-      "key": "flamengo",
-      "global_score": 45.2,
+      "title": "dj moore",
+      "key": "dj moore",
+      "global_score": 52.2,
       "italy_score": 0,
-      "crossover_score": 26.3,
-      "opportunity_score": 27.1,
-      "global_status": "RISING",
+      "crossover_score": 26.5,
+      "opportunity_score": 26.6,
+      "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "GB": {
-          "title": "flamengo",
-          "score": 44.6,
-          "status": "RISING",
-          "acceleration": "MEDIUM",
-          "traffic": "500+",
-          "traffic_level": 3,
-          "momentum": 1.0,
-          "news_count": 3
-        },
-        "FR": {
-          "title": "flamengo",
-          "score": 39.7,
-          "status": "RISING",
-          "acceleration": "MEDIUM",
-          "traffic": "200+",
-          "traffic_level": 2,
-          "momentum": 1.0,
+          "title": "dj moore",
+          "score": 55.3,
+          "status": "ACCELERATING",
+          "acceleration": "STRONG",
+          "traffic": "2000+",
+          "traffic_level": 5,
+          "momentum": 3.0,
           "news_count": 3
         }
       },
-      "market_count": 2,
+      "market_count": 1,
       "market_codes": [
-        "FR",
         "GB"
-      ],
-      "rank": 7
-    },
-    {
-      "title": "conference league",
-      "key": "conference league",
-      "global_score": 25.3,
-      "italy_score": 22.5,
-      "crossover_score": 24.1,
-      "opportunity_score": 26.4,
-      "global_status": "STABLE",
-      "italy_status": "HOT",
-      "why_now": "3 notizie da 3 fonti",
-      "markets": {
-        "IT": {
-          "title": "conference league",
-          "score": 22.5,
-          "status": "HOT",
-          "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
-          "momentum": 0,
-          "news_count": 3
-        },
-        "DE": {
-          "title": "conference league",
-          "score": 24.3,
-          "status": "EMERGING",
-          "acceleration": "NONE",
-          "traffic": "100+",
-          "traffic_level": 1,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 2,
-      "market_codes": [
-        "DE",
-        "IT"
       ],
       "rank": 8
     },
     {
       "title": "meteo palermo",
       "key": "meteo palermo",
-      "global_score": 26.0,
-      "italy_score": 28.7,
-      "crossover_score": 23.3,
-      "opportunity_score": 25.4,
+      "global_score": 26.6,
+      "italy_score": 29.5,
+      "crossover_score": 23.8,
+      "opportunity_score": 25.9,
       "global_status": "STABLE",
       "italy_status": "STABLE",
       "why_now": "3 notizie da 3 fonti",
       "markets": {
         "IT": {
           "title": "meteo palermo",
-          "score": 28.7,
+          "score": 29.5,
           "status": "STABLE",
           "acceleration": "NONE",
           "traffic": "1000+",
@@ -1442,47 +1420,86 @@
       "rank": 10
     },
     {
-      "title": "meteo napoli",
-      "key": "meteo napoli",
-      "global_score": 24.9,
-      "italy_score": 27.4,
-      "crossover_score": 22.4,
-      "opportunity_score": 24.4,
-      "global_status": "STABLE",
-      "italy_status": "STABLE",
-      "why_now": "3 notizie da 3 fonti",
-      "markets": {
-        "IT": {
-          "title": "meteo napoli",
-          "score": 27.4,
-          "status": "STABLE",
-          "acceleration": "NONE",
-          "traffic": "2000+",
-          "traffic_level": 5,
-          "momentum": 0.0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "IT"
-      ],
-      "rank": 11
-    },
-    {
       "title": "cine",
       "key": "cine",
-      "global_score": 45.2,
+      "global_score": 47.9,
       "italy_score": 0,
-      "crossover_score": 23.3,
-      "opportunity_score": 23.5,
+      "crossover_score": 24.6,
+      "opportunity_score": 24.7,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "ES": {
           "title": "cine",
-          "score": 52.8,
+          "score": 53.6,
+          "status": "RISING",
+          "acceleration": "MEDIUM",
+          "traffic": "1000+",
+          "traffic_level": 4,
+          "momentum": 1.0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "ES"
+      ],
+      "rank": 11
+    },
+    {
+      "title": "conference league",
+      "key": "conference league",
+      "global_score": 22.3,
+      "italy_score": 18.8,
+      "crossover_score": 21.7,
+      "opportunity_score": 23.8,
+      "global_status": "STABLE",
+      "italy_status": "HOT",
+      "why_now": "3 notizie da 3 fonti",
+      "markets": {
+        "IT": {
+          "title": "conference league",
+          "score": 18.8,
+          "status": "HOT",
+          "acceleration": "NONE",
+          "traffic": "200+",
+          "traffic_level": 2,
+          "momentum": 0,
+          "news_count": 3
+        },
+        "DE": {
+          "title": "conference league",
+          "score": 20.6,
+          "status": "HOT",
+          "acceleration": "NONE",
+          "traffic": "100+",
+          "traffic_level": 1,
+          "momentum": 0,
+          "news_count": 3
+        }
+      },
+      "market_count": 2,
+      "market_codes": [
+        "DE",
+        "IT"
+      ],
+      "rank": 12
+    },
+    {
+      "title": "música",
+      "key": "musica",
+      "global_score": 44.6,
+      "italy_score": 0,
+      "crossover_score": 23.1,
+      "opportunity_score": 23.2,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "ES": {
+          "title": "música",
+          "score": 52.0,
           "status": "STABLE",
           "acceleration": "NONE",
           "traffic": "1000+",
@@ -1495,22 +1512,22 @@
       "market_codes": [
         "ES"
       ],
-      "rank": 12
+      "rank": 13
     },
     {
       "title": "plage",
       "key": "plage",
-      "global_score": 40.2,
+      "global_score": 40.8,
       "italy_score": 0,
-      "crossover_score": 21.1,
-      "opportunity_score": 21.3,
+      "crossover_score": 21.4,
+      "opportunity_score": 21.6,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "FR": {
           "title": "plage",
-          "score": 44.0,
+          "score": 44.8,
           "status": "RISING",
           "acceleration": "MEDIUM",
           "traffic": "1000+",
@@ -1523,78 +1540,78 @@
       "market_codes": [
         "FR"
       ],
-      "rank": 13
-    },
-    {
-      "title": "ricina",
-      "key": "ricina",
-      "global_score": 20.6,
-      "italy_score": 22.0,
-      "crossover_score": 18.9,
-      "opportunity_score": 20.6,
-      "global_status": "STABLE",
-      "italy_status": "HOT",
-      "why_now": "3 notizie da 3 fonti",
-      "markets": {
-        "IT": {
-          "title": "ricina",
-          "score": 22.0,
-          "status": "HOT",
-          "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "IT"
-      ],
       "rank": 14
     },
     {
-      "title": "de rossi",
-      "key": "de rossi",
-      "global_score": 19.5,
-      "italy_score": 20.6,
-      "crossover_score": 18.0,
-      "opportunity_score": 19.6,
+      "title": "flamengo",
+      "key": "flamengo",
+      "global_score": 37.4,
+      "italy_score": 0,
+      "crossover_score": 19.8,
+      "opportunity_score": 20.0,
       "global_status": "STABLE",
-      "italy_status": "HOT",
-      "why_now": "3 notizie da 3 fonti",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
       "markets": {
-        "IT": {
-          "title": "de rossi",
-          "score": 20.6,
-          "status": "HOT",
-          "acceleration": "NONE",
-          "traffic": "100+",
-          "traffic_level": 1,
-          "momentum": 0,
+        "FR": {
+          "title": "flamengo",
+          "score": 40.5,
+          "status": "RISING",
+          "acceleration": "MEDIUM",
+          "traffic": "200+",
+          "traffic_level": 2,
+          "momentum": 1.0,
           "news_count": 3
         }
       },
       "market_count": 1,
       "market_codes": [
-        "IT"
+        "FR"
       ],
       "rank": 15
     },
     {
+      "title": "karulis",
+      "key": "karulis",
+      "global_score": 36.8,
+      "italy_score": 0,
+      "crossover_score": 19.6,
+      "opportunity_score": 19.8,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "FR": {
+          "title": "karulis",
+          "score": 39.7,
+          "status": "RISING",
+          "acceleration": "MEDIUM",
+          "traffic": "200+",
+          "traffic_level": 2,
+          "momentum": 1.0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "FR"
+      ],
+      "rank": 16
+    },
+    {
       "title": "noticias",
       "key": "noticias",
-      "global_score": 35.4,
+      "global_score": 36.4,
       "italy_score": 0,
-      "crossover_score": 18.9,
-      "opportunity_score": 19.2,
+      "crossover_score": 19.4,
+      "opportunity_score": 19.6,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "ES": {
           "title": "noticias",
-          "score": 40.5,
+          "score": 41.8,
           "status": "STABLE",
           "acceleration": "NONE",
           "traffic": "1000+",
@@ -1607,23 +1624,107 @@
       "market_codes": [
         "ES"
       ],
-      "rank": 16
+      "rank": 17
+    },
+    {
+      "title": "schools",
+      "key": "schools",
+      "global_score": 35.2,
+      "italy_score": 0,
+      "crossover_score": 18.8,
+      "opportunity_score": 19.1,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "GB": {
+          "title": "schools",
+          "score": 40.2,
+          "status": "STABLE",
+          "acceleration": "NONE",
+          "traffic": "500+",
+          "traffic_level": 3,
+          "momentum": 1.0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "GB"
+      ],
+      "rank": 18
+    },
+    {
+      "title": "ricina",
+      "key": "ricina",
+      "global_score": 17.6,
+      "italy_score": 18.3,
+      "crossover_score": 16.4,
+      "opportunity_score": 17.9,
+      "global_status": "STABLE",
+      "italy_status": "HOT",
+      "why_now": "3 notizie da 3 fonti",
+      "markets": {
+        "IT": {
+          "title": "ricina",
+          "score": 18.3,
+          "status": "HOT",
+          "acceleration": "NONE",
+          "traffic": "200+",
+          "traffic_level": 2,
+          "momentum": 0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "IT"
+      ],
+      "rank": 19
+    },
+    {
+      "title": "torque - cienciano",
+      "key": "torque cienciano",
+      "global_score": 30.6,
+      "italy_score": 0,
+      "crossover_score": 16.8,
+      "opportunity_score": 17.1,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "ES": {
+          "title": "torque - cienciano",
+          "score": 34.5,
+          "status": "HOT",
+          "acceleration": "WEAK",
+          "traffic": "500+",
+          "traffic_level": 3,
+          "momentum": 0.38,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "ES"
+      ],
+      "rank": 20
     },
     {
       "title": "betfair odds",
       "key": "betfair odds",
-      "global_score": 24.5,
+      "global_score": 22.0,
       "italy_score": 0,
-      "crossover_score": 17.0,
-      "opportunity_score": 18.0,
+      "crossover_score": 15.9,
+      "opportunity_score": 16.9,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "GB": {
           "title": "betfair odds",
-          "score": 24.3,
-          "status": "EMERGING",
+          "score": 20.6,
+          "status": "HOT",
           "acceleration": "NONE",
           "traffic": "100+",
           "traffic_level": 1,
@@ -1632,7 +1733,7 @@
         },
         "ES": {
           "title": "betfair odds",
-          "score": 15.3,
+          "score": 16.1,
           "status": "STABLE",
           "acceleration": "NONE",
           "traffic": "100+",
@@ -1646,39 +1747,39 @@
         "ES",
         "GB"
       ],
-      "rank": 17
+      "rank": 21
     },
     {
-      "title": "torque - cienciano",
-      "key": "torque cienciano",
-      "global_score": 30.0,
-      "italy_score": 0,
-      "crossover_score": 16.5,
-      "opportunity_score": 16.8,
+      "title": "de rossi",
+      "key": "de rossi",
+      "global_score": 16.5,
+      "italy_score": 16.9,
+      "crossover_score": 15.5,
+      "opportunity_score": 16.9,
       "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
+      "italy_status": "HOT",
+      "why_now": "3 notizie da 3 fonti",
       "markets": {
-        "ES": {
-          "title": "torque - cienciano",
-          "score": 33.7,
+        "IT": {
+          "title": "de rossi",
+          "score": 16.9,
           "status": "HOT",
-          "acceleration": "WEAK",
-          "traffic": "500+",
-          "traffic_level": 3,
-          "momentum": 0.38,
+          "acceleration": "NONE",
+          "traffic": "100+",
+          "traffic_level": 1,
+          "momentum": 0,
           "news_count": 3
         }
       },
       "market_count": 1,
       "market_codes": [
-        "ES"
+        "IT"
       ],
-      "rank": 18
+      "rank": 22
     },
     {
-      "title": "bucaramanga - medellín",
-      "key": "bucaramanga medellin",
+      "title": "rangers game today",
+      "key": "rangers game today",
       "global_score": 28.0,
       "italy_score": 0,
       "crossover_score": 15.6,
@@ -1687,93 +1788,9 @@
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
-        "ES": {
-          "title": "bucaramanga - medellín",
-          "score": 31.2,
-          "status": "HOT",
-          "acceleration": "WEAK",
-          "traffic": "200+",
-          "traffic_level": 2,
-          "momentum": 0.38,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "ES"
-      ],
-      "rank": 19
-    },
-    {
-      "title": "willson contreras",
-      "key": "willson contreras",
-      "global_score": 27.4,
-      "italy_score": 0,
-      "crossover_score": 15.3,
-      "opportunity_score": 15.6,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "US": {
-          "title": "willson contreras",
-          "score": 30.5,
-          "status": "EMERGING",
-          "acceleration": "NONE",
-          "traffic": "1000+",
-          "traffic_level": 4,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "US"
-      ],
-      "rank": 20
-    },
-    {
-      "title": "michael van gerwen",
-      "key": "michael van gerwen",
-      "global_score": 27.4,
-      "italy_score": 0,
-      "crossover_score": 15.3,
-      "opportunity_score": 15.6,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "DE": {
-          "title": "michael van gerwen",
-          "score": 30.5,
-          "status": "EMERGING",
-          "acceleration": "NONE",
-          "traffic": "1000+",
-          "traffic_level": 4,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "DE"
-      ],
-      "rank": 21
-    },
-    {
-      "title": "rangers game today",
-      "key": "rangers game today",
-      "global_score": 26.9,
-      "italy_score": 0,
-      "crossover_score": 15.1,
-      "opportunity_score": 15.4,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
         "US": {
           "title": "rangers game today",
-          "score": 29.9,
+          "score": 31.2,
           "status": "STABLE",
           "acceleration": "NONE",
           "traffic": "500+",
@@ -1785,55 +1802,27 @@
       "market_count": 1,
       "market_codes": [
         "US"
-      ],
-      "rank": 22
-    },
-    {
-      "title": "karulis",
-      "key": "karulis",
-      "global_score": 26.1,
-      "italy_score": 0,
-      "crossover_score": 14.7,
-      "opportunity_score": 15.1,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "FR": {
-          "title": "karulis",
-          "score": 28.9,
-          "status": "STABLE",
-          "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
-          "momentum": 1.0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "FR"
       ],
       "rank": 23
     },
     {
-      "title": "tiffany",
-      "key": "tiffany",
-      "global_score": 26.0,
+      "title": "george clooney",
+      "key": "george clooney",
+      "global_score": 27.4,
       "italy_score": 0,
-      "crossover_score": 14.7,
-      "opportunity_score": 15.0,
+      "crossover_score": 15.3,
+      "opportunity_score": 15.6,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "US": {
-          "title": "tiffany",
-          "score": 28.7,
+          "title": "george clooney",
+          "score": 30.5,
           "status": "EMERGING",
           "acceleration": "NONE",
-          "traffic": "500+",
-          "traffic_level": 3,
+          "traffic": "1000+",
+          "traffic_level": 4,
           "momentum": 0,
           "news_count": 3
         }
@@ -1845,216 +1834,20 @@
       "rank": 24
     },
     {
-      "title": "schiff",
-      "key": "schiff",
+      "title": "chris pratt",
+      "key": "chris pratt",
       "global_score": 26.0,
       "italy_score": 0,
       "crossover_score": 14.7,
       "opportunity_score": 15.0,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "DE": {
-          "title": "schiff",
-          "score": 28.7,
-          "status": "EMERGING",
-          "acceleration": "NONE",
-          "traffic": "500+",
-          "traffic_level": 3,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "DE"
-      ],
-      "rank": 25
-    },
-    {
-      "title": "películas",
-      "key": "peliculas",
-      "global_score": 26.0,
-      "italy_score": 0,
-      "crossover_score": 14.7,
-      "opportunity_score": 15.0,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "ES": {
-          "title": "películas",
-          "score": 28.7,
-          "status": "EMERGING",
-          "acceleration": "NONE",
-          "traffic": "500+",
-          "traffic_level": 3,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "ES"
-      ],
-      "rank": 26
-    },
-    {
-      "title": "música",
-      "key": "musica",
-      "global_score": 24.1,
-      "italy_score": 0,
-      "crossover_score": 13.8,
-      "opportunity_score": 14.2,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "ES": {
-          "title": "música",
-          "score": 26.4,
-          "status": "STABLE",
-          "acceleration": "NONE",
-          "traffic": "500+",
-          "traffic_level": 3,
-          "momentum": 0.0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "ES"
-      ],
-      "rank": 27
-    },
-    {
-      "title": "kryptowährung",
-      "key": "kryptowahrung",
-      "global_score": 24.0,
-      "italy_score": 0,
-      "crossover_score": 13.8,
-      "opportunity_score": 14.2,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "DE": {
-          "title": "kryptowährung",
-          "score": 26.2,
-          "status": "EMERGING",
-          "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "DE"
-      ],
-      "rank": 28
-    },
-    {
-      "title": "accident nancy",
-      "key": "accident nancy",
-      "global_score": 24.0,
-      "italy_score": 0,
-      "crossover_score": 13.8,
-      "opportunity_score": 14.2,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "FR": {
-          "title": "accident nancy",
-          "score": 26.2,
-          "status": "EMERGING",
-          "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "FR"
-      ],
-      "rank": 29
-    },
-    {
-      "title": "fútbol",
-      "key": "futbol",
-      "global_score": 24.0,
-      "italy_score": 0,
-      "crossover_score": 13.8,
-      "opportunity_score": 14.2,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "ES": {
-          "title": "fútbol",
-          "score": 26.3,
-          "status": "STABLE",
-          "acceleration": "NONE",
-          "traffic": "2000+",
-          "traffic_level": 5,
-          "momentum": 0.0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "ES"
-      ],
-      "rank": 30
-    },
-    {
-      "title": "music",
-      "key": "music",
-      "global_score": 23.3,
-      "italy_score": 0,
-      "crossover_score": 13.5,
-      "opportunity_score": 13.9,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "GB": {
-          "title": "music",
-          "score": 25.4,
-          "status": "STABLE",
-          "acceleration": "NONE",
-          "traffic": "2000+",
-          "traffic_level": 5,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "GB"
-      ],
-      "rank": 31
-    },
-    {
-      "title": "trevor story",
-      "key": "trevor story",
-      "global_score": 23.0,
-      "italy_score": 0,
-      "crossover_score": 13.3,
-      "opportunity_score": 13.7,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "US": {
-          "title": "trevor story",
-          "score": 25.0,
-          "status": "HOT",
+          "title": "chris pratt",
+          "score": 28.7,
+          "status": "EMERGING",
           "acceleration": "NONE",
           "traffic": "500+",
           "traffic_level": 3,
@@ -2066,22 +1859,218 @@
       "market_codes": [
         "US"
       ],
+      "rank": 25
+    },
+    {
+      "title": "flamengo vs independiente del valle",
+      "key": "flamengo vs independiente del valle",
+      "global_score": 26.0,
+      "italy_score": 0,
+      "crossover_score": 14.7,
+      "opportunity_score": 15.0,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "GB": {
+          "title": "flamengo vs independiente del valle",
+          "score": 28.7,
+          "status": "EMERGING",
+          "acceleration": "NONE",
+          "traffic": "500+",
+          "traffic_level": 3,
+          "momentum": 0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "GB"
+      ],
+      "rank": 26
+    },
+    {
+      "title": "gabriela guillén",
+      "key": "gabriela guillen",
+      "global_score": 26.0,
+      "italy_score": 0,
+      "crossover_score": 14.7,
+      "opportunity_score": 15.0,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "ES": {
+          "title": "gabriela guillén",
+          "score": 28.7,
+          "status": "EMERGING",
+          "acceleration": "NONE",
+          "traffic": "500+",
+          "traffic_level": 3,
+          "momentum": 0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "ES"
+      ],
+      "rank": 27
+    },
+    {
+      "title": "michael van gerwen",
+      "key": "michael van gerwen",
+      "global_score": 24.4,
+      "italy_score": 0,
+      "crossover_score": 14.0,
+      "opportunity_score": 14.3,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "DE": {
+          "title": "michael van gerwen",
+          "score": 26.8,
+          "status": "HOT",
+          "acceleration": "NONE",
+          "traffic": "1000+",
+          "traffic_level": 4,
+          "momentum": 0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "DE"
+      ],
+      "rank": 28
+    },
+    {
+      "title": "películas",
+      "key": "peliculas",
+      "global_score": 24.4,
+      "italy_score": 0,
+      "crossover_score": 14.0,
+      "opportunity_score": 14.3,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "ES": {
+          "title": "películas",
+          "score": 26.8,
+          "status": "HOT",
+          "acceleration": "NONE",
+          "traffic": "1000+",
+          "traffic_level": 4,
+          "momentum": 0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "ES"
+      ],
+      "rank": 29
+    },
+    {
+      "title": "games",
+      "key": "games",
+      "global_score": 24.0,
+      "italy_score": 0,
+      "crossover_score": 13.8,
+      "opportunity_score": 14.2,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "GB": {
+          "title": "games",
+          "score": 26.2,
+          "status": "EMERGING",
+          "acceleration": "NONE",
+          "traffic": "200+",
+          "traffic_level": 2,
+          "momentum": 0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "GB"
+      ],
+      "rank": 30
+    },
+    {
+      "title": "biathlon",
+      "key": "biathlon",
+      "global_score": 24.0,
+      "italy_score": 0,
+      "crossover_score": 13.8,
+      "opportunity_score": 14.2,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "DE": {
+          "title": "biathlon",
+          "score": 26.2,
+          "status": "EMERGING",
+          "acceleration": "NONE",
+          "traffic": "200+",
+          "traffic_level": 2,
+          "momentum": 0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "DE"
+      ],
+      "rank": 31
+    },
+    {
+      "title": "pnp",
+      "key": "pnp",
+      "global_score": 24.0,
+      "italy_score": 0,
+      "crossover_score": 13.8,
+      "opportunity_score": 14.2,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "DE": {
+          "title": "pnp",
+          "score": 26.2,
+          "status": "EMERGING",
+          "acceleration": "NONE",
+          "traffic": "200+",
+          "traffic_level": 2,
+          "momentum": 0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "DE"
+      ],
       "rank": 32
     },
     {
       "title": "merz",
       "key": "merz",
-      "global_score": 22.7,
+      "global_score": 23.7,
       "italy_score": 0,
-      "crossover_score": 13.2,
-      "opportunity_score": 13.6,
+      "crossover_score": 13.7,
+      "opportunity_score": 14.0,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "DE": {
           "title": "merz",
-          "score": 24.6,
+          "score": 25.9,
           "status": "STABLE",
           "acceleration": "NONE",
           "traffic": "2000+",
@@ -2097,19 +2086,19 @@
       "rank": 33
     },
     {
-      "title": "gary oldman",
-      "key": "gary oldman",
-      "global_score": 22.6,
+      "title": "willson contreras",
+      "key": "willson contreras",
+      "global_score": 23.0,
       "italy_score": 0,
-      "crossover_score": 13.2,
-      "opportunity_score": 13.6,
+      "crossover_score": 13.3,
+      "opportunity_score": 13.7,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "US": {
-          "title": "gary oldman",
-          "score": 24.5,
+          "title": "willson contreras",
+          "score": 25.0,
           "status": "HOT",
           "acceleration": "NONE",
           "traffic": "500+",
@@ -2125,23 +2114,51 @@
       "rank": 34
     },
     {
-      "title": "пособие",
-      "key": "пособие",
-      "global_score": 22.4,
+      "title": "tiffany",
+      "key": "tiffany",
+      "global_score": 23.0,
       "italy_score": 0,
-      "crossover_score": 13.1,
-      "opportunity_score": 13.5,
+      "crossover_score": 13.3,
+      "opportunity_score": 13.7,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "US": {
+          "title": "tiffany",
+          "score": 25.0,
+          "status": "HOT",
+          "acceleration": "NONE",
+          "traffic": "500+",
+          "traffic_level": 3,
+          "momentum": 0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "US"
+      ],
+      "rank": 35
+    },
+    {
+      "title": "schiff",
+      "key": "schiff",
+      "global_score": 23.0,
+      "italy_score": 0,
+      "crossover_score": 13.3,
+      "opportunity_score": 13.7,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "DE": {
-          "title": "пособие",
-          "score": 24.3,
-          "status": "EMERGING",
+          "title": "schiff",
+          "score": 25.0,
+          "status": "HOT",
           "acceleration": "NONE",
-          "traffic": "100+",
-          "traffic_level": 1,
+          "traffic": "500+",
+          "traffic_level": 3,
           "momentum": 0,
           "news_count": 3
         }
@@ -2150,39 +2167,11 @@
       "market_codes": [
         "DE"
       ],
-      "rank": 35
-    },
-    {
-      "title": "drancy",
-      "key": "drancy",
-      "global_score": 22.4,
-      "italy_score": 0,
-      "crossover_score": 13.1,
-      "opportunity_score": 13.5,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "FR": {
-          "title": "drancy",
-          "score": 24.3,
-          "status": "EMERGING",
-          "acceleration": "NONE",
-          "traffic": "100+",
-          "traffic_level": 1,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "FR"
-      ],
       "rank": 36
     },
     {
-      "title": "schools",
-      "key": "schools",
+      "title": "sloane stephens",
+      "key": "sloane stephens",
       "global_score": 22.1,
       "italy_score": 0,
       "crossover_score": 12.9,
@@ -2191,66 +2180,10 @@
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
-        "GB": {
-          "title": "schools",
-          "score": 23.9,
-          "status": "STABLE",
-          "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
-          "momentum": 0.0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "GB"
-      ],
-      "rank": 37
-    },
-    {
-      "title": "amanda mack eku",
-      "key": "amanda mack eku",
-      "global_score": 21.8,
-      "italy_score": 0,
-      "crossover_score": 12.8,
-      "opportunity_score": 13.2,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "US": {
-          "title": "amanda mack eku",
-          "score": 23.5,
-          "status": "HOT",
-          "acceleration": "NONE",
-          "traffic": "500+",
-          "traffic_level": 3,
-          "momentum": 0,
-          "news_count": 2
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "US"
-      ],
-      "rank": 38
-    },
-    {
-      "title": "sloane stephens",
-      "key": "sloane stephens",
-      "global_score": 21.1,
-      "italy_score": 0,
-      "crossover_score": 12.5,
-      "opportunity_score": 12.9,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
         "US": {
           "title": "sloane stephens",
-          "score": 22.6,
-          "status": "HOT",
+          "score": 23.9,
+          "status": "STABLE",
           "acceleration": "NONE",
           "traffic": "1000+",
           "traffic_level": 4,
@@ -2262,11 +2195,39 @@
       "market_codes": [
         "US"
       ],
-      "rank": 39
+      "rank": 37
     },
     {
-      "title": "donald tusk",
-      "key": "donald tusk",
+      "title": "concerts",
+      "key": "concerts",
+      "global_score": 21.3,
+      "italy_score": 0,
+      "crossover_score": 12.6,
+      "opportunity_score": 13.0,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "GB": {
+          "title": "concerts",
+          "score": 22.9,
+          "status": "STABLE",
+          "acceleration": "NONE",
+          "traffic": "2000+",
+          "traffic_level": 5,
+          "momentum": 0.0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "GB"
+      ],
+      "rank": 38
+    },
+    {
+      "title": "kryptowährung",
+      "key": "kryptowahrung",
       "global_score": 21.0,
       "italy_score": 0,
       "crossover_score": 12.5,
@@ -2276,7 +2237,7 @@
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "DE": {
-          "title": "donald tusk",
+          "title": "kryptowährung",
           "score": 22.5,
           "status": "HOT",
           "acceleration": "NONE",
@@ -2289,56 +2250,56 @@
       "market_count": 1,
       "market_codes": [
         "DE"
+      ],
+      "rank": 39
+    },
+    {
+      "title": "accident nancy",
+      "key": "accident nancy",
+      "global_score": 21.0,
+      "italy_score": 0,
+      "crossover_score": 12.5,
+      "opportunity_score": 12.8,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "FR": {
+          "title": "accident nancy",
+          "score": 22.5,
+          "status": "HOT",
+          "acceleration": "NONE",
+          "traffic": "200+",
+          "traffic_level": 2,
+          "momentum": 0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "FR"
       ],
       "rank": 40
     },
     {
-      "title": "sachsen anhalt regierungsbildung",
-      "key": "sachsen anhalt regierungsbildung",
-      "global_score": 21.0,
+      "title": "hyrox competition",
+      "key": "hyrox competition",
+      "global_score": 20.7,
       "italy_score": 0,
-      "crossover_score": 12.5,
-      "opportunity_score": 12.8,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "DE": {
-          "title": "sachsen anhalt regierungsbildung",
-          "score": 22.5,
-          "status": "HOT",
-          "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "DE"
-      ],
-      "rank": 41
-    },
-    {
-      "title": "jeff bezos",
-      "key": "jeff bezos",
-      "global_score": 20.0,
-      "italy_score": 0,
-      "crossover_score": 12.0,
-      "opportunity_score": 12.4,
+      "crossover_score": 12.3,
+      "opportunity_score": 12.7,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "US": {
-          "title": "jeff bezos",
-          "score": 21.3,
-          "status": "HOT",
+          "title": "hyrox competition",
+          "score": 22.1,
+          "status": "STABLE",
           "acceleration": "NONE",
           "traffic": "500+",
           "traffic_level": 3,
-          "momentum": 0.0,
+          "momentum": 0,
           "news_count": 3
         }
       },
@@ -2346,22 +2307,50 @@
       "market_codes": [
         "US"
       ],
+      "rank": 41
+    },
+    {
+      "title": "sc magdeburg",
+      "key": "sc magdeburg",
+      "global_score": 20.7,
+      "italy_score": 0,
+      "crossover_score": 12.3,
+      "opportunity_score": 12.7,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "DE": {
+          "title": "sc magdeburg",
+          "score": 22.1,
+          "status": "HOT",
+          "acceleration": "NONE",
+          "traffic": "1000+",
+          "traffic_level": 4,
+          "momentum": 0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "DE"
+      ],
       "rank": 42
     },
     {
       "title": "immobilier",
       "key": "immobilier",
-      "global_score": 20.0,
+      "global_score": 20.6,
       "italy_score": 0,
-      "crossover_score": 12.0,
-      "opportunity_score": 12.4,
+      "crossover_score": 12.3,
+      "opportunity_score": 12.7,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "FR": {
           "title": "immobilier",
-          "score": 21.2,
+          "score": 22.0,
           "status": "STABLE",
           "acceleration": "NONE",
           "traffic": "200+",
@@ -2377,20 +2366,20 @@
       "rank": 43
     },
     {
-      "title": "red sox magic number",
-      "key": "red sox magic number",
-      "global_score": 19.9,
+      "title": "gary oldman",
+      "key": "gary oldman",
+      "global_score": 19.6,
       "italy_score": 0,
-      "crossover_score": 12.0,
-      "opportunity_score": 12.4,
+      "crossover_score": 11.8,
+      "opportunity_score": 12.2,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "US": {
-          "title": "red sox magic number",
-          "score": 21.1,
-          "status": "STABLE",
+          "title": "gary oldman",
+          "score": 20.8,
+          "status": "HOT",
           "acceleration": "NONE",
           "traffic": "500+",
           "traffic_level": 3,
@@ -2405,8 +2394,8 @@
       "rank": 44
     },
     {
-      "title": "hyrox competition",
-      "key": "hyrox competition",
+      "title": "fútbol",
+      "key": "futbol",
       "global_score": 19.6,
       "italy_score": 0,
       "crossover_score": 11.8,
@@ -2415,70 +2404,14 @@
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
-        "US": {
-          "title": "hyrox competition",
-          "score": 20.8,
-          "status": "HOT",
-          "acceleration": "NONE",
-          "traffic": "500+",
-          "traffic_level": 3,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "US"
-      ],
-      "rank": 45
-    },
-    {
-      "title": "dj moore",
-      "key": "dj moore",
-      "global_score": 17.6,
-      "italy_score": 0,
-      "crossover_score": 10.9,
-      "opportunity_score": 11.3,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "GB": {
-          "title": "dj moore",
-          "score": 18.3,
-          "status": "STABLE",
-          "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
-          "momentum": 0.0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "GB"
-      ],
-      "rank": 46
-    },
-    {
-      "title": "deportes",
-      "key": "deportes",
-      "global_score": 16.9,
-      "italy_score": 0,
-      "crossover_score": 10.6,
-      "opportunity_score": 11.0,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
         "ES": {
-          "title": "deportes",
-          "score": 17.4,
+          "title": "fútbol",
+          "score": 20.7,
           "status": "STABLE",
           "acceleration": "NONE",
-          "traffic": "500+",
-          "traffic_level": 3,
-          "momentum": 0,
+          "traffic": "1000+",
+          "traffic_level": 4,
+          "momentum": -1.0,
           "news_count": 3
         }
       },
@@ -2486,50 +2419,22 @@
       "market_codes": [
         "ES"
       ],
-      "rank": 47
+      "rank": 45
     },
     {
-      "title": "swimming",
-      "key": "swimming",
-      "global_score": 16.8,
+      "title": "пособие",
+      "key": "пособие",
+      "global_score": 19.5,
       "italy_score": 0,
-      "crossover_score": 10.6,
-      "opportunity_score": 11.0,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "GB": {
-          "title": "swimming",
-          "score": 17.3,
-          "status": "STABLE",
-          "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "GB"
-      ],
-      "rank": 48
-    },
-    {
-      "title": "moviepilot",
-      "key": "moviepilot",
-      "global_score": 16.1,
-      "italy_score": 0,
-      "crossover_score": 10.2,
-      "opportunity_score": 10.7,
+      "crossover_score": 11.8,
+      "opportunity_score": 12.2,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "DE": {
-          "title": "moviepilot",
-          "score": 16.4,
+          "title": "пособие",
+          "score": 20.6,
           "status": "HOT",
           "acceleration": "NONE",
           "traffic": "100+",
@@ -2542,22 +2447,162 @@
       "market_codes": [
         "DE"
       ],
+      "rank": 46
+    },
+    {
+      "title": "drancy",
+      "key": "drancy",
+      "global_score": 19.5,
+      "italy_score": 0,
+      "crossover_score": 11.8,
+      "opportunity_score": 12.2,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "FR": {
+          "title": "drancy",
+          "score": 20.6,
+          "status": "HOT",
+          "acceleration": "NONE",
+          "traffic": "100+",
+          "traffic_level": 1,
+          "momentum": 0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "FR"
+      ],
+      "rank": 47
+    },
+    {
+      "title": "supervivientes",
+      "key": "supervivientes",
+      "global_score": 19.2,
+      "italy_score": 0,
+      "crossover_score": 11.6,
+      "opportunity_score": 12.0,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "ES": {
+          "title": "supervivientes",
+          "score": 20.3,
+          "status": "HOT",
+          "acceleration": "NONE",
+          "traffic": "500+",
+          "traffic_level": 3,
+          "momentum": 0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "ES"
+      ],
+      "rank": 48
+    },
+    {
+      "title": "amanda mack eku",
+      "key": "amanda mack eku",
+      "global_score": 18.8,
+      "italy_score": 0,
+      "crossover_score": 11.5,
+      "opportunity_score": 11.9,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "US": {
+          "title": "amanda mack eku",
+          "score": 19.8,
+          "status": "HOT",
+          "acceleration": "NONE",
+          "traffic": "500+",
+          "traffic_level": 3,
+          "momentum": 0,
+          "news_count": 2
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "US"
+      ],
       "rank": 49
     },
     {
-      "title": "lillia",
-      "key": "lillia",
-      "global_score": 15.9,
+      "title": "deportes",
+      "key": "deportes",
+      "global_score": 18.0,
       "italy_score": 0,
-      "crossover_score": 10.2,
-      "opportunity_score": 10.6,
+      "crossover_score": 11.1,
+      "opportunity_score": 11.5,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "ES": {
+          "title": "deportes",
+          "score": 18.7,
+          "status": "STABLE",
+          "acceleration": "NONE",
+          "traffic": "500+",
+          "traffic_level": 3,
+          "momentum": 0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "ES"
+      ],
+      "rank": 50
+    },
+    {
+      "title": "swimming",
+      "key": "swimming",
+      "global_score": 17.9,
+      "italy_score": 0,
+      "crossover_score": 11.1,
+      "opportunity_score": 11.5,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "GB": {
-          "title": "lillia",
-          "score": 16.1,
+          "title": "swimming",
+          "score": 18.6,
+          "status": "STABLE",
+          "acceleration": "NONE",
+          "traffic": "200+",
+          "traffic_level": 2,
+          "momentum": 0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "GB"
+      ],
+      "rank": 51
+    },
+    {
+      "title": "josh allen",
+      "key": "josh allen",
+      "global_score": 17.2,
+      "italy_score": 0,
+      "crossover_score": 10.7,
+      "opportunity_score": 11.2,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "GB": {
+          "title": "josh allen",
+          "score": 17.7,
           "status": "STABLE",
           "acceleration": "NONE",
           "traffic": "100+",
@@ -2570,50 +2615,50 @@
       "market_codes": [
         "GB"
       ],
-      "rank": 50
+      "rank": 52
     },
     {
-      "title": "salamanca",
-      "key": "salamanca",
-      "global_score": 15.9,
+      "title": "red sox magic number",
+      "key": "red sox magic number",
+      "global_score": 16.9,
       "italy_score": 0,
-      "crossover_score": 10.2,
-      "opportunity_score": 10.6,
+      "crossover_score": 10.6,
+      "opportunity_score": 11.0,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
-        "ES": {
-          "title": "salamanca",
-          "score": 16.1,
+        "US": {
+          "title": "red sox magic number",
+          "score": 17.4,
           "status": "STABLE",
           "acceleration": "NONE",
-          "traffic": "100+",
-          "traffic_level": 1,
-          "momentum": 0.0,
+          "traffic": "500+",
+          "traffic_level": 3,
+          "momentum": 0,
           "news_count": 3
         }
       },
       "market_count": 1,
       "market_codes": [
-        "ES"
+        "US"
       ],
-      "rank": 51
+      "rank": 53
     },
     {
       "title": "hormus",
       "key": "hormus",
-      "global_score": 15.6,
+      "global_score": 12.7,
       "italy_score": 0,
-      "crossover_score": 10.0,
-      "opportunity_score": 10.5,
+      "crossover_score": 8.7,
+      "opportunity_score": 9.2,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "DE": {
           "title": "hormus",
-          "score": 15.8,
+          "score": 12.1,
           "status": "HOT",
           "acceleration": "NONE",
           "traffic": "100+",
@@ -2626,45 +2671,17 @@
       "market_codes": [
         "DE"
       ],
-      "rank": 52
-    },
-    {
-      "title": "concerts",
-      "key": "concerts",
-      "global_score": 15.3,
-      "italy_score": 0,
-      "crossover_score": 9.9,
-      "opportunity_score": 10.3,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "GB": {
-          "title": "concerts",
-          "score": 15.4,
-          "status": "STABLE",
-          "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
-          "momentum": -3.0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "GB"
-      ],
-      "rank": 53
+      "rank": 54
     }
   ],
   "crossover_trends": [
     {
       "title": "sports",
       "key": "sports",
-      "global_score": 52.6,
+      "global_score": 52.7,
       "italy_score": 59.9,
-      "crossover_score": 59.6,
-      "opportunity_score": 56.3,
+      "crossover_score": 59.7,
+      "opportunity_score": 56.4,
       "global_status": "RISING",
       "italy_status": "RISING",
       "why_now": "aumento del traffico nel breve periodo; +fascia negli ultimi 30 minuti; +fascia nell'ultima ora",
@@ -2681,7 +2698,7 @@
         },
         "FR": {
           "title": "sports",
-          "score": 26.7,
+          "score": 28.0,
           "status": "STABLE",
           "acceleration": "NONE",
           "traffic": "1000+",
@@ -2700,17 +2717,17 @@
     {
       "title": "fitness",
       "key": "fitness",
-      "global_score": 43.7,
-      "italy_score": 47.8,
-      "crossover_score": 52.0,
-      "opportunity_score": 48.0,
+      "global_score": 44.4,
+      "italy_score": 48.6,
+      "crossover_score": 52.6,
+      "opportunity_score": 48.6,
       "global_status": "RISING",
       "italy_status": "RISING",
       "why_now": "aumento del traffico nel breve periodo; +fascia negli ultimi 30 minuti; +fascia nell'ultima ora",
       "markets": {
         "IT": {
           "title": "fitness",
-          "score": 47.8,
+          "score": 48.6,
           "status": "RISING",
           "acceleration": "MEDIUM",
           "traffic": "500+",
@@ -2720,7 +2737,7 @@
         },
         "GB": {
           "title": "fitness",
-          "score": 22.1,
+          "score": 23.4,
           "status": "STABLE",
           "acceleration": "NONE",
           "traffic": "200+",
@@ -2734,63 +2751,24 @@
         "GB",
         "IT"
       ],
-      "rank": 2
-    },
-    {
-      "title": "fishing",
-      "key": "fishing",
-      "global_score": 30.4,
-      "italy_score": 32.1,
-      "crossover_score": 29.3,
-      "opportunity_score": 32.9,
-      "global_status": "STABLE",
-      "italy_status": "HOT",
-      "why_now": "segnali di crescita nelle finestre piu lunghe; +fascia nell'ultima ora; 3 notizie da 3 fonti",
-      "markets": {
-        "IT": {
-          "title": "fishing",
-          "score": 32.1,
-          "status": "HOT",
-          "acceleration": "WEAK",
-          "traffic": "500+",
-          "traffic_level": 3,
-          "momentum": 0.38,
-          "news_count": 3
-        },
-        "GB": {
-          "title": "fishing",
-          "score": 19.7,
-          "status": "STABLE",
-          "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 2,
-      "market_codes": [
-        "GB",
-        "IT"
-      ],
-      "rank": 4
+      "rank": 3
     },
     {
       "title": "flamengo - independiente del valle",
       "key": "flamengo independiente del valle",
-      "global_score": 27.7,
-      "italy_score": 28.9,
-      "crossover_score": 27.1,
-      "opportunity_score": 31.8,
-      "global_status": "STABLE",
-      "italy_status": "STABLE",
-      "why_now": "+fascia negli ultimi 30 minuti; 3 notizie da 2 fonti",
+      "global_score": 38.3,
+      "italy_score": 39.7,
+      "crossover_score": 47.1,
+      "opportunity_score": 42.7,
+      "global_status": "RISING",
+      "italy_status": "RISING",
+      "why_now": "aumento del traffico nel breve periodo; +fascia negli ultimi 30 minuti; +fascia nell'ultima ora",
       "markets": {
         "IT": {
           "title": "flamengo - independiente del valle",
-          "score": 28.9,
-          "status": "STABLE",
-          "acceleration": "NONE",
+          "score": 39.7,
+          "status": "RISING",
+          "acceleration": "MEDIUM",
           "traffic": "200+",
           "traffic_level": 2,
           "momentum": 1.0,
@@ -2798,12 +2776,12 @@
         },
         "FR": {
           "title": "flamengo – independiente del valle",
-          "score": 14.4,
-          "status": "STABLE",
-          "acceleration": "NONE",
+          "score": 25.2,
+          "status": "HOT",
+          "acceleration": "WEAK",
           "traffic": "200+",
           "traffic_level": 2,
-          "momentum": -2.0,
+          "momentum": -0.88,
           "news_count": 3
         }
       },
@@ -2815,19 +2793,58 @@
       "rank": 5
     },
     {
+      "title": "fishing",
+      "key": "fishing",
+      "global_score": 31.1,
+      "italy_score": 32.9,
+      "crossover_score": 29.9,
+      "opportunity_score": 33.5,
+      "global_status": "STABLE",
+      "italy_status": "HOT",
+      "why_now": "segnali di crescita nelle finestre piu lunghe; +fascia nell'ultima ora; 3 notizie da 3 fonti",
+      "markets": {
+        "IT": {
+          "title": "fishing",
+          "score": 32.9,
+          "status": "HOT",
+          "acceleration": "WEAK",
+          "traffic": "500+",
+          "traffic_level": 3,
+          "momentum": 0.38,
+          "news_count": 3
+        },
+        "GB": {
+          "title": "fishing",
+          "score": 21.0,
+          "status": "STABLE",
+          "acceleration": "NONE",
+          "traffic": "200+",
+          "traffic_level": 2,
+          "momentum": 0,
+          "news_count": 3
+        }
+      },
+      "market_count": 2,
+      "market_codes": [
+        "GB",
+        "IT"
+      ],
+      "rank": 6
+    },
+    {
       "title": "conference league",
       "key": "conference league",
-      "global_score": 25.3,
-      "italy_score": 22.5,
-      "crossover_score": 24.1,
-      "opportunity_score": 26.4,
+      "global_score": 22.3,
+      "italy_score": 18.8,
+      "crossover_score": 21.7,
+      "opportunity_score": 23.8,
       "global_status": "STABLE",
       "italy_status": "HOT",
       "why_now": "3 notizie da 3 fonti",
       "markets": {
         "IT": {
           "title": "conference league",
-          "score": 22.5,
+          "score": 18.8,
           "status": "HOT",
           "acceleration": "NONE",
           "traffic": "200+",
@@ -2837,8 +2854,8 @@
         },
         "DE": {
           "title": "conference league",
-          "score": 24.3,
-          "status": "EMERGING",
+          "score": 20.6,
+          "status": "HOT",
           "acceleration": "NONE",
           "traffic": "100+",
           "traffic_level": 1,
@@ -2851,7 +2868,7 @@
         "DE",
         "IT"
       ],
-      "rank": 8
+      "rank": 12
     }
   ],
   "global_scoring": {
