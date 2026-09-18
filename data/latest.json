@@ -1,7 +1,7 @@
 {
   "version": "3.0",
   "schema": "shortprompt-trend-radar-v3",
-  "timestamp": "2026-09-18T15:00:30.912939+02:00",
+  "timestamp": "2026-09-18T15:19:55.237852+02:00",
   "source": "Google Trends RSS",
   "geo": "IT",
   "feed_url": "https://trends.google.com/trending/rss?geo=IT",
@@ -24,37 +24,37 @@
       "category": "News",
       "status": "HOT",
       "acceleration": "NONE",
-      "score": 25.0,
-      "traffic": "500+",
-      "traffic_level": 3,
-      "traffic_value": 500,
+      "score": 55.0,
+      "traffic": "2000+",
+      "traffic_level": 5,
+      "traffic_value": 2000,
       "first_seen": "2026-09-18T14:49:46.930367+02:00",
-      "last_seen": "2026-09-18T15:00:30.912939+02:00",
-      "appearances": 2,
-      "duration_minutes": 10,
-      "momentum": 0,
-      "momentum_30m": 0,
-      "momentum_1h": 0,
-      "momentum_3h": 0,
-      "momentum_status": "FLAT",
-      "why_now": "3 notizie da 3 fonti",
-      "change_30m_bands": null,
+      "last_seen": "2026-09-18T15:19:55.237852+02:00",
+      "appearances": 3,
+      "duration_minutes": 30,
+      "momentum": 3.0,
+      "momentum_30m": 3,
+      "momentum_1h": 3.0,
+      "momentum_3h": 3.0,
+      "momentum_status": "POSITIVE",
+      "why_now": "+fascia negli ultimi 30 minuti; 3 notizie da 3 fonti",
+      "change_30m_bands": 3,
       "change_1h_bands": null,
       "change_3h_bands": null,
       "change_6h_bands": null,
       "change_24h_bands": null,
-      "direction_30m": "UNKNOWN",
+      "direction_30m": "UP",
       "direction_1h": "UNKNOWN",
       "direction_3h": "UNKNOWN",
-      "occurrences_1h": 1,
-      "occurrences_3h": 1,
-      "occurrences_6h": 1,
+      "occurrences_1h": 2,
+      "occurrences_3h": 2,
+      "occurrences_6h": 2,
       "news_count": 3,
       "source_count": 3,
       "sources": [
-        "ABC7 Chicago",
         "FOX Weather",
-        "News.com.au"
+        "News.com.au",
+        "Sky News"
       ],
       "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5l9kWD3M6Ds7B6hwoW83XIqtjDfwaX5-wcwmGnWKY8pTB_Mi9aDb628nSYZw",
       "picture_source": "FOX Weather",
@@ -67,11 +67,11 @@
           "source": "FOX Weather"
         },
         {
-          "title": "Shark kills swimmer off beach in Western Australia",
+          "title": "Swimmer dies after shark attack at popular Western Australia beach",
           "snippet": "",
-          "url": "https://abc7chicago.com/story/shark-kills-swimmer-off-beach-western-australia/19846616/",
-          "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQjoQwKh4F9f9xHat6O9pSM7z4KZZSBKEX87_w-R_a__iHwnkbNv4SJJh5ntM",
-          "source": "ABC7 Chicago"
+          "url": "https://news.sky.com/video/swimmer-dies-after-shark-attack-at-popular-western-australia-beach-13589301",
+          "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTSKT0-MMth2ACRgIqhSf5pyuR4swpNu6LGACpKAqzlV1yDh0gMgeysYtWDkLU",
+          "source": "Sky News"
         },
         {
           "title": "‘SCENE FROM JAWS’: Man dead in shark attack 15 metres from shore",
@@ -84,103 +84,37 @@
       "rank": 1
     },
     {
-      "title": "milano finanza",
-      "key": "milano finanza",
-      "normalized_title": "milano finanza",
-      "category": "Business",
-      "status": "HOT",
-      "acceleration": "NONE",
-      "score": 25.0,
-      "traffic": "500+",
-      "traffic_level": 3,
-      "traffic_value": 500,
-      "first_seen": "2026-09-18T14:49:46.930367+02:00",
-      "last_seen": "2026-09-18T15:00:30.912939+02:00",
-      "appearances": 2,
-      "duration_minutes": 10,
-      "momentum": 0,
-      "momentum_30m": 0,
-      "momentum_1h": 0,
-      "momentum_3h": 0,
-      "momentum_status": "FLAT",
-      "why_now": "3 notizie da 3 fonti",
-      "change_30m_bands": null,
-      "change_1h_bands": null,
-      "change_3h_bands": null,
-      "change_6h_bands": null,
-      "change_24h_bands": null,
-      "direction_30m": "UNKNOWN",
-      "direction_1h": "UNKNOWN",
-      "direction_3h": "UNKNOWN",
-      "occurrences_1h": 1,
-      "occurrences_3h": 1,
-      "occurrences_6h": 1,
-      "news_count": 3,
-      "source_count": 3,
-      "sources": [
-        "Milano Finanza",
-        "SoldiOnline.it",
-        "la Repubblica"
-      ],
-      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmNcLoy1prFI9_EjCBenTGZ1BsloluHWXpvq9JP9znzyqSZvebJu5AaVdLzwc",
-      "picture_source": "Milano Finanza",
-      "news": [
-        {
-          "title": "Borse oggi in diretta | Ftse Mib sotto 51.800 con le banche, la Francia torna a far paura: spread oltre 100",
-          "snippet": "",
-          "url": "https://www.milanofinanza.it/news/borse-oggi-diretta-18-settembre-2026-chiusura-apertura-europee-borsa-milano-ftse-mib-piazza-affari-202609180736079601",
-          "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmNcLoy1prFI9_EjCBenTGZ1BsloluHWXpvq9JP9znzyqSZvebJu5AaVdLzwc",
-          "source": "Milano Finanza"
-        },
-        {
-          "title": "La Francia è la “nuova Italia”. I bond vigilantes all’erta per bilancio, rating e presidenziali",
-          "snippet": "",
-          "url": "https://www.repubblica.it/economia/rubriche/outlook/2026/09/16/news/la_francia_e_la_nuova_italia_i_bond_vigilantes_all_erta_per_bilancio_rating_e_presidenziali-425587417/",
-          "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSTsrgNr73ZgDOKGGR43iXBgNNpuDJm33vhOS9Wed9sCwGkHv9F7cjMgHue5po",
-          "source": "la Repubblica"
-        },
-        {
-          "title": "Francia, lo spread sul Bund torna sopra 100 punti: livelli da 2012",
-          "snippet": "",
-          "url": "https://www.soldionline.it/notizie/mercati-esteri/francia-lo-spread-sul-bund-torna-sopra-100-punti-livelli-da-2012",
-          "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQ-8ADPiM_E-U6erQSpY4uE1oaLBBNIX-48Uhc6fDIltq_B7XQz7cEGSGspg8",
-          "source": "SoldiOnline.it"
-        }
-      ],
-      "rank": 2
-    },
-    {
       "title": "catherine, principessa del galles",
       "key": "catherine principessa del galles",
       "normalized_title": "catherine principessa del galles",
       "category": "News",
       "status": "HOT",
       "acceleration": "NONE",
-      "score": 25.0,
-      "traffic": "500+",
-      "traffic_level": 3,
-      "traffic_value": 500,
+      "score": 35.6,
+      "traffic": "1000+",
+      "traffic_level": 4,
+      "traffic_value": 1000,
       "first_seen": "2026-09-18T14:49:46.930367+02:00",
-      "last_seen": "2026-09-18T15:00:30.912939+02:00",
-      "appearances": 2,
-      "duration_minutes": 10,
-      "momentum": 0,
-      "momentum_30m": 0,
-      "momentum_1h": 0,
-      "momentum_3h": 0,
-      "momentum_status": "FLAT",
-      "why_now": "3 notizie da 3 fonti",
-      "change_30m_bands": null,
+      "last_seen": "2026-09-18T15:19:55.237852+02:00",
+      "appearances": 3,
+      "duration_minutes": 30,
+      "momentum": 1.0,
+      "momentum_30m": 1,
+      "momentum_1h": 1.0,
+      "momentum_3h": 1.0,
+      "momentum_status": "POSITIVE",
+      "why_now": "+fascia negli ultimi 30 minuti; 3 notizie da 3 fonti",
+      "change_30m_bands": 1,
       "change_1h_bands": null,
       "change_3h_bands": null,
       "change_6h_bands": null,
       "change_24h_bands": null,
-      "direction_30m": "UNKNOWN",
+      "direction_30m": "UP",
       "direction_1h": "UNKNOWN",
       "direction_3h": "UNKNOWN",
-      "occurrences_1h": 1,
-      "occurrences_3h": 1,
-      "occurrences_6h": 1,
+      "occurrences_1h": 2,
+      "occurrences_3h": 2,
+      "occurrences_6h": 2,
       "news_count": 3,
       "source_count": 3,
       "sources": [
@@ -213,7 +147,7 @@
           "source": "Vanity Fair Italia"
         }
       ],
-      "rank": 3
+      "rank": 2
     },
     {
       "title": "bracciante",
@@ -222,31 +156,31 @@
       "category": "News",
       "status": "HOT",
       "acceleration": "NONE",
-      "score": 22.5,
-      "traffic": "200+",
-      "traffic_level": 2,
-      "traffic_value": 200,
+      "score": 33.8,
+      "traffic": "500+",
+      "traffic_level": 3,
+      "traffic_value": 500,
       "first_seen": "2026-09-18T14:49:46.930367+02:00",
-      "last_seen": "2026-09-18T15:00:30.912939+02:00",
-      "appearances": 2,
-      "duration_minutes": 10,
-      "momentum": 0,
-      "momentum_30m": 0,
-      "momentum_1h": 0,
-      "momentum_3h": 0,
-      "momentum_status": "FLAT",
-      "why_now": "3 notizie da 3 fonti",
-      "change_30m_bands": null,
+      "last_seen": "2026-09-18T15:19:55.237852+02:00",
+      "appearances": 3,
+      "duration_minutes": 30,
+      "momentum": 1.0,
+      "momentum_30m": 1,
+      "momentum_1h": 1.0,
+      "momentum_3h": 1.0,
+      "momentum_status": "POSITIVE",
+      "why_now": "+fascia negli ultimi 30 minuti; 3 notizie da 3 fonti",
+      "change_30m_bands": 1,
       "change_1h_bands": null,
       "change_3h_bands": null,
       "change_6h_bands": null,
       "change_24h_bands": null,
-      "direction_30m": "UNKNOWN",
+      "direction_30m": "UP",
       "direction_1h": "UNKNOWN",
       "direction_3h": "UNKNOWN",
-      "occurrences_1h": 1,
-      "occurrences_3h": 1,
-      "occurrences_6h": 1,
+      "occurrences_1h": 2,
+      "occurrences_3h": 2,
+      "occurrences_6h": 2,
       "news_count": 3,
       "source_count": 3,
       "sources": [
@@ -279,29 +213,29 @@
           "source": "la Repubblica"
         }
       ],
-      "rank": 4
+      "rank": 3
     },
     {
-      "title": "serbia",
-      "key": "serbia",
-      "normalized_title": "serbia",
+      "title": "polizia di stato",
+      "key": "polizia di stato",
+      "normalized_title": "polizia di stato",
       "category": "AI",
-      "status": "HOT",
+      "status": "EMERGING",
       "acceleration": "NONE",
-      "score": 22.5,
-      "traffic": "200+",
-      "traffic_level": 2,
-      "traffic_value": 200,
-      "first_seen": "2026-09-18T14:49:46.930367+02:00",
-      "last_seen": "2026-09-18T15:00:30.912939+02:00",
-      "appearances": 2,
-      "duration_minutes": 10,
+      "score": 30.5,
+      "traffic": "1000+",
+      "traffic_level": 4,
+      "traffic_value": 1000,
+      "first_seen": "2026-09-18T15:19:55.237852+02:00",
+      "last_seen": "2026-09-18T15:19:55.237852+02:00",
+      "appearances": 1,
+      "duration_minutes": 0,
       "momentum": 0,
       "momentum_30m": 0,
       "momentum_1h": 0,
       "momentum_3h": 0,
       "momentum_status": "FLAT",
-      "why_now": "3 notizie da 2 fonti",
+      "why_now": "3 notizie da 3 fonti; nuova entrata nel radar",
       "change_30m_bands": null,
       "change_1h_bands": null,
       "change_3h_bands": null,
@@ -310,14 +244,344 @@
       "direction_30m": "UNKNOWN",
       "direction_1h": "UNKNOWN",
       "direction_3h": "UNKNOWN",
-      "occurrences_1h": 1,
-      "occurrences_3h": 1,
-      "occurrences_6h": 1,
+      "occurrences_1h": 0,
+      "occurrences_3h": 0,
+      "occurrences_6h": 0,
+      "news_count": 3,
+      "source_count": 3,
+      "sources": [
+        "RaiNews",
+        "RomaToday",
+        "Virgilio"
+      ],
+      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzsS44eHAiJl4s8xb54-zFvkglqr8ATNyO25Qfq-hQqcS3lZD6tCn-MZtcIxw",
+      "picture_source": "RomaToday",
+      "news": [
+        {
+          "title": "Urla dai ballatoi e fuga nei parchi: così le vedette provano a salvare i pusher della Metro C",
+          "snippet": "",
+          "url": "https://www.romatoday.it/cronaca/droga-arresti-tor-bella-monaca-roma.html",
+          "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzsS44eHAiJl4s8xb54-zFvkglqr8ATNyO25Qfq-hQqcS3lZD6tCn-MZtcIxw",
+          "source": "RomaToday"
+        },
+        {
+          "title": "Roma Est, blitz della Polizia di Stato, 6 arresti e oltre 200 dosi di droga sequestrate",
+          "snippet": "",
+          "url": "https://www.rainews.it/tgr/lazio/articoli/2026/09/roma-est-blitz-della-polizia-di-stato-6-arresti-e-oltre-200-dosi-di-droga-sequestrate-3f48c954-008d-4bf2-8305-da609f8e74e0.html",
+          "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQsBU8r5DxmJkk9ueOREWjV7jqTXtiMKYppmPt3Jj-8f3MAs1PbeudfkYTOZEk",
+          "source": "RaiNews"
+        },
+        {
+          "title": "Nasconde 38mila euro dietro le confezioni di cioccolata a Roma: arrestato",
+          "snippet": "",
+          "url": "https://www.virgilio.it/notizie/nasconde-38mila-euro-dietro-le-confezioni-di-cioccolata-a-roma-arrestato-1783152",
+          "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCLSxUghGx24Q26eCm2yMCNsHjMrepR32PsstaqqOHKb32UZham_AQs8uYZOI",
+          "source": "Virgilio"
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "title": "vanessa incontrada",
+      "key": "vanessa incontrada",
+      "normalized_title": "vanessa incontrada",
+      "category": "Entertainment",
+      "status": "EMERGING",
+      "acceleration": "NONE",
+      "score": 28.7,
+      "traffic": "500+",
+      "traffic_level": 3,
+      "traffic_value": 500,
+      "first_seen": "2026-09-18T15:19:55.237852+02:00",
+      "last_seen": "2026-09-18T15:19:55.237852+02:00",
+      "appearances": 1,
+      "duration_minutes": 0,
+      "momentum": 0,
+      "momentum_30m": 0,
+      "momentum_1h": 0,
+      "momentum_3h": 0,
+      "momentum_status": "FLAT",
+      "why_now": "3 notizie da 3 fonti; nuova entrata nel radar",
+      "change_30m_bands": null,
+      "change_1h_bands": null,
+      "change_3h_bands": null,
+      "change_6h_bands": null,
+      "change_24h_bands": null,
+      "direction_30m": "UNKNOWN",
+      "direction_1h": "UNKNOWN",
+      "direction_3h": "UNKNOWN",
+      "occurrences_1h": 0,
+      "occurrences_3h": 0,
+      "occurrences_6h": 0,
+      "news_count": 3,
+      "source_count": 3,
+      "sources": [
+        "Adnkronos",
+        "La Gazzetta dello Sport",
+        "Mediaset Infinity"
+      ],
+      "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvB2cDedy9WTvQLl8RAtU__DWgqge2ZdYwFyYKaI2jMAPaFRa6_r74YpEWWhc",
+      "picture_source": "Mediaset Infinity",
+      "news": [
+        {
+          "title": "Erica - Una detective per caso: Terza puntata Video",
+          "snippet": "",
+          "url": "https://mediasetinfinity.mediaset.it/video/ericaunadetectivepercaso/terza-puntata_F313988201000301",
+          "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvB2cDedy9WTvQLl8RAtU__DWgqge2ZdYwFyYKaI2jMAPaFRa6_r74YpEWWhc",
+          "source": "Mediaset Infinity"
+        },
+        {
+          "title": "Ascolti tv mercoledì 16 settembre, prima serata e access prime time: Rai e Mediaset, chi ha vinto",
+          "snippet": "",
+          "url": "https://www.adnkronos.com/spettacoli/ascolti-tv-mercoledi-16-settembre-rai-mediaset-prima-serata-access-prime-time_2dQhax43pQfIJL2KYsCTSo",
+          "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT8n8Ausc_2SJ6TPKnNFA-QEaB10inS-rpyD13Zh8EH7xB-UsjpWImGIEVx1eA",
+          "source": "Adnkronos"
+        },
+        {
+          "title": "Erica – Una detective per caso, stasera l'ultimo episodio della fiction con Vanessa Incontrada",
+          "snippet": "",
+          "url": "https://www.gazzetta.it/spettacolo-tv-gossip/storie/16-09-2026/erica-una-detective-per-caso-su-canale-5-trama-del-16-settembre/erica-in-onda-su-canale-5.shtml",
+          "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTEeXDCn3sPDPzdrUefBqcfMITmzR6XI82-f6lcLNldS5jdfzHMnqRaho0MAA",
+          "source": "La Gazzetta dello Sport"
+        }
+      ],
+      "rank": 5
+    },
+    {
+      "title": "vittorio feltri",
+      "key": "vittorio feltri",
+      "normalized_title": "vittorio feltri",
+      "category": "News",
+      "status": "EMERGING",
+      "acceleration": "NONE",
+      "score": 26.2,
+      "traffic": "200+",
+      "traffic_level": 2,
+      "traffic_value": 200,
+      "first_seen": "2026-09-18T15:19:55.237852+02:00",
+      "last_seen": "2026-09-18T15:19:55.237852+02:00",
+      "appearances": 1,
+      "duration_minutes": 0,
+      "momentum": 0,
+      "momentum_30m": 0,
+      "momentum_1h": 0,
+      "momentum_3h": 0,
+      "momentum_status": "FLAT",
+      "why_now": "3 notizie da 3 fonti; nuova entrata nel radar",
+      "change_30m_bands": null,
+      "change_1h_bands": null,
+      "change_3h_bands": null,
+      "change_6h_bands": null,
+      "change_24h_bands": null,
+      "direction_30m": "UNKNOWN",
+      "direction_1h": "UNKNOWN",
+      "direction_3h": "UNKNOWN",
+      "occurrences_1h": 0,
+      "occurrences_3h": 0,
+      "occurrences_6h": 0,
+      "news_count": 3,
+      "source_count": 3,
+      "sources": [
+        "Adnkronos",
+        "La Gazzetta del Mezzogiorno",
+        "Primaonline"
+      ],
+      "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRSLq7ovHNrWR36TyvOhIc4j1rTyIGbdVE54gWLTIdu9WZx_zacKYLPYERS-k4",
+      "picture_source": "La Gazzetta del Mezzogiorno",
+      "news": [
+        {
+          "title": "Premio Giovani Comunicatori, a 10 talenti under 35, alla carriera a Vittorio Feltri e Storytelling a Maria Latella",
+          "snippet": "",
+          "url": "https://www.lagazzettadelmezzogiorno.it/news/ultima-ora/2136240/premio-giovani-comunicatori-a-10-talenti-under-35-alla-carriera-a-vittorio-feltri-e-storytelling-a-maria-latella.html",
+          "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRSLq7ovHNrWR36TyvOhIc4j1rTyIGbdVE54gWLTIdu9WZx_zacKYLPYERS-k4",
+          "source": "La Gazzetta del Mezzogiorno"
+        },
+        {
+          "title": "Premio Speciale alla Carriera a Feltri: \"La gente ha ancora bisogno della carta stampata\"",
+          "snippet": "",
+          "url": "https://www.adnkronos.com/cronaca/premio-speciale-carriera-vittorio-feltri-premio-storytelling-maria-latella_3TTGZfCuxIQcs4OvcTqxxS",
+          "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSaKTj8mBykrMZmLgYN4VAYscLws7OhPk90fRK8PX-RlOdJB70HoiZ3QZpnmeY",
+          "source": "Adnkronos"
+        },
+        {
+          "title": "Piovono premi sulla comunicazione. Sono più di 50, ce n’è per tutti",
+          "snippet": "",
+          "url": "https://www.primaonline.it/2026/09/17/482786/piovono-premi-sulla-comunicazione-sono-piu-di-70-ce-ne-per-tutto-e-tutti/",
+          "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzTOJZWw8jTvewNI0Y9-bBYqK4BlnqakXBIu-sPjBdq_V6UmUX21IwpNghjsg",
+          "source": "Primaonline"
+        }
+      ],
+      "rank": 6
+    },
+    {
+      "title": "19 settembre",
+      "key": "19 settembre",
+      "normalized_title": "19 settembre",
+      "category": "Business",
+      "status": "EMERGING",
+      "acceleration": "NONE",
+      "score": 26.2,
+      "traffic": "200+",
+      "traffic_level": 2,
+      "traffic_value": 200,
+      "first_seen": "2026-09-18T15:19:55.237852+02:00",
+      "last_seen": "2026-09-18T15:19:55.237852+02:00",
+      "appearances": 1,
+      "duration_minutes": 0,
+      "momentum": 0,
+      "momentum_30m": 0,
+      "momentum_1h": 0,
+      "momentum_3h": 0,
+      "momentum_status": "FLAT",
+      "why_now": "3 notizie da 3 fonti; nuova entrata nel radar",
+      "change_30m_bands": null,
+      "change_1h_bands": null,
+      "change_3h_bands": null,
+      "change_6h_bands": null,
+      "change_24h_bands": null,
+      "direction_30m": "UNKNOWN",
+      "direction_1h": "UNKNOWN",
+      "direction_3h": "UNKNOWN",
+      "occurrences_1h": 0,
+      "occurrences_3h": 0,
+      "occurrences_6h": 0,
+      "news_count": 3,
+      "source_count": 3,
+      "sources": [
+        "Amica.it",
+        "Leggo.it",
+        "VeronaSera"
+      ],
+      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWEgi0DiL4Ui7CVBNb2MV2oQbv1MdHY1mMZ7Eqk-UO7qwcos-aeh_SCrHnioM",
+      "picture_source": "VeronaSera",
+      "news": [
+        {
+          "title": "19 Settembre: oroscopo segno per segno e almanacco",
+          "snippet": "",
+          "url": "https://www.veronasera.it/social/19-settembre-oroscopo-segno-per-segno-e-almanacco.html",
+          "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWEgi0DiL4Ui7CVBNb2MV2oQbv1MdHY1mMZ7Eqk-UO7qwcos-aeh_SCrHnioM",
+          "source": "VeronaSera"
+        },
+        {
+          "title": "Oroscopo Gemelli di domani: previsioni del giorno 19/09/2026",
+          "snippet": "",
+          "url": "https://www.amica.it/oroscopo/giorno/gemelli-19-09-2026/",
+          "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSo5v2N_HNlqbtVOg0OiQP_e5XJm4WwW2VmVRuj3gKiz6juoBZUDkNv0E4Q3Ec",
+          "source": "Amica.it"
+        },
+        {
+          "title": "L'oroscopo del fine settimana: Cancro pieno di grinta, Ariete frenato. Toro? Serve pazienza",
+          "snippet": "",
+          "url": "https://www.leggo.it/schede/18_settembre_2026_oroscopo_weekend_fine_settimana_19_20_settembre_2026_segni_favoriti_chi_fa_fatica-9769430.html",
+          "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRYjkOFkpI0l0Mnh3lk--LUm0QH2a75j-WZJHHdszJwAIRufytKpzv0OBETysA",
+          "source": "Leggo.it"
+        }
+      ],
+      "rank": 7
+    },
+    {
+      "title": "milano finanza",
+      "key": "milano finanza",
+      "normalized_title": "milano finanza",
+      "category": "Business",
+      "status": "HOT",
+      "acceleration": "NONE",
+      "score": 21.3,
+      "traffic": "500+",
+      "traffic_level": 3,
+      "traffic_value": 500,
+      "first_seen": "2026-09-18T14:49:46.930367+02:00",
+      "last_seen": "2026-09-18T15:19:55.237852+02:00",
+      "appearances": 3,
+      "duration_minutes": 30,
+      "momentum": 0.0,
+      "momentum_30m": 0,
+      "momentum_1h": 0.0,
+      "momentum_3h": 0.0,
+      "momentum_status": "FLAT",
+      "why_now": "3 notizie da 3 fonti",
+      "change_30m_bands": 0,
+      "change_1h_bands": null,
+      "change_3h_bands": null,
+      "change_6h_bands": null,
+      "change_24h_bands": null,
+      "direction_30m": "FLAT",
+      "direction_1h": "UNKNOWN",
+      "direction_3h": "UNKNOWN",
+      "occurrences_1h": 2,
+      "occurrences_3h": 2,
+      "occurrences_6h": 2,
+      "news_count": 3,
+      "source_count": 3,
+      "sources": [
+        "Investing.com",
+        "MarketScreener Italia",
+        "Milano Finanza"
+      ],
+      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9xu6pB_L1wn0qRWGcLGm0JDj_iF2gqDtEHTqKzVlt95-iSLVNTee2ylZRCX4",
+      "picture_source": "Milano Finanza",
+      "news": [
+        {
+          "title": "Toyota spenderà 6,4 miliardi di dollari all’anno per portare i robot nelle fabbriche dal 2028",
+          "snippet": "",
+          "url": "https://www.milanofinanza.it/news/toyota-spendera-6-4-miliardi-di-dollari-all-anno-per-portare-i-robot-nelle-fabbriche-dal-2028-202609181308436415",
+          "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9xu6pB_L1wn0qRWGcLGm0JDj_iF2gqDtEHTqKzVlt95-iSLVNTee2ylZRCX4",
+          "source": "Milano Finanza"
+        },
+        {
+          "title": "Toyota prevede di impiegare 400.000 robot umanoidi nelle fabbriche",
+          "snippet": "",
+          "url": "https://it.investing.com/news/company-news/toyota-prevede-di-impiegare-400000-robot-umanoidi-nelle-fabbriche-93CH-3554225",
+          "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRWZcihQa1ShUv9yNdq2EZOFx0ADDlVMhAmlwwlGoAR5d0xFaxBNCw8FhbnUqg",
+          "source": "Investing.com"
+        },
+        {
+          "title": "Toyota stima che l'automazione delle fabbriche potrebbe costare 6,4 Mrd USD all'anno dal 2028",
+          "snippet": "",
+          "url": "https://it.marketscreener.com/notizie/toyota-stima-che-l-automazione-delle-fabbriche-potrebbe-costare-6-4-mrd-usd-all-anno-dal-2028-ce785adad88af227",
+          "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSrNgURSIYm93v4-uQQTfa0ijZ06veci3GKj1wVn-iQgxzmL69iLBZNO9YPEvM",
+          "source": "MarketScreener Italia"
+        }
+      ],
+      "rank": 8
+    },
+    {
+      "title": "serbia",
+      "key": "serbia",
+      "normalized_title": "serbia",
+      "category": "News",
+      "status": "HOT",
+      "acceleration": "NONE",
+      "score": 18.8,
+      "traffic": "200+",
+      "traffic_level": 2,
+      "traffic_value": 200,
+      "first_seen": "2026-09-18T14:49:46.930367+02:00",
+      "last_seen": "2026-09-18T15:19:55.237852+02:00",
+      "appearances": 3,
+      "duration_minutes": 30,
+      "momentum": 0.0,
+      "momentum_30m": 0,
+      "momentum_1h": 0.0,
+      "momentum_3h": 0.0,
+      "momentum_status": "FLAT",
+      "why_now": "3 notizie da 2 fonti",
+      "change_30m_bands": 0,
+      "change_1h_bands": null,
+      "change_3h_bands": null,
+      "change_6h_bands": null,
+      "change_24h_bands": null,
+      "direction_30m": "FLAT",
+      "direction_1h": "UNKNOWN",
+      "direction_3h": "UNKNOWN",
+      "occurrences_1h": 2,
+      "occurrences_3h": 2,
+      "occurrences_6h": 2,
       "news_count": 3,
       "source_count": 2,
       "sources": [
         "ANSA",
-        "BGNES"
+        "vreme.com"
       ],
       "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQl4szvZbOoBuKbM-pKIElUe19Ewh1T3tsrfylwXBsJHxSR6R4I7NkIDV-YScY",
       "picture_source": "ANSA",
@@ -325,75 +589,75 @@
         {
           "title": "Von der Leyen visits the Balkans, but stops in Serbia and Bosnia are postponed",
           "snippet": "",
-          "url": "https://www.ansa.it/nuova_europa/en/news/sections/politics/2026/09/18/von-der-leyen-visits-the-balkans-but-stops-in-serbia-and_e42bace5-3c0c-4938-8270-9debefe707b4.html",
+          "url": "https://www.ansa.it/nuova_europa/en/news/sections/news/2026/09/18/von-der-leyen-visits-the-balkans-but-stops-in-serbia-and_99a9275d-60d6-4430-a8c6-a52eb662908b.html",
           "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQl4szvZbOoBuKbM-pKIElUe19Ewh1T3tsrfylwXBsJHxSR6R4I7NkIDV-YScY",
           "source": "ANSA"
         },
         {
-          "title": "Von der Leyen to bypass Serbia during new Balkan tour",
+          "title": "Von der Leyen is not coming to Serbia",
           "snippet": "",
-          "url": "http://www.bgnes.com/european-union/von-der-leyen-to-bypass-serbia-during-new-balkan-tour",
-          "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSO2O0SR8YaoL0BC6RNQmgrdJDEifDcGlHYPxPX2NU7P9voiDGGLYyHTFIGWuE",
-          "source": "BGNES"
+          "url": "https://vreme.com/en/vesti/ursula-fon-der-lajen-srbija-evropska-komisija/",
+          "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQbBYq55HkrgnKumCRkIa-mwheeYS7sfArmBi7hVnDgpCDVm_ENajiQzx0YOa4",
+          "source": "vreme.com"
         },
         {
-          "title": "Zelensky launches the 'Carpathian Eight' format, but Fico fails to attend the summit",
+          "title": "Serbia expels Italian human rights expert deemed a 'threat to national security'",
           "snippet": "",
-          "url": "https://www.ansa.it/nuova_europa/en/news/countries/serbia/2026/09/18/zelensky-launches-the-carpathian-eight-format-but-fico-fails-to-attend_4e4bcb6c-5599-4f5e-9663-06d9b9430002.html",
-          "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSYi2hyVg54TxHx_EGUoqdee0qKJqTRQqT_PjxVTC3aDc8bI6V5Zy5EsZvyW4M",
+          "url": "https://www.ansa.it/nuova_europa/en/news/countries/serbia/2026/09/18/serbia-expels-italian-human-rights-expert-deemed-a-threat-to-national-security_1a695688-035d-4f1d-94cc-ebde857763fb.html",
+          "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTJN-NDqGSAI_LabYXcpFDpC_vkIFdlL6VwTkt5ZIRs4e435Ab6tGJVOW9idRI",
           "source": "ANSA"
         }
       ],
-      "rank": 5
+      "rank": 9
     },
     {
       "title": "san marino rtv",
       "key": "san marino rtv",
       "normalized_title": "san marino rtv",
-      "category": "Entertainment",
+      "category": "AI",
       "status": "HOT",
       "acceleration": "NONE",
-      "score": 20.6,
+      "score": 16.9,
       "traffic": "100+",
       "traffic_level": 1,
       "traffic_value": 100,
       "first_seen": "2026-09-18T14:49:46.930367+02:00",
-      "last_seen": "2026-09-18T15:00:30.912939+02:00",
-      "appearances": 2,
-      "duration_minutes": 10,
-      "momentum": 0,
+      "last_seen": "2026-09-18T15:19:55.237852+02:00",
+      "appearances": 3,
+      "duration_minutes": 30,
+      "momentum": 0.0,
       "momentum_30m": 0,
-      "momentum_1h": 0,
-      "momentum_3h": 0,
+      "momentum_1h": 0.0,
+      "momentum_3h": 0.0,
       "momentum_status": "FLAT",
       "why_now": "3 notizie da 3 fonti",
-      "change_30m_bands": null,
+      "change_30m_bands": 0,
       "change_1h_bands": null,
       "change_3h_bands": null,
       "change_6h_bands": null,
       "change_24h_bands": null,
-      "direction_30m": "UNKNOWN",
+      "direction_30m": "FLAT",
       "direction_1h": "UNKNOWN",
       "direction_3h": "UNKNOWN",
-      "occurrences_1h": 1,
-      "occurrences_3h": 1,
-      "occurrences_6h": 1,
+      "occurrences_1h": 2,
+      "occurrences_3h": 2,
+      "occurrences_6h": 2,
       "news_count": 3,
       "source_count": 3,
       "sources": [
-        "Leggo.it",
-        "San Marino Rtv",
-        "libertas - Informazione per passione"
+        "Domani",
+        "Il Messaggero",
+        "Leggo.it"
       ],
-      "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQmgN2DQu8oEA2F8qlFaJJZSOlvY9oVkdj1RIHgg6Zd5bKiy5n1Nc-xcaSZsC4",
-      "picture_source": "San Marino Rtv",
+      "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ05PKNaNdfv97c-BFPEsd33wz2p4DeW-1Z5pKz4KLl08Bz-kqxbW9ze4Fi3Uk",
+      "picture_source": "Domani",
       "news": [
         {
-          "title": "Roberto Sergio Cavaliere di Gran Croce",
+          "title": "Rai, lascia il dg Sergio (ma vuole restare a San Marino). Il ricorso di Ranucci sarà giudicato il 25, l’azienda aspetta risposte entro lunedì",
           "snippet": "",
-          "url": "https://www.sanmarinortv.sm/news/attualita-c4/roberto-sergio-cavaliere-di-gran-croce-a296034",
-          "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQmgN2DQu8oEA2F8qlFaJJZSOlvY9oVkdj1RIHgg6Zd5bKiy5n1Nc-xcaSZsC4",
-          "source": "San Marino Rtv"
+          "url": "https://www.editorialedomani.it/politica/italia/rai-lascia-dg-sergio-san-marino-ranucci-ricorso-sanzione-disciplinare-chp7yzs0",
+          "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ05PKNaNdfv97c-BFPEsd33wz2p4DeW-1Z5pKz4KLl08Bz-kqxbW9ze4Fi3Uk",
+          "source": "Domani"
         },
         {
           "title": "San Marino Rtv cambia volto: arrivano Myrta Merlino, Simona Ventura e Monica Giandotti. Tutti i nomi del nuovo palinsesto",
@@ -403,266 +667,11 @@
           "source": "Leggo.it"
         },
         {
-          "title": "San Marino RTV presenta la nuova stagione 2026-2027",
+          "title": "Premiato Roberto Sergio: Cavaliere di Gran Croce per oltre quarant’anni di impegno nelle istituzioni e nel sistema dei media",
           "snippet": "",
-          "url": "https://www.libertas.sm/san-marino-rtv-presenta-la-nuova-stagione-2026-2027/",
-          "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQp0B95dWIe2CBBY3IW23wACS_WB82C01c5K9-XCjCZypoTrCRv__YqUVeSYVs",
-          "source": "libertas - Informazione per passione"
-        }
-      ],
-      "rank": 6
-    },
-    {
-      "title": "ikea perugia",
-      "key": "ikea perugia",
-      "normalized_title": "ikea perugia",
-      "category": "News",
-      "status": "HOT",
-      "acceleration": "NONE",
-      "score": 20.6,
-      "traffic": "100+",
-      "traffic_level": 1,
-      "traffic_value": 100,
-      "first_seen": "2026-09-18T14:49:46.930367+02:00",
-      "last_seen": "2026-09-18T15:00:30.912939+02:00",
-      "appearances": 2,
-      "duration_minutes": 10,
-      "momentum": 0,
-      "momentum_30m": 0,
-      "momentum_1h": 0,
-      "momentum_3h": 0,
-      "momentum_status": "FLAT",
-      "why_now": "3 notizie da 3 fonti",
-      "change_30m_bands": null,
-      "change_1h_bands": null,
-      "change_3h_bands": null,
-      "change_6h_bands": null,
-      "change_24h_bands": null,
-      "direction_30m": "UNKNOWN",
-      "direction_1h": "UNKNOWN",
-      "direction_3h": "UNKNOWN",
-      "occurrences_1h": 1,
-      "occurrences_3h": 1,
-      "occurrences_6h": 1,
-      "news_count": 3,
-      "source_count": 3,
-      "sources": [
-        "- Umbria 24",
-        "La Nazione",
-        "PerugiaToday"
-      ],
-      "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRPADLJ4m-ZjFng164Q9gmmNgexSZlxp-O8G5IDs8C6F08M0zz2jwl_EEzxm0o",
-      "picture_source": "PerugiaToday",
-      "news": [
-        {
-          "title": "Il giorno è arrivato: Ikea apre a Corciano, inaugurato il primo store dell'Umbria",
-          "snippet": "",
-          "url": "https://www.perugiatoday.it/economia/apertura-ikea-corciano-primo-store-umbria-prodotti-servizi.html",
-          "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRPADLJ4m-ZjFng164Q9gmmNgexSZlxp-O8G5IDs8C6F08M0zz2jwl_EEzxm0o",
-          "source": "PerugiaToday"
-        },
-        {
-          "title": "Corciano, Ikea apre il suo primo negozio in Umbria: le foto dell’inaugurazione",
-          "snippet": "",
-          "url": "https://www.umbria24.it/fotogallery/corciano-ikea-apre-il-suo-primo-negozio-in-umbria-le-foto-dellinaugurazione/",
-          "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8WHl_WDPws3aocyI4NPmOtGST3Az3Yy1fi27sLfxbA2VH3Cu93TKgpbA8JUY",
-          "source": "- Umbria 24"
-        },
-        {
-          "title": "Oggi apre Ikea a Corciano. Ma FdI incalza la sindaca: “ Che fine ha fatto il maxi-Collestrada? Spieghi”",
-          "snippet": "",
-          "url": "https://www.lanazione.it/umbria/cronaca/oggi-apre-ikea-a-corciano-ma-fdi-incalza-la-sindaca-che-fine-ha-fatto-il-maxi-collestrada-spieghi-g1p6lu9p",
-          "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQKogwXYjFtNqdTTdCxINVaYRYB57XwfcRhxJFZtL8fjuFt0LMImGz2lZw3sdQ",
-          "source": "La Nazione"
-        }
-      ],
-      "rank": 7
-    },
-    {
-      "title": "rasmus munk",
-      "key": "rasmus munk",
-      "normalized_title": "rasmus munk",
-      "category": "News",
-      "status": "HOT",
-      "acceleration": "NONE",
-      "score": 19.1,
-      "traffic": "100+",
-      "traffic_level": 1,
-      "traffic_value": 100,
-      "first_seen": "2026-09-18T14:49:46.930367+02:00",
-      "last_seen": "2026-09-18T15:00:30.912939+02:00",
-      "appearances": 2,
-      "duration_minutes": 10,
-      "momentum": 0,
-      "momentum_30m": 0,
-      "momentum_1h": 0,
-      "momentum_3h": 0,
-      "momentum_status": "FLAT",
-      "why_now": "2 notizie da 2 fonti",
-      "change_30m_bands": null,
-      "change_1h_bands": null,
-      "change_3h_bands": null,
-      "change_6h_bands": null,
-      "change_24h_bands": null,
-      "direction_30m": "UNKNOWN",
-      "direction_1h": "UNKNOWN",
-      "direction_3h": "UNKNOWN",
-      "occurrences_1h": 1,
-      "occurrences_3h": 1,
-      "occurrences_6h": 1,
-      "news_count": 2,
-      "source_count": 2,
-      "sources": [
-        "Falstaff",
-        "Gambero Rosso"
-      ],
-      "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQqR8KzlN6hLJF9Ne4QxjP9mX73vb-Yp55oWD1f6vd7044jRVkjODFmbvmUshU",
-      "picture_source": "Gambero Rosso",
-      "news": [
-        {
-          "title": "Uno dei ristoranti più famosi al mondo chiuderà 5 mesi l'anno. Ma continuerà a pagare 100 dipendenti",
-          "snippet": "",
-          "url": "https://www.gamberorosso.it/notizie/attualita/alchemist-chiude-cinque-mesi-dipendenti-stipendiati/",
-          "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQqR8KzlN6hLJF9Ne4QxjP9mX73vb-Yp55oWD1f6vd7044jRVkjODFmbvmUshU",
-          "source": "Gambero Rosso"
-        },
-        {
-          "title": "Alchemist Is Closing for Five Months – Every Year",
-          "snippet": "",
-          "url": "https://www.falstaff.com/nordics/news/alchemist-is-closing-for-five-months-every-year",
-          "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-2KzRqm3Cxtr0C9MPbOcn_xly54hqh887y6Swx5fUasqyw2iTvfhORG8dKJ8",
-          "source": "Falstaff"
-        }
-      ],
-      "rank": 8
-    },
-    {
-      "title": "valanga",
-      "key": "valanga",
-      "normalized_title": "valanga",
-      "category": "News",
-      "status": "HOT",
-      "acceleration": "NONE",
-      "score": 18.8,
-      "traffic": "200+",
-      "traffic_level": 2,
-      "traffic_value": 200,
-      "first_seen": "2026-09-18T14:24:44.345910+02:00",
-      "last_seen": "2026-09-18T15:00:30.912939+02:00",
-      "appearances": 3,
-      "duration_minutes": 35,
-      "momentum": 0.0,
-      "momentum_30m": 0,
-      "momentum_1h": 0.0,
-      "momentum_3h": 0.0,
-      "momentum_status": "FLAT",
-      "why_now": "3 notizie da 2 fonti",
-      "change_30m_bands": 0,
-      "change_1h_bands": null,
-      "change_3h_bands": null,
-      "change_6h_bands": null,
-      "change_24h_bands": null,
-      "direction_30m": "FLAT",
-      "direction_1h": "UNKNOWN",
-      "direction_3h": "UNKNOWN",
-      "occurrences_1h": 2,
-      "occurrences_3h": 2,
-      "occurrences_6h": 2,
-      "news_count": 3,
-      "source_count": 2,
-      "sources": [
-        "Montagna.TV",
-        "Mount Live"
-      ],
-      "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSNxQkX9IQBq66OmfTa-T2dkjqnyaJnwETiCrCYcsoGYyWk9sRVKMLfbRwGviE",
-      "picture_source": "Mount Live",
-      "news": [
-        {
-          "title": "Simone Moro è al Manaslu, prove generali per l’invernale",
-          "snippet": "",
-          "url": "https://www.mountlive.com/simone-moro-e-al-manaslu-prove-generali-per-linvernale/",
-          "picture": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSNxQkX9IQBq66OmfTa-T2dkjqnyaJnwETiCrCYcsoGYyWk9sRVKMLfbRwGviE",
-          "source": "Mount Live"
-        },
-        {
-          "title": "Valanga sul Manaslu, sepolte le corde sopra Campo III. La via alla vetta è ora aperta",
-          "snippet": "",
-          "url": "https://www.montagna.tv/281544/valanga-sul-manaslu-sepolte-le-corde-sopra-campo-iii-la-via-alla-vetta-e-ora-aperta/",
-          "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0hiItu_rJL84jhJcnEZXE-PwYo_vTO9Trnm5jZWIHkJtyxJqiEmTEO_zKz8g",
-          "source": "Montagna.TV"
-        },
-        {
-          "title": "Simone Moro al Manaslu: l’autunno come prova generale per l’inverno",
-          "snippet": "",
-          "url": "https://www.montagna.tv/281363/simone-moro-al-manaslu-lautunno-come-prova-generale-per-linverno/",
-          "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-uz8Wcbju48QhqMSewod1M-lmki98YyK-ocks1s14AA7hU7hol46pxPAa8Lo",
-          "source": "Montagna.TV"
-        }
-      ],
-      "rank": 9
-    },
-    {
-      "title": "demolizione",
-      "key": "demolizione",
-      "normalized_title": "demolizione",
-      "category": "Business",
-      "status": "HOT",
-      "acceleration": "NONE",
-      "score": 18.8,
-      "traffic": "200+",
-      "traffic_level": 2,
-      "traffic_value": 200,
-      "first_seen": "2026-09-18T14:24:44.345910+02:00",
-      "last_seen": "2026-09-18T15:00:30.912939+02:00",
-      "appearances": 3,
-      "duration_minutes": 35,
-      "momentum": 0.0,
-      "momentum_30m": 0,
-      "momentum_1h": 0.0,
-      "momentum_3h": 0.0,
-      "momentum_status": "FLAT",
-      "why_now": "3 notizie da 3 fonti",
-      "change_30m_bands": 0,
-      "change_1h_bands": null,
-      "change_3h_bands": null,
-      "change_6h_bands": null,
-      "change_24h_bands": null,
-      "direction_30m": "FLAT",
-      "direction_1h": "UNKNOWN",
-      "direction_3h": "UNKNOWN",
-      "occurrences_1h": 2,
-      "occurrences_3h": 2,
-      "occurrences_6h": 2,
-      "news_count": 3,
-      "source_count": 3,
-      "sources": [
-        "Altalex",
-        "Il Sole 24 ORE",
-        "Lavori Pubblici"
-      ],
-      "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTCXEGlI6CW0SUyRGhRph89BT22Dg36YC-A5l2hvXZJ1Ew_KrZRsVnbNNXUZj0",
-      "picture_source": "Altalex",
-      "news": [
-        {
-          "title": "Demolizione di opere abusive: il sequestro penale non blocca l'ordinanza",
-          "snippet": "",
-          "url": "https://www.altalex.com/documents/2026/09/16/demolizione-opere-abusive-sequestro-penale-non-blocca-ordinanza",
-          "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTCXEGlI6CW0SUyRGhRph89BT22Dg36YC-A5l2hvXZJ1Ew_KrZRsVnbNNXUZj0",
-          "source": "Altalex"
-        },
-        {
-          "title": "Condono edilizio illegittimo, l’ordine di demolizione resta in piedi: il giudice penale può sindacare il titolo e l’oblazione non basta",
-          "snippet": "",
-          "url": "https://www.lavoripubblici.it/news/condono-edilizio-illegittimo-ordine-demolizione-cassazione-33159-2026-38728",
-          "picture": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQoumpCndfpWVGuWRVuyfxxt5U3dL-TLNsz8EhkGbZJ34Zb3dK9MQ6i3MVy568",
-          "source": "Lavori Pubblici"
-        },
-        {
-          "title": "L’ordine di demolizione ricade sul soggetto in rapporto con il bene",
-          "snippet": "",
-          "url": "https://ntplusdiritto.ilsole24ore.com/art/l-ordine-demolizione-ricade-soggetto-rapporto-il-bene-AJXvF3EB",
-          "picture": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSdiY4G-uxTIj7x965B7o7mHen9q-cO19AdQI7wZI2cXbEN-SkOCieNq3YbLrI",
-          "source": "Il Sole 24 ORE"
+          "url": "https://www.ilmessaggero.it/televisione/roberto_sergio_cavaliere_di_gran_croce_oltre_quarant_anni_di_impegno_nelle_istituzioni_sistema_media-9769431.html",
+          "picture": "",
+          "source": "Il Messaggero"
         }
       ],
       "rank": 10
@@ -679,7 +688,7 @@
       "ES"
     ],
     "market_count": 6,
-    "global_trend_count": 59,
+    "global_trend_count": 57,
     "crossover_count": 0
   },
   "markets": {
@@ -690,63 +699,63 @@
       "top_trends": [
         {
           "title": "perth",
-          "score": 25.0,
+          "score": 55.0,
           "status": "HOT",
-          "traffic": "500+"
-        },
-        {
-          "title": "milano finanza",
-          "score": 25.0,
-          "status": "HOT",
-          "traffic": "500+"
+          "traffic": "2000+"
         },
         {
           "title": "catherine, principessa del galles",
-          "score": 25.0,
+          "score": 35.6,
+          "status": "HOT",
+          "traffic": "1000+"
+        },
+        {
+          "title": "bracciante",
+          "score": 33.8,
           "status": "HOT",
           "traffic": "500+"
         },
         {
-          "title": "bracciante",
-          "score": 22.5,
-          "status": "HOT",
+          "title": "polizia di stato",
+          "score": 30.5,
+          "status": "EMERGING",
+          "traffic": "1000+"
+        },
+        {
+          "title": "vanessa incontrada",
+          "score": 28.7,
+          "status": "EMERGING",
+          "traffic": "500+"
+        },
+        {
+          "title": "vittorio feltri",
+          "score": 26.2,
+          "status": "EMERGING",
           "traffic": "200+"
         },
         {
+          "title": "19 settembre",
+          "score": 26.2,
+          "status": "EMERGING",
+          "traffic": "200+"
+        },
+        {
+          "title": "milano finanza",
+          "score": 21.3,
+          "status": "HOT",
+          "traffic": "500+"
+        },
+        {
           "title": "serbia",
-          "score": 22.5,
+          "score": 18.8,
           "status": "HOT",
           "traffic": "200+"
         },
         {
           "title": "san marino rtv",
-          "score": 20.6,
+          "score": 16.9,
           "status": "HOT",
           "traffic": "100+"
-        },
-        {
-          "title": "ikea perugia",
-          "score": 20.6,
-          "status": "HOT",
-          "traffic": "100+"
-        },
-        {
-          "title": "rasmus munk",
-          "score": 19.1,
-          "status": "HOT",
-          "traffic": "100+"
-        },
-        {
-          "title": "valanga",
-          "score": 18.8,
-          "status": "HOT",
-          "traffic": "200+"
-        },
-        {
-          "title": "demolizione",
-          "score": 18.8,
-          "status": "HOT",
-          "traffic": "200+"
         }
       ]
     },
@@ -756,64 +765,64 @@
       "trend_count": 10,
       "top_trends": [
         {
-          "title": "oreos",
-          "score": 35.6,
-          "status": "HOT",
+          "title": "fat bear week 2026",
+          "score": 36.9,
+          "status": "STABLE",
           "traffic": "1000+"
         },
         {
+          "title": "mbappe",
+          "score": 33.8,
+          "status": "HOT",
+          "traffic": "500+"
+        },
+        {
           "title": "helen mirren",
-          "score": 28.2,
+          "score": 29.5,
           "status": "STABLE",
           "traffic": "10000+"
         },
         {
+          "title": "dr rachel danis",
+          "score": 26.8,
+          "status": "HOT",
+          "traffic": "1000+"
+        },
+        {
+          "title": "control resonant",
+          "score": 26.2,
+          "status": "EMERGING",
+          "traffic": "200+"
+        },
+        {
+          "title": "on",
+          "score": 26.2,
+          "status": "EMERGING",
+          "traffic": "200+"
+        },
+        {
           "title": "pierce brosnan",
-          "score": 26.2,
-          "status": "EMERGING",
-          "traffic": "200+"
-        },
-        {
-          "title": "data centers",
-          "score": 26.2,
-          "status": "EMERGING",
-          "traffic": "200+"
-        },
-        {
-          "title": "rachel danis",
           "score": 25.0,
           "status": "HOT",
           "traffic": "500+"
         },
         {
-          "title": "mbappe",
-          "score": 22.5,
-          "status": "HOT",
-          "traffic": "200+"
+          "title": "oreos",
+          "score": 24.4,
+          "status": "STABLE",
+          "traffic": "1000+"
         },
         {
           "title": "martin short",
-          "score": 21.3,
-          "status": "HOT",
-          "traffic": "500+"
-        },
-        {
-          "title": "fat bear week 2026",
-          "score": 21.3,
-          "status": "HOT",
+          "score": 22.6,
+          "status": "STABLE",
           "traffic": "500+"
         },
         {
           "title": "netflix stock",
-          "score": 18.8,
-          "status": "HOT",
+          "score": 20.1,
+          "status": "STABLE",
           "traffic": "200+"
-        },
-        {
-          "title": "liev schreiber",
-          "score": 18.1,
-          "status": "HOT",
-          "traffic": "1000+"
         }
       ]
     },
@@ -823,64 +832,64 @@
       "trend_count": 10,
       "top_trends": [
         {
-          "title": "on",
-          "score": 33.1,
+          "title": "on football boots",
+          "score": 48.1,
           "status": "HOT",
-          "traffic": "10000+"
+          "traffic": "1000+"
         },
         {
-          "title": "bmw pga championship",
+          "title": "michael desronvil",
+          "score": 33.8,
+          "status": "HOT",
+          "traffic": "500+"
+        },
+        {
+          "title": "control resonant",
           "score": 26.2,
           "status": "EMERGING",
           "traffic": "200+"
         },
         {
-          "title": "on football boots",
-          "score": 25.0,
-          "status": "HOT",
-          "traffic": "500+"
-        },
-        {
-          "title": "jason bateman",
-          "score": 25.0,
-          "status": "HOT",
-          "traffic": "500+"
-        },
-        {
-          "title": "dai cornell",
-          "score": 22.5,
-          "status": "HOT",
-          "traffic": "200+"
-        },
-        {
-          "title": "iphone 18 pro pro max",
-          "score": 22.5,
-          "status": "HOT",
-          "traffic": "200+"
-        },
-        {
-          "title": "michael desronvil",
-          "score": 22.5,
-          "status": "HOT",
-          "traffic": "200+"
-        },
-        {
-          "title": "boris becker",
-          "score": 22.5,
-          "status": "HOT",
-          "traffic": "200+"
-        },
-        {
           "title": "rugby",
-          "score": 22.4,
+          "score": 23.7,
           "status": "STABLE",
           "traffic": "200+"
         },
         {
-          "title": "battlestar galactica",
+          "title": "bmw pga championship",
+          "score": 22.5,
+          "status": "HOT",
+          "traffic": "200+"
+        },
+        {
+          "title": "jason bateman",
+          "score": 21.3,
+          "status": "HOT",
+          "traffic": "500+"
+        },
+        {
+          "title": "iphone 18 pro pro max",
           "score": 18.8,
           "status": "HOT",
           "traffic": "200+"
+        },
+        {
+          "title": "dai cornell",
+          "score": 18.8,
+          "status": "HOT",
+          "traffic": "200+"
+        },
+        {
+          "title": "sale",
+          "score": 17.6,
+          "status": "STABLE",
+          "traffic": "200+"
+        },
+        {
+          "title": "landlord",
+          "score": 15.9,
+          "status": "HOT",
+          "traffic": "100+"
         }
       ]
     },
@@ -890,63 +899,63 @@
       "trend_count": 10,
       "top_trends": [
         {
-          "title": "spritpreise luxemburg",
-          "score": 37.5,
-          "status": "HOT",
-          "traffic": "2000+"
-        },
-        {
-          "title": "skispringen",
-          "score": 30.5,
-          "status": "EMERGING",
-          "traffic": "1000+"
-        },
-        {
-          "title": "oktober",
-          "score": 29.4,
-          "status": "HOT",
-          "traffic": "10000+"
-        },
-        {
-          "title": "golem",
-          "score": 25.0,
-          "status": "HOT",
-          "traffic": "500+"
-        },
-        {
-          "title": "mittelhessen",
-          "score": 22.5,
-          "status": "HOT",
-          "traffic": "200+"
-        },
-        {
           "title": "polarwirbel",
-          "score": 20.8,
-          "status": "HOT",
-          "traffic": "500+"
-        },
-        {
-          "title": "geld",
-          "score": 19.5,
+          "score": 36.4,
           "status": "STABLE",
           "traffic": "1000+"
         },
         {
-          "title": "dominik krause",
-          "score": 18.8,
-          "status": "HOT",
-          "traffic": "200+"
-        },
-        {
           "title": "jeff bezos",
-          "score": 18.8,
-          "status": "HOT",
-          "traffic": "200+"
+          "score": 35.1,
+          "status": "STABLE",
+          "traffic": "500+"
         },
         {
           "title": "eurofighter typhoon",
-          "score": 18.8,
+          "score": 35.1,
+          "status": "STABLE",
+          "traffic": "500+"
+        },
+        {
+          "title": "mittelhessen",
+          "score": 33.8,
           "status": "HOT",
+          "traffic": "500+"
+        },
+        {
+          "title": "oktober",
+          "score": 30.7,
+          "status": "STABLE",
+          "traffic": "10000+"
+        },
+        {
+          "title": "spritpreise luxemburg",
+          "score": 26.3,
+          "status": "STABLE",
+          "traffic": "2000+"
+        },
+        {
+          "title": "evotec",
+          "score": 26.2,
+          "status": "EMERGING",
+          "traffic": "200+"
+        },
+        {
+          "title": "geld",
+          "score": 22.7,
+          "status": "STABLE",
+          "traffic": "2000+"
+        },
+        {
+          "title": "golem",
+          "score": 21.3,
+          "status": "HOT",
+          "traffic": "500+"
+        },
+        {
+          "title": "dominik krause",
+          "score": 20.1,
+          "status": "STABLE",
           "traffic": "200+"
         }
       ]
@@ -957,64 +966,64 @@
       "trend_count": 10,
       "top_trends": [
         {
-          "title": "on",
-          "score": 57.5,
-          "status": "HOT",
-          "traffic": "5000+"
-        },
-        {
-          "title": "cambriolage",
+          "title": "on football",
           "score": 50.0,
           "status": "HOT",
           "traffic": "2000+"
         },
         {
+          "title": "on",
+          "score": 41.3,
+          "status": "STABLE",
+          "traffic": "5000+"
+        },
+        {
+          "title": "cambriolage",
+          "score": 38.8,
+          "status": "STABLE",
+          "traffic": "2000+"
+        },
+        {
+          "title": "évasion",
+          "score": 35.1,
+          "status": "STABLE",
+          "traffic": "500+"
+        },
+        {
+          "title": "johanna rolland",
+          "score": 35.1,
+          "status": "STABLE",
+          "traffic": "500+"
+        },
+        {
           "title": "italie",
-          "score": 33.8,
+          "score": 35.1,
+          "status": "STABLE",
+          "traffic": "500+"
+        },
+        {
+          "title": "mbappe on",
+          "score": 25.0,
           "status": "HOT",
           "traffic": "500+"
         },
         {
-          "title": "on football",
-          "score": 31.2,
-          "status": "HOT",
-          "traffic": "5000+"
-        },
-        {
           "title": "focus entertainment",
-          "score": 24.3,
-          "status": "EMERGING",
-          "traffic": "100+"
-        },
-        {
-          "title": "septeo stadium",
-          "score": 20.6,
-          "status": "HOT",
-          "traffic": "100+"
-        },
-        {
-          "title": "johanna rolland",
-          "score": 18.8,
-          "status": "HOT",
-          "traffic": "200+"
-        },
-        {
-          "title": "évasion",
-          "score": 18.8,
-          "status": "HOT",
-          "traffic": "200+"
-        },
-        {
-          "title": "stephen curry",
-          "score": 18.8,
+          "score": 22.5,
           "status": "HOT",
           "traffic": "200+"
         },
         {
           "title": "diana spencer",
-          "score": 17.8,
-          "status": "HOT",
+          "score": 19.1,
+          "status": "STABLE",
           "traffic": "200+"
+        },
+        {
+          "title": "septeo stadium",
+          "score": 16.9,
+          "status": "HOT",
+          "traffic": "100+"
         }
       ]
     },
@@ -1024,62 +1033,62 @@
       "trend_count": 10,
       "top_trends": [
         {
-          "title": "encuesta",
-          "score": 40.4,
-          "status": "RISING",
-          "traffic": "500+"
+          "title": "granada hoy",
+          "score": 32.4,
+          "status": "EMERGING",
+          "traffic": "2000+"
         },
         {
-          "title": "terremoto granada",
-          "score": 38.9,
-          "status": "STABLE",
-          "traffic": "2000+"
+          "title": "gran premio de austria de motociclismo",
+          "score": 30.5,
+          "status": "EMERGING",
+          "traffic": "1000+"
         },
         {
           "title": "sorteo de la lotería nacional de hoy jueves 17 de septiembre",
-          "score": 31.2,
-          "status": "HOT",
-          "traffic": "5000+"
-        },
-        {
-          "title": "naomi watts",
-          "score": 28.7,
-          "status": "HOT",
-          "traffic": "2000+"
-        },
-        {
-          "title": "el país",
           "score": 27.5,
           "status": "HOT",
           "traffic": "5000+"
         },
         {
-          "title": "jonathan andic",
-          "score": 25.0,
-          "status": "HOT",
-          "traffic": "2000+"
+          "title": "joselu",
+          "score": 26.2,
+          "status": "EMERGING",
+          "traffic": "200+"
         },
         {
-          "title": "ign",
-          "score": 22.7,
-          "status": "STABLE",
-          "traffic": "500+"
+          "title": "on",
+          "score": 26.2,
+          "status": "EMERGING",
+          "traffic": "200+"
+        },
+        {
+          "title": "presupuesto de la unión europea",
+          "score": 24.3,
+          "status": "EMERGING",
+          "traffic": "100+"
+        },
+        {
+          "title": "auchan",
+          "score": 24.3,
+          "status": "EMERGING",
+          "traffic": "100+"
+        },
+        {
+          "title": "jaime chávarri",
+          "score": 22.3,
+          "status": "EMERGING",
+          "traffic": "100+"
         },
         {
           "title": "josé maría aznar",
-          "score": 22.5,
+          "score": 18.8,
           "status": "HOT",
           "traffic": "200+"
         },
         {
-          "title": "ertzaintza",
-          "score": 22.5,
-          "status": "HOT",
-          "traffic": "200+"
-        },
-        {
-          "title": "raúl varela",
-          "score": 20.5,
+          "title": "naomi watts",
+          "score": 18.8,
           "status": "HOT",
           "traffic": "200+"
         }
@@ -1088,63 +1097,52 @@
   },
   "global_trends": [
     {
-      "title": "on",
-      "key": "on",
-      "global_score": 49.6,
-      "italy_score": 0,
-      "crossover_score": 28.3,
-      "opportunity_score": 29.0,
+      "title": "perth",
+      "key": "perth",
+      "global_score": 47.0,
+      "italy_score": 55.0,
+      "crossover_score": 40.7,
+      "opportunity_score": 50.1,
       "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
+      "italy_status": "HOT",
+      "why_now": "+fascia negli ultimi 30 minuti; 3 notizie da 3 fonti",
       "markets": {
-        "GB": {
-          "title": "on",
-          "score": 33.1,
+        "IT": {
+          "title": "perth",
+          "score": 55.0,
           "status": "HOT",
           "acceleration": "NONE",
-          "traffic": "10000+",
-          "traffic_level": 7,
-          "momentum": 0,
-          "news_count": 3
-        },
-        "FR": {
-          "title": "on",
-          "score": 57.5,
-          "status": "HOT",
-          "acceleration": "NONE",
-          "traffic": "5000+",
-          "traffic_level": 6,
+          "traffic": "2000+",
+          "traffic_level": 5,
           "momentum": 3.0,
           "news_count": 3
         }
       },
-      "market_count": 2,
+      "market_count": 1,
       "market_codes": [
-        "FR",
-        "GB"
+        "IT"
       ],
       "rank": 1
     },
     {
-      "title": "perth",
-      "key": "perth",
-      "global_score": 23.0,
-      "italy_score": 25.0,
-      "crossover_score": 20.9,
-      "opportunity_score": 22.7,
+      "title": "catherine, principessa del galles",
+      "key": "catherine principessa del galles",
+      "global_score": 31.5,
+      "italy_score": 35.6,
+      "crossover_score": 27.9,
+      "opportunity_score": 32.3,
       "global_status": "STABLE",
       "italy_status": "HOT",
-      "why_now": "3 notizie da 3 fonti",
+      "why_now": "+fascia negli ultimi 30 minuti; 3 notizie da 3 fonti",
       "markets": {
         "IT": {
-          "title": "perth",
-          "score": 25.0,
+          "title": "catherine, principessa del galles",
+          "score": 35.6,
           "status": "HOT",
           "acceleration": "NONE",
-          "traffic": "500+",
-          "traffic_level": 3,
-          "momentum": 0,
+          "traffic": "1000+",
+          "traffic_level": 4,
+          "momentum": 1.0,
           "news_count": 3
         }
       },
@@ -1155,24 +1153,24 @@
       "rank": 2
     },
     {
-      "title": "milano finanza",
-      "key": "milano finanza",
-      "global_score": 23.0,
-      "italy_score": 25.0,
-      "crossover_score": 20.9,
-      "opportunity_score": 22.7,
+      "title": "bracciante",
+      "key": "bracciante",
+      "global_score": 30.0,
+      "italy_score": 33.8,
+      "crossover_score": 26.6,
+      "opportunity_score": 31.0,
       "global_status": "STABLE",
       "italy_status": "HOT",
-      "why_now": "3 notizie da 3 fonti",
+      "why_now": "+fascia negli ultimi 30 minuti; 3 notizie da 3 fonti",
       "markets": {
         "IT": {
-          "title": "milano finanza",
-          "score": 25.0,
+          "title": "bracciante",
+          "score": 33.8,
           "status": "HOT",
           "acceleration": "NONE",
           "traffic": "500+",
           "traffic_level": 3,
-          "momentum": 0,
+          "momentum": 1.0,
           "news_count": 3
         }
       },
@@ -1183,23 +1181,73 @@
       "rank": 3
     },
     {
-      "title": "catherine, principessa del galles",
-      "key": "catherine principessa del galles",
-      "global_score": 23.0,
-      "italy_score": 25.0,
-      "crossover_score": 20.9,
-      "opportunity_score": 22.7,
+      "title": "on",
+      "key": "on",
+      "global_score": 40.0,
+      "italy_score": 0,
+      "crossover_score": 27.0,
+      "opportunity_score": 28.4,
       "global_status": "STABLE",
-      "italy_status": "HOT",
-      "why_now": "3 notizie da 3 fonti",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "US": {
+          "title": "on",
+          "score": 26.2,
+          "status": "EMERGING",
+          "acceleration": "NONE",
+          "traffic": "200+",
+          "traffic_level": 2,
+          "momentum": 0,
+          "news_count": 3
+        },
+        "FR": {
+          "title": "on",
+          "score": 41.3,
+          "status": "STABLE",
+          "acceleration": "NONE",
+          "traffic": "5000+",
+          "traffic_level": 6,
+          "momentum": 1.0,
+          "news_count": 3
+        },
+        "ES": {
+          "title": "on",
+          "score": 26.2,
+          "status": "EMERGING",
+          "acceleration": "NONE",
+          "traffic": "200+",
+          "traffic_level": 2,
+          "momentum": 0,
+          "news_count": 3
+        }
+      },
+      "market_count": 3,
+      "market_codes": [
+        "ES",
+        "FR",
+        "US"
+      ],
+      "rank": 4
+    },
+    {
+      "title": "polizia di stato",
+      "key": "polizia di stato",
+      "global_score": 27.4,
+      "italy_score": 30.5,
+      "crossover_score": 24.5,
+      "opportunity_score": 26.6,
+      "global_status": "STABLE",
+      "italy_status": "EMERGING",
+      "why_now": "3 notizie da 3 fonti; nuova entrata nel radar",
       "markets": {
         "IT": {
-          "title": "catherine, principessa del galles",
-          "score": 25.0,
-          "status": "HOT",
+          "title": "polizia di stato",
+          "score": 30.5,
+          "status": "EMERGING",
           "acceleration": "NONE",
-          "traffic": "500+",
-          "traffic_level": 3,
+          "traffic": "1000+",
+          "traffic_level": 4,
           "momentum": 0,
           "news_count": 3
         }
@@ -1208,54 +1256,26 @@
       "market_codes": [
         "IT"
       ],
-      "rank": 4
-    },
-    {
-      "title": "cambriolage",
-      "key": "cambriolage",
-      "global_score": 43.0,
-      "italy_score": 0,
-      "crossover_score": 22.4,
-      "opportunity_score": 22.5,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "FR": {
-          "title": "cambriolage",
-          "score": 50.0,
-          "status": "HOT",
-          "acceleration": "NONE",
-          "traffic": "2000+",
-          "traffic_level": 5,
-          "momentum": 2.0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "FR"
-      ],
       "rank": 5
     },
     {
-      "title": "bracciante",
-      "key": "bracciante",
-      "global_score": 21.0,
-      "italy_score": 22.5,
-      "crossover_score": 19.2,
-      "opportunity_score": 20.9,
+      "title": "vanessa incontrada",
+      "key": "vanessa incontrada",
+      "global_score": 26.0,
+      "italy_score": 28.7,
+      "crossover_score": 23.3,
+      "opportunity_score": 25.4,
       "global_status": "STABLE",
-      "italy_status": "HOT",
-      "why_now": "3 notizie da 3 fonti",
+      "italy_status": "EMERGING",
+      "why_now": "3 notizie da 3 fonti; nuova entrata nel radar",
       "markets": {
         "IT": {
-          "title": "bracciante",
-          "score": 22.5,
-          "status": "HOT",
+          "title": "vanessa incontrada",
+          "score": 28.7,
+          "status": "EMERGING",
           "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
+          "traffic": "500+",
+          "traffic_level": 3,
           "momentum": 0,
           "news_count": 3
         }
@@ -1267,20 +1287,20 @@
       "rank": 6
     },
     {
-      "title": "serbia",
-      "key": "serbia",
-      "global_score": 21.0,
-      "italy_score": 22.5,
-      "crossover_score": 19.2,
-      "opportunity_score": 20.9,
+      "title": "vittorio feltri",
+      "key": "vittorio feltri",
+      "global_score": 24.0,
+      "italy_score": 26.2,
+      "crossover_score": 21.7,
+      "opportunity_score": 23.6,
       "global_status": "STABLE",
-      "italy_status": "HOT",
-      "why_now": "3 notizie da 2 fonti",
+      "italy_status": "EMERGING",
+      "why_now": "3 notizie da 3 fonti; nuova entrata nel radar",
       "markets": {
         "IT": {
-          "title": "serbia",
-          "score": 22.5,
-          "status": "HOT",
+          "title": "vittorio feltri",
+          "score": 26.2,
+          "status": "EMERGING",
           "acceleration": "NONE",
           "traffic": "200+",
           "traffic_level": 2,
@@ -1295,80 +1315,108 @@
       "rank": 7
     },
     {
-      "title": "encuesta",
-      "key": "encuesta",
-      "global_score": 37.3,
-      "italy_score": 0,
-      "crossover_score": 19.8,
-      "opportunity_score": 20.0,
+      "title": "19 settembre",
+      "key": "19 settembre",
+      "global_score": 24.0,
+      "italy_score": 26.2,
+      "crossover_score": 21.7,
+      "opportunity_score": 23.6,
       "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
+      "italy_status": "EMERGING",
+      "why_now": "3 notizie da 3 fonti; nuova entrata nel radar",
       "markets": {
-        "ES": {
-          "title": "encuesta",
-          "score": 40.4,
-          "status": "RISING",
-          "acceleration": "MEDIUM",
-          "traffic": "500+",
-          "traffic_level": 3,
-          "momentum": 1.0,
+        "IT": {
+          "title": "19 settembre",
+          "score": 26.2,
+          "status": "EMERGING",
+          "acceleration": "NONE",
+          "traffic": "200+",
+          "traffic_level": 2,
+          "momentum": 0,
           "news_count": 3
         }
       },
       "market_count": 1,
       "market_codes": [
-        "ES"
+        "IT"
       ],
       "rank": 8
     },
     {
-      "title": "san marino rtv",
-      "key": "san marino rtv",
-      "global_score": 19.5,
-      "italy_score": 20.6,
-      "crossover_score": 18.0,
-      "opportunity_score": 19.6,
+      "title": "on football",
+      "key": "on football",
+      "global_score": 43.0,
+      "italy_score": 0,
+      "crossover_score": 22.4,
+      "opportunity_score": 22.5,
       "global_status": "STABLE",
-      "italy_status": "HOT",
-      "why_now": "3 notizie da 3 fonti",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
       "markets": {
-        "IT": {
-          "title": "san marino rtv",
-          "score": 20.6,
+        "FR": {
+          "title": "on football",
+          "score": 50.0,
           "status": "HOT",
           "acceleration": "NONE",
-          "traffic": "100+",
-          "traffic_level": 1,
-          "momentum": 0,
+          "traffic": "2000+",
+          "traffic_level": 5,
+          "momentum": 2.0,
           "news_count": 3
         }
       },
       "market_count": 1,
       "market_codes": [
-        "IT"
+        "FR"
       ],
       "rank": 9
     },
     {
-      "title": "ikea perugia",
-      "key": "ikea perugia",
-      "global_score": 19.5,
-      "italy_score": 20.6,
-      "crossover_score": 18.0,
-      "opportunity_score": 19.6,
+      "title": "on football boots",
+      "key": "on football boots",
+      "global_score": 41.5,
+      "italy_score": 0,
+      "crossover_score": 21.7,
+      "opportunity_score": 21.9,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "GB": {
+          "title": "on football boots",
+          "score": 48.1,
+          "status": "HOT",
+          "acceleration": "NONE",
+          "traffic": "1000+",
+          "traffic_level": 4,
+          "momentum": 2.0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "GB"
+      ],
+      "rank": 10
+    },
+    {
+      "title": "milano finanza",
+      "key": "milano finanza",
+      "global_score": 20.0,
+      "italy_score": 21.3,
+      "crossover_score": 18.4,
+      "opportunity_score": 20.1,
       "global_status": "STABLE",
       "italy_status": "HOT",
       "why_now": "3 notizie da 3 fonti",
       "markets": {
         "IT": {
-          "title": "ikea perugia",
-          "score": 20.6,
+          "title": "milano finanza",
+          "score": 21.3,
           "status": "HOT",
           "acceleration": "NONE",
-          "traffic": "100+",
-          "traffic_level": 1,
-          "momentum": 0,
+          "traffic": "500+",
+          "traffic_level": 3,
+          "momentum": 0.0,
           "news_count": 3
         }
       },
@@ -1376,12 +1424,51 @@
       "market_codes": [
         "IT"
       ],
-      "rank": 10
+      "rank": 11
     },
     {
-      "title": "terremoto granada",
-      "key": "terremoto granada",
-      "global_score": 34.1,
+      "title": "control resonant",
+      "key": "control resonant",
+      "global_score": 27.0,
+      "italy_score": 0,
+      "crossover_score": 18.1,
+      "opportunity_score": 19.1,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "US": {
+          "title": "control resonant",
+          "score": 26.2,
+          "status": "EMERGING",
+          "acceleration": "NONE",
+          "traffic": "200+",
+          "traffic_level": 2,
+          "momentum": 0,
+          "news_count": 3
+        },
+        "GB": {
+          "title": "control resonant",
+          "score": 26.2,
+          "status": "EMERGING",
+          "acceleration": "NONE",
+          "traffic": "200+",
+          "traffic_level": 2,
+          "momentum": 0,
+          "news_count": 3
+        }
+      },
+      "market_count": 2,
+      "market_codes": [
+        "GB",
+        "US"
+      ],
+      "rank": 12
+    },
+    {
+      "title": "cambriolage",
+      "key": "cambriolage",
+      "global_score": 34.0,
       "italy_score": 0,
       "crossover_score": 18.3,
       "opportunity_score": 18.6,
@@ -1389,9 +1476,9 @@
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
-        "ES": {
-          "title": "terremoto granada",
-          "score": 38.9,
+        "FR": {
+          "title": "cambriolage",
+          "score": 38.8,
           "status": "STABLE",
           "acceleration": "NONE",
           "traffic": "2000+",
@@ -1402,41 +1489,13 @@
       },
       "market_count": 1,
       "market_codes": [
-        "ES"
+        "FR"
       ],
-      "rank": 11
+      "rank": 13
     },
     {
-      "title": "rasmus munk",
-      "key": "rasmus munk",
-      "global_score": 18.3,
-      "italy_score": 19.1,
-      "crossover_score": 17.0,
-      "opportunity_score": 18.5,
-      "global_status": "STABLE",
-      "italy_status": "HOT",
-      "why_now": "2 notizie da 2 fonti",
-      "markets": {
-        "IT": {
-          "title": "rasmus munk",
-          "score": 19.1,
-          "status": "HOT",
-          "acceleration": "NONE",
-          "traffic": "100+",
-          "traffic_level": 1,
-          "momentum": 0,
-          "news_count": 2
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "IT"
-      ],
-      "rank": 12
-    },
-    {
-      "title": "valanga",
-      "key": "valanga",
+      "title": "serbia",
+      "key": "serbia",
       "global_score": 18.0,
       "italy_score": 18.8,
       "crossover_score": 16.7,
@@ -1446,35 +1505,7 @@
       "why_now": "3 notizie da 2 fonti",
       "markets": {
         "IT": {
-          "title": "valanga",
-          "score": 18.8,
-          "status": "HOT",
-          "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
-          "momentum": 0.0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "IT"
-      ],
-      "rank": 13
-    },
-    {
-      "title": "demolizione",
-      "key": "demolizione",
-      "global_score": 18.0,
-      "italy_score": 18.8,
-      "crossover_score": 16.7,
-      "opportunity_score": 18.3,
-      "global_status": "STABLE",
-      "italy_status": "HOT",
-      "why_now": "3 notizie da 3 fonti",
-      "markets": {
-        "IT": {
-          "title": "demolizione",
+          "title": "serbia",
           "score": 18.8,
           "status": "HOT",
           "acceleration": "NONE",
@@ -1491,48 +1522,20 @@
       "rank": 14
     },
     {
-      "title": "spritpreise luxemburg",
-      "key": "spritpreise luxemburg",
-      "global_score": 33.0,
+      "title": "fat bear week 2026",
+      "key": "fat bear week 2026",
+      "global_score": 32.5,
       "italy_score": 0,
-      "crossover_score": 17.9,
-      "opportunity_score": 18.1,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "DE": {
-          "title": "spritpreise luxemburg",
-          "score": 37.5,
-          "status": "HOT",
-          "acceleration": "NONE",
-          "traffic": "2000+",
-          "traffic_level": 5,
-          "momentum": 1.0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "DE"
-      ],
-      "rank": 15
-    },
-    {
-      "title": "oreos",
-      "key": "oreos",
-      "global_score": 31.5,
-      "italy_score": 0,
-      "crossover_score": 17.2,
-      "opportunity_score": 17.5,
+      "crossover_score": 17.6,
+      "opportunity_score": 17.9,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "US": {
-          "title": "oreos",
-          "score": 35.6,
-          "status": "HOT",
+          "title": "fat bear week 2026",
+          "score": 36.9,
+          "status": "STABLE",
           "acceleration": "NONE",
           "traffic": "1000+",
           "traffic_level": 4,
@@ -1544,23 +1547,107 @@
       "market_codes": [
         "US"
       ],
+      "rank": 15
+    },
+    {
+      "title": "polarwirbel",
+      "key": "polarwirbel",
+      "global_score": 32.1,
+      "italy_score": 0,
+      "crossover_score": 17.4,
+      "opportunity_score": 17.7,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "DE": {
+          "title": "polarwirbel",
+          "score": 36.4,
+          "status": "STABLE",
+          "acceleration": "NONE",
+          "traffic": "1000+",
+          "traffic_level": 4,
+          "momentum": 1.0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "DE"
+      ],
       "rank": 16
     },
     {
-      "title": "italie",
-      "key": "italie",
-      "global_score": 30.0,
+      "title": "jeff bezos",
+      "key": "jeff bezos",
+      "global_score": 31.1,
       "italy_score": 0,
-      "crossover_score": 16.5,
-      "opportunity_score": 16.8,
+      "crossover_score": 17.0,
+      "opportunity_score": 17.3,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "DE": {
+          "title": "jeff bezos",
+          "score": 35.1,
+          "status": "STABLE",
+          "acceleration": "NONE",
+          "traffic": "500+",
+          "traffic_level": 3,
+          "momentum": 1.0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "DE"
+      ],
+      "rank": 17
+    },
+    {
+      "title": "eurofighter typhoon",
+      "key": "eurofighter typhoon",
+      "global_score": 31.1,
+      "italy_score": 0,
+      "crossover_score": 17.0,
+      "opportunity_score": 17.3,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "DE": {
+          "title": "eurofighter typhoon",
+          "score": 35.1,
+          "status": "STABLE",
+          "acceleration": "NONE",
+          "traffic": "500+",
+          "traffic_level": 3,
+          "momentum": 1.0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "DE"
+      ],
+      "rank": 18
+    },
+    {
+      "title": "évasion",
+      "key": "evasion",
+      "global_score": 31.1,
+      "italy_score": 0,
+      "crossover_score": 17.0,
+      "opportunity_score": 17.3,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "FR": {
-          "title": "italie",
-          "score": 33.8,
-          "status": "HOT",
+          "title": "évasion",
+          "score": 35.1,
+          "status": "STABLE",
           "acceleration": "NONE",
           "traffic": "500+",
           "traffic_level": 3,
@@ -1572,27 +1659,27 @@
       "market_codes": [
         "FR"
       ],
-      "rank": 17
+      "rank": 19
     },
     {
-      "title": "on football",
-      "key": "on football",
-      "global_score": 28.0,
+      "title": "johanna rolland",
+      "key": "johanna rolland",
+      "global_score": 31.1,
       "italy_score": 0,
-      "crossover_score": 15.6,
-      "opportunity_score": 15.9,
+      "crossover_score": 17.0,
+      "opportunity_score": 17.3,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "FR": {
-          "title": "on football",
-          "score": 31.2,
-          "status": "HOT",
+          "title": "johanna rolland",
+          "score": 35.1,
+          "status": "STABLE",
           "acceleration": "NONE",
-          "traffic": "5000+",
-          "traffic_level": 6,
-          "momentum": 0,
+          "traffic": "500+",
+          "traffic_level": 3,
+          "momentum": 1.0,
           "news_count": 3
         }
       },
@@ -1600,107 +1687,163 @@
       "market_codes": [
         "FR"
       ],
-      "rank": 18
-    },
-    {
-      "title": "sorteo de la lotería nacional de hoy jueves 17 de septiembre",
-      "key": "sorteo de la loteria nacional de hoy jueves 17 de septiembre",
-      "global_score": 28.0,
-      "italy_score": 0,
-      "crossover_score": 15.6,
-      "opportunity_score": 15.9,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "ES": {
-          "title": "sorteo de la lotería nacional de hoy jueves 17 de septiembre",
-          "score": 31.2,
-          "status": "HOT",
-          "acceleration": "NONE",
-          "traffic": "5000+",
-          "traffic_level": 6,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "ES"
-      ],
-      "rank": 19
-    },
-    {
-      "title": "skispringen",
-      "key": "skispringen",
-      "global_score": 27.4,
-      "italy_score": 0,
-      "crossover_score": 15.3,
-      "opportunity_score": 15.6,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "DE": {
-          "title": "skispringen",
-          "score": 30.5,
-          "status": "EMERGING",
-          "acceleration": "NONE",
-          "traffic": "1000+",
-          "traffic_level": 4,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "DE"
-      ],
       "rank": 20
     },
     {
-      "title": "oktober",
-      "key": "oktober",
-      "global_score": 26.5,
+      "title": "italie",
+      "key": "italie",
+      "global_score": 31.1,
       "italy_score": 0,
-      "crossover_score": 14.9,
-      "opportunity_score": 15.3,
+      "crossover_score": 17.0,
+      "opportunity_score": 17.3,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
-        "DE": {
-          "title": "oktober",
-          "score": 29.4,
+        "FR": {
+          "title": "italie",
+          "score": 35.1,
+          "status": "STABLE",
+          "acceleration": "NONE",
+          "traffic": "500+",
+          "traffic_level": 3,
+          "momentum": 1.0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "FR"
+      ],
+      "rank": 21
+    },
+    {
+      "title": "san marino rtv",
+      "key": "san marino rtv",
+      "global_score": 16.5,
+      "italy_score": 16.9,
+      "crossover_score": 15.5,
+      "opportunity_score": 16.9,
+      "global_status": "STABLE",
+      "italy_status": "HOT",
+      "why_now": "3 notizie da 3 fonti",
+      "markets": {
+        "IT": {
+          "title": "san marino rtv",
+          "score": 16.9,
           "status": "HOT",
           "acceleration": "NONE",
-          "traffic": "10000+",
-          "traffic_level": 7,
+          "traffic": "100+",
+          "traffic_level": 1,
           "momentum": 0.0,
           "news_count": 3
         }
       },
       "market_count": 1,
       "market_codes": [
-        "DE"
+        "IT"
       ],
-      "rank": 21
+      "rank": 22
     },
     {
-      "title": "naomi watts",
-      "key": "naomi watts",
-      "global_score": 26.0,
+      "title": "mbappe",
+      "key": "mbappe",
+      "global_score": 30.0,
       "italy_score": 0,
-      "crossover_score": 14.7,
-      "opportunity_score": 15.0,
+      "crossover_score": 16.5,
+      "opportunity_score": 16.8,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "US": {
+          "title": "mbappe",
+          "score": 33.8,
+          "status": "HOT",
+          "acceleration": "NONE",
+          "traffic": "500+",
+          "traffic_level": 3,
+          "momentum": 1.0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "US"
+      ],
+      "rank": 23
+    },
+    {
+      "title": "michael desronvil",
+      "key": "michael desronvil",
+      "global_score": 30.0,
+      "italy_score": 0,
+      "crossover_score": 16.5,
+      "opportunity_score": 16.8,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "GB": {
+          "title": "michael desronvil",
+          "score": 33.8,
+          "status": "HOT",
+          "acceleration": "NONE",
+          "traffic": "500+",
+          "traffic_level": 3,
+          "momentum": 1.0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "GB"
+      ],
+      "rank": 24
+    },
+    {
+      "title": "mittelhessen",
+      "key": "mittelhessen",
+      "global_score": 30.0,
+      "italy_score": 0,
+      "crossover_score": 16.5,
+      "opportunity_score": 16.8,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "DE": {
+          "title": "mittelhessen",
+          "score": 33.8,
+          "status": "HOT",
+          "acceleration": "NONE",
+          "traffic": "500+",
+          "traffic_level": 3,
+          "momentum": 1.0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "DE"
+      ],
+      "rank": 25
+    },
+    {
+      "title": "granada hoy",
+      "key": "granada hoy",
+      "global_score": 28.9,
+      "italy_score": 0,
+      "crossover_score": 16.0,
+      "opportunity_score": 16.3,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "ES": {
-          "title": "naomi watts",
-          "score": 28.7,
-          "status": "HOT",
+          "title": "granada hoy",
+          "score": 32.4,
+          "status": "EMERGING",
           "acceleration": "NONE",
           "traffic": "2000+",
           "traffic_level": 5,
@@ -1712,22 +1855,78 @@
       "market_codes": [
         "ES"
       ],
-      "rank": 22
+      "rank": 26
+    },
+    {
+      "title": "oktober",
+      "key": "oktober",
+      "global_score": 27.6,
+      "italy_score": 0,
+      "crossover_score": 15.4,
+      "opportunity_score": 15.7,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "DE": {
+          "title": "oktober",
+          "score": 30.7,
+          "status": "STABLE",
+          "acceleration": "NONE",
+          "traffic": "10000+",
+          "traffic_level": 7,
+          "momentum": 0.0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "DE"
+      ],
+      "rank": 27
+    },
+    {
+      "title": "gran premio de austria de motociclismo",
+      "key": "gran premio de austria de motociclismo",
+      "global_score": 27.4,
+      "italy_score": 0,
+      "crossover_score": 15.3,
+      "opportunity_score": 15.6,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "ES": {
+          "title": "gran premio de austria de motociclismo",
+          "score": 30.5,
+          "status": "EMERGING",
+          "acceleration": "NONE",
+          "traffic": "1000+",
+          "traffic_level": 4,
+          "momentum": 0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "ES"
+      ],
+      "rank": 28
     },
     {
       "title": "helen mirren",
       "key": "helen mirren",
-      "global_score": 25.6,
+      "global_score": 26.6,
       "italy_score": 0,
-      "crossover_score": 14.5,
-      "opportunity_score": 14.9,
+      "crossover_score": 15.0,
+      "opportunity_score": 15.3,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "US": {
           "title": "helen mirren",
-          "score": 28.2,
+          "score": 29.5,
           "status": "STABLE",
           "acceleration": "NONE",
           "traffic": "10000+",
@@ -1740,11 +1939,11 @@
       "market_codes": [
         "US"
       ],
-      "rank": 23
+      "rank": 29
     },
     {
-      "title": "el país",
-      "key": "el pais",
+      "title": "sorteo de la lotería nacional de hoy jueves 17 de septiembre",
+      "key": "sorteo de la loteria nacional de hoy jueves 17 de septiembre",
       "global_score": 25.0,
       "italy_score": 0,
       "crossover_score": 14.2,
@@ -1754,7 +1953,7 @@
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "ES": {
-          "title": "el país",
+          "title": "sorteo de la lotería nacional de hoy jueves 17 de septiembre",
           "score": 27.5,
           "status": "HOT",
           "acceleration": "NONE",
@@ -1768,219 +1967,51 @@
       "market_codes": [
         "ES"
       ],
-      "rank": 24
-    },
-    {
-      "title": "pierce brosnan",
-      "key": "pierce brosnan",
-      "global_score": 24.0,
-      "italy_score": 0,
-      "crossover_score": 13.8,
-      "opportunity_score": 14.2,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "US": {
-          "title": "pierce brosnan",
-          "score": 26.2,
-          "status": "EMERGING",
-          "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "US"
-      ],
-      "rank": 25
-    },
-    {
-      "title": "data centers",
-      "key": "data centers",
-      "global_score": 24.0,
-      "italy_score": 0,
-      "crossover_score": 13.8,
-      "opportunity_score": 14.2,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "US": {
-          "title": "data centers",
-          "score": 26.2,
-          "status": "EMERGING",
-          "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "US"
-      ],
-      "rank": 26
-    },
-    {
-      "title": "bmw pga championship",
-      "key": "bmw pga championship",
-      "global_score": 24.0,
-      "italy_score": 0,
-      "crossover_score": 13.8,
-      "opportunity_score": 14.2,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "GB": {
-          "title": "bmw pga championship",
-          "score": 26.2,
-          "status": "EMERGING",
-          "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "GB"
-      ],
-      "rank": 27
-    },
-    {
-      "title": "rachel danis",
-      "key": "rachel danis",
-      "global_score": 23.0,
-      "italy_score": 0,
-      "crossover_score": 13.3,
-      "opportunity_score": 13.7,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "US": {
-          "title": "rachel danis",
-          "score": 25.0,
-          "status": "HOT",
-          "acceleration": "NONE",
-          "traffic": "500+",
-          "traffic_level": 3,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "US"
-      ],
-      "rank": 28
-    },
-    {
-      "title": "on football boots",
-      "key": "on football boots",
-      "global_score": 23.0,
-      "italy_score": 0,
-      "crossover_score": 13.3,
-      "opportunity_score": 13.7,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "GB": {
-          "title": "on football boots",
-          "score": 25.0,
-          "status": "HOT",
-          "acceleration": "NONE",
-          "traffic": "500+",
-          "traffic_level": 3,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "GB"
-      ],
-      "rank": 29
-    },
-    {
-      "title": "jason bateman",
-      "key": "jason bateman",
-      "global_score": 23.0,
-      "italy_score": 0,
-      "crossover_score": 13.3,
-      "opportunity_score": 13.7,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "GB": {
-          "title": "jason bateman",
-          "score": 25.0,
-          "status": "HOT",
-          "acceleration": "NONE",
-          "traffic": "500+",
-          "traffic_level": 3,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "GB"
-      ],
       "rank": 30
     },
     {
-      "title": "golem",
-      "key": "golem",
-      "global_score": 23.0,
+      "title": "dr rachel danis",
+      "key": "dr rachel danis",
+      "global_score": 24.4,
       "italy_score": 0,
-      "crossover_score": 13.3,
-      "opportunity_score": 13.7,
+      "crossover_score": 14.0,
+      "opportunity_score": 14.3,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "US": {
+          "title": "dr rachel danis",
+          "score": 26.8,
+          "status": "HOT",
+          "acceleration": "NONE",
+          "traffic": "1000+",
+          "traffic_level": 4,
+          "momentum": 0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "US"
+      ],
+      "rank": 31
+    },
+    {
+      "title": "spritpreise luxemburg",
+      "key": "spritpreise luxemburg",
+      "global_score": 24.0,
+      "italy_score": 0,
+      "crossover_score": 13.8,
+      "opportunity_score": 14.2,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "DE": {
-          "title": "golem",
-          "score": 25.0,
-          "status": "HOT",
-          "acceleration": "NONE",
-          "traffic": "500+",
-          "traffic_level": 3,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "DE"
-      ],
-      "rank": 31
-    },
-    {
-      "title": "jonathan andic",
-      "key": "jonathan andic",
-      "global_score": 23.0,
-      "italy_score": 0,
-      "crossover_score": 13.3,
-      "opportunity_score": 13.7,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "ES": {
-          "title": "jonathan andic",
-          "score": 25.0,
-          "status": "HOT",
+          "title": "spritpreise luxemburg",
+          "score": 26.3,
+          "status": "STABLE",
           "acceleration": "NONE",
           "traffic": "2000+",
           "traffic_level": 5,
@@ -1990,57 +2021,57 @@
       },
       "market_count": 1,
       "market_codes": [
-        "ES"
+        "DE"
       ],
       "rank": 32
     },
     {
-      "title": "focus entertainment",
-      "key": "focus entertainment",
-      "global_score": 22.4,
+      "title": "evotec",
+      "key": "evotec",
+      "global_score": 24.0,
       "italy_score": 0,
-      "crossover_score": 13.1,
-      "opportunity_score": 13.5,
+      "crossover_score": 13.8,
+      "opportunity_score": 14.2,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
-        "FR": {
-          "title": "focus entertainment",
-          "score": 24.3,
+        "DE": {
+          "title": "evotec",
+          "score": 26.2,
           "status": "EMERGING",
           "acceleration": "NONE",
-          "traffic": "100+",
-          "traffic_level": 1,
+          "traffic": "200+",
+          "traffic_level": 2,
           "momentum": 0,
           "news_count": 3
         }
       },
       "market_count": 1,
       "market_codes": [
-        "FR"
+        "DE"
       ],
       "rank": 33
     },
     {
-      "title": "ign",
-      "key": "ign",
-      "global_score": 21.2,
+      "title": "joselu",
+      "key": "joselu",
+      "global_score": 24.0,
       "italy_score": 0,
-      "crossover_score": 12.5,
-      "opportunity_score": 12.9,
+      "crossover_score": 13.8,
+      "opportunity_score": 14.2,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "ES": {
-          "title": "ign",
-          "score": 22.7,
-          "status": "STABLE",
+          "title": "joselu",
+          "score": 26.2,
+          "status": "EMERGING",
           "acceleration": "NONE",
-          "traffic": "500+",
-          "traffic_level": 3,
-          "momentum": 0.0,
+          "traffic": "200+",
+          "traffic_level": 2,
+          "momentum": 0,
           "news_count": 3
         }
       },
@@ -2051,23 +2082,23 @@
       "rank": 34
     },
     {
-      "title": "mbappe",
-      "key": "mbappe",
-      "global_score": 21.0,
+      "title": "pierce brosnan",
+      "key": "pierce brosnan",
+      "global_score": 23.0,
       "italy_score": 0,
-      "crossover_score": 12.5,
-      "opportunity_score": 12.8,
+      "crossover_score": 13.3,
+      "opportunity_score": 13.7,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "US": {
-          "title": "mbappe",
-          "score": 22.5,
+          "title": "pierce brosnan",
+          "score": 25.0,
           "status": "HOT",
           "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
+          "traffic": "500+",
+          "traffic_level": 3,
           "momentum": 0,
           "news_count": 3
         }
@@ -2079,104 +2110,132 @@
       "rank": 35
     },
     {
-      "title": "dai cornell",
-      "key": "dai cornell",
-      "global_score": 21.0,
+      "title": "mbappe on",
+      "key": "mbappe on",
+      "global_score": 23.0,
       "italy_score": 0,
-      "crossover_score": 12.5,
-      "opportunity_score": 12.8,
+      "crossover_score": 13.3,
+      "opportunity_score": 13.7,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
-        "GB": {
-          "title": "dai cornell",
-          "score": 22.5,
+        "FR": {
+          "title": "mbappe on",
+          "score": 25.0,
           "status": "HOT",
           "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
-          "momentum": 0,
+          "traffic": "500+",
+          "traffic_level": 3,
+          "momentum": -2.0,
           "news_count": 3
         }
       },
       "market_count": 1,
       "market_codes": [
-        "GB"
+        "FR"
       ],
       "rank": 36
     },
     {
-      "title": "iphone 18 pro pro max",
-      "key": "iphone 18 pro pro max",
-      "global_score": 21.0,
+      "title": "oreos",
+      "key": "oreos",
+      "global_score": 22.5,
       "italy_score": 0,
-      "crossover_score": 12.5,
-      "opportunity_score": 12.8,
+      "crossover_score": 13.1,
+      "opportunity_score": 13.5,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
-        "GB": {
-          "title": "iphone 18 pro pro max",
-          "score": 22.5,
-          "status": "HOT",
+        "US": {
+          "title": "oreos",
+          "score": 24.4,
+          "status": "STABLE",
           "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
-          "momentum": 0,
+          "traffic": "1000+",
+          "traffic_level": 4,
+          "momentum": 0.0,
           "news_count": 3
         }
       },
       "market_count": 1,
       "market_codes": [
-        "GB"
+        "US"
       ],
       "rank": 37
     },
     {
-      "title": "michael desronvil",
-      "key": "michael desronvil",
-      "global_score": 21.0,
+      "title": "presupuesto de la unión europea",
+      "key": "presupuesto de la union europea",
+      "global_score": 22.4,
       "italy_score": 0,
-      "crossover_score": 12.5,
-      "opportunity_score": 12.8,
+      "crossover_score": 13.1,
+      "opportunity_score": 13.5,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
-        "GB": {
-          "title": "michael desronvil",
-          "score": 22.5,
-          "status": "HOT",
+        "ES": {
+          "title": "presupuesto de la unión europea",
+          "score": 24.3,
+          "status": "EMERGING",
           "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
+          "traffic": "100+",
+          "traffic_level": 1,
           "momentum": 0,
           "news_count": 3
         }
       },
       "market_count": 1,
       "market_codes": [
-        "GB"
+        "ES"
       ],
       "rank": 38
     },
     {
-      "title": "boris becker",
-      "key": "boris becker",
-      "global_score": 21.0,
+      "title": "auchan",
+      "key": "auchan",
+      "global_score": 22.4,
       "italy_score": 0,
-      "crossover_score": 12.5,
-      "opportunity_score": 12.8,
+      "crossover_score": 13.1,
+      "opportunity_score": 13.5,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "ES": {
+          "title": "auchan",
+          "score": 24.3,
+          "status": "EMERGING",
+          "acceleration": "NONE",
+          "traffic": "100+",
+          "traffic_level": 1,
+          "momentum": 0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "ES"
+      ],
+      "rank": 39
+    },
+    {
+      "title": "rugby",
+      "key": "rugby",
+      "global_score": 22.0,
+      "italy_score": 0,
+      "crossover_score": 12.9,
+      "opportunity_score": 13.3,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "GB": {
-          "title": "boris becker",
-          "score": 22.5,
-          "status": "HOT",
+          "title": "rugby",
+          "score": 23.7,
+          "status": "STABLE",
           "acceleration": "NONE",
           "traffic": "200+",
           "traffic_level": 2,
@@ -2188,26 +2247,26 @@
       "market_codes": [
         "GB"
       ],
-      "rank": 39
+      "rank": 40
     },
     {
-      "title": "mittelhessen",
-      "key": "mittelhessen",
-      "global_score": 21.0,
+      "title": "geld",
+      "key": "geld",
+      "global_score": 21.2,
       "italy_score": 0,
       "crossover_score": 12.5,
-      "opportunity_score": 12.8,
+      "opportunity_score": 12.9,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "DE": {
-          "title": "mittelhessen",
-          "score": 22.5,
-          "status": "HOT",
+          "title": "geld",
+          "score": 22.7,
+          "status": "STABLE",
           "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
+          "traffic": "2000+",
+          "traffic_level": 5,
           "momentum": 0,
           "news_count": 3
         }
@@ -2216,79 +2275,51 @@
       "market_codes": [
         "DE"
       ],
-      "rank": 40
-    },
-    {
-      "title": "josé maría aznar",
-      "key": "jose maria aznar",
-      "global_score": 21.0,
-      "italy_score": 0,
-      "crossover_score": 12.5,
-      "opportunity_score": 12.8,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "ES": {
-          "title": "josé maría aznar",
-          "score": 22.5,
-          "status": "HOT",
-          "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "ES"
-      ],
       "rank": 41
     },
     {
-      "title": "ertzaintza",
-      "key": "ertzaintza",
-      "global_score": 21.0,
+      "title": "martin short",
+      "key": "martin short",
+      "global_score": 21.1,
       "italy_score": 0,
       "crossover_score": 12.5,
-      "opportunity_score": 12.8,
+      "opportunity_score": 12.9,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
-        "ES": {
-          "title": "ertzaintza",
-          "score": 22.5,
-          "status": "HOT",
+        "US": {
+          "title": "martin short",
+          "score": 22.6,
+          "status": "STABLE",
           "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
-          "momentum": 0,
+          "traffic": "500+",
+          "traffic_level": 3,
+          "momentum": 0.0,
           "news_count": 3
         }
       },
       "market_count": 1,
       "market_codes": [
-        "ES"
+        "US"
       ],
       "rank": 42
     },
     {
-      "title": "rugby",
-      "key": "rugby",
-      "global_score": 20.9,
+      "title": "bmw pga championship",
+      "key": "bmw pga championship",
+      "global_score": 21.0,
       "italy_score": 0,
-      "crossover_score": 12.4,
+      "crossover_score": 12.5,
       "opportunity_score": 12.8,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "GB": {
-          "title": "rugby",
-          "score": 22.4,
-          "status": "STABLE",
+          "title": "bmw pga championship",
+          "score": 22.5,
+          "status": "HOT",
           "acceleration": "NONE",
           "traffic": "200+",
           "traffic_level": 2,
@@ -2303,131 +2334,19 @@
       "rank": 43
     },
     {
-      "title": "martin short",
-      "key": "martin short",
-      "global_score": 20.0,
+      "title": "focus entertainment",
+      "key": "focus entertainment",
+      "global_score": 21.0,
       "italy_score": 0,
-      "crossover_score": 12.0,
-      "opportunity_score": 12.4,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "US": {
-          "title": "martin short",
-          "score": 21.3,
-          "status": "HOT",
-          "acceleration": "NONE",
-          "traffic": "500+",
-          "traffic_level": 3,
-          "momentum": 0.0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "US"
-      ],
-      "rank": 44
-    },
-    {
-      "title": "fat bear week 2026",
-      "key": "fat bear week 2026",
-      "global_score": 20.0,
-      "italy_score": 0,
-      "crossover_score": 12.0,
-      "opportunity_score": 12.4,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "US": {
-          "title": "fat bear week 2026",
-          "score": 21.3,
-          "status": "HOT",
-          "acceleration": "NONE",
-          "traffic": "500+",
-          "traffic_level": 3,
-          "momentum": 0.0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "US"
-      ],
-      "rank": 45
-    },
-    {
-      "title": "polarwirbel",
-      "key": "polarwirbel",
-      "global_score": 19.6,
-      "italy_score": 0,
-      "crossover_score": 11.8,
-      "opportunity_score": 12.2,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "DE": {
-          "title": "polarwirbel",
-          "score": 20.8,
-          "status": "HOT",
-          "acceleration": "NONE",
-          "traffic": "500+",
-          "traffic_level": 3,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "DE"
-      ],
-      "rank": 46
-    },
-    {
-      "title": "septeo stadium",
-      "key": "septeo stadium",
-      "global_score": 19.5,
-      "italy_score": 0,
-      "crossover_score": 11.8,
-      "opportunity_score": 12.2,
+      "crossover_score": 12.5,
+      "opportunity_score": 12.8,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "FR": {
-          "title": "septeo stadium",
-          "score": 20.6,
-          "status": "HOT",
-          "acceleration": "NONE",
-          "traffic": "100+",
-          "traffic_level": 1,
-          "momentum": 0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "FR"
-      ],
-      "rank": 47
-    },
-    {
-      "title": "raúl varela",
-      "key": "raul varela",
-      "global_score": 19.4,
-      "italy_score": 0,
-      "crossover_score": 11.7,
-      "opportunity_score": 12.1,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "ES": {
-          "title": "raúl varela",
-          "score": 20.5,
+          "title": "focus entertainment",
+          "score": 22.5,
           "status": "HOT",
           "acceleration": "NONE",
           "traffic": "200+",
@@ -2438,29 +2357,141 @@
       },
       "market_count": 1,
       "market_codes": [
-        "ES"
+        "FR"
       ],
-      "rank": 48
+      "rank": 44
     },
     {
-      "title": "geld",
-      "key": "geld",
-      "global_score": 18.6,
+      "title": "jaime chávarri",
+      "key": "jaime chavarri",
+      "global_score": 20.8,
       "italy_score": 0,
-      "crossover_score": 11.4,
-      "opportunity_score": 11.8,
+      "crossover_score": 12.4,
+      "opportunity_score": 12.8,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "ES": {
+          "title": "jaime chávarri",
+          "score": 22.3,
+          "status": "EMERGING",
+          "acceleration": "NONE",
+          "traffic": "100+",
+          "traffic_level": 1,
+          "momentum": 0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "ES"
+      ],
+      "rank": 45
+    },
+    {
+      "title": "jason bateman",
+      "key": "jason bateman",
+      "global_score": 20.0,
+      "italy_score": 0,
+      "crossover_score": 12.0,
+      "opportunity_score": 12.4,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "GB": {
+          "title": "jason bateman",
+          "score": 21.3,
+          "status": "HOT",
+          "acceleration": "NONE",
+          "traffic": "500+",
+          "traffic_level": 3,
+          "momentum": 0.0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "GB"
+      ],
+      "rank": 46
+    },
+    {
+      "title": "golem",
+      "key": "golem",
+      "global_score": 20.0,
+      "italy_score": 0,
+      "crossover_score": 12.0,
+      "opportunity_score": 12.4,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "DE": {
-          "title": "geld",
-          "score": 19.5,
+          "title": "golem",
+          "score": 21.3,
+          "status": "HOT",
+          "acceleration": "NONE",
+          "traffic": "500+",
+          "traffic_level": 3,
+          "momentum": 0.0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "DE"
+      ],
+      "rank": 47
+    },
+    {
+      "title": "netflix stock",
+      "key": "netflix stock",
+      "global_score": 19.1,
+      "italy_score": 0,
+      "crossover_score": 11.6,
+      "opportunity_score": 12.0,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "US": {
+          "title": "netflix stock",
+          "score": 20.1,
           "status": "STABLE",
           "acceleration": "NONE",
-          "traffic": "1000+",
-          "traffic_level": 4,
-          "momentum": 0,
+          "traffic": "200+",
+          "traffic_level": 2,
+          "momentum": 0.0,
+          "news_count": 3
+        }
+      },
+      "market_count": 1,
+      "market_codes": [
+        "US"
+      ],
+      "rank": 48
+    },
+    {
+      "title": "dominik krause",
+      "key": "dominik krause",
+      "global_score": 19.1,
+      "italy_score": 0,
+      "crossover_score": 11.6,
+      "opportunity_score": 12.0,
+      "global_status": "STABLE",
+      "italy_status": "NOT_PRESENT",
+      "why_now": "presenza internazionale rilevata",
+      "markets": {
+        "DE": {
+          "title": "dominik krause",
+          "score": 20.1,
+          "status": "STABLE",
+          "acceleration": "NONE",
+          "traffic": "200+",
+          "traffic_level": 2,
+          "momentum": 0.0,
           "news_count": 3
         }
       },
@@ -2471,36 +2502,36 @@
       "rank": 49
     },
     {
-      "title": "netflix stock",
-      "key": "netflix stock",
-      "global_score": 18.0,
+      "title": "diana spencer",
+      "key": "diana spencer",
+      "global_score": 18.3,
       "italy_score": 0,
-      "crossover_score": 11.1,
-      "opportunity_score": 11.5,
+      "crossover_score": 11.2,
+      "opportunity_score": 11.6,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
-        "US": {
-          "title": "netflix stock",
-          "score": 18.8,
-          "status": "HOT",
+        "FR": {
+          "title": "diana spencer",
+          "score": 19.1,
+          "status": "STABLE",
           "acceleration": "NONE",
           "traffic": "200+",
           "traffic_level": 2,
-          "momentum": 0.0,
+          "momentum": 0,
           "news_count": 3
         }
       },
       "market_count": 1,
       "market_codes": [
-        "US"
+        "FR"
       ],
       "rank": 50
     },
     {
-      "title": "battlestar galactica",
-      "key": "battlestar galactica",
+      "title": "iphone 18 pro pro max",
+      "key": "iphone 18 pro pro max",
       "global_score": 18.0,
       "italy_score": 0,
       "crossover_score": 11.1,
@@ -2510,7 +2541,7 @@
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "GB": {
-          "title": "battlestar galactica",
+          "title": "iphone 18 pro pro max",
           "score": 18.8,
           "status": "HOT",
           "acceleration": "NONE",
@@ -2527,8 +2558,8 @@
       "rank": 51
     },
     {
-      "title": "dominik krause",
-      "key": "dominik krause",
+      "title": "dai cornell",
+      "key": "dai cornell",
       "global_score": 18.0,
       "italy_score": 0,
       "crossover_score": 11.1,
@@ -2537,8 +2568,8 @@
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
-        "DE": {
-          "title": "dominik krause",
+        "GB": {
+          "title": "dai cornell",
           "score": 18.8,
           "status": "HOT",
           "acceleration": "NONE",
@@ -2550,13 +2581,13 @@
       },
       "market_count": 1,
       "market_codes": [
-        "DE"
+        "GB"
       ],
       "rank": 52
     },
     {
-      "title": "jeff bezos",
-      "key": "jeff bezos",
+      "title": "josé maría aznar",
+      "key": "jose maria aznar",
       "global_score": 18.0,
       "italy_score": 0,
       "crossover_score": 11.1,
@@ -2565,8 +2596,8 @@
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
-        "DE": {
-          "title": "jeff bezos",
+        "ES": {
+          "title": "josé maría aznar",
           "score": 18.8,
           "status": "HOT",
           "acceleration": "NONE",
@@ -2578,13 +2609,13 @@
       },
       "market_count": 1,
       "market_codes": [
-        "DE"
+        "ES"
       ],
       "rank": 53
     },
     {
-      "title": "eurofighter typhoon",
-      "key": "eurofighter typhoon",
+      "title": "naomi watts",
+      "key": "naomi watts",
       "global_score": 18.0,
       "italy_score": 0,
       "crossover_score": 11.1,
@@ -2593,69 +2624,69 @@
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
-        "DE": {
-          "title": "eurofighter typhoon",
+        "ES": {
+          "title": "naomi watts",
           "score": 18.8,
           "status": "HOT",
           "acceleration": "NONE",
           "traffic": "200+",
           "traffic_level": 2,
-          "momentum": 0.0,
+          "momentum": -3.0,
           "news_count": 3
         }
       },
       "market_count": 1,
       "market_codes": [
-        "DE"
+        "ES"
       ],
       "rank": 54
     },
     {
-      "title": "johanna rolland",
-      "key": "johanna rolland",
-      "global_score": 18.0,
+      "title": "sale",
+      "key": "sale",
+      "global_score": 17.1,
       "italy_score": 0,
-      "crossover_score": 11.1,
-      "opportunity_score": 11.5,
+      "crossover_score": 10.7,
+      "opportunity_score": 11.1,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
-        "FR": {
-          "title": "johanna rolland",
-          "score": 18.8,
-          "status": "HOT",
+        "GB": {
+          "title": "sale",
+          "score": 17.6,
+          "status": "STABLE",
           "acceleration": "NONE",
           "traffic": "200+",
           "traffic_level": 2,
-          "momentum": 0.0,
+          "momentum": 0,
           "news_count": 3
         }
       },
       "market_count": 1,
       "market_codes": [
-        "FR"
+        "GB"
       ],
       "rank": 55
     },
     {
-      "title": "évasion",
-      "key": "evasion",
-      "global_score": 18.0,
+      "title": "septeo stadium",
+      "key": "septeo stadium",
+      "global_score": 16.5,
       "italy_score": 0,
-      "crossover_score": 11.1,
-      "opportunity_score": 11.5,
+      "crossover_score": 10.4,
+      "opportunity_score": 10.9,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
         "FR": {
-          "title": "évasion",
-          "score": 18.8,
+          "title": "septeo stadium",
+          "score": 16.9,
           "status": "HOT",
           "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
+          "traffic": "100+",
+          "traffic_level": 1,
           "momentum": 0.0,
           "news_count": 3
         }
@@ -2667,88 +2698,32 @@
       "rank": 56
     },
     {
-      "title": "stephen curry",
-      "key": "stephen curry",
-      "global_score": 18.0,
+      "title": "landlord",
+      "key": "landlord",
+      "global_score": 15.7,
       "italy_score": 0,
-      "crossover_score": 11.1,
-      "opportunity_score": 11.5,
+      "crossover_score": 10.1,
+      "opportunity_score": 10.5,
       "global_status": "STABLE",
       "italy_status": "NOT_PRESENT",
       "why_now": "presenza internazionale rilevata",
       "markets": {
-        "FR": {
-          "title": "stephen curry",
-          "score": 18.8,
+        "GB": {
+          "title": "landlord",
+          "score": 15.9,
           "status": "HOT",
           "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
-          "momentum": 0.0,
-          "news_count": 3
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "FR"
-      ],
-      "rank": 57
-    },
-    {
-      "title": "liev schreiber",
-      "key": "liev schreiber",
-      "global_score": 17.5,
-      "italy_score": 0,
-      "crossover_score": 10.9,
-      "opportunity_score": 11.3,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "US": {
-          "title": "liev schreiber",
-          "score": 18.1,
-          "status": "HOT",
-          "acceleration": "NONE",
-          "traffic": "1000+",
-          "traffic_level": 4,
-          "momentum": 0.0,
-          "news_count": 1
-        }
-      },
-      "market_count": 1,
-      "market_codes": [
-        "US"
-      ],
-      "rank": 58
-    },
-    {
-      "title": "diana spencer",
-      "key": "diana spencer",
-      "global_score": 17.2,
-      "italy_score": 0,
-      "crossover_score": 10.7,
-      "opportunity_score": 11.2,
-      "global_status": "STABLE",
-      "italy_status": "NOT_PRESENT",
-      "why_now": "presenza internazionale rilevata",
-      "markets": {
-        "FR": {
-          "title": "diana spencer",
-          "score": 17.8,
-          "status": "HOT",
-          "acceleration": "NONE",
-          "traffic": "200+",
-          "traffic_level": 2,
+          "traffic": "100+",
+          "traffic_level": 1,
           "momentum": 0,
           "news_count": 3
         }
       },
       "market_count": 1,
       "market_codes": [
-        "FR"
+        "GB"
       ],
-      "rank": 59
+      "rank": 57
     }
   ],
   "crossover_trends": [],
